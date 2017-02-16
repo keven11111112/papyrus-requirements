@@ -19,6 +19,7 @@
 	
 	<!-- Modules to build -->
 	<modules>
+		<module>common</module>
 		<module>sysml11</module>
 		<module>sysml14</module> 
 	</modules>

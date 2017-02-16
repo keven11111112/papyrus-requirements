@@ -19,9 +19,7 @@
 	
 	<!-- Modules to build -->
 	<modules>
-<!-- 		<module>bmm</module> -->
-<!-- 		<module>metrics</module> -->
-<!-- 		<module>requirements</module> -->
+		<!-- <module>requirements</module> -->
 	</modules>
 	
 </project>

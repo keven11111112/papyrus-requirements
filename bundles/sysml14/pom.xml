@@ -19,7 +19,7 @@
 	
 	<!-- Modules to build -->
 	<modules>
-	
+		<!-- <module>requirements</module> -->	
 	</modules>
 	
 </project>

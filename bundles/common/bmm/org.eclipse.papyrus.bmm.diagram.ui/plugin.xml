@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+      Copyright (c) 2017 CEA LIST and others.
+     
+      All rights reserved. This program and the accompanying materials
+      are made available under the terms of the Eclipse Public License v1.0
+      which accompanies this distribution, and is available at
+      http://www.eclipse.org/legal/epl-v10.html
+     
+      Contributors:
+     	CEA LIST - Initial API and implementation
+ -->
+
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            canFinishEarly="false"
+            category="org.eclipse.papyrus.wizards.category"
+            class="org.eclipse.papyrus.bmm.diagram.ui.NewBmmModelWizard"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/bmm_32x32.png"
+            id="org.eclipse.papyrus.wizards.createbmmmodel"
+            name="%wizard.name">
+         <selection
+               class="org.eclipse.core.resources.IResource">
+         </selection>
+      </wizard>
+      <wizard
+            category="org.eclipse.papyrus.wizards.category"
+            class="org.eclipse.papyrus.bmm.diagram.ui.NewBmmProjectWizard"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/bmm_32x32.png"
+            id="org.eclipse.papyrus.wizards.createbmmwizard"
+            name="%wizard.name.0"
+            project="true">
+         <description>
+            %wizard.description
+         </description>
+      </wizard>
+   </extension>
+  <!-- 
+   <extension
+         point="org.eclipse.papyrus.uml.diagram.wizards.templates">
+      <template
+            file="org.eclipse.papyrus.bmm.diagram.ui.template1"
+            id="org.eclipse.papyrus.bmm.diagram.ui.template1"
+            language="org.eclipse.papyrus.bmm.diagram.ui.template1"
+            name="Empty Process BMM Model">
+      </template>
+   </extension>
+   -->
+</plugin>
