@@ -9,3 +9,15 @@ location "http://download.eclipse.org/releases/neon/" eclipse-neon {
  
  org.eclipse.papyrus.sdk.feature.feature.group
 }
+
+location "https://hudson.eclipse.org/papyrus/job/Papyrus-Neon-Extra/lastSuccessfulBuild/artifact/repository/" papyrus-neon-extra {
+ org.eclipse.papyrus.sysml.feature.feature.group lazy
+ org.eclipse.papyrus.sysml.nattable.feature.feature.group lazy
+}
+
+//manualUpdate 
+
+location rmf "http://download.eclipse.org/rmf/updates/releases" {
+	org.eclipse.rmf.reqif10.sdk.feature.feature.group
+	org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group
+}

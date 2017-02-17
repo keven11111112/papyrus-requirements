@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Parent POM (i.e., bundles POM) -->
+	<parent>
+		<groupId>org.eclipse.papyrus.requirements</groupId>
+		<artifactId>org.eclipse.papyrus.requirements.bundles.sysml11</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<!-- POM Description -->
+	<artifactId>org.eclipse.papyrus.requirements.bundles.sysml11.requirements</artifactId>
+	<packaging>pom</packaging>
+	<name>Requirements requirements</name>
+	
+	<!-- Modules to build -->
+	<modules>
+		<module>org.eclipse.papyrus.requirements.common</module>
+		<module>org.eclipse.papyrus.requirements.common.ui</module>
+		<module>org.eclipse.papyrus.requirements.languagecreationtools.commands</module>
+		<module>org.eclipse.papyrus.requirements.languagecreationtools.domainModel2Profile</module>
+		<module>org.eclipse.papyrus.requirements.languagecreationtools.handlers</module>
+		<module>org.eclipse.papyrus.requirements.languagecreationtools.ui</module>
+		<module>org.eclipse.papyrus.requirements.metrics.library</module>
+		<module>org.eclipse.papyrus.requirements.preferences</module>
+		<module>org.eclipse.papyrus.requirements.reqif</module>
+		<module>org.eclipse.papyrus.requirements.sysml.assistant.commands</module>
+		<module>org.eclipse.papyrus.requirements.sysml.assistant.handlers</module>
+		<module>org.eclipse.papyrus.requirements.sysml.assistant.ui</module>
+		<module>org.eclipse.papyrus.requirements.sysml.common</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.common</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.derivedFrom.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.refinedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.satisfiedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.tracedTo.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml.matrix.verifiedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml.testers</module>
+		<module>org.eclipse.papyrus.requirements.sysml.traceability.assistant</module>
+		<module>org.eclipse.papyrus.requirements.sysml.traceability.commands</module>
+		<module>org.eclipse.papyrus.requirements.sysml.traceability.handlers</module>
+		<module>org.eclipse.papyrus.requirements.sysml.traceability.ui</module>
+		<module>org.eclipse.papyrus.requirements.sysml.verification</module>
+		<module>org.eclipse.papyrus.requirements.templates</module>
+	</modules>
+	
+</project>
