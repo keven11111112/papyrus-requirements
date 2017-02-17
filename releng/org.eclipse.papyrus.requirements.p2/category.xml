@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.papyrus.requirements.feature_0.0.1.qualifier.jar" id="org.eclipse.papyrus.requirements.feature" version="0.0.1.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <category-def name="org.eclipse.papyrus.requirements" label="Requirements">
+      <description>
+         Papyrus Tools for Requirements
+      </description>
+   </category-def>
+</site>

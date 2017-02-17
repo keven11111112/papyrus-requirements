@@ -44,6 +44,18 @@
 		<system>Bugzilla</system>
 	</issueManagement>
 	
+	<distributionManagement>
+		<site>
+			<id>git.eclipse.org.server</id>
+			<url>scm:git:https://git.eclipse.org/gitroot/www.eclipse.org/papyrus/components/${component.shortname}</url>
+		</site>
+	</distributionManagement>
+
+	<scm>
+		<url>https://git.eclipse.org/c/papyrus/org.eclipse.papyrus-${component.shortname}.git</url>
+		<connection>scm:git:git://git.eclipse.org/gitroot/papyrus/org.eclipse.papyrus-${component.shortname}.git</connection>
+	</scm>
+	
 	<!-- Requirements Developpers -->
 	<developers>
 		<developer>
@@ -113,25 +125,8 @@
         <version>3.0.rc1</version>
         <executions>
           <execution>
-            <phase>process-sources</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
             <configuration>
               <header>${session.executionRootDirectory}/tests/header/header.epl.txt</header>
-              <useDefaultExcludes>true</useDefaultExcludes>
-              <failIfMissing>true</failIfMissing>
-              <strictCheck>false</strictCheck>
-              <aggregate>true</aggregate>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-              <excludes>
-                <exclude>**/src/site/**</exclude>
-                <exclude>**/target/**</exclude>
-                <exclude>**/src-gen/**</exclude>
-                <exclude>**/xtend-gen/**</exclude>
-              </excludes>
             </configuration>
           </execution>
         </executions>
