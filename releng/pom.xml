@@ -18,6 +18,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	
 	<!-- Modules to build -->
 	<modules>
+		<module>org.eclipse.papyrus.requirements.p2</module>
 		<module>targetplatforms</module>
 	</modules>
 	
