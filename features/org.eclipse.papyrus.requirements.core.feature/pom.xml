@@ -10,7 +10,7 @@
 	</parent>
 
 	<!-- POM description -->
-	<artifactId>org.eclipse.papyrus.requirements.feature</artifactId>
+	<artifactId>org.eclipse.papyrus.requirements.core.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 	<name>Requirements Core Feature</name>
 
