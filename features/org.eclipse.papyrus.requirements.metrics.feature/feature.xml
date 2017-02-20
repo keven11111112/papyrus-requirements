@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.papyrus.requirements.metrics.feature"
-      label="Requirements Core (Incubation)"
+      label="Requirements Metrics (Incubation)"
       version="0.0.1.qualifier"
       provider-name="Eclipse Modeling Project">
 
