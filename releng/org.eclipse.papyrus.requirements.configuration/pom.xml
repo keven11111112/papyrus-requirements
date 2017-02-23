@@ -119,18 +119,31 @@
 	
 	<build>
     	<plugins>
-     <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <version>3.0.rc1</version>
-        <executions>
-          <execution>
-            <configuration>
-              <header>${session.executionRootDirectory}/tests/header/header.epl.txt</header>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+	     <plugin>
+	        <groupId>com.mycila</groupId>
+	        <artifactId>license-maven-plugin</artifactId>
+	        <version>3.0.rc1</version>
+	        <executions>
+	          <execution>
+	            <configuration>
+	              <header>${session.executionRootDirectory}/tests/header/header.epl.txt</header>
+	            </configuration>
+	          </execution>
+	        </executions>
+	      </plugin>
     	</plugins>  
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>eclipse-sign</id>
+			<activation>
+				<property>
+					<name>Sign</name>
+					<value>true</value>
+				</property>
+			</activation>
+		</profile>
+	
+	</profiles>
 </project>
