@@ -135,12 +135,20 @@
 	</build>
 	
 	<profiles>
-		<profile>
+	<profile>
 			<id>eclipse-sign</id>
 			<activation>
 				<property>
 					<name>Sign</name>
 					<value>true</value>
+				</property>
+			</activation>
+		</profile>
+		<profile>
+			<id>eclipse-pack</id>
+			<activation>
+				<property>
+					<name>!skipPack</name>
 				</property>
 			</activation>
 		</profile>
