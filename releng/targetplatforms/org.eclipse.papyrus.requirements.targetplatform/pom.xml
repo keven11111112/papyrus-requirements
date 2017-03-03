@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
 		<artifactId>org.eclipse.papyrus.requirements.releng.targetplatforms</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.7.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM description -->
-	<artifactId>org.eclipse.papyrus.requirements.targetplatform.neon</artifactId>
+	<artifactId>org.eclipse.papyrus.requirements.targetplatform</artifactId>
 	<packaging>eclipse-target-definition</packaging>
-	<name>Requirements Neon Target Platform</name>
+	<name>Requirements Target Platform</name>
 	
 </project>

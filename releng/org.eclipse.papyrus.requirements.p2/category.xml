@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.papyrus.requirements.core.feature_0.0.1.qualifier.jar" id="org.eclipse.papyrus.requirements.core.feature" version="0.0.1.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.core.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.core.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
    
-   <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_0.0.1.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="0.0.1.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
    
-   <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_0.0.1.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="0.0.1.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
    

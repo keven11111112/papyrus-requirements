@@ -14,7 +14,7 @@
 	<!-- Requirements root POM: general information -->
 	<groupId>org.eclipse.papyrus.requirements</groupId>
 	<artifactId>org.eclipse.papyrus.requirements.releng.configuration</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.7.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Requirements</name>
 	<description>Papyrus Requirements</description>
@@ -28,7 +28,7 @@
 		<component.bugzilla.name>Requirements</component.bugzilla.name>
 		<component.package.rootname>org.eclipse.papyrus.requirements</component.package.rootname>
 		<component.apibaseline.url>http://download.eclipse.org/modeling/mdt/papyrus/components/requirements/</component.apibaseline.url>
-		<eclipse.targetrelease>neon</eclipse.targetrelease>
+		<eclipse.targetrelease>oxygen</eclipse.targetrelease>
 		<target.version>0.0.1-SNAPSHOT</target.version>
 	</properties>
 
@@ -119,6 +119,34 @@
 	
 	<build>
     	<plugins>
+		<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+					<target>
+						<artifact>
+							<groupId>org.eclipse.papyrus.requirements</groupId>
+							<artifactId>org.eclipse.papyrus.requirements.targetplatform</artifactId>
+							<version>0.7.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+				</configuration>
+			</plugin>
+		
+		
 	     <plugin>
 	        <groupId>com.mycila</groupId>
 	        <artifactId>license-maven-plugin</artifactId>

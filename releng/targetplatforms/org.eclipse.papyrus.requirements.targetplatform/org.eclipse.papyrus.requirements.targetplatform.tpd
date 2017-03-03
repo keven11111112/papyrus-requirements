@@ -1,6 +1,6 @@
 target "Requirements Neon Target Platform" with source requirements
 
-location "http://download.eclipse.org/releases/neon/" eclipse-neon {
+location "http://download.eclipse.org/releases/oxygen/" eclipse-neon {
  org.eclipse.platform.feature.group
  org.eclipse.rcp.feature.group
  org.eclipse.jdt.feature.group
@@ -10,7 +10,7 @@ location "http://download.eclipse.org/releases/neon/" eclipse-neon {
  org.eclipse.papyrus.sdk.feature.feature.group
 }
 
-location "https://hudson.eclipse.org/papyrus/job/Papyrus-Neon-Extra/lastSuccessfulBuild/artifact/repository/" papyrus-neon-extra {
+location "https://hudson.eclipse.org/papyrus/job/Papyrus-Master-Extra/lastSuccessfulBuild/artifact/repository/" papyrus-neon-extra {
  org.eclipse.papyrus.sysml.feature.feature.group lazy
  org.eclipse.papyrus.sysml.nattable.feature.feature.group lazy
 }

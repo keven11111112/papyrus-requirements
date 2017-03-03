@@ -1,5 +1,5 @@
 /*****************************************************************************
- * Copyright (c) 2014, 2017 CEA LIST.
+ * Copyright (c) 2014 CEA LIST.
  *
  *
  * All rights reserved. This program and the accompanying materials
