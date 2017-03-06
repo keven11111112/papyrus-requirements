@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    /*****************************************************************************
+     * Copyright (c) 2017 CEA LIST.
+     *
+     * All rights reserved. This program and the accompanying materials
+     * are made available under the terms of the Eclipse Public License v1.0
+     * which accompanies this distribution, and is available at
+     * http://www.eclipse.org/legal/epl-v10.html
+     *
+     * Contributors:
+     * 		CEA LIST - Initial API and implementation
+     *
+     *****************************************************************************/
+ -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Parent POM -->
+	<parent>
+		<groupId>org.eclipse.papyrus.requirements</groupId>
+		<artifactId>org.eclipse.papyrus.requirements.root</artifactId>
+		<version>0.7.0-SNAPSHOT</version>
+	</parent>
+	
+	<!-- POM Description -->
+	<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
+	<packaging>pom</packaging>
+	<name>Requirements Bundles (Bundles folder)</name>
+	
+	<!-- Modules to build -->
+	<modules>
+		<module>common</module>
+		<module>sysml11</module>
+		<module>sysml14</module> 
+	</modules>
+	
+</project>

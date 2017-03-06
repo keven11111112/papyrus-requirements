@@ -1,4 +1,4 @@
-target "Requirements Neon Target Platform" with source requirements
+target "Requirements Target Platform"
 
 location "http://download.eclipse.org/releases/oxygen/" eclipse-neon {
  org.eclipse.platform.feature.group
