@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.papyrus.requirements.bmm.feature"
       label="Requirements BMM (Incubation)"
-      version="0.0.1.qualifier"
+      version="0.7.0.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <description url="http://www.example.com/description">
