@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Export
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.export;singleton:=true
+Bundle-Version: 0.7.0.qualifier
+Bundle-Activator: org.eclipse.papyrus.requirements.export.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.expressions,
+ org.eclipse.papyrus.infra.emf,
+ org.eclipse.uml2.uml,
+ org.eclipse.papyrus.uml.tools.utils,
+ org.eclipse.papyrus.infra.emf.gmf,
+ org.eclipse.papyrus.sysml14
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Eclipse Modeling Project
