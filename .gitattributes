@@ -63,5 +63,6 @@
 *.pdf           binary
 *.png           binary
 *.so            binary
+*.svg           binary
 *.war           binary
 

@@ -21,7 +21,7 @@
 
 	<!-- Children modules to build -->
 	<modules>
-		<module>bundles</module>
+		<module>plugins</module>
 		<module>releng</module>
 		<module>features</module>
 		<!-- <module>tests</module> -->
