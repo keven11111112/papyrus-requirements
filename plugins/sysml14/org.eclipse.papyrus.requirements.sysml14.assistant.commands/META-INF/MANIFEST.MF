@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.assistant.commands;singleton:=true
+Bundle-Version: 0.0.2.qualifier
+Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.assistant.commands.Activator
+Bundle-Vendor: %Bundle-Vendor
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui,
+ org.eclipse.papyrus.uml.tools,
+ org.eclipse.papyrus.requirements.sysml14.preferences,
+ org.eclipse.papyrus.requirements.sysml14.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.papyrus.requirements.sysml14.assistant.commands
+Bundle-Localization: plugin

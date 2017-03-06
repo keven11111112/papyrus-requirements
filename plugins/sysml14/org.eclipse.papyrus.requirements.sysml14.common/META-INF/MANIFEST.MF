@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.common
+Bundle-Version: 0.0.2.qualifier
+Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.common.Activator
+Bundle-Vendor: %Bundle-Vendor
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.8.0",
+ org.eclipse.papyrus.infra.ui,
+ org.eclipse.papyrus.requirements.sysml14.preferences,
+ org.eclipse.papyrus.sysml14;bundle-version="0.9.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: bundle
+Export-Package: org.eclipse.papyrus.requirements.sysml14.common

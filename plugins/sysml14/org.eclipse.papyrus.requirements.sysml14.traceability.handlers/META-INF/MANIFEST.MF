@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.traceability.handlers;singleton:=true
+Bundle-Version: 0.0.2.qualifier
+Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.traceability.handlers.Activator
+Bundle-Vendor: %Bundle-Vendor
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.6.0",
+ org.eclipse.papyrus.uml.tools;bundle-version="1.2.0";resolution:=optional,
+ org.eclipse.papyrus.requirements.sysml14.traceability.assistant,
+ org.eclipse.papyrus.uml.extensionpoints;bundle-version="1.2.0",
+ org.eclipse.papyrus.requirements.sysml14.common,
+ org.eclipse.papyrus.requirements.sysml14.traceability.commands
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.papyrus.requirements.sysml14.traceability.handlers
+Bundle-Localization: plugin
