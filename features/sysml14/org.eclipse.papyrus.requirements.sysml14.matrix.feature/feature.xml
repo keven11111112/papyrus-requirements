@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.requirements.sysml14.matrix.feature"
+      label="%featureName"
+      version="0.7.0.qualifier"
+      provider-name="%providerName">
+
+   <description>
+      Traceability - Matrices to create and edit SysML14 requirements relationships
+   </description>
+
+   <copyright url="http://www.eclipse.org/legal/epl-v10.html">
+      Copyright (c) 2015 CEA LIST
+All rights reserved.   This program and the accompanying materials
+are made available under the terms of the Eclipse Public License
+v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.papyrus.infra.viewpoints.policy"/>
+      <import plugin="org.eclipse.papyrus.sysml14.service.types" version="0.9.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.sysml14" version="0.9.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.infra.emf.gmf" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.uml.nattable" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.requirements.sysml14.common"/>
+      <import plugin="org.eclipse.papyrus.sysml14.nattable.common"/>
+      <import plugin="org.eclipse.uml2.uml"/>
+      <import plugin="org.eclipse.papyrus.uml.tools.utils"/>
+      <import plugin="org.eclipse.papyrus.uml.tools.utils" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.infra.nattable.common" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.infra.gmfdiag.commands"/>
+      <import plugin="org.eclipse.papyrus.infra.nattable.common" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.uml.service.types"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.derivedFrom.config"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.refinedBy.config"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy.config"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.tracedTo.config"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.requirements.sysml14.matrix.verifiedBy.config"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

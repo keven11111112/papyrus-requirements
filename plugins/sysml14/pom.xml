@@ -15,11 +15,32 @@
 	<!-- POM Description -->
 	<artifactId>org.eclipse.papyrus.requirements.plugins.sysml14</artifactId>
 	<packaging>pom</packaging>
-	<name>Requirements for sysml14</name>
+	<name>Requirements for Sysml14</name>
 	
 	<!-- Modules to build -->
 	<modules>
-		<!-- <module>requirements</module> -->	
+		<module>org.eclipse.papyrus.requirements.cheatsheet</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.assistant.commands</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.assistant.handlers</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.assistant.ui</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.common</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.common.ui</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.export</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.common</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.derivedFrom.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.refinedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.tracedTo.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.verifiedBy.config</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.metrics.library</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.preferences</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.templates</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.testers</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.traceability.assistant</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.traceability.commands</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.traceability.handlers</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.traceability.ui</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.verification</module>
 	</modules>
 	
 </project>

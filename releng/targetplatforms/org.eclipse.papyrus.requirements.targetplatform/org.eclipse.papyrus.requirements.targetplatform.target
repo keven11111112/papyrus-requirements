@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="Requirements Neon Target Platform" sequenceNumber="1488790219">
+<target name="Requirements Neon Target Platform" sequenceNumber="1489150949">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.platform.feature.group" version="4.6.2.v20161124-1529"/>
@@ -21,6 +21,11 @@
       <unit id="org.eclipse.rmf.reqif10.sdk.feature.feature.group" version="0.13.0.201509161042"/>
       <unit id="org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group" version="0.13.0.201509161042"/>
       <repository id="rmf" location="http://download.eclipse.org/rmf/updates/releases"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.papyrus.sysml14" version="0.0.0"/>
+      <unit id="org.eclipse.papyrus.sysml14.feature.feature.group" version="0.0.0"/>
+      <repository id="sysml14-releases" location="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14"/>
     </location>
   </locations>
 </target>

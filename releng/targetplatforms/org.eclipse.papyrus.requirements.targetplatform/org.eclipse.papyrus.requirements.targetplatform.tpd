@@ -1,7 +1,7 @@
 target "Requirements Neon Target Platform" with source requirements
 
 location "http://download.eclipse.org/releases/neon/" eclipse-neon {
- org.eclipse.platform.feature.group
+ org.eclipse.platform.feature.group 
  org.eclipse.rcp.feature.group
  org.eclipse.jdt.feature.group
  org.eclipse.equinox.p2.discovery.feature.feature.group
@@ -20,4 +20,9 @@ location "https://hudson.eclipse.org/papyrus/job/Papyrus-Neon-Extra/lastSuccessf
 location rmf "http://download.eclipse.org/rmf/updates/releases" {
 	org.eclipse.rmf.reqif10.sdk.feature.feature.group
 	org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group
+}
+
+location sysml14-releases "http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14"{
+	org.eclipse.papyrus.sysml14 lazy
+	org.eclipse.papyrus.sysml14.feature.feature.group lazy
 }
