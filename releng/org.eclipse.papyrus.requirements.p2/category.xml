@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.papyrus.requirements.core.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.core.feature" version="0.7.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.sysml11.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml11.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
-   
-   <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="0.7.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.bmm.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.bmm.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
-   
-   <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="0.7.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.cheatsheets.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.cheatsheets.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
-   
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.assistant.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.assistant.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.core.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.core.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.matrix.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.matrix.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.traceability.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.traceability.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.verification.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.verification.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.metrics.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.metrics.feature" version="0.7.0.qualifier">
+      <category name="org.eclipse.papyrus.requirements"/>
+   </feature>
    <category-def name="org.eclipse.papyrus.requirements" label="Requirements">
       <description>
          Papyrus Tools for Requirements

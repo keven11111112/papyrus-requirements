@@ -16,10 +16,17 @@
 	<name>Requirements Features (Features folder)</name>
 	
 	<!-- Modules to build -->
-	<modules>
-		<module>org.eclipse.papyrus.requirements.core.feature</module>
-		<module>org.eclipse.papyrus.requirements.bmm.feature</module>
-		<module>org.eclipse.papyrus.requirements.metrics.feature</module>
-	</modules>
 	
+	<modules>
+		<module>org.eclipse.papyrus.bmm.feature</module>
+		<module>org.eclipse.papyrus.metrics.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml11.feature</module>
+		<module>org.eclipse.papyrus.requirements.cheatsheets.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.assistant.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.core.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.matrix.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.metrics.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.traceability.feature</module>
+		<module>org.eclipse.papyrus.requirements.sysml14.verification.feature</module>
+	</modules>
 </project>
