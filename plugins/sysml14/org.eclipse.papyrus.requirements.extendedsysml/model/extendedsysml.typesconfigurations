@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.1" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" identifier="org.eclipse.papyrus.requirements.extendedsysml.extendedSysMLProfile.elementTypes" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" identifier="org.eclipse.papyrus.requirements.extendedsysml.extendedSysMLProfile.RequirementsPackage" name="RequirementsPackage" hint="UML::Package">
+    <iconEntry iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypesID>org.eclipse.papyrus.uml.Package</specializedTypesID>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" editHelperAdviceClassName="org.eclipse.papyrus.requirements.extendedsysml.advices.AfterMovingRequirementsCommandEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>ExtendedSysMLProfile::RequirementsPackage</stereotypesQualifiedNames>
+    </matcherConfiguration>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" identifier="org.eclipse.papyrus.requirements.extendedsysml.extendedSysMLProfile.requirementsPackage" target="//@elementTypeConfigurations.0">
+    <stereotypesToApply stereotypeQualifiedName="ExtendedSysMLProfile::RequirementsPackage" updateName="true">
+      <requiredProfiles>ExtendedSysMLProfile</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

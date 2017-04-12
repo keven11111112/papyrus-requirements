@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+      Copyright (c) 2017 CEA LIST and others.
+     
+      All rights reserved. This program and the accompanying materials
+      are made available under the terms of the Eclipse Public License v1.0
+      which accompanies this distribution, and is available at
+      http://www.eclipse.org/legal/epl-v10.html
+     
+      Contributors:
+     	Mauricio Alferez (CEA LIST) - Initial API and implementation
+ -->
+
+<!--
+-->
+
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://EXTENDED_SYSML_PROFILE/"
+            target="platform:/plugin/org.eclipse.papyrus.requirements.extendedsysml/model/">
+      </mapping>
+   </extension>
+
+
+
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated extendedsysml.profile -->
+      <package
+            uri="https://www.eclipse.org/papyrus/requirements/sysml14/extendedsysml/ExtendedSysMLProfile"
+            class="org.eclipse.papyrus.requirements.extendedsysml.extendedsysmlprofile.ExtendedSysMLProfilePackage"
+            genModel="model/extendedsysml.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="Extensions for ID naming in Papyrus for Requirements based on SysML 1.4"
+            name="ExtendedSysMLProfile"
+            path="pathmap://EXTENDED_SYSML_PROFILE/extendedsysml.profile.uml"
+            provider="CEA List">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://EXTENDED_SYSML_PROFILE/extendedsysml.profile.uml#_p1dY8BLLEee-OZDY556bKw"
+            uri="https://www.eclipse.org/papyrus/requirements/sysml14/extendedsysml/ExtendedSysMLProfile">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+      <elementTypeSet
+            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            path="model/extendedsysml.typesconfigurations">
+      </elementTypeSet>
+   </extension>
+
+</plugin>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Profile xmi:id="_p1dY8BLLEee-OZDY556bKw" name="ExtendedSysMLProfile" metaclassReference="_Qz7_wBLMEee-OZDY556bKw _sXDWgBLMEee-OZDY556bKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6CjSEB6REeeu7sGqHmw6SA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_6DS48B6REeeu7sGqHmw6SA" name="extendedsysmlprofile" nsURI="https://www.eclipse.org/papyrus/requirements/sysml14/extendedsysml/ExtendedSysMLProfile" nsPrefix="ExtendedSysMLProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DS48R6REeeu7sGqHmw6SA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS48h6REeeu7sGqHmw6SA" key="originalName" value="ExtendedSysMLProfile"/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DS5Ax6REeeu7sGqHmw6SA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS5BB6REeeu7sGqHmw6SA" key="Version" value="0.0.1"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS5BR6REeeu7sGqHmw6SA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS5Bh6REeeu7sGqHmw6SA" key="Copyright" value="/*****************************************************************************&#xD;&#xA; * Copyright (c) 2017 CEA LIST.&#xD;&#xA; *&#xD;&#xA; *&#xD;&#xA; * All rights reserved. This program and the accompanying materials&#xD;&#xA; * are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA; * which accompanies this distribution, and is available at&#xD;&#xA; * http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA; *&#xD;&#xA; * Contributors:&#xD;&#xA; * &#xD;&#xA; * &#x9;&#x9;Mauricio Alferez (mauricio.alferez@cea.fr) CEA LIST - Initial API and implementation&#xD;&#xA; *&#xD;&#xA; *****************************************************************************/"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS5Bx6REeeu7sGqHmw6SA" key="Date" value="2017-04-11"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6DS5CB6REeeu7sGqHmw6SA" key="Author" value="Mauricio Alferez"/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_6DS48x6REeeu7sGqHmw6SA" name="RequirementsPackage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DS49B6REeeu7sGqHmw6SA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RdJU0BLMEee-OZDY556bKw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6DS49R6REeeu7sGqHmw6SA" name="base_Package" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6DS49x6REeeu7sGqHmw6SA" name="alias" ordered="false" lowerBound="1" defaultValueLiteral="">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6DS4-R6REeeu7sGqHmw6SA" name="idDepth" ordered="false" lowerBound="1" eType="_6DS4-x6REeeu7sGqHmw6SA" defaultValueLiteral="-1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_6DS4-x6REeeu7sGqHmw6SA" name="Depth">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6DS4_B6REeeu7sGqHmw6SA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Wb_uMBOtEeeLdr3NiBSUYg"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_6DS4_R6REeeu7sGqHmw6SA" name="All_Levels"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_6DS4_h6REeeu7sGqHmw6SA" name="One_Level" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_6DS4_x6REeeu7sGqHmw6SA" name="Two_Levels" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_6DS5AB6REeeu7sGqHmw6SA" name="Three_Levels" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_6DS5AR6REeeu7sGqHmw6SA" name="Four_Levels" value="4"/>
+        </eClassifiers>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_Qz7_wBLMEee-OZDY556bKw" alias="Package">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_sXDWgBLMEee-OZDY556bKw" alias="Class">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </elementImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_p6tsYBLLEee-OZDY556bKw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_p6uTcBLLEee-OZDY556bKw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_RdJU0BLMEee-OZDY556bKw" name="RequirementsPackage">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UVs2URLMEee-OZDY556bKw" name="base_Package" association="_UVsPQBLMEee-OZDY556bKw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VmZpMBLMEee-OZDY556bKw" name="alias">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lvXQ0BLMEee-OZDY556bKw" annotatedElement="_VmZpMBLMEee-OZDY556bKw">
+          <body>The Alias is generally a two or three letters string that will be used to create the id of the requirements inside the package</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_dX5koBOSEeeLdr3NiBSUYg" value=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zMGiwBLMEee-OZDY556bKw" name="idDepth" type="_Wb_uMBOtEeeLdr3NiBSUYg">
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_QAtFwBOtEeeLdr3NiBSUYg" value="-1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_UVsPQBLMEee-OZDY556bKw" name="E_RequirementsPackage_Package1" memberEnd="_UVs2UBLMEee-OZDY556bKw _UVs2URLMEee-OZDY556bKw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_UVs2UBLMEee-OZDY556bKw" name="extension_RequirementsPackage" type="_RdJU0BLMEee-OZDY556bKw" aggregation="composite" association="_UVsPQBLMEee-OZDY556bKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wb_uMBOtEeeLdr3NiBSUYg" name="Depth">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YSsKEBOtEeeLdr3NiBSUYg" name="All_Levels"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YmX7EBOtEeeLdr3NiBSUYg" name="One_Level"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bhUCMBOtEeeLdr3NiBSUYg" name="Two_Levels"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QokhkBOuEeeLdr3NiBSUYg" name="Three_Levels"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_z9bG4B6REeeu7sGqHmw6SA" name="Four_Levels"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JE0IIBYSEeeb1OfMBCMukQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JE0IIRYSEeeb1OfMBCMukQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+  <Ecore:EPackage xmi:id="_JobykBYSEeeb1OfMBCMukQ" base_Package="_p1dY8BLLEee-OZDY556bKw" packageName="extendedsysmlprofile" nsPrefix="ExtendedSysMLProfile" nsURI="https://www.eclipse.org/papyrus/requirements/sysml14/extendedsysml/ExtendedSysMLProfile" basePackage="org.eclipse.papyrus.requirements.extendedsysml" prefix="ExtendedSysMLProfile"/>
+</xmi:XMI>
