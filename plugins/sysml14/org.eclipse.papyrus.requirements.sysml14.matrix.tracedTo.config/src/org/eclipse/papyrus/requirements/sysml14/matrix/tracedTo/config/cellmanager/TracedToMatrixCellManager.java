@@ -105,8 +105,8 @@ public class TracedToMatrixCellManager extends AbstractCellManager {
 			if (Boolean.FALSE.equals(newValue)) {
 				if (UMLUtil.getStereotypeApplication(colUMLElement, Requirement.class) != null) {
 					IntersectionEditingUtil.deleteRelationshipInIntersection(domain, row, colUMLElement,
-							I_SysMLStereotype.REQUIREMENT_STEREOTYPE, I_SysMLStereotype.REQUIREMENT_VERIFIEDBY_ATT,
-							I_SysMLStereotype.VERIFY_STEREOTYPE);
+							I_SysMLStereotype.REQUIREMENT_STEREOTYPE, I_SysMLStereotype.REQUIREMENT_TRACEDTO_ATT,
+							I_SysMLStereotype.TRACE_STEREOTYPE);
 				}
 			} else if (Boolean.TRUE.equals(newValue)
 					|| (newValue instanceof Abstraction && ((Abstraction) newValue).eContainer() == null)) {
