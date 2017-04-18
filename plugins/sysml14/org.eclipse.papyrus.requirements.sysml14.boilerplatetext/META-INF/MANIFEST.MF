@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.papyrus.requirements.sysml14.boilerplatetext
+Bundle-Vendor: Eclipse Modelling Project
+Bundle-Version: 0.7.0.qualifier
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.boilerplatetext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common,
+ org.eclipse.papyrus.extensionpoints.editors,
+ org.eclipse.uml2.uml,
+ org.eclipse.papyrus.sysml14;bundle-version="0.10.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.eclipse.papyrus.requirements.sysml14,
+ org.eclipse.papyrus.requirements.sysml14.boilerplateText,
+ org.eclipse.papyrus.requirements.sysml14.boilerplateText.impl,
+ org.eclipse.papyrus.requirements.sysml14.boilerplateText.util,
+ org.eclipse.papyrus.requirements.sysml14.generator,
+ org.eclipse.papyrus.requirements.sysml14.parser.antlr,
+ org.eclipse.papyrus.requirements.sysml14.parser.antlr.internal,
+ org.eclipse.papyrus.requirements.sysml14.scoping,
+ org.eclipse.papyrus.requirements.sysml14.serializer,
+ org.eclipse.papyrus.requirements.sysml14.services,
+ org.eclipse.papyrus.requirements.sysml14.validation,
+ org.eclipse.papyrus.requirements.sysml14.visitor
+Import-Package: org.apache.log4j,
+ org.eclipse.papyrus.infra.emf.utils,
+ org.eclipse.papyrus.uml.tools.utils
