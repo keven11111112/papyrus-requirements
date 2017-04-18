@@ -40,7 +40,7 @@ public class AllRequirementsMustBeSatisfied extends AbstractModelConstraint {
 					@SuppressWarnings("unchecked")
 					EList<EObject> list = (EList<EObject>) listOfObjectsThatSatisfyRequirement;
 					if (list.isEmpty()) {
-						return context.createFailureStatus(clazz.getName() + " must by satisfied.");
+						return context.createFailureStatus(clazz.getName() + " must be satisfied");
 					}
 				}
 			}
