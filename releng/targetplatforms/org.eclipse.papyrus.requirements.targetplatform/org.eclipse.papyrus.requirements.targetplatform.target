@@ -1,26 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="Requirements Neon Target Platform" sequenceNumber="1488554308">
+<target name="Requirements Target Platform" sequenceNumber="1497625216">
   <locations>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.platform.feature.group" version="4.7.0.v20170126-1030"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.7.0.v20170126-1030"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.13.0.v20170126-1030"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.0.v20170105-1450"/>
-      <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.0.v20170111-1955"/>
-      <unit id="org.eclipse.papyrus.sdk.feature.feature.group" version="3.0.0.201702011724"/>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.rcp.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.jdt.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.pde.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.draw2d" version="0.0.0"/>
+      <unit id="org.eclipse.papyrus.sdk.feature.feature.group" version="0.0.0"/>
       <repository id="eclipse-neon" location="http://download.eclipse.org/releases/oxygen/"/>
     </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.papyrus.sysml.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.papyrus.sysml.nattable.feature.feature.group" version="0.0.0"/>
-      <repository id="papyrus-neon-extra" location="https://hudson.eclipse.org/papyrus/job/Papyrus-Master-Extra/lastSuccessfulBuild/artifact/repository/"/>
+      <repository location="https://hudson.eclipse.org/papyrus/job/papyrus-sysml11-oxygen/lastSuccessfulBuild/artifact/org.eclipse.papyrus.sysml11.p2/target/repository/"/>
     </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.rmf.reqif10.sdk.feature.feature.group" version="0.13.0.201509161042"/>
-      <unit id="org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group" version="0.13.0.201509161042"/>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.uml2.sdk.feature.group" version="0.0.0"/>
+      <repository id="uml2" location="http://download.eclipse.org/modeling/mdt/uml2/updates/5.3milestones"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
+      <repository id="emfCore" location="http://download.eclipse.org/modeling/emf/emf/updates/2.13/"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.emf.transaction.sdk.feature.group" version="0.0.0"/>
+      <repository id="emfTransaction" location="http://download.eclipse.org/modeling/emf/transaction/updates/releases/R201706061339"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.emf.validation.sdk.feature.group" version="0.0.0"/>
+      <repository id="emfValidation" location="http://download.eclipse.org/modeling/emf/validation/updates/releases/R201706061352"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.gmf.runtime.sdk.feature.group" version="0.0.0"/>
+      <repository id="gmfRuntim" location="http://download.eclipse.org/modeling/gmp/gmf-runtime/updates/releases/R201706061437"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.gmf.runtime.notation.sdk.feature.group" version="0.0.0"/>
+      <repository id="gmfNotation" location="http://download.eclipse.org/modeling/gmp/gmf-notation/updates/releases/R201706061354"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.gef.sdk.feature.group" version="0.0.0"/>
+      <repository id="gef" location="http://download.eclipse.org/tools/gef/updates/legacy/releases/4.0.0_gef-master_1952"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.ocl.all.sdk.feature.group" version="0.0.0"/>
+      <repository id="ocl" location="http://download.eclipse.org/modeling/mdt/ocl/updates/milestones/6.3.0/S201706132000"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.xwt.feature.feature.group" version="0.0.0"/>
+      <repository id="xwt" location="http://download.eclipse.org/xwt/release-1.3.0"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.m2m.qvt.oml.sdk.feature.group" version="0.0.0"/>
+      <repository id="qvto" location="http://download.eclipse.org/mmt/qvto/updates/releases/3.7.0"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.rmf.reqif10.sdk.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group" version="0.0.0"/>
       <repository id="rmf" location="http://download.eclipse.org/rmf/updates/releases"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="false" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.apache.commons.lang" version="0.0.0"/>
+      <unit id="org.apache.commons.codec" version="0.0.0"/>
+      <repository id="orbit" location="http://download.eclipse.org/tools/orbit/S-builds/S20170306214312/repository"/>
     </location>
   </locations>
 </target>
