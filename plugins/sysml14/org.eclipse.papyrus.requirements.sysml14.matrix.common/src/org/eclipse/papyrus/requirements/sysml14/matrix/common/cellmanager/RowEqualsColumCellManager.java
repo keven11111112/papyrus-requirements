@@ -22,19 +22,20 @@ import org.eclipse.papyrus.requirements.sysml14.matrix.common.Activator;
 public class RowEqualsColumCellManager extends AbstractCellManager {
 	public static final String CELL_MANAGER_ID = Activator.PLUGIN_ID + ".cellmanager.RowEqualsColumnCellManager";
 
+
 	@Override
-	public boolean handles(Object columnElement, Object rowElement) {
+	protected Object doGetValue(Object columnElement, Object rowElement, INattableModelManager tableManager) {
+		return "N/A";
+	}
+
+	@Override
+	public boolean handles(Object columnElement, Object rowElement, INattableModelManager arg2) {
 		Object column = AxisUtils.getRepresentedElement(columnElement);
 		Object row = AxisUtils.getRepresentedElement(rowElement);
 		if (row.equals(column)) {
 			return true;
 		}
 		return false;
-	}
-
-	@Override
-	protected Object doGetValue(Object columnElement, Object rowElement, INattableModelManager tableManager) {
-		return "N/A"; 
 	}
 
 }

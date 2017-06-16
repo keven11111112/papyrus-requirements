@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.preferences;singleton:=true
-Bundle-Version: 0.0.2.qualifier
+Bundle-Version: 0.7.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.preferences.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime

@@ -5,10 +5,6 @@
       version="3.0.0.qualifier"
       provider-name="Eclipse Modeling Project">
 
-   <description url="http://www.example.com/description">
-      
-   </description>
-
    <copyright url="http://www.eclipse.org/legal/epl-v10.html">
       Copyright (c) 2016 CEA LIST.
 All rights reserved.   This program and the accompanying materials
@@ -22,192 +18,108 @@ http://www.eclipse.org/legal/epl-v10.html
    </license>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.common"
+         id="org.eclipse.papyrus.requirements.sysml14.common"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.common.ui"
+         id="org.eclipse.papyrus.requirements.sysml14.common.ui"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.export"
+         id="org.eclipse.papyrus.requirements.sysml14.export"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.languagecreationtools.commands"
+         id="org.eclipse.papyrus.requirements.sysml14.assistant.commands"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.languagecreationtools.domainModel2Profile"
+         id="org.eclipse.papyrus.requirements.sysml14.assistant.handlers"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.languagecreationtools.handlers"
+         id="org.eclipse.papyrus.requirements.sysml14.assistant.ui"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.languagecreationtools.ui"
+         id="org.eclipse.papyrus.requirements.sysml14.common"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.metrics.library"
+         id="org.eclipse.papyrus.requirements.sysml14.testers"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.preferences"
+         id="org.eclipse.papyrus.requirements.sysml14.traceability.assistant"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.reqif"
+         id="org.eclipse.papyrus.requirements.sysml14.traceability.commands"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.sysml.assistant.commands"
+         id="org.eclipse.papyrus.requirements.sysml14.traceability.handlers"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.sysml.assistant.handlers"
+         id="org.eclipse.papyrus.requirements.sysml14.traceability.ui"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.sysml.assistant.ui"
+         id="org.eclipse.papyrus.requirements.sysml14.verification"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.sysml.common"
+         id="org.eclipse.papyrus.requirements.sysml14.templates"
          download-size="0"
          install-size="0"
          version="0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.common"
+         id="org.eclipse.papyrus.requirements.sysml14.preferences"
          download-size="0"
          install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.derivedFrom.config"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.refinedBy.config"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.satisfiedBy.config"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.tracedTo.config"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.matrix.verifiedBy.config"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.testers"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.traceability.assistant"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.traceability.commands"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.traceability.handlers"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.traceability.ui"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.sysml.verification"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.papyrus.requirements.templates"
-         download-size="0"
-         install-size="0"
-         version="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>

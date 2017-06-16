@@ -1,6 +1,6 @@
 target "Requirements Target Platform"
 
-location "http://download.eclipse.org/releases/oxygen/" eclipse-neon {
+location "http://download.eclipse.org/releases/oxygen/" eclipse-oxygen {
  org.eclipse.platform.feature.group lazy
  org.eclipse.rcp.feature.group lazy
  org.eclipse.jdt.feature.group lazy
@@ -9,18 +9,27 @@ location "http://download.eclipse.org/releases/oxygen/" eclipse-neon {
  org.eclipse.pde.feature.group lazy
  org.eclipse.draw2d lazy
  
- org.eclipse.papyrus.sdk.feature.feature.group lazy
- 
+}
+
+//manualUpdate for Papyrus nightly
+location "http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/photon/" {
+ org.eclipse.papyrus.sdk.feature.feature.group lazy	
+}
+
+//manualUpdate for SysML14 nightly
+location "https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen-nightly/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/" {
+ org.eclipse.papyrus.sysml14 lazy
 }
 
 
+//manualUpdate for SysML11
 location "https://hudson.eclipse.org/papyrus/job/papyrus-sysml11-oxygen/lastSuccessfulBuild/artifact/org.eclipse.papyrus.sysml11.p2/target/repository/" {
  org.eclipse.papyrus.sysml.feature.feature.group lazy
  org.eclipse.papyrus.sysml.nattable.feature.feature.group lazy
 }
 
 //updateFrom("MDT UML2",0)
-location uml2 "http://download.eclipse.org/modeling/mdt/uml2/updates/5.3milestones" {
+location uml2 "http://download.eclipse.org/modeling/mdt/uml2/updates/5.3" {
  org.eclipse.uml2.sdk.feature.group lazy	
 }
 
@@ -55,7 +64,7 @@ location gef "http://download.eclipse.org/tools/gef/updates/legacy/releases/4.0.
 }
 
 //updateFrom ("Eclipse OCL 6.3",0)
-location ocl "http://download.eclipse.org/modeling/mdt/ocl/updates/milestones/6.3.0/S201706132000" {
+location ocl "http://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.3.0" {
 	org.eclipse.ocl.all.sdk.feature.group lazy
 }
 
@@ -76,7 +85,7 @@ location rmf "http://download.eclipse.org/rmf/updates/releases" {
 	org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group lazy
 }
 
-location orbit "http://download.eclipse.org/tools/orbit/S-builds/S20170306214312/repository" {
+location orbit "http://download.eclipse.org/tools/orbit/downloads/drops/R20170516192513/repository" {
 	org.apache.commons.lang lazy
 	org.apache.commons.codec lazy
 }

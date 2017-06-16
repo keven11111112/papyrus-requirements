@@ -13,11 +13,5 @@
  -->
 
 <plugin>
-  <extension
-       point="org.eclipse.papyrus.infra.viewpoints.policy.custom">
-    <contribution
-          file="viewpoints/bmm.configuration"
-          original="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration">
-    </contribution>
- </extension>
+ 
 </plugin>

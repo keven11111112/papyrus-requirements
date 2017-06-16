@@ -33,8 +33,56 @@
 	<name>Requirements for sysml14</name>
 	
 	<!-- Modules to build -->
-	<modules>
-		<!-- <module>requirements</module> -->	
-	</modules>
 	
+	<modules>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.assistant.commands
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.assistant.handlers
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.assistant.ui
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.common
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.common.ui
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.export
+		</module>
+		
+		
+		
+		
+		
+		
+		
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.preferences
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.templates
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.testers
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.traceability.assistant
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.traceability.commands
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.traceability.handlers
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.traceability.ui
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.verification
+		</module>
+	</modules>
 </project>

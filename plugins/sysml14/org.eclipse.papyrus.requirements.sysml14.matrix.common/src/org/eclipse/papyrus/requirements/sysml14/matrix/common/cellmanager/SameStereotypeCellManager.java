@@ -29,7 +29,7 @@ public class SameStereotypeCellManager extends AbstractCellManager {
 	public static final String CELL_MANAGER_ID = Activator.PLUGIN_ID + ".cellmanager.SameStereotypeCellManager";
 
 	@Override
-	public boolean handles(Object columnElement, Object rowElement) {
+	public boolean handles(Object columnElement, Object rowElement, INattableModelManager arg2) {
 		Object column = AxisUtils.getRepresentedElement(columnElement);
 		Object row = AxisUtils.getRepresentedElement(rowElement);
 		if (column instanceof Element && row instanceof Element) {
