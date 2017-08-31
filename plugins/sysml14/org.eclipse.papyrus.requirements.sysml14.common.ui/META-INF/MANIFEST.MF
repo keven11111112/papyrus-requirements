@@ -5,7 +5,12 @@ Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.common.ui;singleto
 Bundle-Version: 0.7.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.common.ui.Activator
 Bundle-Vendor: %Bundle-Vendor
-Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.6.0"
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.6.0",
+ org.eclipse.papyrus.emf.facet.efacet.core,
+ org.eclipse.papyrus.emf.facet.query.java.core,
+ org.eclipse.uml2.uml,
+ org.eclipse.papyrus.uml.tools,
+ org.eclipse.papyrus.requirements.sysml14.common
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
