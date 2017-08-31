@@ -5,9 +5,8 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu?after=org.eclipse.papyrus.requirements.sysml14.common.ui.assistant.additions">
+            locationURI="popup:papyrus.requirements.menu">
          <menu
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
                id="papyrus.requirements.sysml14.assistant.menu"
                label="%papyrus.requirements.sysml14.assistant.menu.label"
                tooltip="%papyrus.requirements.sysml14.assistant.menu.tooltip">
@@ -19,16 +18,6 @@
                   </equals>
                </with>
             </visibleWhen>
-         </menu>
-      </menuContribution>
-      <menuContribution
-            allPopups="false"
-            locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?after=org.eclipse.papyrus.requirements.sysml14.common.ui.assistant.additions">
-         <menu
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
-               id="papyrus.requirements.sysml14.assistant.menu"
-               label="%papyrus.requirements.sysml14.assistant.menu.label"
-               tooltip="%papyrus.requirements.sysml14.assistant.menu.tooltip">
          </menu>
       </menuContribution>
       <menuContribution

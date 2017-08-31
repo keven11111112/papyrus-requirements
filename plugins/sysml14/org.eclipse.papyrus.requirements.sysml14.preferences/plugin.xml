@@ -7,7 +7,7 @@
             category="org.eclipse.papyrus.infra.core.sasheditor.preferences.generalcategory"
             class="org.eclipse.papyrus.requirements.sysml14.preferences.PreferencePage"
             id="org.eclipse.papyrus.requirements.sysml14.preferences.PreferencePage"
-            name="%page.name">
+            name="Preferences for Requirements">
       </page>
    </extension>
    <extension
@@ -20,21 +20,11 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu?after=org.eclipse.papyrus.requirements.sysml14.common.ui.preferences.additions">
+            locationURI="popup:papyrus.requirements.menu">
          <command
                commandId="org.eclipse.papyrus.requirements.sysml14.preferences.handlers.ShowPreferencePageHandler"
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
                id="org.eclipse.papyrus.requirements.sysml14.preferences.handlers.ShowPreferencePageHandler"
-               style="push">
-         </command>
-      </menuContribution>
-      <menuContribution
-            allPopups="false"
-            locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?after=org.eclipse.papyrus.requirements.sysml14.common.ui.preferences.additions">
-         <command
-               commandId="org.eclipse.papyrus.requirements.sysml14.preferences.handlers.ShowPreferencePageHandler"
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
-               id="org.eclipse.papyrus.requirements.sysml14.preferences.handlers.ShowPreferencePageHandler"
+               label="Preference Settings..."
                style="push">
          </command>
       </menuContribution>
@@ -51,7 +41,7 @@
       <command
             categoryId="org.eclipse.papyrus.editor.category"
             id="org.eclipse.papyrus.requirements.sysml14.preferences.handlers.ShowPreferencePageHandler"
-            name="%command.name">
+            name="Preference Settings...">
       </command>
    </extension>
 </plugin>

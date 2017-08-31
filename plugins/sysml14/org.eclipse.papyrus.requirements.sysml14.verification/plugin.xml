@@ -94,20 +94,10 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu?after=org.eclipse.papyrus.requirements.sysml14.common.ui.analysis.additions">
+            locationURI="popup:papyrus.requirements.menu">
          <menu
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
                id="org.eclipse.papyrus.requirements.sysml14.verification.menu"
-               label="SysML 1.4 Papyrus Req - Validation">
-         </menu>
-      </menuContribution>
-      <menuContribution
-            allPopups="false"
-            locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?after=org.eclipse.papyrus.requirements.sysml14.common.ui.analysis.additions">
-         <menu
-               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
-               id="org.eclipse.papyrus.requirements.sysml14.verification.menu"
-               label="SysML 1.4 Papyrus Req - Validation">
+               label="Validation">
          </menu>
       </menuContribution>
       <menuContribution

@@ -7,64 +7,36 @@
             allPopups="true"
             locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?before=org.eclipse.ui.edit.delete">
          <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.start">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.metrics.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.assistant.additions"
+               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.start"
                visible="true">
          </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.traceability.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.analysis.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.preferences.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.dummy"
-               visible="true">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.end">
-         </separator>
+             <menu
+               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
+               id="papyrus.requirements.menu"
+               label="Papyrus Req"
+               tooltip="Menu to manage Requirements">
+         </menu>
+             <separator
+                   name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.end"
+                    visible="true">
+             </separator>
       </menuContribution>
       <menuContribution
             allPopups="true"
             locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu?after=filtersMenu">
          <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.start">
+               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.start"
+                visible="true">
          </separator>
+         <menu
+               icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.common.ui/images/Papyrus_Req_logo_16x16.png"
+               id="papyrus.requirements.menu"
+               label="Papyrus Req"
+               tooltip="Menu to manage Requirements">
+         </menu>
          <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.metrics.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.assistant.additions"
-               visible="true">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.traceability.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.analysis.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.preferences.additions"
-               visible="false">
-         </separator>
-         <separator
-               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.end">
+               name="org.eclipse.papyrus.requirements.sysml14.common.ui.separator.end"
+                visible="true">
          </separator>
       </menuContribution>
    </extension>

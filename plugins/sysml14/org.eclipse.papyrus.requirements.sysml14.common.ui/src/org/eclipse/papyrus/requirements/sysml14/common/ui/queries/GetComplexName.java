@@ -61,11 +61,9 @@ public class GetComplexName implements IJavaQuery2<NamedElement, String> {
 		if (source.getAppliedStereotypes().size() > 0) {
 			appStereotype = source.getAppliedStereotypes().get(0);
 		}
-		if (stereotypeReq != null) {
-			return "" + source.getValue(stereotypeReq, I_SysMLStereotype.REQUIREMENT_ID_ATT) + ": " + source.getValue(stereotypeReq, I_SysMLStereotype.REQUIREMENT_TEXT_ATT);
-		}
+
 		if ((source instanceof org.eclipse.uml2.uml.Class) && (appStereotype != null) && (isRequirementStereotype(appStereotype))) {
-			return "" + source.getValue(appStereotype, I_SysMLStereotype.REQUIREMENT_ID_ATT) + ": " + source.getValue(appStereotype, I_SysMLStereotype.REQUIREMENT_TEXT_ATT);
+			return "" + source.getValue(appStereotype, I_SysMLStereotype.REQUIREMENT_ID_ATT) + ": " + source.getName();
 		}
 		// Delegate to UML2 Edit providers to get localized and inferred names where applicable
 		return labelProvider.getText(source);
