@@ -38,7 +38,7 @@
 		<module>org.eclipse.papyrus.metrics.extensionpoints</module>
 		<module>org.eclipse.papyrus.metrics.handlers</module>
 		<module>org.eclipse.papyrus.metrics.smm</module>
-		<module>org.eclipse.papyrus.metrics.ui</module>
+		<!-- module>org.eclipse.papyrus.metrics.ui</module-->
 		<module>org.eclipse.papyrus.metrics.view</module>
 		<module>org.eclipse.papyrus.metrics.viewers</module>
 	</modules>

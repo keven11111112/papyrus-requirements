@@ -41,6 +41,19 @@
       </menuContribution>
    </extension>
    <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:papyrus.requirements.menu">
+         <command
+               commandId="org.eclipse.papyrus.metrics.handlers.MeasureMetricsHandler"
+               label="Metrics"
+               style="push"
+               tooltip="Metric about requirements">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
          point="org.eclipse.papyrus.emf.facet.util.emf.core.modeldeclaration">
       <modeldeclaration
             file="resources/ReqDisplay.custom">

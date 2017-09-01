@@ -11,6 +11,7 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ic9rQI4yEeeHHIaf5vdK1g" name="Requirements In ModelExplorer"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_A5bWcI40EeeYpYlUdHhhKQ" name="PapyrusReq Menu"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FoGR4I8tEeeSyOZlBmfUSA" name="Metric"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_F5oL0I4yEeeHHIaf5vdK1g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F5uScI4yEeeHHIaf5vdK1g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -75,4 +76,5 @@
   <Requirements:Requirement xmi:id="_IqIkkI4yEeeHHIaf5vdK1g" base_Class="_Ic9rQI4yEeeHHIaf5vdK1g" id="R-001-001" text="Requirements should be displayed in the model explorer by using Id and text"/>
   <Requirements:Requirement xmi:id="_cI_xAI4yEeeHHIaf5vdK1g" base_Class="_cIrn8I4yEeeHHIaf5vdK1g" id="R-001" text="Views of papyrus must be customized in order to manage requirements"/>
   <Requirements:Requirement xmi:id="_A6KWQI40EeeYpYlUdHhhKQ" base_Class="_A5bWcI40EeeYpYlUdHhhKQ" id="R-001-002" text="Papyrus should contains only one menu called Papyrus Req."/>
+  <Requirements:Requirement xmi:id="_F3rmAI8tEeeSyOZlBmfUSA" base_Class="_FoGR4I8tEeeSyOZlBmfUSA" id="R-002" text="Papyrus should provide a set of metric to manage Requirements"/>
 </xmi:XMI>
