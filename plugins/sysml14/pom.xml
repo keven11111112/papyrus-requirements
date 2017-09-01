@@ -84,5 +84,8 @@
 		<module>
 			org.eclipse.papyrus.requirements.sysml14.verification
 		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.metrics.library
+		</module>
 	</modules>
 </project>

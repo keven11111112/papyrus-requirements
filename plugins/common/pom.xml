@@ -34,7 +34,7 @@
 	
 	<!-- Modules to build -->
 	<modules>
-		<module>bmm</module>
+		<!-- module>bmm</module-->
 		<module>metrics</module>
 	</modules>
 	

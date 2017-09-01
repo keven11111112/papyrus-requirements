@@ -36,7 +36,9 @@
 	<modules>
 		
 		<!-- module>sysml11</module-->
+		<module>common</module> 
 		<module>sysml14</module> 
+		
 	</modules>
 	
 </project>
