@@ -34,38 +34,12 @@ import org.eclipse.papyrus.sysml14.requirements.Requirement;
 import org.eclipse.papyrus.sysml14.service.types.util.SysMLServiceTypeUtil;
 import org.eclipse.uml2.uml.Abstraction;
 import org.eclipse.uml2.uml.Element;
-import org.eclipse.uml2.uml.NamedElement;
 import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 public class SatisfiedByMatrixCellManager extends AbstractCellManager {
 	public static final String CELL_MANAGER_ID = Activator.PLUGIN_ID + ".cellmanager";
 
-	@Override
-	public boolean handles(Object columnElement, Object rowElement) {
-		// Supports Requirement x Element
-		Object column = AxisUtils.getRepresentedElement(columnElement);
-		Object row = AxisUtils.getRepresentedElement(rowElement);
-		if (rowElement instanceof ITreeItemAxis) {
-			ITreeItemAxis axis = (ITreeItemAxis) rowElement;
-			AxisManagerRepresentation manager = axis.getManager();
-			TableConfiguration conf = (TableConfiguration) manager.eContainer().eContainer();
-			String tableName = conf.getName();
-			if (!tableName.equals("SatisfiedByMatrixSysML14")) {
-				return false;
-			}
-		}
-
-		if (column instanceof Element) {
-			Element colUMLElement = (Element) column;
-			if (UMLUtil.getStereotypeApplication(colUMLElement, Requirement.class) != null) {
-				if (row instanceof Element) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}
 
 	@Override
 	protected Object doGetValue(Object columnElement, Object rowElement, INattableModelManager tableManager) {
@@ -123,12 +97,38 @@ public class SatisfiedByMatrixCellManager extends AbstractCellManager {
 		return super.getSetValueCommand(domain, columnElement, rowElement, newValue, tableManager);
 	}
 
+	// @Override
+	// public boolean isCellEditable(Object columnElement, Object rowElement) {
+	// Object column = AxisUtils.getRepresentedElement(columnElement);
+	// Object row = AxisUtils.getRepresentedElement(rowElement);
+	// if (row instanceof NamedElement && column instanceof Element) {
+	// return UMLUtil.getStereotypeApplication((Element) column, Requirement.class) != null;
+	// }
+	// return false;
+	// }
+
 	@Override
-	public boolean isCellEditable(Object columnElement, Object rowElement) {
+	public boolean handles(Object  columnElement , Object rowElement, INattableModelManager arg2) {
+		// Supports Requirement x Element
 		Object column = AxisUtils.getRepresentedElement(columnElement);
 		Object row = AxisUtils.getRepresentedElement(rowElement);
-		if (row instanceof NamedElement && column instanceof Element) {
-			return UMLUtil.getStereotypeApplication((Element) column, Requirement.class) != null;
+		if (rowElement instanceof ITreeItemAxis) {
+			ITreeItemAxis axis = (ITreeItemAxis) rowElement;
+			AxisManagerRepresentation manager = axis.getManager();
+			TableConfiguration conf = (TableConfiguration) manager.eContainer().eContainer();
+			String tableName = conf.getName();
+			if (!tableName.equals("SatisfiedByMatrixSysML14")) {
+				return false;
+			}
+		}
+
+		if (column instanceof Element) {
+			Element colUMLElement = (Element) column;
+			if (UMLUtil.getStereotypeApplication(colUMLElement, Requirement.class) != null) {
+				if (row instanceof Element) {
+					return true;
+				}
+			}
 		}
 		return false;
 	}

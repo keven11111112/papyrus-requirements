@@ -28,6 +28,6 @@
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.sysml14.matrix.common</artifactId>
+	<artifactId>org.eclipse.papyrus.requirement.architecture</artifactId>
 	<packaging>eclipse-plugin</packaging>
 </project>

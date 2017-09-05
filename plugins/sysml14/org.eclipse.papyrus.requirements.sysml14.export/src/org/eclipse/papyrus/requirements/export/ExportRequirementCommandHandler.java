@@ -51,7 +51,7 @@ import org.eclipse.uml2.uml.util.UMLUtil;
 
 public class ExportRequirementCommandHandler extends AbstractCommandHandler {
 
-	private final String FS = ",";
+	private final String FS = ";";
 
 	@Override
 	protected Command getCommand(IEvaluationContext context) {
@@ -85,9 +85,9 @@ public class ExportRequirementCommandHandler extends AbstractCommandHandler {
 							dialog.setFilterPath(System.getProperty("user.home"));
 							dialog.setOverwrite(true);
 							String result = dialog.open();
-							
-							
-							
+
+
+
 							if (result != null) {
 								try {
 									saveRequirements(result);
@@ -97,8 +97,8 @@ public class ExportRequirementCommandHandler extends AbstractCommandHandler {
 							}
 							return CommandResult.newOKCommandResult();
 						}
-						
-						public boolean canUndo(){
+
+						public boolean canUndo() {
 							return false;
 						}
 
@@ -124,7 +124,7 @@ public class ExportRequirementCommandHandler extends AbstractCommandHandler {
 		return requirements;
 	}
 
-	
+
 	/*
 	 * file format :
 	 * package name , req ID , req name , req text
@@ -170,15 +170,15 @@ public class ExportRequirementCommandHandler extends AbstractCommandHandler {
 
 	protected String formatCsvField(String field) {
 		String ret = "";
-		
-		if(field != null){
+
+		if (field != null) {
 			ret = field;
 		}
 		if (ret.contains("\"") || ret.contains(FS)) {
 			String newField = field.replace("\"", "\"\"");
-			if(ret.length() > 1 && newField.startsWith("\"") && newField.endsWith("\""))
+			if (ret.length() > 1 && newField.startsWith("\"") && newField.endsWith("\""))
 				ret = newField;
-			else 
+			else
 				ret = "\"" + newField + "\"";
 		}
 		if (ret.contains("\r\n")) {

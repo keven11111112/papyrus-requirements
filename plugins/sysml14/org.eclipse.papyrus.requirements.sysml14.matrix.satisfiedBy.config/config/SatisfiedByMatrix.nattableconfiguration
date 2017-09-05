@@ -9,7 +9,7 @@
     <intListValue>3</intListValue>
   </styles>
   <creationTester xsi:type="nattabletester:JavaTableTester" tester="org.eclipse.papyrus.requirements.sysml14.matrix.common.tester.RequirementTableTester.java"/>
-  <rowHeaderAxisConfiguration xsi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" indexStyle="NUMERIC" displayIndex="false">
+  <rowHeaderAxisConfiguration indexStyle="NUMERIC" displayIndex="false">
     <ownedLabelConfigurations xsi:type="nattablelabelprovider:ObjectLabelProviderConfiguration"/>
     <ownedLabelConfigurations xsi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" displayType="false" displayMultiplicity="false"/>
     <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
@@ -32,14 +32,14 @@
         <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
     </ownedAxisConfigurations>
-    <axisManagers xsi:type="nattableaxisconfiguration:AxisManagerRepresentation" axisManagerId="org.eclipse.papyrus.requirements.sysml14.matrix.common.axismanager.NamedElementsWithoutRequirementsAndDependenciesAxisManager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@rowHeaderAxisConfiguration/@ownedAxisConfigurations.0 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.1 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.2 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.3"/>
+    <axisManagers axisManagerId="org.eclipse.papyrus.requirements.sysml14.matrix.common.axismanager.NamedElementsWithoutRequirementsAndDependenciesAxisManager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@rowHeaderAxisConfiguration/@ownedAxisConfigurations.0 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.1 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.2 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.3"/>
   </rowHeaderAxisConfiguration>
-  <columnHeaderAxisConfiguration xsi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration">
+  <columnHeaderAxisConfiguration>
     <ownedLabelConfigurations xsi:type="nattablelabelprovider:ObjectLabelProviderConfiguration"/>
     <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:EStructuralFeatureValueFillingConfiguration">
       <listenFeature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace/ownedMember"/>
     </ownedAxisConfigurations>
-    <axisManagers xsi:type="nattableaxisconfiguration:AxisManagerRepresentation" axisManagerId="org.eclipse.papyrus.requirements.sysml14.matrix.common.axismanager.RequirementAndSubRequirementsAxisManager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@columnHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@columnHeaderAxisConfiguration/@ownedAxisConfigurations.0"/>
+    <axisManagers axisManagerId="org.eclipse.papyrus.requirements.sysml14.matrix.common.axismanager.RequirementAndSubRequirementsAxisManager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@columnHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@columnHeaderAxisConfiguration/@ownedAxisConfigurations.0"/>
   </columnHeaderAxisConfiguration>
   <columnAxisProviders xsi:type="nattableaxisprovider:MasterObjectAxisProvider" name="DefaultColumnProvider"/>
   <rowAxisProviders xsi:type="nattableaxisprovider:MasterObjectAxisProvider" name="DefaultRowProvider"/>

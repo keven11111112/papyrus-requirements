@@ -16,13 +16,7 @@
             order="3">
       </cellManager>
    </extension>
-   <extension
-         point="org.eclipse.papyrus.infra.viewpoints.policy.custom">
-      <contribution
-            file="config/SatisfiedByMatrix.configuration"
-            original="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration">
-      </contribution>
-   </extension>
+ 
    <extension
          point="org.eclipse.papyrus.infra.nattable.celleditor.configuration">
       <cellAxisConfiguration

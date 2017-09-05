@@ -87,5 +87,11 @@
 		<module>
 			org.eclipse.papyrus.requirements.sysml14.metrics.library
 		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.matrix.common
+		</module>
+		<module>
+			org.eclipse.papyrus.requirement.architecture
+		</module>
 	</modules>
 </project>

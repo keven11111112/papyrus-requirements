@@ -6,20 +6,13 @@ Bundle-Version: 0.7.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.matrix.common.Activator
 Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.papyrus.infra.viewpoints.policy,
- org.eclipse.papyrus.sysml14.service.types;bundle-version="0.9.1",
  org.eclipse.papyrus.sysml14;bundle-version="0.9.1",
  org.eclipse.papyrus.infra.emf.gmf;bundle-version="1.2.0",
  org.eclipse.papyrus.uml.nattable;bundle-version="2.0.0",
  org.eclipse.papyrus.requirements.sysml14.common,
- org.eclipse.papyrus.sysml14.nattable.common,
  org.eclipse.uml2.uml,
- org.eclipse.papyrus.infra.nattable
+ org.eclipse.papyrus.infra.nattable,
+ org.eclipse.papyrus.uml.nattable.matrix;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Export-Package: org.eclipse.papyrus.requirements.sysml14.matrix.common,
- org.eclipse.papyrus.requirements.sysml14.matrix.common.axismanager,
- org.eclipse.papyrus.requirements.sysml14.matrix.common.celleditor,
- org.eclipse.papyrus.requirements.sysml14.matrix.common.cellmanager,
- org.eclipse.papyrus.requirements.sysml14.matrix.common.tester,
- org.eclipse.papyrus.requirements.sysml14.matrix.common.utils
 Bundle-Localization: bundle
