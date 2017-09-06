@@ -6,11 +6,11 @@
    
    <!-- feature url="features/org.eclipse.papyrus.requirements.bmm.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
-   </feature>
+   </feature>-->
    
    <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
-   </feature -->
+   </feature>
    
    <category-def name="org.eclipse.papyrus.requirements" label="Requirements">
       <description>
