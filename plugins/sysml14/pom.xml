@@ -91,6 +91,9 @@
 			org.eclipse.papyrus.requirements.sysml14.matrix.common
 		</module>
 		<module>
+			org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy.config
+		</module>
+		<module>
 			org.eclipse.papyrus.requirement.architecture
 		</module>
 	</modules>
