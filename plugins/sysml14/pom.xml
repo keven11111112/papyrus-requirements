@@ -35,6 +35,21 @@
 	<!-- Modules to build -->
 	
 	<modules>
+	
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.papyrusre
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.papyrusre.ui
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.ui
+		</module>
+		
+	
 		<module>
 			org.eclipse.papyrus.requirements.sysml14.assistant.commands
 		</module>

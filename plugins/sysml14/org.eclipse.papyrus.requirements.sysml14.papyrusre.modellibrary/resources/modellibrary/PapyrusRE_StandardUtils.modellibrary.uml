@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_03nSwFOPEeCXkoFpHlFAkw" name="PapyrusRE_StandardUtils">
+    <packagedElement xmi:type="uml:Package" xmi:id="_BZPAQFOQEeCXkoFpHlFAkw" name="RequirementClassificationConcerns">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_aChacFOhEeCXkoFpHlFAkw" name="QualityKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bdPE8FOhEeCXkoFpHlFAkw" name="Adaptability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bxpOsFOhEeCXkoFpHlFAkw" name="Availability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cA1hQFOhEeCXkoFpHlFAkw" name="Compatability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cRqykFOhEeCXkoFpHlFAkw" name="Maintainability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cwDXsFOhEeCXkoFpHlFAkw" name="Portability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dTp0AFOhEeCXkoFpHlFAkw" name="Reliability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dmR1EFOhEeCXkoFpHlFAkw" name="Safety"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_d4veEFOhEeCXkoFpHlFAkw" name="Security"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eNmTwFOhEeCXkoFpHlFAkw" name="Usability"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ehHFoFOhEeCXkoFpHlFAkw" name="Variability"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_azPFsFOhEeCXkoFpHlFAkw" name="ConstraintKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pOUPMFOhEeCXkoFpHlFAkw" name="Cultural"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pfAWkFOhEeCXkoFpHlFAkw" name="Design"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pxnwkFOhEeCXkoFpHlFAkw" name="Environment"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p_LEYFOhEeCXkoFpHlFAkw" name="Implementation"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qRNPkFOhEeCXkoFpHlFAkw" name="Interface"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qjX9oFOhEeCXkoFpHlFAkw" name="Physical"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4_IvgJMMEeeXis3ri3jkBA" name="Standard"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8zH-gJMMEeeXis3ri3jkBA" name="Other"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__aV4YJMMEeeXis3ri3jkBA" name="Undefined"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_bDBOIFOhEeCXkoFpHlFAkw" name="WorkloadCapacitiesKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_q5k3IFOhEeCXkoFpHlFAkw" name="Bound"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rQzrYFOhEeCXkoFpHlFAkw" name="Memory"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rftDAFOhEeCXkoFpHlFAkw" name="Speed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sACI4FOhEeCXkoFpHlFAkw" name="Throughput"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sQkfQFOhEeCXkoFpHlFAkw" name="Time"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sjyWMFOhEeCXkoFpHlFAkw" name="Volume"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hdrPUFOfEeCXkoFpHlFAkw" name="RequirementsCharacteristicsConcerns">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HF8JwFOjEeCXkoFpHlFAkw" name="LifeCyclePhaseKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dXIecFOkEeCXkoFpHlFAkw" name="PreConcept"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eKOIQFOkEeCXkoFpHlFAkw" name="Concept"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eadjsFOkEeCXkoFpHlFAkw" name="Development"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ewznIFOkEeCXkoFpHlFAkw" name="Manufacturing"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fCE9UFOkEeCXkoFpHlFAkw" name="Integration"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fSBd0FOkEeCXkoFpHlFAkw" name="Test"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fiaDMFOkEeCXkoFpHlFAkw" name="Deployment"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gBiPMFOkEeCXkoFpHlFAkw" name="Delivery"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gksmoFOkEeCXkoFpHlFAkw" name="Installation"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g2kZwFOkEeCXkoFpHlFAkw" name="Operation"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hHZrEFOkEeCXkoFpHlFAkw" name="Support"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hXofcFOkEeCXkoFpHlFAkw" name="Disposal"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HWoRIFOjEeCXkoFpHlFAkw" name="AbstractionLevelKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HyefoFOjEeCXkoFpHlFAkw" name="SpecificationLevel"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IAnpUFOjEeCXkoFpHlFAkw" name="AnalysisLevel"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IQG20FOjEeCXkoFpHlFAkw" name="DesignLevel"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cF8jYFOkEeCXkoFpHlFAkw" name="ImplementationLevel"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cV4c0FOkEeCXkoFpHlFAkw" name="Specfication_level"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sXUgIFOkEeCXkoFpHlFAkw" name="OperationalLevel"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_h4KL4FOfEeCXkoFpHlFAkw" name="PriorityAndImportanceConcerns">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Fx9ugFOlEeCXkoFpHlFAkw" name="PriorityKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3pZRgFPJEeCXkoFpHlFAkw" name="Key"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4FQHEFPJEeCXkoFpHlFAkw" name="Mandatory"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4XbcMFPJEeCXkoFpHlFAkw" name="Optional"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4nEasFPJEeCXkoFpHlFAkw" name="Desirable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_GAtVIFOlEeCXkoFpHlFAkw" name="ImportanceKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gF5PIFPCEeCXkoFpHlFAkw" name="1"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gj_gYFPCEeCXkoFpHlFAkw" name="2"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bYp_wFPJEeCXkoFpHlFAkw" name="3"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_blUiwFPJEeCXkoFpHlFAkw" name="4"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_b2mgAFPJEeCXkoFpHlFAkw" name="5"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cNZPYFPJEeCXkoFpHlFAkw" name="6"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_crybkFPJEeCXkoFpHlFAkw" name="7"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c9OJ0FPJEeCXkoFpHlFAkw" name="8"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dNdlQFPJEeCXkoFpHlFAkw" name="9"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dc9Z0FPJEeCXkoFpHlFAkw" name="10"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jGcj8FOfEeCXkoFpHlFAkw" name="RequirementAndProcessConcerns">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZUhvYFPKEeCXkoFpHlFAkw" name="AgreementStatusKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c7L3kFPLEeCXkoFpHlFAkw" name="Proposed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dLIYEFPLEeCXkoFpHlFAkw" name="ToBeRefined"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_daLgsFPLEeCXkoFpHlFAkw" name="Accepted"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KAfiQJMOEeeXis3ri3jkBA" name="Draft"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SEIokJMOEeeXis3ri3jkBA" name="Rejected"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Zh75QFPKEeCXkoFpHlFAkw" name="QualificationStatusKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gMhFcFPLEeCXkoFpHlFAkw" name="NotQualified"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gaOKQFPLEeCXkoFpHlFAkw" name="Qualified"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g4KqgFPLEeCXkoFpHlFAkw" name="Suspect"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZnvmUFPKEeCXkoFpHlFAkw" name="SatisfactionStatusKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_j8PfgFPLEeCXkoFpHlFAkw" name="NotSatisfied"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kJppYFPLEeCXkoFpHlFAkw" name="Satisfied"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kaVwwFPLEeCXkoFpHlFAkw" name="Suspect"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZuThUFPKEeCXkoFpHlFAkw" name="ReviewStatusKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nb4PIFPLEeCXkoFpHlFAkw" name="ToBeReviewed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_no1tEFPLEeCXkoFpHlFAkw" name="Accepted"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_n4LwoFPLEeCXkoFpHlFAkw" name="Rejected"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jh-pYFOfEeCXkoFpHlFAkw" name="VerificationAndValidationConcerns">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="__xkAkFPLEeCXkoFpHlFAkw" name="VV_MethodKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AcnvwFPMEeCXkoFpHlFAkw" name="Analysis"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AtdBEFPMEeCXkoFpHlFAkw" name="Inspection"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A881oFPMEeCXkoFpHlFAkw" name="SystemTest"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BoKV0FPMEeCXkoFpHlFAkw" name="ComponentTest"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_AF-KUFPMEeCXkoFpHlFAkw" name="VV_StatusKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B3WoYFPMEeCXkoFpHlFAkw" name="Pending"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CE6jQFPMEeCXkoFpHlFAkw" name="Passed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CTg_8FPMEeCXkoFpHlFAkw" name="Failed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ClikEFPMEeCXkoFpHlFAkw" name="Inconclusive"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_FWPoYFOQEeCXkoFpHlFAkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FXlsMFOQEeCXkoFpHlFAkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8jwGAJ6iEeemerk4ddBG7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8jwGAZ6iEeemerk4ddBG7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:ModelLibrary xmi:id="_A_4BEF_vEeeOZqSO0VwLaQ" base_Package="_jGcj8FOfEeCXkoFpHlFAkw"/>
+  <standard:ModelLibrary xmi:id="_B-kd8F_vEeeOZqSO0VwLaQ" base_Package="_h4KL4FOfEeCXkoFpHlFAkw"/>
+  <standard:ModelLibrary xmi:id="_EQIQ4F_vEeeOZqSO0VwLaQ" base_Package="_hdrPUFOfEeCXkoFpHlFAkw"/>
+  <standard:ModelLibrary xmi:id="_FEJu0F_vEeeOZqSO0VwLaQ" base_Package="_BZPAQFOQEeCXkoFpHlFAkw"/>
+  <standard:ModelLibrary xmi:id="_uZgQ8F_wEeeOZqSO0VwLaQ" base_Package="_jh-pYFOfEeCXkoFpHlFAkw"/>
+  <Ecore:EEnumLiteral xmi:id="_AWGWQJ6jEeemerk4ddBG7Q" base_EnumerationLiteral="_gF5PIFPCEeCXkoFpHlFAkw" enumLiteralName="Importance1" literal="1"/>
+  <Ecore:EEnumLiteral xmi:id="_9vdZQJ6kEeemerk4ddBG7Q" base_EnumerationLiteral="_gj_gYFPCEeCXkoFpHlFAkw" enumLiteralName="Importance2" literal="2"/>
+  <Ecore:EEnumLiteral xmi:id="_Ak6jcJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_bYp_wFPJEeCXkoFpHlFAkw" enumLiteralName="Importance3" literal="3"/>
+  <Ecore:EEnumLiteral xmi:id="_D1MBYJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_blUiwFPJEeCXkoFpHlFAkw" enumLiteralName="Importance4" literal="4"/>
+  <Ecore:EEnumLiteral xmi:id="_JtQoAJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_b2mgAFPJEeCXkoFpHlFAkw" enumLiteralName="Importance5" literal="5"/>
+  <Ecore:EEnumLiteral xmi:id="_L64WIJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_cNZPYFPJEeCXkoFpHlFAkw" enumLiteralName="Importance6" literal="6"/>
+  <Ecore:EEnumLiteral xmi:id="_OgKWUJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_crybkFPJEeCXkoFpHlFAkw" enumLiteralName="Importance7" literal="7"/>
+  <Ecore:EEnumLiteral xmi:id="_Q7LAMJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_c9OJ0FPJEeCXkoFpHlFAkw" enumLiteralName="Importance8" literal="8"/>
+  <Ecore:EEnumLiteral xmi:id="_TnHpEJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_dNdlQFPJEeCXkoFpHlFAkw" enumLiteralName="Importance9" literal="9"/>
+  <Ecore:EEnumLiteral xmi:id="_WNJQIJ6lEeemerk4ddBG7Q" base_EnumerationLiteral="_dc9Z0FPJEeCXkoFpHlFAkw" enumLiteralName="Importance10" literal="10"/>
+  <Ecore:EPackage xmi:id="_Xy5tAKOHEeeuXsxbHFzK8w" base_Package="_BZPAQFOQEeCXkoFpHlFAkw" packageName="requirementclassificationconcerns" nsPrefix="requirementclassificationconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils" prefix="RequirementClassificationConcerns"/>
+  <Ecore:EPackage xmi:id="_xzhWQKOHEeeuXsxbHFzK8w" base_Package="_hdrPUFOfEeCXkoFpHlFAkw" packageName="requirementscharacteristicsconcerns" nsPrefix="RequirementsCharacteristicsConcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils" prefix="RequirementsCharacteristicsConcerns"/>
+  <Ecore:EPackage xmi:id="_SRZW0KOIEeeuXsxbHFzK8w" base_Package="_h4KL4FOfEeCXkoFpHlFAkw" packageName="priorityandimportanceconcerns" nsPrefix="PriorityAndImportanceConcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils" prefix="PriorityAndImportanceConcerns"/>
+  <Ecore:EPackage xmi:id="_lBKBkKOIEeeuXsxbHFzK8w" base_Package="_jGcj8FOfEeCXkoFpHlFAkw" packageName="requirementandprocessconcerns" nsPrefix="RequirementAndProcessConcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils" prefix="RequirementAndProcessConcerns"/>
+  <Ecore:EPackage xmi:id="_vJLacKOIEeeuXsxbHFzK8w" base_Package="_jh-pYFOfEeCXkoFpHlFAkw" packageName="verificationandvalidationconcerns" nsPrefix="VerificationAndValidationConcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils" prefix="VerificationAndValidationConcerns"/>
+  <standard:ModelLibrary xmi:id="_GIbTQFOQEeCXkoFpHlFAkw" base_Package="_03nSwFOPEeCXkoFpHlFAkw"/>
+  <Ecore:EPackage xmi:id="_E1Hp0KOGEeeuXsxbHFzK8w" base_Package="_03nSwFOPEeCXkoFpHlFAkw" packageName="papyrusrestandardutils" nsPrefix="PapyrusREStandardUtils" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary" prefix="PapyrusREStandardUtils"/>
+</xmi:XMI>

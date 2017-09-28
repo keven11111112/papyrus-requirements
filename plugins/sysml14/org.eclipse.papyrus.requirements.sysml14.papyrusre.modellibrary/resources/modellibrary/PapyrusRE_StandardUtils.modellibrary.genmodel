@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" copyrightText="Copyright (c) 2017 CEA LIST.&#xD;&#xA;&#xD;&#xA; All rights reserved. This program and the accompanying materials&#xD;&#xA; are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA; which accompanies this distribution, and is available at&#xD;&#xA; http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA;&#xD;&#xA;Contributors:&#xD;&#xA;  Sébastien Gerard (CEA LIST) &lt;sebastien.gerard@cea.fr> - Initial API and implementation&#xD;&#xA;  Yupanqui Munoz Julho (CEA LIST) &lt;yupanqui.munozjulho@cea.fr> - Initial API and implementation&#xD;&#xA;"
+    modelDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/src-gen"
+    editDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.edit/src-gen"
+    editorDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.editor/src-gen"
+    modelPluginID="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary"
+    modelName="PapyrusREStandardUtils" editPluginClass="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.provider.PapyrusREStandardUtilsEditPlugin"
+    editorPluginClass="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.presentation.PapyrusREStandardUtilsEditorPlugin"
+    nonNLSMarkers="true" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.tests/src-gen"
+    testSuiteClass="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.tests.PapyrusREStandardUtilsAllTests"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>PapyrusRE_StandardUtils.modellibrary.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="PapyrusREStandardUtils" basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary"
+      disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="RequirementClassificationConcerns"
+        basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
+        disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//requirementclassificationconcerns">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Adaptability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Availability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Compatability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Maintainability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Portability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Reliability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Safety"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Security"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Usability"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind/Variability"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Cultural"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Design"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Environment"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Implementation"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Interface"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Physical"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Standard"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Other"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind/Undefined"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Bound"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Memory"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Speed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Throughput"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Time"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind/Volume"/>
+      </genEnums>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="RequirementsCharacteristicsConcerns"
+        basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
+        disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/PreConcept"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Concept"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Development"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Manufacturing"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Integration"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Test"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Deployment"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Delivery"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Installation"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Operation"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Support"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind/Disposal"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/SpecificationLevel"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/AnalysisLevel"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/DesignLevel"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/ImplementationLevel"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/Specfication_level"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind/OperationalLevel"/>
+      </genEnums>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="PriorityAndImportanceConcerns"
+        basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
+        disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//priorityandimportanceconcerns">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Key"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Mandatory"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Optional"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Desirable"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance1"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance2"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance3"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance4"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance5"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance6"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance7"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance8"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance9"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance10"/>
+      </genEnums>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="RequirementAndProcessConcerns"
+        basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
+        disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//requirementandprocessconcerns">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Proposed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/ToBeRefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Accepted"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Draft"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Rejected"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind/NotQualified"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind/Qualified"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind/Suspect"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind/NotSatisfied"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind/Satisfied"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind/Suspect"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind/ToBeReviewed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind/Accepted"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind/Rejected"/>
+      </genEnums>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="VerificationAndValidationConcerns"
+        basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
+        disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//verificationandvalidationconcerns">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind/Analysis"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind/Inspection"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind/SystemTest"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind/ComponentTest"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind/Pending"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind/Passed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind/Failed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind/Inconclusive"/>
+      </genEnums>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+    Copyright (c) 2017 CEA LIST.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+    	Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+        Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - initial API and implementation
+ -->
+<plugin>
+
+   
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PapyrusRE.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics"
+            class="org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage"
+            genModel="resources/profile/PapyrusRE.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PapyrusRE.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification"
+            class="org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage"
+            genModel="resources/profile/PapyrusRE.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PapyrusRE.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability"
+            class="org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage"
+            genModel="resources/profile/PapyrusRE.profile.genmodel"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://PAPYRUSRE_PROFILE/"
+            target="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.papyrusre/resources/profile/">
+      </mapping>
+   </extension>
+   
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://PAPYRUSRE_PROFILE/PapyrusRE.profile.uml#_wJDIkDp6EeCmwNGSFJpOjg"
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE">
+      </profile>
+   </extension>
+   
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://PAPYRUSRE_PROFILE/PapyrusRE.profile.uml#_6-xDADp8EeCmwNGSFJpOjg"
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics">
+      </profile>
+   </extension>
+   
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://PAPYRUSRE_PROFILE/PapyrusRE.profile.uml#_7P52UDp8EeCmwNGSFJpOjg"
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification">
+      </profile>
+   </extension>
+   
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://PAPYRUSRE_PROFILE/PapyrusRE.profile.uml#_7uTCgDp8EeCmwNGSFJpOjg"
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability">
+      </profile>
+   </extension>
+   
+</plugin>

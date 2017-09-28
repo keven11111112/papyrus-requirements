@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="papyrusre" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE"
+    nsPrefix="PapyrusRE">
+  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <details key="originalName" value="PapyrusRE"/>
+  </eAnnotations>
+  <eSubpackages name="requirementgenericcharacteristics" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics"
+      nsPrefix="RequirementGenericCharacteristics">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementGenericCharacteristics"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="Requirement" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Requirement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="agreementStatus" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="approvalAuthority" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="importance" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lifeCyclePhase" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maturity" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractionLevel" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualificationStatus"
+          ordered="false" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="reviewStatus" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="satisfactionRationale"
+          ordered="false" eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="satisfactionStatus" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validationRationale"
+          ordered="false" eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validatorName" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifierName" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Method" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Status" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualityNature" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification"
+      nsPrefix="RequirementClassification">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementClassification"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="ProjectRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ProcessRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConstraintRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="constraintKind" ordered="false"
+          lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="WorkloadCapacityRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="workloadCapacity" ordered="false"
+          lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QualityRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="specificQualityKind"
+          ordered="false" lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability"
+      nsPrefix="RequirementTraceability">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementTraceability"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="Satisfy" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Satisfy">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validatorName" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="satisfyStatus" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Verify" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Verify">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifierName" ordered="false"
+          eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifyStatus" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Method" ordered="false"
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

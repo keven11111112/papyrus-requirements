@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="papyrusrestandardutils" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils"
+    nsPrefix="PapyrusREStandardUtils">
+  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <details key="originalName" value="PapyrusRE_StandardUtils"/>
+  </eAnnotations>
+  <eSubpackages name="requirementclassificationconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns"
+      nsPrefix="requirementclassificationconcerns">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementClassificationConcerns"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="QualityKind">
+      <eLiterals name="Adaptability"/>
+      <eLiterals name="Availability" value="1"/>
+      <eLiterals name="Compatability" value="2"/>
+      <eLiterals name="Maintainability" value="3"/>
+      <eLiterals name="Portability" value="4"/>
+      <eLiterals name="Reliability" value="5"/>
+      <eLiterals name="Safety" value="6"/>
+      <eLiterals name="Security" value="7"/>
+      <eLiterals name="Usability" value="8"/>
+      <eLiterals name="Variability" value="9"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ConstraintKind">
+      <eLiterals name="Cultural"/>
+      <eLiterals name="Design" value="1"/>
+      <eLiterals name="Environment" value="2"/>
+      <eLiterals name="Implementation" value="3"/>
+      <eLiterals name="Interface" value="4"/>
+      <eLiterals name="Physical" value="5"/>
+      <eLiterals name="Standard" value="6"/>
+      <eLiterals name="Other" value="7"/>
+      <eLiterals name="Undefined" value="8"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="WorkloadCapacitiesKind">
+      <eLiterals name="Bound"/>
+      <eLiterals name="Memory" value="1"/>
+      <eLiterals name="Speed" value="2"/>
+      <eLiterals name="Throughput" value="3"/>
+      <eLiterals name="Time" value="4"/>
+      <eLiterals name="Volume" value="5"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="requirementscharacteristicsconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns"
+      nsPrefix="RequirementsCharacteristicsConcerns">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementsCharacteristicsConcerns"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="LifeCyclePhaseKind">
+      <eLiterals name="PreConcept"/>
+      <eLiterals name="Concept" value="1"/>
+      <eLiterals name="Development" value="2"/>
+      <eLiterals name="Manufacturing" value="3"/>
+      <eLiterals name="Integration" value="4"/>
+      <eLiterals name="Test" value="5"/>
+      <eLiterals name="Deployment" value="6"/>
+      <eLiterals name="Delivery" value="7"/>
+      <eLiterals name="Installation" value="8"/>
+      <eLiterals name="Operation" value="9"/>
+      <eLiterals name="Support" value="10"/>
+      <eLiterals name="Disposal" value="11"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="AbstractionLevelKind">
+      <eLiterals name="SpecificationLevel"/>
+      <eLiterals name="AnalysisLevel" value="1"/>
+      <eLiterals name="DesignLevel" value="2"/>
+      <eLiterals name="ImplementationLevel" value="3"/>
+      <eLiterals name="Specfication_level" value="4"/>
+      <eLiterals name="OperationalLevel" value="5"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="priorityandimportanceconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns"
+      nsPrefix="PriorityAndImportanceConcerns">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="PriorityAndImportanceConcerns"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="PriorityKind">
+      <eLiterals name="Key"/>
+      <eLiterals name="Mandatory" value="1"/>
+      <eLiterals name="Optional" value="2"/>
+      <eLiterals name="Desirable" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ImportanceKind">
+      <eLiterals name="Importance1" literal="1">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_1"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance2" value="1" literal="2">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_2"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance3" value="2" literal="3">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_3"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance4" value="3" literal="4">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_4"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance5" value="4" literal="5">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_5"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance6" value="5" literal="6">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_6"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance7" value="6" literal="7">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_7"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance8" value="7" literal="8">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_8"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance9" value="8" literal="9">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_9"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Importance10" value="9" literal="10">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="_10"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="requirementandprocessconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns"
+      nsPrefix="RequirementAndProcessConcerns">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RequirementAndProcessConcerns"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="AgreementStatusKind">
+      <eLiterals name="Proposed"/>
+      <eLiterals name="ToBeRefined" value="1"/>
+      <eLiterals name="Accepted" value="2"/>
+      <eLiterals name="Draft" value="3"/>
+      <eLiterals name="Rejected" value="4"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="QualificationStatusKind">
+      <eLiterals name="NotQualified"/>
+      <eLiterals name="Qualified" value="1"/>
+      <eLiterals name="Suspect" value="2"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="SatisfactionStatusKind">
+      <eLiterals name="NotSatisfied"/>
+      <eLiterals name="Satisfied" value="1"/>
+      <eLiterals name="Suspect" value="2"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ReviewStatusKind">
+      <eLiterals name="ToBeReviewed"/>
+      <eLiterals name="Accepted" value="1"/>
+      <eLiterals name="Rejected" value="2"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="verificationandvalidationconcerns" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns"
+      nsPrefix="VerificationAndValidationConcerns">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="VerificationAndValidationConcerns"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="VV_MethodKind">
+      <eLiterals name="Analysis"/>
+      <eLiterals name="Inspection" value="1"/>
+      <eLiterals name="SystemTest" value="2"/>
+      <eLiterals name="ComponentTest" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="VV_StatusKind">
+      <eLiterals name="Pending"/>
+      <eLiterals name="Passed" value="1"/>
+      <eLiterals name="Failed" value="2"/>
+      <eLiterals name="Inconclusive" value="3"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
