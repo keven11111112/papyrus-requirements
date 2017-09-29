@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:papyrus.requirements.menu">
+         <menu
+               id="papyrus.requirements.sysml14.migrationtoreq.menu"
+               label="%papyrus.requirements.sysml14.migrationtoreq.menu.label">
+            <command
+                  commandId="papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.command"
+                  label="%papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.label"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+  
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+      		description="%papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.description"
+            id="papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.command"
+            name="%papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.label">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.papyrus.requirements.sysml14.migrationtoreq.ui.handler.SysML14ToPapyrusREHandler"
+            commandId="papyrus.requirements.sysml14.migrationtoreq.sysml14topapyrusre.command">
+            <activeWhen>
+            <and>
+               <with
+                     variable="selection">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <instanceof
+                              value="org.eclipse.uml2.uml.Package">
+                        </instanceof>
+                     </adapt>
+                  </iterate>
+               </with>
+               <count
+                     value="1">
+               </count>
+            </and>
+         </activeWhen>
+      </handler>
+   </extension>
+
+</plugin>
