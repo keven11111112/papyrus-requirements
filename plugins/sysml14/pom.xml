@@ -49,6 +49,13 @@
 			org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.ui
 		</module>
 		
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.migrationtoreq
+		</module>
+		<module>
+			org.eclipse.papyrus.requirements.sysml14.migrationtoreq.ui
+		</module>
+		
 	
 		<module>
 			org.eclipse.papyrus.requirements.sysml14.assistant.commands
