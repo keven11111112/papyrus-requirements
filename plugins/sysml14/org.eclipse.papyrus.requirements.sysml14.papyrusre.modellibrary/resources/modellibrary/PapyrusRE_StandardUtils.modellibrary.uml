@@ -80,7 +80,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_jGcj8FOfEeCXkoFpHlFAkw" name="RequirementAndProcessConcerns">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZUhvYFPKEeCXkoFpHlFAkw" name="AgreementStatusKind">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c7L3kFPLEeCXkoFpHlFAkw" name="Proposed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c7L3kFPLEeCXkoFpHlFAkw" name="Submitted"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dLIYEFPLEeCXkoFpHlFAkw" name="ToBeRefined"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_daLgsFPLEeCXkoFpHlFAkw" name="Accepted"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KAfiQJMOEeeXis3ri3jkBA" name="Draft"/>

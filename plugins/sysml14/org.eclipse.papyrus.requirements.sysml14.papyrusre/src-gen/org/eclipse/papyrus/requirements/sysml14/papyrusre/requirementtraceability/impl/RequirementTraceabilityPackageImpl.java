@@ -19,9 +19,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.PapyrusREPackage;
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.impl.PapyrusREPackageImpl;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityAndImportanceConcernsPackage;
 
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.RequirementAndProcessConcernsPackage;
@@ -132,19 +129,16 @@ public class RequirementTraceabilityPackageImpl extends EPackageImpl implements 
 		UMLPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		PapyrusREPackageImpl thePapyrusREPackage = (PapyrusREPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PapyrusREPackage.eNS_URI) instanceof PapyrusREPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PapyrusREPackage.eNS_URI) : PapyrusREPackage.eINSTANCE);
 		RequirementGenericCharacteristicsPackageImpl theRequirementGenericCharacteristicsPackage = (RequirementGenericCharacteristicsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(RequirementGenericCharacteristicsPackage.eNS_URI) instanceof RequirementGenericCharacteristicsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(RequirementGenericCharacteristicsPackage.eNS_URI) : RequirementGenericCharacteristicsPackage.eINSTANCE);
 		RequirementClassificationPackageImpl theRequirementClassificationPackage = (RequirementClassificationPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(RequirementClassificationPackage.eNS_URI) instanceof RequirementClassificationPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(RequirementClassificationPackage.eNS_URI) : RequirementClassificationPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theRequirementTraceabilityPackage.createPackageContents();
-		thePapyrusREPackage.createPackageContents();
 		theRequirementGenericCharacteristicsPackage.createPackageContents();
 		theRequirementClassificationPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theRequirementTraceabilityPackage.initializePackageContents();
-		thePapyrusREPackage.initializePackageContents();
 		theRequirementGenericCharacteristicsPackage.initializePackageContents();
 		theRequirementClassificationPackage.initializePackageContents();
 
@@ -304,6 +298,9 @@ public class RequirementTraceabilityPackageImpl extends EPackageImpl implements 
 		initEAttribute(getVerify_VerifierName(), theTypesPackage.getString(), "verifierName", null, 0, 1, Verify.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 		initEAttribute(getVerify_VerifyStatus(), theVerificationAndValidationConcernsPackage.getVV_StatusKind(), "verifyStatus", null, 0, 1, Verify.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 		initEAttribute(getVerify_VV_Method(), theRequirementAndProcessConcernsPackage.getSatisfactionStatusKind(), "VV_Method", null, 0, 1, Verify.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		// Create resource
+		createResource(eNS_URI);
 
 		// Create annotations
 		// http://www.eclipse.org/uml2/2.0.0/UML

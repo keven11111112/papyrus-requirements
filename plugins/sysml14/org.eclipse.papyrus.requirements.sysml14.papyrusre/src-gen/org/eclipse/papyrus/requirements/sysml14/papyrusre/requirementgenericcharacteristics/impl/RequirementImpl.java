@@ -78,7 +78,7 @@ public class RequirementImpl extends org.eclipse.papyrus.sysml14.requirements.in
 	 * @generated
 	 * @ordered
 	 */
-	protected static final AgreementStatusKind AGREEMENT_STATUS_EDEFAULT = AgreementStatusKind.PROPOSED;
+	protected static final AgreementStatusKind AGREEMENT_STATUS_EDEFAULT = AgreementStatusKind.SUBMITTED;
 
 	/**
 	 * The cached value of the '{@link #getAgreementStatus() <em>Agreement Status</em>}' attribute.

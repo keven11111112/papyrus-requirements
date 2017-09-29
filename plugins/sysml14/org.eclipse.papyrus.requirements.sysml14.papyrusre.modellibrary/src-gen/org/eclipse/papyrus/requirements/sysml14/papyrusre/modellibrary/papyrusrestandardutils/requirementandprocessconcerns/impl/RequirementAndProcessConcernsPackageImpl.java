@@ -246,7 +246,7 @@ public class RequirementAndProcessConcernsPackageImpl extends EPackageImpl imple
 
 		// Initialize enums and add enum literals
 		initEEnum(agreementStatusKindEEnum, AgreementStatusKind.class, "AgreementStatusKind"); //$NON-NLS-1$
-		addEEnumLiteral(agreementStatusKindEEnum, AgreementStatusKind.PROPOSED);
+		addEEnumLiteral(agreementStatusKindEEnum, AgreementStatusKind.SUBMITTED);
 		addEEnumLiteral(agreementStatusKindEEnum, AgreementStatusKind.TO_BE_REFINED);
 		addEEnumLiteral(agreementStatusKindEEnum, AgreementStatusKind.ACCEPTED);
 		addEEnumLiteral(agreementStatusKindEEnum, AgreementStatusKind.DRAFT);

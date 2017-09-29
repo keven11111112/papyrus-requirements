@@ -126,7 +126,7 @@
         basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
         disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//requirementandprocessconcerns">
       <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind">
-        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Proposed"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Submitted"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/ToBeRefined"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Accepted"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind/Draft"/>

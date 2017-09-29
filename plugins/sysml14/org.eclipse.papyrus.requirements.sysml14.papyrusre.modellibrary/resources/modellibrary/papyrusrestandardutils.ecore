@@ -140,7 +140,7 @@
       <details key="originalName" value="RequirementAndProcessConcerns"/>
     </eAnnotations>
     <eClassifiers xsi:type="ecore:EEnum" name="AgreementStatusKind">
-      <eLiterals name="Proposed"/>
+      <eLiterals name="Submitted"/>
       <eLiterals name="ToBeRefined" value="1"/>
       <eLiterals name="Accepted" value="2"/>
       <eLiterals name="Draft" value="3"/>

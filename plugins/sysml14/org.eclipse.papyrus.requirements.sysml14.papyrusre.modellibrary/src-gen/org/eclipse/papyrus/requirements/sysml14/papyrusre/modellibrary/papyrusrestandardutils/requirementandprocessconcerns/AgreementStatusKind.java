@@ -30,14 +30,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum AgreementStatusKind implements Enumerator {
 	/**
-	 * The '<em><b>Proposed</b></em>' literal object.
+	 * The '<em><b>Submitted</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PROPOSED_VALUE
+	 * @see #SUBMITTED_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PROPOSED(0, "Proposed", "Proposed"), //$NON-NLS-1$ //$NON-NLS-2$
+	SUBMITTED(0, "Submitted", "Submitted"), //$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
 	 * The '<em><b>To Be Refined</b></em>' literal object.
@@ -80,19 +80,19 @@ public enum AgreementStatusKind implements Enumerator {
 	REJECTED(4, "Rejected", "Rejected"); //$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
-	 * The '<em><b>Proposed</b></em>' literal value.
+	 * The '<em><b>Submitted</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Proposed</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Submitted</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #PROPOSED
-	 * @model name="Proposed"
+	 * @see #SUBMITTED
+	 * @model name="Submitted"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PROPOSED_VALUE = 0;
+	public static final int SUBMITTED_VALUE = 0;
 
 	/**
 	 * The '<em><b>To Be Refined</b></em>' literal value.
@@ -162,7 +162,7 @@ public enum AgreementStatusKind implements Enumerator {
 	 */
 	private static final AgreementStatusKind[] VALUES_ARRAY =
 		new AgreementStatusKind[] {
-			PROPOSED,
+			SUBMITTED,
 			TO_BE_REFINED,
 			ACCEPTED,
 			DRAFT,
@@ -223,7 +223,7 @@ public enum AgreementStatusKind implements Enumerator {
 	 */
 	public static AgreementStatusKind get(int value) {
 		switch (value) {
-			case PROPOSED_VALUE: return PROPOSED;
+			case SUBMITTED_VALUE: return SUBMITTED;
 			case TO_BE_REFINED_VALUE: return TO_BE_REFINED;
 			case ACCEPTED_VALUE: return ACCEPTED;
 			case DRAFT_VALUE: return DRAFT;
