@@ -18,6 +18,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PapyrusRE.profile -->
       <package
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE"
+            class="org.eclipse.papyrus.requirements.sysml14.papyrusre.PapyrusREPackage"
+            genModel="resources/profile/PapyrusRE.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PapyrusRE.profile -->
+      <package
             uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics"
             class="org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage"
             genModel="resources/profile/PapyrusRE.profile.genmodel"/>

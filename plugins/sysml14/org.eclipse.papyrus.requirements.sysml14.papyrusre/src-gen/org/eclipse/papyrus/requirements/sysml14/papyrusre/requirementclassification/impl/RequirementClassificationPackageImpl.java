@@ -20,6 +20,8 @@ import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.PapyrusREPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.impl.PapyrusREPackageImpl;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityAndImportanceConcernsPackage;
 
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.RequirementAndProcessConcernsPackage;
@@ -152,16 +154,19 @@ public class RequirementClassificationPackageImpl extends EPackageImpl implement
 		UMLPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		PapyrusREPackageImpl thePapyrusREPackage = (PapyrusREPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PapyrusREPackage.eNS_URI) instanceof PapyrusREPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PapyrusREPackage.eNS_URI) : PapyrusREPackage.eINSTANCE);
 		RequirementGenericCharacteristicsPackageImpl theRequirementGenericCharacteristicsPackage = (RequirementGenericCharacteristicsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(RequirementGenericCharacteristicsPackage.eNS_URI) instanceof RequirementGenericCharacteristicsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(RequirementGenericCharacteristicsPackage.eNS_URI) : RequirementGenericCharacteristicsPackage.eINSTANCE);
 		RequirementTraceabilityPackageImpl theRequirementTraceabilityPackage = (RequirementTraceabilityPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(RequirementTraceabilityPackage.eNS_URI) instanceof RequirementTraceabilityPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(RequirementTraceabilityPackage.eNS_URI) : RequirementTraceabilityPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theRequirementClassificationPackage.createPackageContents();
+		thePapyrusREPackage.createPackageContents();
 		theRequirementGenericCharacteristicsPackage.createPackageContents();
 		theRequirementTraceabilityPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theRequirementClassificationPackage.initializePackageContents();
+		thePapyrusREPackage.initializePackageContents();
 		theRequirementGenericCharacteristicsPackage.initializePackageContents();
 		theRequirementTraceabilityPackage.initializePackageContents();
 
@@ -339,9 +344,6 @@ public class RequirementClassificationPackageImpl extends EPackageImpl implement
 
 		initEClass(qualityRequirementEClass, QualityRequirement.class, "QualityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getQualityRequirement_SpecificQualityKind(), theRequirementClassificationConcernsPackage.getQualityKind(), "specificQualityKind", null, 1, 1, QualityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-
-		// Create resource
-		createResource(eNS_URI);
 
 		// Create annotations
 		// http://www.eclipse.org/uml2/2.0.0/UML
