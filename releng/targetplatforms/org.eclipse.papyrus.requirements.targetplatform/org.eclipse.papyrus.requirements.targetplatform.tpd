@@ -11,18 +11,18 @@ location "http://download.eclipse.org/releases/oxygen/" eclipse-oxygen {
  
 }
 
-//manualUpdate for Papyrus nightly
-location "http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/photon/" {
+//manualUpdate for Papyrus (nightly)
+location "http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/oxygen/" {
  org.eclipse.papyrus.sdk.feature.feature.group lazy	
 }
 
-//manualUpdate for SysML14 nightly
-location "https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen-nightly/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/" {
+//manualUpdate for SysML14 (release)
+location "http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/oxygen/" {
  org.eclipse.papyrus.sysml14 lazy
 }
 
 
-//manualUpdate for SysML11
+//manualUpdate for SysML11 (nightly)
 location "https://hudson.eclipse.org/papyrus/job/papyrus-sysml11-oxygen/lastSuccessfulBuild/artifact/org.eclipse.papyrus.sysml11.p2/target/repository/" {
  org.eclipse.papyrus.sysml.feature.feature.group lazy
  org.eclipse.papyrus.sysml.nattable.feature.feature.group lazy
