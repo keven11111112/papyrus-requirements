@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module SysML_Queries('http://www.eclipse.org/uml2/4.0.0/UML', 'http://www.eclipse.org/papyrus/sysml/1.4/SysML')]
+
+[query public getStringValue(elt : Element,stereotypeName : String, propertyName:String) : String = 
+	invoke('org.eclipse.papyrus.requirements.gendoc.queries.SysML_Queries', 'getStringValue(org.eclipse.uml2.uml.Element, java.lang.String, java.lang.String)', Sequence{elt,stereotypeName,propertyName})
+/]
+
+[query public countReq(elt : Model) : String = 
+	invoke('org.eclipse.papyrus.requirements.gendoc.queries.SysML_Queries', 'countReq(org.eclipse.uml2.uml.Model)', Sequence{elt})
+/]
+
+[query public getAllReq(elt : Package) : Sequence(NamedElement) = 
+	invoke('org.eclipse.papyrus.requirements.gendoc.queries.SysML_Queries', 'getAllReq(org.eclipse.uml2.uml.Package)', Sequence{elt})
+/]
+
+
+[query public basicPrintReq(elt : Model) : String = 
+	invoke('org.eclipse.papyrus.requirements.gendoc.queries.SysML_Queries', 'basicPrintReq(org.eclipse.uml2.uml.Model)', Sequence{elt})
+/]

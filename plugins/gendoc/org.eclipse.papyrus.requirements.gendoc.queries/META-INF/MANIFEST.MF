@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.gendoc.queries;singleton:=true
+Bundle-Version: 0.3.0.qualifier
+Bundle-Activator: org.eclipse.papyrus.requirements.gendoc.queries.Activator
+Bundle-Vendor: %providerName
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.uml2.uml,
+ org.eclipse.gendoc.script.acceleo;bundle-version="0.5.0",
+ org.eclipse.papyrus.sysml14;bundle-version="0.11.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.papyrus.requirements.gendoc.queries

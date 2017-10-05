@@ -20,5 +20,9 @@
             class="org.eclipse.papyrus.requirements.sysml14.assistant.handlers.CommentReqHandler"
             commandId="org.eclipse.papyrus.requirements.sysml14.assistant.handlers.CommentReqHandler">
       </handler>
+      <handler
+            class="org.eclipse.papyrus.requirements.sysml14.assistant.handlers.SetIdSubTreeHandler"
+            commandId="org.eclipse.papyrus.requirements.sysml14.assistant.handlers.SetIdSubTreeHandler">
+      </handler>
    </extension>
 </plugin>

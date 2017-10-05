@@ -95,6 +95,15 @@
                </with>
             </visibleWhen>
          </command>
+         <command
+               commandId="org.eclipse.papyrus.requirements.sysml14.assistant.handlers.SetIdSubTreeHandler"
+               label="Set Ids for the the requirement tree"
+               style="push"
+               tooltip="Set Id for the the requirement tree">
+            <visibleWhen
+                  checkEnabled="true">
+            </visibleWhen>
+         </command>
       </menuContribution>
    </extension>
    <extension
