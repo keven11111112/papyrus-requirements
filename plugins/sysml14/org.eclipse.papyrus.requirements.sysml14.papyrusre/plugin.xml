@@ -86,4 +86,12 @@
       </profile>
    </extension>
    
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.impl.RequirementGenericCharacteristicsFactoryCustomImpl"
+            uri="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics">
+      </factory>
+   </extension>
+   
 </plugin>
