@@ -16,3 +16,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.papyrus.requirements.sysml14.migrationtoreq;bundle-version="0.7.0",
  org.eclipse.papyrus.requirements.sysml14.papyrusre,
  org.eclipse.papyrus.uml.tools.utils
+Export-Package: org.eclipse.papyrus.requirements.sysml14.migrationtoreq.ui.handler

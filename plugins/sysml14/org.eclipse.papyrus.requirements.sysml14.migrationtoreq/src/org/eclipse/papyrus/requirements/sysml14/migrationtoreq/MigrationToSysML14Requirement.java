@@ -24,13 +24,13 @@ import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 /**
- * This class executes the migration from SysML 1.4 model to PapyrusRE model. 
+ * This class executes the migration from SysML 1.4 model to another domain model. 
  *
  */
-public class SysML14ToPapyrusRE {
+public class MigrationToSysML14Requirement {
 
 	/** Label of the command to apply annotation on the UML model. */
-	private static final String CMD_LABEL_APPLY_ANNOTATION_ON_UML_MODEL = "PapyrusRE: Apply Annotation on the UML model"; //$NON-NLS-1$
+	private static final String CMD_LABEL_APPLY_ANNOTATION_ON_UML_MODEL = "Apply Annotation on the UML model"; //$NON-NLS-1$
 
 	/** Message of the error during the service registry search. */
 	private static final String ERROR_SERVICE_REAGITRY_SEARCH = "Error during the service registry search"; //$NON-NLS-1$
@@ -55,7 +55,7 @@ public class SysML14ToPapyrusRE {
 		try {
 			domain.getCommandStack().execute(applyAnnotationCmd);
 		} catch (final IllegalArgumentException exception) {
-			Activator.log.error("Error during the application of the PapyrusRE annotation on the model", exception); //$NON-NLS-1$
+			Activator.log.error("Error during the the migration from SysML 1.4 model to another domain model", exception); //$NON-NLS-1$
 
 		}
 	}
