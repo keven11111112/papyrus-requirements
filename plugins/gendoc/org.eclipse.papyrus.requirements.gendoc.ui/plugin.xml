@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.gendoc.wizard.runner">
+      <GendocElement
+            Instance="org.eclipse.papyrus.requirements.gendoc.ui.RequirementsGendoc2Runner">
+      </GendocElement>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.eclipse.papyrus.requirements.gendoc.ui.handlers.GenerateRequirementsHandler"
+            id="org.eclipse.papyrus.requirements.gendoc.ui.generateRequirementsCommand"
+            name="Generate requirements report">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?after=tools">
+         <command
+               commandId="org.eclipse.papyrus.requirements.gendoc.ui.generateRequirementsCommand"
+               id="org.eclipse.papyrus.requirements.gendoc.ui.generateRequirementsCommand"
+               label="Generate requirements report"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="selection">
+                  <and>
+                     <iterate>
+                        <adapt
+                              type="org.eclipse.emf.ecore.EObject">
+                        </adapt>
+                     </iterate>
+                     <count
+                           value="1">
+                     </count>
+                  </and>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+</plugin>
