@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            defaultHandler="org.eclipse.papyrus.proxy.ui.handler.LinkToEcoreModelHandler"
+            description="Link to ecore element"
+            id="org.eclipse.papyrus.proxy.ui.handler.LinkToEcoreModelHandler"
+            name="Link to ecore element">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup">
+         <command
+               commandId="org.eclipse.papyrus.proxy.ui.handler.LinkToEcoreModelHandler"
+               id="org.eclipse.papyrus.proxy.ui.handler.LinkToEcoreModelMenu"
+               label="Link to ecore element"
+               style="push">
+            <visibleWhen
+                  checkEnabled="true">
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="org.eclipse.papyrus.proxy.ui.Activator">
+      </startup>
+   </extension>
+
+</plugin>
