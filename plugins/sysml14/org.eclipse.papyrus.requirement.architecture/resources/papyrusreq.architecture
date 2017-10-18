@@ -3,7 +3,7 @@
   <stakeholders xmi:id="_ACzA4Iv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.req.reqEngineer" name="Requirement Engineer" description="An engineer interested in Requirement Engineering" concerns="_hhXXgIv7EeeNBcglvVZtOQ"/>
   <concerns xmi:id="_hhXXgIv7EeeNBcglvVZtOQ" id="org.eclipse.papyrus.req.concern" name="Requirement engineering concern" description="The concern of managing requirements"/>
   <contexts xsi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_U9_ocIv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.sysml.architecture.SysML14" name="SysML 1.4" description="The Systems Modeling Language" icon="platform:/plugin/org.eclipse.papyrus.sysml14/resources/icons/SysML.gif" creationCommandClass="org.eclipse.papyrus.sysml14.architecture.CreateSysML14ModelCommand" conversionCommandClass="org.eclipse.papyrus.sysml14.architecture.internal.UMLtoSyML14ModelConversionCommand">
-    <viewpoints xmi:id="_c3giYIv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.viewpoint" name="Requirement Specification" description="Requirement Specification" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif">
+    <viewpoints xmi:id="_c3giYIv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.requirement.viewpoint" name="Requirement Specification" description="Requirement Specification" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif">
       <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.sysml14.architecture/resources/sysml14.architecture#org.eclipse.papyrus.sysml14.diagram.requirement"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.sysml14.architecture/resources/sysml14.architecture#org.eclipse.papyrus.sysml14.table.requirement"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.sysml14.architecture/resources/sysml14.architecture#org.eclipse.papyrus.sysml14.table.requirementTree"/>
@@ -11,8 +11,9 @@
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="#_z_Hs8JI1EeeIi5L9EZAlzw"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="#_WdWhUI85EeeoX5z29mN4Kg"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="#_zDnG8JI1EeeIi5L9EZAlzw"/>
+      <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="#_Cfnr8LP2EeeLo8Gu4FwO3w"/>
     </viewpoints>
-    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_WdWhUI85EeeoX5z29mN4Kg" id="SysMLSatisfactionRequirementMatrix" name="Satisfaction Requirement Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy/icons/satisfied_by_matrix.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLSatisfactionRequirementMatrix">
+    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_WdWhUI85EeeoX5z29mN4Kg" id="SysMLSatisfactionRequirementMatrix" name="Satisfaction Requirement Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLSatisfactionRequirementMatrix">
       <modelRules xmi:id="_-v9pgI85EeeoX5z29mN4Kg">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
@@ -21,7 +22,7 @@
       </owningRules>
       <configuration href="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.common/resource/SatisfactionMatrix.nattableconfiguration#/"/>
     </representationKinds>
-    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_zDnG8JI1EeeIi5L9EZAlzw" id="SysMLVerifyRequirementMatrix" name="Verify Requirement Matrix" description="This table is a matrix that shows if the element verify a requirement" icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy/icons/satisfied_by_matrix.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLVerifyRequirementMatrix">
+    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_zDnG8JI1EeeIi5L9EZAlzw" id="SysMLVerifyRequirementMatrix" name="Verify Requirement Matrix" description="This table is a matrix that shows if the element verify a requirement" icon="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLVerifyRequirementMatrix">
       <modelRules xmi:id="_zDnG8ZI1EeeIi5L9EZAlzw">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
@@ -30,7 +31,7 @@
       </owningRules>
       <configuration href="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.common/resource/VerifiedMatrix.nattableconfiguration#/"/>
     </representationKinds>
-    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_zx3UEJI1EeeIi5L9EZAlzw" id="SysMLDerivedRequirementMatrix" name="Derived Requirement Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy/icons/satisfied_by_matrix.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLDerivedRequirementMatrix">
+    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_zx3UEJI1EeeIi5L9EZAlzw" id="SysMLDerivedRequirementMatrix" name="Derived Requirement Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLDerivedRequirementMatrix">
       <modelRules xmi:id="_zx3UEZI1EeeIi5L9EZAlzw">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
@@ -39,7 +40,7 @@
       </owningRules>
       <configuration href="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.common/resource/DerivedMatrix.nattableconfiguration#/"/>
     </representationKinds>
-    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_z_Hs8JI1EeeIi5L9EZAlzw" id="SysMLTraceRequirementMatrix" name="Related Element to Requirements Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.satisfiedBy/icons/satisfied_by_matrix.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLTraceRequirementMatrix">
+    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_z_Hs8JI1EeeIi5L9EZAlzw" id="SysMLTraceRequirementMatrix" name="Related Element to Requirements Matrix" description="This table is a matrix that shows if the element satisfies a requirement" icon="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="SysMLTraceRequirementMatrix">
       <modelRules xmi:id="_z_Hs8ZI1EeeIi5L9EZAlzw">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
@@ -47,6 +48,15 @@
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </owningRules>
       <configuration href="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.common/resource/TraceMatrix.nattableconfiguration#/"/>
+    </representationKinds>
+    <representationKinds xsi:type="nattablerepresentation:PapyrusTable" xmi:id="_Cfnr8LP2EeeLo8Gu4FwO3w" id="AllocationRequirementMatrix" name="Allocation Requirment Matrix" description="This table allows to display SysML 1.4 allocate relationship between Classes and Requirements" icon="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="AllocationRequirementMatrix">
+      <modelRules xmi:id="_z_Hs8ZI1EeeIi5L9EZAlzw">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:id="_z_Hs8pI1EeeIi5L9EZAlzw">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <configuration href="platform:/plugin/org.eclipse.papyrus.requirements.sysml14.matrix.common/resource/AllocationMatrix.nattableconfiguration#/"/>
     </representationKinds>
     <metamodel href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
     <profiles href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
