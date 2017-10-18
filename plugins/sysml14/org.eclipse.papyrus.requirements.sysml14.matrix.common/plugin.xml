@@ -39,4 +39,28 @@
             order="29">
       </cellAxisConfiguration>
    </extension>
+   
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.configuration">
+      <configuration
+            file="resource/AllocationMatrix.nattableconfiguration"
+            type="AllocationRequirementMatrix">
+      </configuration>
+      <configuration
+            file="resource/SatisfactionMatrix.nattableconfiguration"
+            type="SysMLSatisfactionRequirementMatrix">
+      </configuration>
+      <configuration
+            file="resource/TraceMatrix.nattableconfiguration"
+            type="SysMLTraceRequirement Matrix">
+      </configuration>
+      <configuration
+            file="resource/DerivedMatrix.nattableconfiguration"
+            type="SysMLDerivedRequirementMatrix">
+      </configuration>
+      <configuration
+            file="resource/VerifiedMatrix.nattableconfiguration"
+            type="SysMLVerifyRequirementMatrix">
+      </configuration>
+   </extension>
 </plugin>
