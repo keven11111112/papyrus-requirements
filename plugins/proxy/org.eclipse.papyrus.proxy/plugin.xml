@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated proxy -->
+      <package
+            uri="http://org.eclipse.papyrus/proxy"
+            class="org.eclipse.papyrus.proxy.proxy.ProxyPackage"
+            genModel="resource/profil/proxy.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="This profile is used to connect to other model of file of this environment"
+            iconpath="resource/icons/reference.GIF"
+            name="Proxy profile"
+            path="platform:/plugin/org.eclipse.papyrus.proxy/resource/profil/Proxy.profile.uml"
+            qualifiednames="QSProject">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="platform:/plugin/org.eclipse.papyrus.proxy/resource/profil/Proxy.profile.uml#_yTEaoK9cEeeX4J2fh1dVPQ"
+            uri="http://org.eclipse.papyrus/proxy">
+      </profile>
+   </extension>
+
+</plugin>
