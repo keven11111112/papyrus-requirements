@@ -134,9 +134,8 @@
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_d4-1ETp7EeCmwNGSFJpOjg"/>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_6HCcUFxREeelPYvPzDlaIw" name="diagram_compatibility_version" stringValue="1.3.0"/>
-    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_rfYh0F_zEeeOZqSO0VwLaQ">
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_rfYh0F_zEeeOZqSO0VwLaQ" diagramKindId="org.eclipse.papyrus.uml.diagram.profile">
       <owner xmi:type="uml:Profile" href="PapyrusRE.profile.uml#_wJDIkDp6EeCmwNGSFJpOjg"/>
-      <diagramKind xmi:type="gmfdiagrepresentation:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_UekVgHDwEeWh-MssWmCB_A"/>
     </styles>
     <styles xmi:type="notation:DoubleValueStyle" xmi:id="_RN744JIoEeeji413eaUmIg" name="rulergrid.gridspacing" doubleValue="10.0"/>
     <styles xmi:type="notation:IntValueStyle" xmi:id="_Rsk8sJIoEeeji413eaUmIg" name="rulergrid.gridlinestyle" intValue="2"/>
