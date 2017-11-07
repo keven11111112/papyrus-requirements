@@ -20,26 +20,21 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	
-	<!-- Parent POM -->
+	<!-- Parent POM (i.e., Bundles) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.root</artifactId>
+		<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
 		<version>0.7.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
+	<artifactId>org.eclipse.papyrus.proxy-root</artifactId>
 	<packaging>pom</packaging>
-	<name>Requirements Bundles (Bundles folder)</name>
+	<name>Proxy for UML</name>
 	
 	<!-- Modules to build -->
-	<modules>
-		
-		<!-- module>sysml11</module-->
-		<module>common</module> 
-		<module>sysml14</module> 
-		<module>proxy</module> 
-		
-	</modules>
 	
+	<modules>
+		<module>org.eclipse.papyrus.proxy</module>
+	</modules>
 </project>
