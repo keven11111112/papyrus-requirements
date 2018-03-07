@@ -25,7 +25,7 @@
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.papyrus.sysml14" version="0.0.0"/>
       <unit id="org.eclipse.papyrus.sysml14.feature.feature.group" version="0.0.0"/>
-      <repository id="sysml14-releases" location="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14"/>
+      <repository id="sysml14-releases" location="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/neon"/>
     </location>
   </locations>
 </target>
