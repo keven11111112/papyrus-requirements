@@ -28,6 +28,7 @@ import org.eclipse.uml2.uml.Class;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.Profile;
+import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 public class Utils {
@@ -35,6 +36,24 @@ public class Utils {
 	private Utils() {
 	}
 
+	/**
+	 * test if the stereotype is a SysML Requirement Stereotype
+	 * @param stereotype a given stereotype
+	 * @return return true if this is a SysML stereotype or inherits directly or indirectly from requirement
+	 */
+	public static boolean isRequirementStereotype(Stereotype stereotype) {
+		if( I_SysMLStereotype.REQUIREMENT_STEREOTYPE.equals(stereotype.getQualifiedName())){
+			return true;
+		}
+		for(org.eclipse.uml2.uml.Class superStereotype : stereotype.getSuperClasses()) {
+			if( superStereotype instanceof Stereotype){
+				if(isRequirementStereotype((Stereotype)superStereotype)){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 	/**
 	 * @param elem
 	 *            UML model element

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmi:id="org.eclipse.papyrus.requirements.sysml.common.elementTypeSet" identifier="org.eclipse.papyrus.requirements.sysml.common.elementTypesconfiguration" name="org.eclipse.papyrus.requirements.sysml.common.elementTypesconfiguration" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_iEqC8HeQEeesoqsNSRk13w" identifier="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice" editHelperAdviceClassName="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

@@ -1,15 +1,23 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
-Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.common
+Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.common;singleton:=true
 Bundle-Version: 0.7.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.common.Activator
 Bundle-Vendor: %Bundle-Vendor
-Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.8.0",
+Require-Bundle: org.eclipse.papyrus.uml.service.types;bundle-version="3.1.0",
+ org.eclipse.papyrus.sysml14;bundle-version="0.9.1",
+ org.eclipse.gmf.runtime.emf.type.core,
+ org.eclipse.papyrus.infra.types.core,
+ org.eclipse.papyrus.infra.services.edit,
+  org.eclipse.papyrus.uml.tools.utils,
+ org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.8.0",
  org.eclipse.papyrus.infra.ui,
  org.eclipse.papyrus.requirements.sysml14.preferences,
- org.eclipse.papyrus.sysml14;bundle-version="0.9.1"
+ org.eclipse.papyrus.uml.types.core
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: bundle
-Export-Package: org.eclipse.papyrus.requirements.sysml14.common
+Export-Package: org.eclipse.papyrus.requirements.sysml.common.advices,
+ org.eclipse.papyrus.requirements.sysml.common.command,
+ org.eclipse.papyrus.requirements.sysml14.common
