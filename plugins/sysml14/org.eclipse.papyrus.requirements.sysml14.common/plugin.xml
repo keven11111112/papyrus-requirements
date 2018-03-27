@@ -8,5 +8,10 @@
             path="resource/Requirement.elementtypesconfigurations">
       </elementTypeSet>
    </extension>
-
+<extension
+      point="org.eclipse.papyrus.infra.gmfdiag.common.pasteStrategy">
+   <strategy
+         strategy="org.eclipse.papyrus.requirements.sysml14.common.StereotypeReqPasteStrategy">
+   </strategy>
+   </extension>
 </plugin>

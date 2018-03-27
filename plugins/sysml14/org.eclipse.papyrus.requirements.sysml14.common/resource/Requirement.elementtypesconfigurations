@@ -3,4 +3,7 @@
   <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_iEqC8HeQEeesoqsNSRk13w" identifier="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice" editHelperAdviceClassName="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice">
     <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
   </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_rFcs4C3NEeiA9c5Y7RXntA" identifier="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice2" editHelperAdviceClassName="org.eclipse.papyrus.requirements.sysml.common.advices.RequirementEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </adviceBindingsConfigurations>
 </elementtypesconfigurations:ElementTypeSetConfiguration>
