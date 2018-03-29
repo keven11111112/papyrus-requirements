@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -40,6 +40,141 @@ public interface RequirementGenericCharacteristicsFactory extends EFactory {
 	 * @generated
 	 */
 	Requirement createRequirement();
+
+	/**
+	 * Returns a new object of class '<em>Owner Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Owner Req Charac</em>'.
+	 * @generated
+	 */
+	OwnerReqCharac createOwnerReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Importance Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Importance Req Charac</em>'.
+	 * @generated
+	 */
+	ImportanceReqCharac createImportanceReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Approval Authority Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Approval Authority Req Charac</em>'.
+	 * @generated
+	 */
+	ApprovalAuthorityReqCharac createApprovalAuthorityReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Agreement Status Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Agreement Status Req Charac</em>'.
+	 * @generated
+	 */
+	AgreementStatusReqCharac createAgreementStatusReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Maturity Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Maturity Req Charac</em>'.
+	 * @generated
+	 */
+	MaturityReqCharac createMaturityReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Life Cycle Phase Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Life Cycle Phase Req Charac</em>'.
+	 * @generated
+	 */
+	LifeCyclePhaseReqCharac createLifeCyclePhaseReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Abstraction Level Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Abstraction Level Req Charac</em>'.
+	 * @generated
+	 */
+	AbstractionLevelReqCharac createAbstractionLevelReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Priority Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Priority Req Charac</em>'.
+	 * @generated
+	 */
+	PriorityReqCharac createPriorityReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Source Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Source Req Charac</em>'.
+	 * @generated
+	 */
+	SourceReqCharac createSourceReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Qualification Status Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Qualification Status Req Charac</em>'.
+	 * @generated
+	 */
+	QualificationStatusReqCharac createQualificationStatusReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Review Status Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Review Status Req Charac</em>'.
+	 * @generated
+	 */
+	ReviewStatusReqCharac createReviewStatusReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Validator Name Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Validator Name Req Charac</em>'.
+	 * @generated
+	 */
+	ValidatorNameReqCharac createValidatorNameReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Quality Nature Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Quality Nature Req Charac</em>'.
+	 * @generated
+	 */
+	QualityNatureReqCharac createQualityNatureReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Verifier Name Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Verifier Name Req Charac</em>'.
+	 * @generated
+	 */
+	VerifierNameReqCharac createVerifierNameReqCharac();
+
+	/**
+	 * Returns a new object of class '<em>Satifiaction Status Req Charac</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Satifiaction Status Req Charac</em>'.
+	 * @generated
+	 */
+	SatifiactionStatusReqCharac createSatifiactionStatusReqCharac();
 
 	/**
 	 * Returns the package supported by this factory.

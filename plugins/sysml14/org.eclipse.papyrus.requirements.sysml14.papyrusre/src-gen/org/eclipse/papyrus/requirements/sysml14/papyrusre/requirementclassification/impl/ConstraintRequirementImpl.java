@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -18,9 +18,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.ConstraintKind;
-
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.ConstraintRequirement;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage;
 
@@ -48,7 +45,7 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ConstraintKind CONSTRAINT_KIND_EDEFAULT = ConstraintKind.CULTURAL;
+	protected static final Object CONSTRAINT_KIND_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getConstraintKind() <em>Constraint Kind</em>}' attribute.
@@ -58,7 +55,7 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	 * @generated
 	 * @ordered
 	 */
-	protected ConstraintKind constraintKind = CONSTRAINT_KIND_EDEFAULT;
+	protected Object constraintKind = CONSTRAINT_KIND_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,7 +81,7 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConstraintKind getConstraintKind() {
+	public Object getConstraintKind() {
 		return constraintKind;
 	}
 
@@ -93,9 +90,9 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConstraintKind(ConstraintKind newConstraintKind) {
-		ConstraintKind oldConstraintKind = constraintKind;
-		constraintKind = newConstraintKind == null ? CONSTRAINT_KIND_EDEFAULT : newConstraintKind;
+	public void setConstraintKind(Object newConstraintKind) {
+		Object oldConstraintKind = constraintKind;
+		constraintKind = newConstraintKind;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementClassificationPackage.CONSTRAINT_REQUIREMENT__CONSTRAINT_KIND, oldConstraintKind, constraintKind));
 	}
@@ -123,7 +120,7 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementClassificationPackage.CONSTRAINT_REQUIREMENT__CONSTRAINT_KIND:
-				setConstraintKind((ConstraintKind)newValue);
+				setConstraintKind(newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -153,7 +150,7 @@ public class ConstraintRequirementImpl extends RequirementImpl implements Constr
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementClassificationPackage.CONSTRAINT_REQUIREMENT__CONSTRAINT_KIND:
-				return constraintKind != CONSTRAINT_KIND_EDEFAULT;
+				return CONSTRAINT_KIND_EDEFAULT == null ? constraintKind != null : !CONSTRAINT_KIND_EDEFAULT.equals(constraintKind);
 		}
 		return super.eIsSet(featureID);
 	}

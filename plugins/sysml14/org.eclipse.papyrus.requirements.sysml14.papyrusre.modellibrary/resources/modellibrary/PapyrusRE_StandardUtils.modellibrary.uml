@@ -60,10 +60,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_h4KL4FOfEeCXkoFpHlFAkw" name="PriorityAndImportanceConcerns">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_Fx9ugFOlEeCXkoFpHlFAkw" name="PriorityKind">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3pZRgFPJEeCXkoFpHlFAkw" name="Key"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4FQHEFPJEeCXkoFpHlFAkw" name="Mandatory"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4XbcMFPJEeCXkoFpHlFAkw" name="Optional"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4nEasFPJEeCXkoFpHlFAkw" name="Desirable"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4nEasFPJEeCXkoFpHlFAkw" name="NotDefined"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_GAtVIFOlEeCXkoFpHlFAkw" name="ImportanceKind">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gF5PIFPCEeCXkoFpHlFAkw" name="1"/>

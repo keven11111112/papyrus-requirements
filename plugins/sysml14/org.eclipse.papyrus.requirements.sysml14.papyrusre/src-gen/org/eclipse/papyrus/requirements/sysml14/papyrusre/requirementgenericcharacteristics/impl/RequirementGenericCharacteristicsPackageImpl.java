@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -19,24 +19,29 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityAndImportanceConcernsPackage;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.RequirementAndProcessConcernsPackage;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.RequirementClassificationConcernsPackage;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.RequirementsCharacteristicsConcernsPackage;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VerificationAndValidationConcernsPackage;
-
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage;
 
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.impl.RequirementClassificationPackageImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AbstractionLevelReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AgreementStatusReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ApprovalAuthorityReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ImportanceReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.LifeCyclePhaseReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.MaturityReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.OwnerReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.PriorityReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualificationStatusReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualityNatureReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.Requirement;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsFactory;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ReviewStatusReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.SatifiactionStatusReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.SourceReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ValidatorNameReqCharac;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.VerifierNameReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage;
 
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.impl.RequirementTraceabilityPackageImpl;
@@ -62,6 +67,97 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * @generated
 	 */
 	private EClass requirementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ownerReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass importanceReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass approvalAuthorityReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass agreementStatusReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass maturityReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lifeCyclePhaseReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass abstractionLevelReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass priorityReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sourceReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass qualificationStatusReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass reviewStatusReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass validatorNameReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass qualityNatureReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass verifierNameReqCharacEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass satifiactionStatusReqCharacEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -111,11 +207,6 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 
 		// Initialize simple dependencies
 		EcorePackage.eINSTANCE.eClass();
-		RequirementClassificationConcernsPackage.eINSTANCE.eClass();
-		RequirementsCharacteristicsConcernsPackage.eINSTANCE.eClass();
-		PriorityAndImportanceConcernsPackage.eINSTANCE.eClass();
-		RequirementAndProcessConcernsPackage.eINSTANCE.eClass();
-		VerificationAndValidationConcernsPackage.eINSTANCE.eClass();
 		sysmlPackage.eINSTANCE.eClass();
 		TypesPackage.eINSTANCE.eClass();
 		UMLPackage.eINSTANCE.eClass();
@@ -157,8 +248,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_AgreementStatus() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(0);
+	public EClass getOwnerReqCharac() {
+		return ownerReqCharacEClass;
 	}
 
 	/**
@@ -166,8 +257,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_ApprovalAuthority() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(1);
+	public EAttribute getOwnerReqCharac_Owner() {
+		return (EAttribute)ownerReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -175,8 +266,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_Importance() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(2);
+	public EClass getImportanceReqCharac() {
+		return importanceReqCharacEClass;
 	}
 
 	/**
@@ -184,8 +275,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_LifeCyclePhase() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(3);
+	public EAttribute getImportanceReqCharac_Importance() {
+		return (EAttribute)importanceReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -193,8 +284,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_Maturity() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(4);
+	public EClass getApprovalAuthorityReqCharac() {
+		return approvalAuthorityReqCharacEClass;
 	}
 
 	/**
@@ -202,8 +293,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_AbstractionLevel() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(5);
+	public EAttribute getApprovalAuthorityReqCharac_ApprovalAuthority() {
+		return (EAttribute)approvalAuthorityReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -211,8 +302,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_Owner() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(6);
+	public EClass getAgreementStatusReqCharac() {
+		return agreementStatusReqCharacEClass;
 	}
 
 	/**
@@ -220,8 +311,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_Priority() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(7);
+	public EAttribute getAgreementStatusReqCharac_AgreementStatus() {
+		return (EAttribute)agreementStatusReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -229,8 +320,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_QualificationStatus() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(8);
+	public EClass getMaturityReqCharac() {
+		return maturityReqCharacEClass;
 	}
 
 	/**
@@ -238,8 +329,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_ReviewStatus() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(9);
+	public EAttribute getMaturityReqCharac_Maturity() {
+		return (EAttribute)maturityReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -247,8 +338,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_SatisfactionRationale() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(10);
+	public EClass getLifeCyclePhaseReqCharac() {
+		return lifeCyclePhaseReqCharacEClass;
 	}
 
 	/**
@@ -256,8 +347,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_SatisfactionStatus() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(11);
+	public EAttribute getLifeCyclePhaseReqCharac_LifeCyclePhase() {
+		return (EAttribute)lifeCyclePhaseReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -265,8 +356,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_Source() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(12);
+	public EClass getAbstractionLevelReqCharac() {
+		return abstractionLevelReqCharacEClass;
 	}
 
 	/**
@@ -274,8 +365,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_ValidationRationale() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(13);
+	public EAttribute getAbstractionLevelReqCharac_AbstractionLevel() {
+		return (EAttribute)abstractionLevelReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -283,8 +374,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_ValidatorName() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(14);
+	public EClass getPriorityReqCharac() {
+		return priorityReqCharacEClass;
 	}
 
 	/**
@@ -292,8 +383,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_VerifierName() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(15);
+	public EAttribute getPriorityReqCharac_Priority() {
+		return (EAttribute)priorityReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -301,8 +392,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_VV_Method() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(16);
+	public EClass getSourceReqCharac() {
+		return sourceReqCharacEClass;
 	}
 
 	/**
@@ -310,8 +401,8 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_VV_Status() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(17);
+	public EAttribute getSourceReqCharac_Source() {
+		return (EAttribute)sourceReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -319,8 +410,125 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRequirement_QualityNature() {
-		return (EAttribute)requirementEClass.getEStructuralFeatures().get(18);
+	public EClass getQualificationStatusReqCharac() {
+		return qualificationStatusReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getQualificationStatusReqCharac_QualificationStatus() {
+		return (EAttribute)qualificationStatusReqCharacEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReviewStatusReqCharac() {
+		return reviewStatusReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getReviewStatusReqCharac_ReviewStatus() {
+		return (EAttribute)reviewStatusReqCharacEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getValidatorNameReqCharac() {
+		return validatorNameReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getValidatorNameReqCharac_ValidatorName() {
+		return (EAttribute)validatorNameReqCharacEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getQualityNatureReqCharac() {
+		return qualityNatureReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getQualityNatureReqCharac_QualityNature() {
+		return (EAttribute)qualityNatureReqCharacEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVerifierNameReqCharac() {
+		return verifierNameReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getVerifierNameReqCharac_VerifierName() {
+		return (EAttribute)verifierNameReqCharacEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getVerifierNameReqCharac_VV_Method() {
+		return (EAttribute)verifierNameReqCharacEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getVerifierNameReqCharac_VV_Status() {
+		return (EAttribute)verifierNameReqCharacEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSatifiactionStatusReqCharac() {
+		return satifiactionStatusReqCharacEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSatifiactionStatusReqCharac_SatisfactionStatus() {
+		return (EAttribute)satifiactionStatusReqCharacEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -352,25 +560,53 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 
 		// Create classes and their features
 		requirementEClass = createEClass(REQUIREMENT);
-		createEAttribute(requirementEClass, REQUIREMENT__AGREEMENT_STATUS);
-		createEAttribute(requirementEClass, REQUIREMENT__APPROVAL_AUTHORITY);
-		createEAttribute(requirementEClass, REQUIREMENT__IMPORTANCE);
-		createEAttribute(requirementEClass, REQUIREMENT__LIFE_CYCLE_PHASE);
-		createEAttribute(requirementEClass, REQUIREMENT__MATURITY);
-		createEAttribute(requirementEClass, REQUIREMENT__ABSTRACTION_LEVEL);
-		createEAttribute(requirementEClass, REQUIREMENT__OWNER);
-		createEAttribute(requirementEClass, REQUIREMENT__PRIORITY);
-		createEAttribute(requirementEClass, REQUIREMENT__QUALIFICATION_STATUS);
-		createEAttribute(requirementEClass, REQUIREMENT__REVIEW_STATUS);
-		createEAttribute(requirementEClass, REQUIREMENT__SATISFACTION_RATIONALE);
-		createEAttribute(requirementEClass, REQUIREMENT__SATISFACTION_STATUS);
-		createEAttribute(requirementEClass, REQUIREMENT__SOURCE);
-		createEAttribute(requirementEClass, REQUIREMENT__VALIDATION_RATIONALE);
-		createEAttribute(requirementEClass, REQUIREMENT__VALIDATOR_NAME);
-		createEAttribute(requirementEClass, REQUIREMENT__VERIFIER_NAME);
-		createEAttribute(requirementEClass, REQUIREMENT__VV_METHOD);
-		createEAttribute(requirementEClass, REQUIREMENT__VV_STATUS);
-		createEAttribute(requirementEClass, REQUIREMENT__QUALITY_NATURE);
+
+		ownerReqCharacEClass = createEClass(OWNER_REQ_CHARAC);
+		createEAttribute(ownerReqCharacEClass, OWNER_REQ_CHARAC__OWNER);
+
+		importanceReqCharacEClass = createEClass(IMPORTANCE_REQ_CHARAC);
+		createEAttribute(importanceReqCharacEClass, IMPORTANCE_REQ_CHARAC__IMPORTANCE);
+
+		approvalAuthorityReqCharacEClass = createEClass(APPROVAL_AUTHORITY_REQ_CHARAC);
+		createEAttribute(approvalAuthorityReqCharacEClass, APPROVAL_AUTHORITY_REQ_CHARAC__APPROVAL_AUTHORITY);
+
+		agreementStatusReqCharacEClass = createEClass(AGREEMENT_STATUS_REQ_CHARAC);
+		createEAttribute(agreementStatusReqCharacEClass, AGREEMENT_STATUS_REQ_CHARAC__AGREEMENT_STATUS);
+
+		maturityReqCharacEClass = createEClass(MATURITY_REQ_CHARAC);
+		createEAttribute(maturityReqCharacEClass, MATURITY_REQ_CHARAC__MATURITY);
+
+		lifeCyclePhaseReqCharacEClass = createEClass(LIFE_CYCLE_PHASE_REQ_CHARAC);
+		createEAttribute(lifeCyclePhaseReqCharacEClass, LIFE_CYCLE_PHASE_REQ_CHARAC__LIFE_CYCLE_PHASE);
+
+		abstractionLevelReqCharacEClass = createEClass(ABSTRACTION_LEVEL_REQ_CHARAC);
+		createEAttribute(abstractionLevelReqCharacEClass, ABSTRACTION_LEVEL_REQ_CHARAC__ABSTRACTION_LEVEL);
+
+		priorityReqCharacEClass = createEClass(PRIORITY_REQ_CHARAC);
+		createEAttribute(priorityReqCharacEClass, PRIORITY_REQ_CHARAC__PRIORITY);
+
+		sourceReqCharacEClass = createEClass(SOURCE_REQ_CHARAC);
+		createEAttribute(sourceReqCharacEClass, SOURCE_REQ_CHARAC__SOURCE);
+
+		qualificationStatusReqCharacEClass = createEClass(QUALIFICATION_STATUS_REQ_CHARAC);
+		createEAttribute(qualificationStatusReqCharacEClass, QUALIFICATION_STATUS_REQ_CHARAC__QUALIFICATION_STATUS);
+
+		reviewStatusReqCharacEClass = createEClass(REVIEW_STATUS_REQ_CHARAC);
+		createEAttribute(reviewStatusReqCharacEClass, REVIEW_STATUS_REQ_CHARAC__REVIEW_STATUS);
+
+		validatorNameReqCharacEClass = createEClass(VALIDATOR_NAME_REQ_CHARAC);
+		createEAttribute(validatorNameReqCharacEClass, VALIDATOR_NAME_REQ_CHARAC__VALIDATOR_NAME);
+
+		qualityNatureReqCharacEClass = createEClass(QUALITY_NATURE_REQ_CHARAC);
+		createEAttribute(qualityNatureReqCharacEClass, QUALITY_NATURE_REQ_CHARAC__QUALITY_NATURE);
+
+		verifierNameReqCharacEClass = createEClass(VERIFIER_NAME_REQ_CHARAC);
+		createEAttribute(verifierNameReqCharacEClass, VERIFIER_NAME_REQ_CHARAC__VERIFIER_NAME);
+		createEAttribute(verifierNameReqCharacEClass, VERIFIER_NAME_REQ_CHARAC__VV_METHOD);
+		createEAttribute(verifierNameReqCharacEClass, VERIFIER_NAME_REQ_CHARAC__VV_STATUS);
+
+		satifiactionStatusReqCharacEClass = createEClass(SATIFIACTION_STATUS_REQ_CHARAC);
+		createEAttribute(satifiactionStatusReqCharacEClass, SATIFIACTION_STATUS_REQ_CHARAC__SATISFACTION_STATUS);
 	}
 
 	/**
@@ -398,41 +634,81 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 
 		// Obtain other dependent packages
 		RequirementsPackage theRequirementsPackage = (RequirementsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsPackage.eNS_URI);
-		RequirementAndProcessConcernsPackage theRequirementAndProcessConcernsPackage = (RequirementAndProcessConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementAndProcessConcernsPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
-		PriorityAndImportanceConcernsPackage thePriorityAndImportanceConcernsPackage = (PriorityAndImportanceConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(PriorityAndImportanceConcernsPackage.eNS_URI);
-		RequirementsCharacteristicsConcernsPackage theRequirementsCharacteristicsConcernsPackage = (RequirementsCharacteristicsConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsCharacteristicsConcernsPackage.eNS_URI);
-		VerificationAndValidationConcernsPackage theVerificationAndValidationConcernsPackage = (VerificationAndValidationConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(VerificationAndValidationConcernsPackage.eNS_URI);
-		RequirementClassificationConcernsPackage theRequirementClassificationConcernsPackage = (RequirementClassificationConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementClassificationConcernsPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		requirementEClass.getESuperTypes().add(this.getAgreementStatusReqCharac());
+		requirementEClass.getESuperTypes().add(this.getImportanceReqCharac());
 		requirementEClass.getESuperTypes().add(theRequirementsPackage.getRequirement());
+		requirementEClass.getESuperTypes().add(this.getVerifierNameReqCharac());
+		requirementEClass.getESuperTypes().add(this.getAbstractionLevelReqCharac());
+		requirementEClass.getESuperTypes().add(this.getApprovalAuthorityReqCharac());
+		requirementEClass.getESuperTypes().add(this.getLifeCyclePhaseReqCharac());
+		requirementEClass.getESuperTypes().add(this.getMaturityReqCharac());
+		requirementEClass.getESuperTypes().add(this.getOwnerReqCharac());
+		requirementEClass.getESuperTypes().add(this.getPriorityReqCharac());
+		requirementEClass.getESuperTypes().add(this.getQualificationStatusReqCharac());
+		requirementEClass.getESuperTypes().add(this.getQualityNatureReqCharac());
+		requirementEClass.getESuperTypes().add(this.getReviewStatusReqCharac());
+		requirementEClass.getESuperTypes().add(this.getSatifiactionStatusReqCharac());
+		requirementEClass.getESuperTypes().add(this.getSourceReqCharac());
+		requirementEClass.getESuperTypes().add(this.getValidatorNameReqCharac());
+		importanceReqCharacEClass.getESuperTypes().add(theRequirementsPackage.getRequirement());
+		agreementStatusReqCharacEClass.getESuperTypes().add(theRequirementsPackage.getRequirement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(requirementEClass, Requirement.class, "Requirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getRequirement_AgreementStatus(), theRequirementAndProcessConcernsPackage.getAgreementStatusKind(), "agreementStatus", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_ApprovalAuthority(), theTypesPackage.getString(), "approvalAuthority", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_Importance(), thePriorityAndImportanceConcernsPackage.getImportanceKind(), "importance", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_LifeCyclePhase(), theRequirementsCharacteristicsConcernsPackage.getLifeCyclePhaseKind(), "lifeCyclePhase", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_Maturity(), theTypesPackage.getInteger(), "maturity", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_AbstractionLevel(), theRequirementsCharacteristicsConcernsPackage.getAbstractionLevelKind(), "abstractionLevel", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_Owner(), theTypesPackage.getString(), "owner", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_Priority(), thePriorityAndImportanceConcernsPackage.getPriorityKind(), "priority", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_QualificationStatus(), theRequirementAndProcessConcernsPackage.getQualificationStatusKind(), "qualificationStatus", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_ReviewStatus(), theRequirementAndProcessConcernsPackage.getReviewStatusKind(), "reviewStatus", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_SatisfactionRationale(), theTypesPackage.getString(), "satisfactionRationale", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_SatisfactionStatus(), theRequirementAndProcessConcernsPackage.getSatisfactionStatusKind(), "satisfactionStatus", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_Source(), theTypesPackage.getString(), "source", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_ValidationRationale(), theTypesPackage.getString(), "validationRationale", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_ValidatorName(), theTypesPackage.getString(), "validatorName", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_VerifierName(), theTypesPackage.getString(), "verifierName", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_VV_Method(), theVerificationAndValidationConcernsPackage.getVV_MethodKind(), "VV_Method", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_VV_Status(), theVerificationAndValidationConcernsPackage.getVV_StatusKind(), "VV_Status", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getRequirement_QualityNature(), theRequirementClassificationConcernsPackage.getQualityKind(), "qualityNature", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(ownerReqCharacEClass, OwnerReqCharac.class, "OwnerReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getOwnerReqCharac_Owner(), theTypesPackage.getString(), "owner", null, 0, 1, OwnerReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(importanceReqCharacEClass, ImportanceReqCharac.class, "ImportanceReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getImportanceReqCharac_Importance(), ecorePackage.getEJavaObject(), "importance", null, 0, 1, ImportanceReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(approvalAuthorityReqCharacEClass, ApprovalAuthorityReqCharac.class, "ApprovalAuthorityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getApprovalAuthorityReqCharac_ApprovalAuthority(), theTypesPackage.getString(), "approvalAuthority", null, 0, 1, ApprovalAuthorityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(agreementStatusReqCharacEClass, AgreementStatusReqCharac.class, "AgreementStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getAgreementStatusReqCharac_AgreementStatus(), ecorePackage.getEJavaObject(), "agreementStatus", null, 0, 1, AgreementStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(maturityReqCharacEClass, MaturityReqCharac.class, "MaturityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getMaturityReqCharac_Maturity(), theTypesPackage.getInteger(), "maturity", null, 0, 1, MaturityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(lifeCyclePhaseReqCharacEClass, LifeCyclePhaseReqCharac.class, "LifeCyclePhaseReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getLifeCyclePhaseReqCharac_LifeCyclePhase(), ecorePackage.getEJavaObject(), "lifeCyclePhase", null, 0, 1, LifeCyclePhaseReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(abstractionLevelReqCharacEClass, AbstractionLevelReqCharac.class, "AbstractionLevelReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getAbstractionLevelReqCharac_AbstractionLevel(), ecorePackage.getEJavaObject(), "abstractionLevel", null, 0, 1, AbstractionLevelReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(priorityReqCharacEClass, PriorityReqCharac.class, "PriorityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getPriorityReqCharac_Priority(), ecorePackage.getEJavaObject(), "priority", null, 0, 1, PriorityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(sourceReqCharacEClass, SourceReqCharac.class, "SourceReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getSourceReqCharac_Source(), theTypesPackage.getString(), "source", null, 0, 1, SourceReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(qualificationStatusReqCharacEClass, QualificationStatusReqCharac.class, "QualificationStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getQualificationStatusReqCharac_QualificationStatus(), ecorePackage.getEJavaObject(), "qualificationStatus", null, 0, 1, QualificationStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(reviewStatusReqCharacEClass, ReviewStatusReqCharac.class, "ReviewStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getReviewStatusReqCharac_ReviewStatus(), ecorePackage.getEJavaObject(), "reviewStatus", null, 0, 1, ReviewStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(validatorNameReqCharacEClass, ValidatorNameReqCharac.class, "ValidatorNameReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getValidatorNameReqCharac_ValidatorName(), theTypesPackage.getString(), "validatorName", null, 0, 1, ValidatorNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(qualityNatureReqCharacEClass, QualityNatureReqCharac.class, "QualityNatureReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getQualityNatureReqCharac_QualityNature(), ecorePackage.getEJavaObject(), "qualityNature", null, 0, 1, QualityNatureReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(verifierNameReqCharacEClass, VerifierNameReqCharac.class, "VerifierNameReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getVerifierNameReqCharac_VerifierName(), theTypesPackage.getString(), "verifierName", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getVerifierNameReqCharac_VV_Method(), ecorePackage.getEJavaObject(), "VV_Method", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getVerifierNameReqCharac_VV_Status(), ecorePackage.getEJavaObject(), "VV_Status", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(satifiactionStatusReqCharacEClass, SatifiactionStatusReqCharac.class, "SatifiactionStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getSatifiactionStatusReqCharac_SatisfactionStatus(), ecorePackage.getEJavaObject(), "satisfactionStatus", null, 0, 1, SatifiactionStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		// Create resource
 		createResource(eNS_URI);

@@ -104,10 +104,9 @@
         basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils"
         disposableProviderFactory="true" ecorePackage="papyrusrestandardutils.ecore#//priorityandimportanceconcerns">
       <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind">
-        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Key"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Mandatory"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Optional"/>
-        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/Desirable"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind/NotDefined"/>
       </genEnums>
       <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind">
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind/Importance1"/>

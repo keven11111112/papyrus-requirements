@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Localization: plugin
-Bundle-Version: 0.7.0.qualifier
+Bundle-Version: 0.8.0.qualifier
 Bundle-ClassPath: .
 Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary;singleton:=true
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.Activator

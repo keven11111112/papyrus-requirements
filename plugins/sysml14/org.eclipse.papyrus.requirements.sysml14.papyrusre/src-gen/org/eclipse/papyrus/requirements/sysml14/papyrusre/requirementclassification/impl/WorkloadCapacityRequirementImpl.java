@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -18,9 +18,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.WorkloadCapacitiesKind;
-
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.WorkloadCapacityRequirement;
 
@@ -48,7 +45,7 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final WorkloadCapacitiesKind WORKLOAD_CAPACITY_EDEFAULT = WorkloadCapacitiesKind.BOUND;
+	protected static final Object WORKLOAD_CAPACITY_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getWorkloadCapacity() <em>Workload Capacity</em>}' attribute.
@@ -58,7 +55,7 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected WorkloadCapacitiesKind workloadCapacity = WORKLOAD_CAPACITY_EDEFAULT;
+	protected Object workloadCapacity = WORKLOAD_CAPACITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,7 +81,7 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public WorkloadCapacitiesKind getWorkloadCapacity() {
+	public Object getWorkloadCapacity() {
 		return workloadCapacity;
 	}
 
@@ -93,9 +90,9 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWorkloadCapacity(WorkloadCapacitiesKind newWorkloadCapacity) {
-		WorkloadCapacitiesKind oldWorkloadCapacity = workloadCapacity;
-		workloadCapacity = newWorkloadCapacity == null ? WORKLOAD_CAPACITY_EDEFAULT : newWorkloadCapacity;
+	public void setWorkloadCapacity(Object newWorkloadCapacity) {
+		Object oldWorkloadCapacity = workloadCapacity;
+		workloadCapacity = newWorkloadCapacity;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementClassificationPackage.WORKLOAD_CAPACITY_REQUIREMENT__WORKLOAD_CAPACITY, oldWorkloadCapacity, workloadCapacity));
 	}
@@ -123,7 +120,7 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementClassificationPackage.WORKLOAD_CAPACITY_REQUIREMENT__WORKLOAD_CAPACITY:
-				setWorkloadCapacity((WorkloadCapacitiesKind)newValue);
+				setWorkloadCapacity(newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -153,7 +150,7 @@ public class WorkloadCapacityRequirementImpl extends RequirementImpl implements 
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementClassificationPackage.WORKLOAD_CAPACITY_REQUIREMENT__WORKLOAD_CAPACITY:
-				return workloadCapacity != WORKLOAD_CAPACITY_EDEFAULT;
+				return WORKLOAD_CAPACITY_EDEFAULT == null ? workloadCapacity != null : !WORKLOAD_CAPACITY_EDEFAULT.equals(workloadCapacity);
 		}
 		return super.eIsSet(featureID);
 	}

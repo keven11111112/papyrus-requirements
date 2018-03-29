@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -179,15 +179,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	int PROJECT_REQUIREMENT__AGREEMENT_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__AGREEMENT_STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
-
-	/**
 	 * The feature id for the '<em><b>Importance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -195,114 +186,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROJECT_REQUIREMENT__IMPORTANCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE;
-
-	/**
-	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
-
-	/**
-	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
-
-	/**
-	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__SATISFACTION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
-
-	/**
-	 * The feature id for the '<em><b>Validation Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__VALIDATION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verifier Name</b></em>' attribute.
@@ -332,6 +215,69 @@ public interface RequirementClassificationPackage extends EPackage {
 	int PROJECT_REQUIREMENT__VV_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
+
+	/**
+	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
+
+	/**
+	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
+
+	/**
 	 * The feature id for the '<em><b>Quality Nature</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -339,6 +285,42 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROJECT_REQUIREMENT__QUALITY_NATURE = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE;
+
+	/**
+	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The number of structural features of the '<em>Project Requirement</em>' class.
@@ -468,15 +450,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	int PROCESS_REQUIREMENT__AGREEMENT_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__AGREEMENT_STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
-
-	/**
 	 * The feature id for the '<em><b>Importance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -484,114 +457,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCESS_REQUIREMENT__IMPORTANCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE;
-
-	/**
-	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
-
-	/**
-	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
-
-	/**
-	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__SATISFACTION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
-
-	/**
-	 * The feature id for the '<em><b>Validation Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__VALIDATION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verifier Name</b></em>' attribute.
@@ -621,6 +486,69 @@ public interface RequirementClassificationPackage extends EPackage {
 	int PROCESS_REQUIREMENT__VV_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
+
+	/**
+	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
+
+	/**
+	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
+
+	/**
 	 * The feature id for the '<em><b>Quality Nature</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -628,6 +556,42 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCESS_REQUIREMENT__QUALITY_NATURE = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE;
+
+	/**
+	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The number of structural features of the '<em>Process Requirement</em>' class.
@@ -757,15 +721,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	int CONSTRAINT_REQUIREMENT__AGREEMENT_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__AGREEMENT_STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
-
-	/**
 	 * The feature id for the '<em><b>Importance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -773,114 +728,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONSTRAINT_REQUIREMENT__IMPORTANCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE;
-
-	/**
-	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
-
-	/**
-	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
-
-	/**
-	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__SATISFACTION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
-
-	/**
-	 * The feature id for the '<em><b>Validation Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__VALIDATION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verifier Name</b></em>' attribute.
@@ -910,6 +757,69 @@ public interface RequirementClassificationPackage extends EPackage {
 	int CONSTRAINT_REQUIREMENT__VV_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
+
+	/**
+	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
+
+	/**
+	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
+
+	/**
 	 * The feature id for the '<em><b>Quality Nature</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -917,6 +827,42 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONSTRAINT_REQUIREMENT__QUALITY_NATURE = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE;
+
+	/**
+	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Constraint Kind</b></em>' attribute.
@@ -1055,15 +1001,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	int WORKLOAD_CAPACITY_REQUIREMENT__AGREEMENT_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__AGREEMENT_STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
-
-	/**
 	 * The feature id for the '<em><b>Importance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1071,114 +1008,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int WORKLOAD_CAPACITY_REQUIREMENT__IMPORTANCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE;
-
-	/**
-	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
-
-	/**
-	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
-
-	/**
-	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__SATISFACTION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
-
-	/**
-	 * The feature id for the '<em><b>Validation Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__VALIDATION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORKLOAD_CAPACITY_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verifier Name</b></em>' attribute.
@@ -1208,6 +1037,69 @@ public interface RequirementClassificationPackage extends EPackage {
 	int WORKLOAD_CAPACITY_REQUIREMENT__VV_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
+
+	/**
+	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
+
+	/**
+	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
+
+	/**
 	 * The feature id for the '<em><b>Quality Nature</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1215,6 +1107,42 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int WORKLOAD_CAPACITY_REQUIREMENT__QUALITY_NATURE = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE;
+
+	/**
+	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKLOAD_CAPACITY_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Workload Capacity</b></em>' attribute.
@@ -1353,15 +1281,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	int QUALITY_REQUIREMENT__AGREEMENT_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__AGREEMENT_STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
-
-	/**
 	 * The feature id for the '<em><b>Importance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1369,114 +1288,6 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUALITY_REQUIREMENT__IMPORTANCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE;
-
-	/**
-	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
-
-	/**
-	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
-
-	/**
-	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__SATISFACTION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
-
-	/**
-	 * The feature id for the '<em><b>Validation Rationale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__VALIDATION_RATIONALE = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATION_RATIONALE;
-
-	/**
-	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUALITY_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verifier Name</b></em>' attribute.
@@ -1506,6 +1317,69 @@ public interface RequirementClassificationPackage extends EPackage {
 	int QUALITY_REQUIREMENT__VV_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Abstraction Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__ABSTRACTION_LEVEL = RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Approval Authority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__APPROVAL_AUTHORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY;
+
+	/**
+	 * The feature id for the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__LIFE_CYCLE_PHASE = RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE;
+
+	/**
+	 * The feature id for the '<em><b>Maturity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__MATURITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__OWNER = RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__PRIORITY = RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Qualification Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__QUALIFICATION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS;
+
+	/**
 	 * The feature id for the '<em><b>Quality Nature</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1513,6 +1387,42 @@ public interface RequirementClassificationPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUALITY_REQUIREMENT__QUALITY_NATURE = RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE;
+
+	/**
+	 * The feature id for the '<em><b>Review Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__REVIEW_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__SATISFACTION_STATUS = RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__SOURCE = RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Validator Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__VALIDATOR_NAME = RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Specific Quality Kind</b></em>' attribute.

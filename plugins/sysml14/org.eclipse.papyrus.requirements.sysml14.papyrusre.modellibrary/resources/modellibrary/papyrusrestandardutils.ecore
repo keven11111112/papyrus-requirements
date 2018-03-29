@@ -76,10 +76,9 @@
       <details key="originalName" value="PriorityAndImportanceConcerns"/>
     </eAnnotations>
     <eClassifiers xsi:type="ecore:EEnum" name="PriorityKind">
-      <eLiterals name="Key"/>
-      <eLiterals name="Mandatory" value="1"/>
-      <eLiterals name="Optional" value="2"/>
-      <eLiterals name="Desirable" value="3"/>
+      <eLiterals name="Mandatory"/>
+      <eLiterals name="Optional" value="1"/>
+      <eLiterals name="NotDefined" value="2"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EEnum" name="ImportanceKind">
       <eLiterals name="Importance1" literal="1">

@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -29,15 +29,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @generated
  */
 public enum PriorityKind implements Enumerator {
-	/**
-	 * The '<em><b>Key</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #KEY_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	KEY(0, "Key", "Key"), //$NON-NLS-1$ //$NON-NLS-2$
+	//$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
 	 * The '<em><b>Mandatory</b></em>' literal object.
@@ -47,7 +39,7 @@ public enum PriorityKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MANDATORY(1, "Mandatory", "Mandatory"), //$NON-NLS-1$ //$NON-NLS-2$
+	MANDATORY(0, "Mandatory", "Mandatory"), //$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
 	 * The '<em><b>Optional</b></em>' literal object.
@@ -57,32 +49,15 @@ public enum PriorityKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OPTIONAL(2, "Optional", "Optional"), //$NON-NLS-1$ //$NON-NLS-2$
-
-	/**
-	 * The '<em><b>Desirable</b></em>' literal object.
+	OPTIONAL(1, "Optional", "Optional"), /**
+	 * The '<em><b>Not Defined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #DESIRABLE_VALUE
+	 * @see #NOT_DEFINED_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	DESIRABLE(3, "Desirable", "Desirable"); //$NON-NLS-1$ //$NON-NLS-2$
-
-	/**
-	 * The '<em><b>Key</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Key</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #KEY
-	 * @model name="Key"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int KEY_VALUE = 0;
+	NOT_DEFINED(2, "NotDefined", "NotDefined"); //$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
 	 * The '<em><b>Mandatory</b></em>' literal value.
@@ -97,7 +72,7 @@ public enum PriorityKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MANDATORY_VALUE = 1;
+	public static final int MANDATORY_VALUE = 0;
 
 	/**
 	 * The '<em><b>Optional</b></em>' literal value.
@@ -112,22 +87,22 @@ public enum PriorityKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int OPTIONAL_VALUE = 2;
+	public static final int OPTIONAL_VALUE = 1;
 
 	/**
-	 * The '<em><b>Desirable</b></em>' literal value.
+	 * The '<em><b>Not Defined</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Desirable</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Not Defined</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #DESIRABLE
-	 * @model name="Desirable"
+	 * @see #NOT_DEFINED
+	 * @model name="NotDefined"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DESIRABLE_VALUE = 3;
+	public static final int NOT_DEFINED_VALUE = 2;
 
 	/**
 	 * An array of all the '<em><b>Priority Kind</b></em>' enumerators.
@@ -137,10 +112,9 @@ public enum PriorityKind implements Enumerator {
 	 */
 	private static final PriorityKind[] VALUES_ARRAY =
 		new PriorityKind[] {
-			KEY,
 			MANDATORY,
 			OPTIONAL,
-			DESIRABLE,
+			NOT_DEFINED,
 		};
 
 	/**
@@ -197,10 +171,9 @@ public enum PriorityKind implements Enumerator {
 	 */
 	public static PriorityKind get(int value) {
 		switch (value) {
-			case KEY_VALUE: return KEY;
 			case MANDATORY_VALUE: return MANDATORY;
 			case OPTIONAL_VALUE: return OPTIONAL;
-			case DESIRABLE_VALUE: return DESIRABLE;
+			case NOT_DEFINED_VALUE: return NOT_DEFINED;
 		}
 		return null;
 	}

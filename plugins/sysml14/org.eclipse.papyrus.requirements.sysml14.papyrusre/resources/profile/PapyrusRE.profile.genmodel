@@ -11,7 +11,7 @@
     testsDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.tests/src-gen"
     testSuiteClass="org.eclipse.papyrus.requirements.sysml14.papyrusre.tests.PapyrusREAllTests"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/PapyrusRE_StandardUtils.modellibrary.genmodel#//papyrusrestandardutils ../../../org.eclipse.papyrus.sysml14/resources/profile/SysML.profile.genmodel#//sysml14 ../../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
+    usedGenPackages="../../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../../org.eclipse.papyrus.sysml14/resources/profile/SysML.profile.genmodel#//sysml14 ../../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
     classNamePattern="" operationReflection="true" importOrganizing="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
@@ -43,26 +43,53 @@
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="RequirementGenericCharacteristics"
         basePackage="org.eclipse.papyrus.requirements.sysml14.papyrusre" disposableProviderFactory="true"
         ecorePackage="papyrusre.ecore#//requirementgenericcharacteristics">
-      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/Requirement">
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/agreementStatus"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/approvalAuthority"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/importance"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/lifeCyclePhase"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/maturity"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/abstractionLevel"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/owner"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/priority"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/qualificationStatus"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/reviewStatus"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/satisfactionRationale"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/satisfactionStatus"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/source"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/validationRationale"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/validatorName"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/verifierName"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/VV_Method"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/VV_Status"/>
-        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/Requirement/qualityNature"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/Requirement"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/OwnerReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/OwnerReqCharac/owner"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/ImportanceReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/ImportanceReqCharac/importance"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/ApprovalAuthorityReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/ApprovalAuthorityReqCharac/approvalAuthority"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/AgreementStatusReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/AgreementStatusReqCharac/agreementStatus"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/MaturityReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/MaturityReqCharac/maturity"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/LifeCyclePhaseReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/LifeCyclePhaseReqCharac/lifeCyclePhase"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/AbstractionLevelReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/AbstractionLevelReqCharac/abstractionLevel"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/PriorityReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/PriorityReqCharac/priority"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/SourceReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/SourceReqCharac/source"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/QualificationStatusReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/QualificationStatusReqCharac/qualificationStatus"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/ReviewStatusReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/ReviewStatusReqCharac/reviewStatus"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/ValidatorNameReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/ValidatorNameReqCharac/validatorName"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/QualityNatureReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/QualityNatureReqCharac/qualityNature"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/VerifierNameReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/VerifierNameReqCharac/verifierName"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/VerifierNameReqCharac/VV_Method"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/VerifierNameReqCharac/VV_Status"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="papyrusre.ecore#//requirementgenericcharacteristics/SatifiactionStatusReqCharac">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute papyrusre.ecore#//requirementgenericcharacteristics/SatifiactionStatusReqCharac/satisfactionStatus"/>
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="RequirementClassification"

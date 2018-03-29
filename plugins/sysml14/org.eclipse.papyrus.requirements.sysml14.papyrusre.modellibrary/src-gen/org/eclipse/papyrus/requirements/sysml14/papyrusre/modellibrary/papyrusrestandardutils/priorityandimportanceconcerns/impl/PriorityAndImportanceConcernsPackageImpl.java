@@ -7,7 +7,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *   Sébastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
+ *   Sï¿½bastien Gerard (CEA LIST) <sebastien.gerard@cea.fr> - Initial API and implementation
  *   Yupanqui Munoz Julho (CEA LIST) <yupanqui.munozjulho@cea.fr> - Initial API and implementation
  * 
  */
@@ -210,10 +210,9 @@ public class PriorityAndImportanceConcernsPackageImpl extends EPackageImpl imple
 
 		// Initialize enums and add enum literals
 		initEEnum(priorityKindEEnum, PriorityKind.class, "PriorityKind"); //$NON-NLS-1$
-		addEEnumLiteral(priorityKindEEnum, PriorityKind.KEY);
 		addEEnumLiteral(priorityKindEEnum, PriorityKind.MANDATORY);
 		addEEnumLiteral(priorityKindEEnum, PriorityKind.OPTIONAL);
-		addEEnumLiteral(priorityKindEEnum, PriorityKind.DESIRABLE);
+		addEEnumLiteral(priorityKindEEnum, PriorityKind.NOT_DEFINED);
 
 		initEEnum(importanceKindEEnum, ImportanceKind.class, "ImportanceKind"); //$NON-NLS-1$
 		addEEnumLiteral(importanceKindEEnum, ImportanceKind.IMPORTANCE1);

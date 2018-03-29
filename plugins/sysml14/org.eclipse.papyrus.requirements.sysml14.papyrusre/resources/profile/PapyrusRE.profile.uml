@@ -1,34 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Profile xmi:id="_wJDIkDp6EeCmwNGSFJpOjg" name="PapyrusRE">
-    <packageImport xmi:id="_I4Rq8JInEeeji413eaUmIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBM6YTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_hBNhcDKnEeiCRcmDqF2OVg" name="papyrusre" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE" nsPrefix="PapyrusRE">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBNhcTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_6-xDADp8EeCmwNGSFJpOjg"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBNhcjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hBNhczKnEeiCRcmDqF2OVg" key="originalName" value="PapyrusRE"/>
+        </eAnnotations>
+      </contents>
+    </eAnnotations>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_I4Rq8JInEeeji413eaUmIg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
     </packageImport>
-    <packageImport xmi:id="_I4Rq8ZInEeeji413eaUmIg">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_I4Rq8ZInEeeji413eaUmIg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
     </packageImport>
-    <packageImport xmi:id="_gSdukJJVEeesEtnYkurh9A">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gSdukJJVEeesEtnYkurh9A">
       <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_03nSwFOPEeCXkoFpHlFAkw"/>
     </packageImport>
     <packagedElement xmi:type="uml:Profile" xmi:id="_6-xDADp8EeCmwNGSFJpOjg" name="RequirementGenericCharacteristics">
-      <eAnnotations xmi:id="_SIcpczp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <contents xmi:type="ecore:EPackage" xmi:id="_u20mMaToEeenne7APpWiQg" name="requirementgenericcharacteristics" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics" nsPrefix="RequirementGenericCharacteristics">
-          <eAnnotations xmi:id="_u20mMqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SIcpczp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_hBP9sDKnEeiCRcmDqF2OVg" name="requirementgenericcharacteristics" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics" nsPrefix="RequirementGenericCharacteristics">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9sTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/4.1.0/UML">
             <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_u20mM6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_u20mNKToEeenne7APpWiQg" key="originalName" value="RequirementGenericCharacteristics"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9sjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hBP9szKnEeiCRcmDqF2OVg" key="originalName" value="RequirementGenericCharacteristics"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_u25esaToEeenne7APpWiQg" source="PapyrusVersion">
-            <details xmi:id="_u25esqToEeenne7APpWiQg" key="Version" value="0.0.1"/>
-            <details xmi:id="_u25es6ToEeenne7APpWiQg" key="Comment" value=""/>
-            <details xmi:id="_u25etKToEeenne7APpWiQg" key="Copyright" value=""/>
-            <details xmi:id="_u25etaToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
-            <details xmi:id="_u25etqToEeenne7APpWiQg" key="Author" value=""/>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9tDKnEeiCRcmDqF2OVg" name="Requirement">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9tTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP9xjKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP9yjKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP9zzKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP90zKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP92DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP93DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP94DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP95DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP96DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP97DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP98DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP99DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP9-DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP9_DKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBP-BDKnEeiCRcmDqF2OVg"/>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9xjKnEeiCRcmDqF2OVg" name="OwnerReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9xzKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xStW0DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP9yDKnEeiCRcmDqF2OVg" name="owner" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9yjKnEeiCRcmDqF2OVg" name="ImportanceReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9yzKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RockgDKjEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP9zDKnEeiCRcmDqF2OVg" name="importance" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns#//ImportanceKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9zzKnEeiCRcmDqF2OVg" name="ApprovalAuthorityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP90DKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_izoeIDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP90TKnEeiCRcmDqF2OVg" name="approvalAuthority" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP90zKnEeiCRcmDqF2OVg" name="AgreementStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP91DKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RodyoDKjEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP91TKnEeiCRcmDqF2OVg" name="agreementStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//AgreementStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP92DKnEeiCRcmDqF2OVg" name="MaturityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP92TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r46AkDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP92jKnEeiCRcmDqF2OVg" name="maturity" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP93DKnEeiCRcmDqF2OVg" name="LifeCyclePhaseReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP93TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_mrsU0DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP93jKnEeiCRcmDqF2OVg" name="lifeCyclePhase" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns#//LifeCyclePhaseKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP94DKnEeiCRcmDqF2OVg" name="AbstractionLevelReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP94TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vX2zsDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP94jKnEeiCRcmDqF2OVg" name="abstractionLevel" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns#//AbstractionLevelKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP95DKnEeiCRcmDqF2OVg" name="PriorityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP95TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0VqxgDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP95jKnEeiCRcmDqF2OVg" name="priority" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns#//PriorityKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP96DKnEeiCRcmDqF2OVg" name="SourceReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP96TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-7h88DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP96jKnEeiCRcmDqF2OVg" name="source" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP97DKnEeiCRcmDqF2OVg" name="QualificationStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP97TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3pbBQDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP97jKnEeiCRcmDqF2OVg" name="qualificationStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//QualificationStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP98DKnEeiCRcmDqF2OVg" name="ReviewStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP98TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5szOQDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP98jKnEeiCRcmDqF2OVg" name="reviewStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//ReviewStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP99DKnEeiCRcmDqF2OVg" name="ValidatorNameReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP99TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r52w4DKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP99jKnEeiCRcmDqF2OVg" name="validatorName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9-DKnEeiCRcmDqF2OVg" name="QualityNatureReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9-TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Gg0BYDKmEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP9-jKnEeiCRcmDqF2OVg" name="qualityNature" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//QualityKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP9_DKnEeiCRcmDqF2OVg" name="VerifierNameReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP9_TKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vZzCgDKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP9_jKnEeiCRcmDqF2OVg" name="verifierName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP-ADKnEeiCRcmDqF2OVg" name="VV_Method" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns#//VV_MethodKind"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP-AjKnEeiCRcmDqF2OVg" name="VV_Status" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns#//VV_StatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBP-BDKnEeiCRcmDqF2OVg" name="SatifiactionStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBP-BTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nBEdADKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBP-BjKnEeiCRcmDqF2OVg" name="satisfactionStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//SatisfactionStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_u20mMaToEeenne7APpWiQg" name="requirementgenericcharacteristics" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics" nsPrefix="RequirementGenericCharacteristics">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u20mMqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u20mM6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u20mNKToEeenne7APpWiQg" key="originalName" value="RequirementGenericCharacteristics"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u25esaToEeenne7APpWiQg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25esqToEeenne7APpWiQg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25es6ToEeenne7APpWiQg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25etKToEeenne7APpWiQg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25etaToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25etqToEeenne7APpWiQg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u20mNaToEeenne7APpWiQg" name="Requirement">
-            <eAnnotations xmi:id="_u20mNqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u20mNqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u20mN6ToEeenne7APpWiQg" name="agreementStatus" ordered="false">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//AgreementStatusKind"/>
             </eStructuralFeatures>
@@ -89,22 +222,22 @@
           </eClassifiers>
         </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_4wyi8KROEeeur8HW6jKajg" name="requirementgenericcharacteristics" nsURI="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/RequirementGenericCharacteristics" nsPrefix="RequirementGenericCharacteristics">
-          <eAnnotations xmi:id="_4wyi8aROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wyi8aROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML">
             <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_4wyi8qROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_4wyi86ROEeeur8HW6jKajg" key="originalName" value="RequirementGenericCharacteristics"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wyi8qROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4wyi86ROEeeur8HW6jKajg" key="originalName" value="RequirementGenericCharacteristics"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_4w4pkaROEeeur8HW6jKajg" source="PapyrusVersion">
-            <details xmi:id="_4w4pkqROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
-            <details xmi:id="_4w4pk6ROEeeur8HW6jKajg" key="Comment" value=""/>
-            <details xmi:id="_4w4plKROEeeur8HW6jKajg" key="Copyright" value=""/>
-            <details xmi:id="_4w4plaROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
-            <details xmi:id="_4w4plqROEeeur8HW6jKajg" key="Author" value=""/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w4pkaROEeeur8HW6jKajg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w4pkqROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w4pk6ROEeeur8HW6jKajg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w4plKROEeeur8HW6jKajg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w4plaROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w4plqROEeeur8HW6jKajg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wyi9KROEeeur8HW6jKajg" name="Requirement">
-            <eAnnotations xmi:id="_4wyi9aROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wyi9aROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4wyi9qROEeeur8HW6jKajg" name="agreementStatus" ordered="false">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//AgreementStatusKind"/>
             </eStructuralFeatures>
@@ -166,183 +299,374 @@
         </contents>
       </eAnnotations>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_qIm20Dp_EeCmwNGSFJpOjg" name="Requirement">
-        <generalization xmi:id="_O_aoUJInEeeji413eaUmIg">
+        <generalization xmi:type="uml:Generalization" xmi:id="_O_aoUJInEeeji413eaUmIg">
           <general xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Requirement"/>
         </generalization>
-        <ownedAttribute xmi:id="_AyCZcDqOEeCmwNGSFJpOjg" name="agreementStatus" visibility="public">
-          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZUhvYFPKEeCXkoFpHlFAkw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BBrX8DqOEeCmwNGSFJpOjg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BB1I8DqOEeCmwNGSFJpOjg" value="1"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_pND-ADKmEeiCRcmDqF2OVg" general="_xStW0DKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_pxKJkDKmEeiCRcmDqF2OVg" general="_RockgDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_qlkCADKmEeiCRcmDqF2OVg" general="_izoeIDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_rR7_0DKmEeiCRcmDqF2OVg" general="_RodyoDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_r-vbcDKmEeiCRcmDqF2OVg" general="_r46AkDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_si7GkDKmEeiCRcmDqF2OVg" general="_mrsU0DKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_tLka8DKmEeiCRcmDqF2OVg" general="_vX2zsDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_tx73YDKmEeiCRcmDqF2OVg" general="_0VqxgDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_uf37cDKmEeiCRcmDqF2OVg" general="_-7h88DKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_vV8n0DKmEeiCRcmDqF2OVg" general="_3pbBQDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_wES7kDKmEeiCRcmDqF2OVg" general="_5szOQDKjEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_wvd_gDKmEeiCRcmDqF2OVg" general="_r52w4DKlEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_xgIAYDKmEeiCRcmDqF2OVg" general="_Gg0BYDKmEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_yNkVMDKmEeiCRcmDqF2OVg" general="_vZzCgDKlEeiCRcmDqF2OVg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_y6GEADKmEeiCRcmDqF2OVg" general="_nBEdADKlEeiCRcmDqF2OVg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_RockgDKjEeiCRcmDqF2OVg" name="ImportanceReqCharac">
+        <generalization xmi:type="uml:Generalization" xmi:id="_RockgTKjEeiCRcmDqF2OVg">
+          <general xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Requirement"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RockgjKjEeiCRcmDqF2OVg" name="importance" visibility="public">
+          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_GAtVIFOlEeCXkoFpHlFAkw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RockgzKjEeiCRcmDqF2OVg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RockhDKjEeiCRcmDqF2OVg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_IU1cgDqOEeCmwNGSFJpOjg" name="approvalAuthority" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_RodyoDKjEeiCRcmDqF2OVg" name="AgreementStatusReqCharac">
+        <generalization xmi:type="uml:Generalization" xmi:id="_RodyoTKjEeiCRcmDqF2OVg">
+          <general xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Requirement"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RodyojKjEeiCRcmDqF2OVg" name="agreementStatus" visibility="public">
+          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZUhvYFPKEeCXkoFpHlFAkw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RodyozKjEeiCRcmDqF2OVg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RodypDKjEeiCRcmDqF2OVg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_izoeIDKjEeiCRcmDqF2OVg" name="ApprovalAuthorityReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IU1cgDqOEeCmwNGSFJpOjg" name="approvalAuthority" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItRKoDqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ita7oDqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_UH4MwDqOEeCmwNGSFJpOjg" name="importance" visibility="public">
-          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_GAtVIFOlEeCXkoFpHlFAkw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UcSWgDqOEeCmwNGSFJpOjg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UccHgDqOEeCmwNGSFJpOjg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_ZUnXYDqOEeCmwNGSFJpOjg" name="lifeCyclePhase" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_mrsU0DKjEeiCRcmDqF2OVg" name="LifeCyclePhaseReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZUnXYDqOEeCmwNGSFJpOjg" name="lifeCyclePhase" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_HF8JwFOjEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZgZJkDqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZgsEgDqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_b3CQ0DqOEeCmwNGSFJpOjg" name="maturity" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_r46AkDKjEeiCRcmDqF2OVg" name="MaturityReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b3CQ0DqOEeCmwNGSFJpOjg" name="maturity" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cI6rADqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJONADqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_hb61sDqOEeCmwNGSFJpOjg" name="abstractionLevel" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_vX2zsDKjEeiCRcmDqF2OVg" name="AbstractionLevelReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hb61sDqOEeCmwNGSFJpOjg" name="abstractionLevel" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_HWoRIFOjEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzUCADqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzdzADqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_l1s5YDqOEeCmwNGSFJpOjg" name="owner" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_xStW0DKjEeiCRcmDqF2OVg" name="OwnerReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_l1s5YDqOEeCmwNGSFJpOjg" name="owner" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n3ys8DqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n3724DqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_rPQ_EDqOEeCmwNGSFJpOjg" name="priority" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_0VqxgDKjEeiCRcmDqF2OVg" name="PriorityReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rPQ_EDqOEeCmwNGSFJpOjg" name="priority" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_Fx9ugFOlEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rc0S4DqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rc-D4DqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_ycc-gDqOEeCmwNGSFJpOjg" name="qualificationStatus" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_3pbBQDKjEeiCRcmDqF2OVg" name="QualificationStatusReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ycc-gDqOEeCmwNGSFJpOjg" name="qualificationStatus" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_Zh75QFPKEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrp4IDqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrzCEDqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7EGJwDqOEeCmwNGSFJpOjg" name="reviewStatus" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_5szOQDKjEeiCRcmDqF2OVg" name="ReviewStatusReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7EGJwDqOEeCmwNGSFJpOjg" name="reviewStatus" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZuThUFPKEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8LLGkDqOEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8LUQgDqOEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_95vhMDqOEeCmwNGSFJpOjg" name="satisfactionRationale" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-QPVoDqOEeCmwNGSFJpOjg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-QZGoDqOEeCmwNGSFJpOjg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_C2iLUDqPEeCmwNGSFJpOjg" name="satisfactionStatus" visibility="public">
-          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZnvmUFPKEeCXkoFpHlFAkw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DEGGMDqPEeCmwNGSFJpOjg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DEP3MDqPEeCmwNGSFJpOjg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_H2A9EDqPEeCmwNGSFJpOjg" name="source" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_-7h88DKjEeiCRcmDqF2OVg" name="SourceReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_H2A9EDqPEeCmwNGSFJpOjg" name="source" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ICPbMDqPEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ICYlIDqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_JzfWYDqPEeCmwNGSFJpOjg" name="validationRationale" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LukjADqPEeCmwNGSFJpOjg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Luts8DqPEeCmwNGSFJpOjg" value="1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_nBEdADKlEeiCRcmDqF2OVg" name="SatifiactionStatusReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_C2iLUDqPEeCmwNGSFJpOjg" name="satisfactionStatus" visibility="public">
+          <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZnvmUFPKEeCXkoFpHlFAkw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DEGGMDqPEeCmwNGSFJpOjg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DEP3MDqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_PqGkcDqPEeCmwNGSFJpOjg" name="validatorName" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_r52w4DKlEeiCRcmDqF2OVg" name="ValidatorNameReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PqGkcDqPEeCmwNGSFJpOjg" name="validatorName" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PzyE4DqPEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pz714DqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_TpNeUDqPEeCmwNGSFJpOjg" name="verifierName" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_vZzCgDKlEeiCRcmDqF2OVg" name="VerifierNameReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TpNeUDqPEeCmwNGSFJpOjg" name="verifierName" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T0PCkDqPEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T0YzkDqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_VW4hEDqPEeCmwNGSFJpOjg" name="VV_Method" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VW4hEDqPEeCmwNGSFJpOjg" name="VV_Method" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#__xkAkFPLEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WTO0kDqPEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WTYlkDqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_XyckkDqPEeCmwNGSFJpOjg" name="VV_Status" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XyckkDqPEeCmwNGSFJpOjg" name="VV_Status" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_AF-KUFPMEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X71xIDqPEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X7-7EDqPEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_JCYBUJJXEeesEtnYkurh9A" name="qualityNature" visibility="public">
+      </packagedElement>
+      <packagedElement xmi:type="uml:Stereotype" xmi:id="_Gg0BYDKmEeiCRcmDqF2OVg" name="QualityNatureReqCharac">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JCYBUJJXEeesEtnYkurh9A" name="qualityNature" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_aChacFOhEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCYBUZJXEeesEtnYkurh9A"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCYBUpJXEeesEtnYkurh9A" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <profileApplication xmi:id="_ofvaoKK_EeeYBKEUTtrY-A">
-        <eAnnotations xmi:id="_ofx24KK_EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ofvaoKK_EeeYBKEUTtrY-A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ofx24KK_EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
         </eAnnotations>
-        <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
       </profileApplication>
     </packagedElement>
     <packagedElement xmi:type="uml:Profile" xmi:id="_7P52UDp8EeCmwNGSFJpOjg" name="RequirementClassification">
-      <eAnnotations xmi:id="_SIcpdjp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <contents xmi:type="ecore:EPackage" xmi:id="_u22bYaToEeenne7APpWiQg" name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification" nsPrefix="RequirementClassification">
-          <eAnnotations xmi:id="_u22bYqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML" references="_u20mMaToEeenne7APpWiQg"/>
-          <eAnnotations xmi:id="_u22bY6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_u22bZKToEeenne7APpWiQg" key="originalName" value="RequirementClassification"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SIcpdjp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_hBU2MDKnEeiCRcmDqF2OVg" name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification" nsPrefix="RequirementClassification">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2MTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_6-xDADp8EeCmwNGSFJpOjg"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2MjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_u25et6ToEeenne7APpWiQg" source="PapyrusVersion">
-            <details xmi:id="_u25euKToEeenne7APpWiQg" key="Version" value="0.0.1"/>
-            <details xmi:id="_u25euaToEeenne7APpWiQg" key="Comment" value=""/>
-            <details xmi:id="_u25euqToEeenne7APpWiQg" key="Copyright" value=""/>
-            <details xmi:id="_u25eu6ToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
-            <details xmi:id="_u25evKToEeenne7APpWiQg" key="Author" value=""/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2MzKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hBU2NDKnEeiCRcmDqF2OVg" key="originalName" value="RequirementClassification"/>
+          </eAnnotations>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2NTKnEeiCRcmDqF2OVg" name="ProjectRequirement" eSuperTypes="_hBU2ODKnEeiCRcmDqF2OVg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2NjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BuF6YDqAEeCmwNGSFJpOjg"/>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2ODKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_Requirement">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2OTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qIm20Dp_EeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2SjKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2TjKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2UzKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2VzKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2XDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2YDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2ZDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2aDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2bDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2cDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2dDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2eDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2fDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2gDKnEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="#_hBU2iDKnEeiCRcmDqF2OVg"/>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2SjKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_OwnerReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2SzKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xStW0DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2TDKnEeiCRcmDqF2OVg" name="owner" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2TjKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_ImportanceReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2TzKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RockgDKjEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2UDKnEeiCRcmDqF2OVg" name="importance" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns#//ImportanceKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2UzKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_ApprovalAuthorityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2VDKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_izoeIDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2VTKnEeiCRcmDqF2OVg" name="approvalAuthority" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2VzKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_AgreementStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2WDKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RodyoDKjEeiCRcmDqF2OVg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Requirement"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2WTKnEeiCRcmDqF2OVg" name="agreementStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//AgreementStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2XDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_MaturityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2XTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r46AkDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2XjKnEeiCRcmDqF2OVg" name="maturity" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2YDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_LifeCyclePhaseReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2YTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_mrsU0DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2YjKnEeiCRcmDqF2OVg" name="lifeCyclePhase" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns#//LifeCyclePhaseKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2ZDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_AbstractionLevelReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2ZTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vX2zsDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2ZjKnEeiCRcmDqF2OVg" name="abstractionLevel" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementsCharacteristicsConcerns#//AbstractionLevelKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2aDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_PriorityReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2aTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0VqxgDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2ajKnEeiCRcmDqF2OVg" name="priority" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/PriorityAndImportanceConcerns#//PriorityKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2bDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_SourceReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2bTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-7h88DKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2bjKnEeiCRcmDqF2OVg" name="source" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2cDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_QualificationStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2cTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3pbBQDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2cjKnEeiCRcmDqF2OVg" name="qualificationStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//QualificationStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2dDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_ReviewStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2dTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5szOQDKjEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2djKnEeiCRcmDqF2OVg" name="reviewStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//ReviewStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2eDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_ValidatorNameReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2eTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r52w4DKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2ejKnEeiCRcmDqF2OVg" name="validatorName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2fDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_QualityNatureReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2fTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Gg0BYDKmEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2fjKnEeiCRcmDqF2OVg" name="qualityNature" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//QualityKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2gDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_VerifierNameReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2gTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vZzCgDKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2gjKnEeiCRcmDqF2OVg" name="verifierName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2hDKnEeiCRcmDqF2OVg" name="VV_Method" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns#//VV_MethodKind"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2hjKnEeiCRcmDqF2OVg" name="VV_Status" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns#//VV_StatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2iDKnEeiCRcmDqF2OVg" name="PapyrusRE_RequirementGenericCharacteristics_SatifiactionStatusReqCharac">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2iTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nBEdADKlEeiCRcmDqF2OVg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2ijKnEeiCRcmDqF2OVg" name="satisfactionStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//SatisfactionStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2jDKnEeiCRcmDqF2OVg" name="ProcessRequirement" eSuperTypes="_hBU2ODKnEeiCRcmDqF2OVg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2jTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DNURcDqAEeCmwNGSFJpOjg"/>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2jzKnEeiCRcmDqF2OVg" name="ConstraintRequirement" eSuperTypes="_hBU2ODKnEeiCRcmDqF2OVg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2kDKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IBDQwDqBEeCmwNGSFJpOjg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2kTKnEeiCRcmDqF2OVg" name="constraintKind" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//ConstraintKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2lDKnEeiCRcmDqF2OVg" name="WorkloadCapacityRequirement" eSuperTypes="_hBU2ODKnEeiCRcmDqF2OVg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2lTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QhT9cDqIEeCmwNGSFJpOjg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2ljKnEeiCRcmDqF2OVg" name="workloadCapacity" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//WorkloadCapacitiesKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBU2mTKnEeiCRcmDqF2OVg" name="QualityRequirement" eSuperTypes="_hBU2ODKnEeiCRcmDqF2OVg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBU2mjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Q2eVIDqIEeCmwNGSFJpOjg"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBU2mzKnEeiCRcmDqF2OVg" name="specificQualityKind" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//QualityKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_u22bYaToEeenne7APpWiQg" name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification" nsPrefix="RequirementClassification">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bYqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML" references="_u20mMaToEeenne7APpWiQg"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bY6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u22bZKToEeenne7APpWiQg" key="originalName" value="RequirementClassification"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u25et6ToEeenne7APpWiQg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25euKToEeenne7APpWiQg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25euaToEeenne7APpWiQg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25euqToEeenne7APpWiQg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25eu6ToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u25evKToEeenne7APpWiQg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u22bZaToEeenne7APpWiQg" name="ProjectRequirement" eSuperTypes="_u20mNaToEeenne7APpWiQg">
-            <eAnnotations xmi:id="_u22bZqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BuF6YDqAEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bZqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BuF6YDqAEeCmwNGSFJpOjg"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u22baKToEeenne7APpWiQg" name="ProcessRequirement" eSuperTypes="_u20mNaToEeenne7APpWiQg">
-            <eAnnotations xmi:id="_u22baaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DNURcDqAEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22baaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DNURcDqAEeCmwNGSFJpOjg"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u22ba6ToEeenne7APpWiQg" name="ConstraintRequirement" eSuperTypes="_u20mNaToEeenne7APpWiQg">
-            <eAnnotations xmi:id="_u22bbKToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IBDQwDqBEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bbKToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IBDQwDqBEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u22bbaToEeenne7APpWiQg" name="constraintKind" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//ConstraintKind"/>
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u22bcKToEeenne7APpWiQg" name="WorkloadCapacityRequirement" eSuperTypes="_u20mNaToEeenne7APpWiQg">
-            <eAnnotations xmi:id="_u22bcaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QhT9cDqIEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bcaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QhT9cDqIEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u22bcqToEeenne7APpWiQg" name="workloadCapacity" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//WorkloadCapacitiesKind"/>
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u22bdaToEeenne7APpWiQg" name="QualityRequirement" eSuperTypes="_u20mNaToEeenne7APpWiQg">
-            <eAnnotations xmi:id="_u22bdqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Q2eVIDqIEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u22bdqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Q2eVIDqIEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u22bd6ToEeenne7APpWiQg" name="specificQualityKind" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//QualityKind"/>
             </eStructuralFeatures>
           </eClassifiers>
         </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_4wzxEaROEeeur8HW6jKajg" name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/RequirementClassification" nsPrefix="RequirementClassification">
-          <eAnnotations xmi:id="_4wzxEqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML" references="_4wyi8KROEeeur8HW6jKajg"/>
-          <eAnnotations xmi:id="_4wzxE6ROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_4wzxFKROEeeur8HW6jKajg" key="originalName" value="RequirementClassification"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxEqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML" references="_4wyi8KROEeeur8HW6jKajg"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxE6ROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4wzxFKROEeeur8HW6jKajg" key="originalName" value="RequirementClassification"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_4w5QoKROEeeur8HW6jKajg" source="PapyrusVersion">
-            <details xmi:id="_4w5QoaROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
-            <details xmi:id="_4w5QoqROEeeur8HW6jKajg" key="Comment" value=""/>
-            <details xmi:id="_4w5Qo6ROEeeur8HW6jKajg" key="Copyright" value=""/>
-            <details xmi:id="_4w5QpKROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
-            <details xmi:id="_4w5QpaROEeeur8HW6jKajg" key="Author" value=""/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w5QoKROEeeur8HW6jKajg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QoaROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QoqROEeeur8HW6jKajg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5Qo6ROEeeur8HW6jKajg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QpKROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QpaROEeeur8HW6jKajg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wzxFaROEeeur8HW6jKajg" name="ProjectRequirement" eSuperTypes="_4wyi9KROEeeur8HW6jKajg">
-            <eAnnotations xmi:id="_4wzxFqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BuF6YDqAEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxFqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BuF6YDqAEeCmwNGSFJpOjg"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wzxGKROEeeur8HW6jKajg" name="ProcessRequirement" eSuperTypes="_4wyi9KROEeeur8HW6jKajg">
-            <eAnnotations xmi:id="_4wzxGaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DNURcDqAEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxGaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DNURcDqAEeCmwNGSFJpOjg"/>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wzxG6ROEeeur8HW6jKajg" name="ConstraintRequirement" eSuperTypes="_4wyi9KROEeeur8HW6jKajg">
-            <eAnnotations xmi:id="_4wzxHKROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IBDQwDqBEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxHKROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IBDQwDqBEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4wzxHaROEeeur8HW6jKajg" name="constraintKind" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//ConstraintKind"/>
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wzxIKROEeeur8HW6jKajg" name="WorkloadCapacityRequirement" eSuperTypes="_4wyi9KROEeeur8HW6jKajg">
-            <eAnnotations xmi:id="_4wzxIaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QhT9cDqIEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxIaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QhT9cDqIEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4wzxIqROEeeur8HW6jKajg" name="workloadCapacity" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//WorkloadCapacitiesKind"/>
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4wzxJaROEeeur8HW6jKajg" name="QualityRequirement" eSuperTypes="_4wyi9KROEeeur8HW6jKajg">
-            <eAnnotations xmi:id="_4wzxJqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Q2eVIDqIEeCmwNGSFJpOjg"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4wzxJqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Q2eVIDqIEeCmwNGSFJpOjg"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4wzxJ6ROEeeur8HW6jKajg" name="specificQualityKind" ordered="false" lowerBound="1">
               <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementClassificationConcerns#//QualityKind"/>
             </eStructuralFeatures>
@@ -350,61 +674,92 @@
         </contents>
       </eAnnotations>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_BuF6YDqAEeCmwNGSFJpOjg" name="ProjectRequirement">
-        <generalization xmi:id="_dW3NMDqAEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_dW3NMDqAEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_DNURcDqAEeCmwNGSFJpOjg" name="ProcessRequirement">
-        <generalization xmi:id="_b4ZEEDqAEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_b4ZEEDqAEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_IBDQwDqBEeCmwNGSFJpOjg" name="ConstraintRequirement">
-        <generalization xmi:id="_sAAOkDqFEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
-        <ownedAttribute xmi:id="_JJCaQDqGEeCmwNGSFJpOjg" name="constraintKind" visibility="public">
+        <generalization xmi:type="uml:Generalization" xmi:id="_sAAOkDqFEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JJCaQDqGEeCmwNGSFJpOjg" name="constraintKind" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_azPFsFOhEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JVaCUDqGEeCmwNGSFJpOjg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JVs9QDqGEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_QhT9cDqIEeCmwNGSFJpOjg" name="WorkloadCapacityRequirement">
-        <generalization xmi:id="_ROrH0DqKEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
-        <ownedAttribute xmi:id="_-PTwQDqIEeCmwNGSFJpOjg" name="workloadCapacity" visibility="public">
+        <generalization xmi:type="uml:Generalization" xmi:id="_ROrH0DqKEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-PTwQDqIEeCmwNGSFJpOjg" name="workloadCapacity" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_bDBOIFOhEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-YPp0DqIEeCmwNGSFJpOjg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-YZa0DqIEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_Q2eVIDqIEeCmwNGSFJpOjg" name="QualityRequirement">
-        <generalization xmi:id="_R5JBIDqKEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
-        <ownedAttribute xmi:id="_9r120DqIEeCmwNGSFJpOjg" name="specificQualityKind" visibility="public">
+        <generalization xmi:type="uml:Generalization" xmi:id="_R5JBIDqKEeCmwNGSFJpOjg" general="_qIm20Dp_EeCmwNGSFJpOjg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_9r120DqIEeCmwNGSFJpOjg" name="specificQualityKind" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_aChacFOhEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9105QDqIEeCmwNGSFJpOjg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_91-qQDqIEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <profileApplication xmi:id="_5X-jEKK_EeeYBKEUTtrY-A">
-        <eAnnotations xmi:id="_5X_KIKK_EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5X-jEKK_EeeYBKEUTtrY-A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5X_KIKK_EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
         </eAnnotations>
-        <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
       </profileApplication>
     </packagedElement>
     <packagedElement xmi:type="uml:Profile" xmi:id="_7uTCgDp8EeCmwNGSFJpOjg" name="RequirementTraceability">
-      <eAnnotations xmi:id="_SIcpeTp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <contents xmi:type="ecore:EPackage" xmi:id="_u23CcaToEeenne7APpWiQg" name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability" nsPrefix="RequirementTraceability">
-          <eAnnotations xmi:id="_u23CcqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SIcpeTp_EeCmwNGSFJpOjg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_hBWrYDKnEeiCRcmDqF2OVg" name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability" nsPrefix="RequirementTraceability">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBWrYTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/4.1.0/UML">
             <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_u23Cc6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_u23CdKToEeenne7APpWiQg" key="originalName" value="RequirementTraceability"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBWrYjKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hBWrYzKnEeiCRcmDqF2OVg" key="originalName" value="RequirementTraceability"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_u26FwqToEeenne7APpWiQg" source="PapyrusVersion">
-            <details xmi:id="_u26Fw6ToEeenne7APpWiQg" key="Version" value="0.0.1"/>
-            <details xmi:id="_u26FxKToEeenne7APpWiQg" key="Comment" value=""/>
-            <details xmi:id="_u26FxaToEeenne7APpWiQg" key="Copyright" value=""/>
-            <details xmi:id="_u26FxqToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
-            <details xmi:id="_u26Fx6ToEeenne7APpWiQg" key="Author" value=""/>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBWrZDKnEeiCRcmDqF2OVg" name="Satisfy">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBWrZTKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X8dYDqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Satisfy"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBWrZjKnEeiCRcmDqF2OVg" name="validatorName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBWraDKnEeiCRcmDqF2OVg" name="satisfyStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//SatisfactionStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_hBWrazKnEeiCRcmDqF2OVg" name="Verify">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBWrbDKnEeiCRcmDqF2OVg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_70Ql8DqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Verify"/>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBWrbTKnEeiCRcmDqF2OVg" name="verifierName" ordered="false">
+              <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBWrbzKnEeiCRcmDqF2OVg" name="verifyStatus" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/VerificationAndValidationConcerns#//VV_StatusKind"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hBWrcTKnEeiCRcmDqF2OVg" name="VV_Method" ordered="false">
+              <eType xmi:type="ecore:EEnum" href="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/ModelLibrary/PapyrusREStandardUtils/RequirementAndProcessConcerns#//SatisfactionStatusKind"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_u23CcaToEeenne7APpWiQg" name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability" nsPrefix="RequirementTraceability">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u23CcqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u23Cc6ToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u23CdKToEeenne7APpWiQg" key="originalName" value="RequirementTraceability"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u26FwqToEeenne7APpWiQg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u26Fw6ToEeenne7APpWiQg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u26FxKToEeenne7APpWiQg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u26FxaToEeenne7APpWiQg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u26FxqToEeenne7APpWiQg" key="Date" value="2017-09-29"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u26Fx6ToEeenne7APpWiQg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u23CdaToEeenne7APpWiQg" name="Satisfy">
-            <eAnnotations xmi:id="_u23CdqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X8dYDqPEeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Satisfy"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u23CdqToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X8dYDqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Satisfy"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u23Cd6ToEeenne7APpWiQg" name="validatorName" ordered="false">
               <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
             </eStructuralFeatures>
@@ -413,8 +768,8 @@
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_u23CfKToEeenne7APpWiQg" name="Verify">
-            <eAnnotations xmi:id="_u23CfaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_70Ql8DqPEeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Verify"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u23CfaToEeenne7APpWiQg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_70Ql8DqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Verify"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_u23CfqToEeenne7APpWiQg" name="verifierName" ordered="false">
               <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
             </eStructuralFeatures>
@@ -427,22 +782,22 @@
           </eClassifiers>
         </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_4w2NUaROEeeur8HW6jKajg" name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirement/sysml14/0.7.0/PapyrusRE/RequirementTraceability" nsPrefix="RequirementTraceability">
-          <eAnnotations xmi:id="_4w2NUqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w2NUqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/4.1.0/UML">
             <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_4w2NU6ROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_4w2NVKROEeeur8HW6jKajg" key="originalName" value="RequirementTraceability"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w2NU6ROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w2NVKROEeeur8HW6jKajg" key="originalName" value="RequirementTraceability"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_4w5QqKROEeeur8HW6jKajg" source="PapyrusVersion">
-            <details xmi:id="_4w5QqaROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
-            <details xmi:id="_4w5QqqROEeeur8HW6jKajg" key="Comment" value=""/>
-            <details xmi:id="_4w5Qq6ROEeeur8HW6jKajg" key="Copyright" value=""/>
-            <details xmi:id="_4w5QrKROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
-            <details xmi:id="_4w5QraROEeeur8HW6jKajg" key="Author" value=""/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w5QqKROEeeur8HW6jKajg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QqaROEeeur8HW6jKajg" key="Version" value="0.0.1"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QqqROEeeur8HW6jKajg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5Qq6ROEeeur8HW6jKajg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QrKROEeeur8HW6jKajg" key="Date" value="2017-09-28"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4w5QraROEeeur8HW6jKajg" key="Author" value=""/>
           </eAnnotations>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4w2NVaROEeeur8HW6jKajg" name="Satisfy">
-            <eAnnotations xmi:id="_4w2NVqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X8dYDqPEeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Satisfy"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w2NVqROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X8dYDqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Satisfy"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4w2NV6ROEeeur8HW6jKajg" name="validatorName" ordered="false">
               <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
             </eStructuralFeatures>
@@ -451,8 +806,8 @@
             </eStructuralFeatures>
           </eClassifiers>
           <eClassifiers xmi:type="ecore:EClass" xmi:id="_4w2NXKROEeeur8HW6jKajg" name="Verify">
-            <eAnnotations xmi:id="_4w2NXaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_70Ql8DqPEeCmwNGSFJpOjg"/>
-            <eSuperTypes href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Verify"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4w2NXaROEeeur8HW6jKajg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_70Ql8DqPEeCmwNGSFJpOjg"/>
+            <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements/Verify"/>
             <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4w2NXqROEeeur8HW6jKajg" name="verifierName" ordered="false">
               <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
             </eStructuralFeatures>
@@ -466,52 +821,52 @@
         </contents>
       </eAnnotations>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_7X8dYDqPEeCmwNGSFJpOjg" name="Satisfy">
-        <generalization xmi:id="_hq8vAJJWEeesEtnYkurh9A">
+        <generalization xmi:type="uml:Generalization" xmi:id="_hq8vAJJWEeesEtnYkurh9A">
           <general xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Satisfy"/>
         </generalization>
-        <ownedAttribute xmi:id="_MA7o4DqQEeCmwNGSFJpOjg" name="validatorName" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MA7o4DqQEeCmwNGSFJpOjg" name="validatorName" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MK6rUDqQEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MK6rUTqQEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MidBkDqQEeCmwNGSFJpOjg" name="satisfyStatus" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MidBkDqQEeCmwNGSFJpOjg" name="satisfyStatus" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZnvmUFPKEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MsJJEDqQEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MsJJETqQEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Stereotype" xmi:id="_70Ql8DqPEeCmwNGSFJpOjg" name="Verify">
-        <generalization xmi:id="_nfLXcJJWEeesEtnYkurh9A">
+        <generalization xmi:type="uml:Generalization" xmi:id="_nfLXcJJWEeesEtnYkurh9A">
           <general xmi:type="uml:Stereotype" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Verify"/>
         </generalization>
-        <ownedAttribute xmi:id="_NGXm8DqQEeCmwNGSFJpOjg" name="verifierName" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NGXm8DqQEeCmwNGSFJpOjg" name="verifierName" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NQWpYDqQEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NQfzUDqQEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_Np1gYDqQEeCmwNGSFJpOjg" name="verifyStatus" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Np1gYDqQEeCmwNGSFJpOjg" name="verifyStatus" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_AF-KUFPMEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N0aYsDqQEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N0kJsDqQEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_ODdhUDqQEeCmwNGSFJpOjg" name="VV_Method" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ODdhUDqQEeCmwNGSFJpOjg" name="VV_Method" visibility="public">
           <type xmi:type="uml:Enumeration" href="pathmap://PAPYRUSRE_STANDARDUTILS_MODELLIBARY/PapyrusRE_StandardUtils.modellibrary.uml#_ZnvmUFPKEeCXkoFpHlFAkw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OLzlADqQEeCmwNGSFJpOjg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OL9WADqQEeCmwNGSFJpOjg" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <profileApplication xmi:id="_FNW1oKLAEeeYBKEUTtrY-A">
-        <eAnnotations xmi:id="_FNXcsKLAEeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_FNW1oKLAEeeYBKEUTtrY-A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FNXcsKLAEeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
         </eAnnotations>
-        <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
       </profileApplication>
     </packagedElement>
-    <profileApplication xmi:id="_WQAlsKK9EeeYBKEUTtrY-A">
-      <eAnnotations xmi:id="_WQHTYKK9EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_WQAlsKK9EeeYBKEUTtrY-A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WQHTYKK9EeeYBKEUTtrY-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
-      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="_XMFzcKK9EeeYBKEUTtrY-A" base_Package="_wJDIkDp6EeCmwNGSFJpOjg" packageName="papyrusre" nsPrefix="PapyrusRE" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE" basePackage="org.eclipse.papyrus.requirements.sysml14" prefix="PapyrusRE"/>
