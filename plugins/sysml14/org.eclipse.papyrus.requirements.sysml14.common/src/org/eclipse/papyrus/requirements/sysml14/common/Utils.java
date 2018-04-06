@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.papyrus.requirements.sysml14.preferences.PreferenceConstants;
@@ -151,9 +152,11 @@ public class Utils {
 			}
 			for (Iterator<Element> iterator = elements.iterator(); iterator.hasNext() && (!IDexist);) {
 				Element element = (Element) iterator.next();
-				Object reqIdObject = UMLUtil.getTaggedValue(element, I_SysMLStereotype.REQUIREMENT_STEREOTYPE, I_SysMLStereotype.REQUIREMENT_ID_ATT);
-				if (reqIdObject != null) {
-					String existedID = (String) reqIdObject;
+				EObject applyStereotype = UMLUtil.getStereotypeApplication(element,Requirement.class);
+				
+				if(applyStereotype instanceof Requirement) {
+
+					String existedID = (String) ((Requirement)applyStereotype).getId();
 					String newID = prefix + parentRequirementIdSuffix + separator + value;
 					// id already exists so increment suffix
 					if (newID.equals(existedID)) {

@@ -68,7 +68,6 @@ public class DuplicateStereotypeAndReqCommand extends DuplicateStereotypeCommand
 		
 		if(applyStereotype instanceof Requirement) {
 			String id = Utils.getNewRequirementID(((Requirement) applyStereotype).getBase_Class().getOwner());
-			((Requirement) applyStereotype).getBase_Class().setName(id);
 			((Requirement)applyStereotype).setId(id);
 		}
 	}
