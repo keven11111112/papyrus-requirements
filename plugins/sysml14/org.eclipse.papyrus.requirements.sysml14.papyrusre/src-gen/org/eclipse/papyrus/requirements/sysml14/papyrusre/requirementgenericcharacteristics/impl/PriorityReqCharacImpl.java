@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.PriorityReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -45,7 +46,7 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object PRIORITY_EDEFAULT = null;
+	protected static final PriorityKind PRIORITY_EDEFAULT = PriorityKind.MANDATORY;
 
 	/**
 	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
@@ -55,7 +56,7 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected Object priority = PRIORITY_EDEFAULT;
+	protected PriorityKind priority = PRIORITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getPriority() {
+	public PriorityKind getPriority() {
 		return priority;
 	}
 
@@ -90,9 +91,9 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPriority(Object newPriority) {
-		Object oldPriority = priority;
-		priority = newPriority;
+	public void setPriority(PriorityKind newPriority) {
+		PriorityKind oldPriority = priority;
+		priority = newPriority == null ? PRIORITY_EDEFAULT : newPriority;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.PRIORITY_REQ_CHARAC__PRIORITY, oldPriority, priority));
 	}
@@ -120,7 +121,7 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.PRIORITY_REQ_CHARAC__PRIORITY:
-				setPriority(newValue);
+				setPriority((PriorityKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class PriorityReqCharacImpl extends MinimalEObjectImpl.Container implemen
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.PRIORITY_REQ_CHARAC__PRIORITY:
-				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
+				return priority != PRIORITY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

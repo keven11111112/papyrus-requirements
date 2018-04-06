@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface LifeCyclePhaseReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Life Cycle Phase</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Life Cycle Phase</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface LifeCyclePhaseReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Life Cycle Phase</em>' attribute.
-	 * @see #setLifeCyclePhase(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind
+	 * @see #setLifeCyclePhase(LifeCyclePhaseKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getLifeCyclePhaseReqCharac_LifeCyclePhase()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getLifeCyclePhase();
+	LifeCyclePhaseKind getLifeCyclePhase();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.LifeCyclePhaseReqCharac#getLifeCyclePhase <em>Life Cycle Phase</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Life Cycle Phase</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind
 	 * @see #getLifeCyclePhase()
 	 * @generated
 	 */
-	void setLifeCyclePhase(Object value);
+	void setLifeCyclePhase(LifeCyclePhaseKind value);
 
 } // LifeCyclePhaseReqCharac

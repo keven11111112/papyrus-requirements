@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface QualityNatureReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Quality Nature</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Quality Nature</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface QualityNatureReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quality Nature</em>' attribute.
-	 * @see #setQualityNature(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind
+	 * @see #setQualityNature(QualityKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getQualityNatureReqCharac_QualityNature()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getQualityNature();
+	QualityKind getQualityNature();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualityNatureReqCharac#getQualityNature <em>Quality Nature</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Quality Nature</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind
 	 * @see #getQualityNature()
 	 * @generated
 	 */
-	void setQualityNature(Object value);
+	void setQualityNature(QualityKind value);
 
 } // QualityNatureReqCharac

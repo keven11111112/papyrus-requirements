@@ -18,6 +18,8 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.Verify;
 
@@ -65,7 +67,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VERIFY_STATUS_EDEFAULT = null;
+	protected static final VV_StatusKind VERIFY_STATUS_EDEFAULT = VV_StatusKind.PENDING;
 
 	/**
 	 * The cached value of the '{@link #getVerifyStatus() <em>Verify Status</em>}' attribute.
@@ -75,7 +77,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * @generated
 	 * @ordered
 	 */
-	protected Object verifyStatus = VERIFY_STATUS_EDEFAULT;
+	protected VV_StatusKind verifyStatus = VERIFY_STATUS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVV_Method() <em>VV Method</em>}' attribute.
@@ -85,7 +87,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VV_METHOD_EDEFAULT = null;
+	protected static final SatisfactionStatusKind VV_METHOD_EDEFAULT = SatisfactionStatusKind.NOT_SATISFIED;
 
 	/**
 	 * The cached value of the '{@link #getVV_Method() <em>VV Method</em>}' attribute.
@@ -95,7 +97,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * @generated
 	 * @ordered
 	 */
-	protected Object vV_Method = VV_METHOD_EDEFAULT;
+	protected SatisfactionStatusKind vV_Method = VV_METHOD_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,7 +144,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVerifyStatus() {
+	public VV_StatusKind getVerifyStatus() {
 		return verifyStatus;
 	}
 
@@ -151,9 +153,9 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerifyStatus(Object newVerifyStatus) {
-		Object oldVerifyStatus = verifyStatus;
-		verifyStatus = newVerifyStatus;
+	public void setVerifyStatus(VV_StatusKind newVerifyStatus) {
+		VV_StatusKind oldVerifyStatus = verifyStatus;
+		verifyStatus = newVerifyStatus == null ? VERIFY_STATUS_EDEFAULT : newVerifyStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementTraceabilityPackage.VERIFY__VERIFY_STATUS, oldVerifyStatus, verifyStatus));
 	}
@@ -163,7 +165,7 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVV_Method() {
+	public SatisfactionStatusKind getVV_Method() {
 		return vV_Method;
 	}
 
@@ -172,9 +174,9 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVV_Method(Object newVV_Method) {
-		Object oldVV_Method = vV_Method;
-		vV_Method = newVV_Method;
+	public void setVV_Method(SatisfactionStatusKind newVV_Method) {
+		SatisfactionStatusKind oldVV_Method = vV_Method;
+		vV_Method = newVV_Method == null ? VV_METHOD_EDEFAULT : newVV_Method;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementTraceabilityPackage.VERIFY__VV_METHOD, oldVV_Method, vV_Method));
 	}
@@ -209,10 +211,10 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 				setVerifierName((String)newValue);
 				return;
 			case RequirementTraceabilityPackage.VERIFY__VERIFY_STATUS:
-				setVerifyStatus(newValue);
+				setVerifyStatus((VV_StatusKind)newValue);
 				return;
 			case RequirementTraceabilityPackage.VERIFY__VV_METHOD:
-				setVV_Method(newValue);
+				setVV_Method((SatisfactionStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -250,9 +252,9 @@ public class VerifyImpl extends org.eclipse.papyrus.sysml14.requirements.interna
 			case RequirementTraceabilityPackage.VERIFY__VERIFIER_NAME:
 				return VERIFIER_NAME_EDEFAULT == null ? verifierName != null : !VERIFIER_NAME_EDEFAULT.equals(verifierName);
 			case RequirementTraceabilityPackage.VERIFY__VERIFY_STATUS:
-				return VERIFY_STATUS_EDEFAULT == null ? verifyStatus != null : !VERIFY_STATUS_EDEFAULT.equals(verifyStatus);
+				return verifyStatus != VERIFY_STATUS_EDEFAULT;
 			case RequirementTraceabilityPackage.VERIFY__VV_METHOD:
-				return VV_METHOD_EDEFAULT == null ? vV_Method != null : !VV_METHOD_EDEFAULT.equals(vV_Method);
+				return vV_Method != VV_METHOD_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

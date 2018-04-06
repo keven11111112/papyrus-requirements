@@ -19,6 +19,11 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityAndImportanceConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.RequirementAndProcessConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.RequirementClassificationConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.RequirementsCharacteristicsConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VerificationAndValidationConcernsPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage;
 
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.impl.RequirementClassificationPackageImpl;
@@ -53,6 +58,7 @@ import org.eclipse.papyrus.sysml14.sysmlPackage;
 import org.eclipse.uml2.types.TypesPackage;
 
 import org.eclipse.uml2.uml.UMLPackage;
+import org.eclipse.uml2.uml.profile.standard.StandardPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -207,6 +213,12 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 
 		// Initialize simple dependencies
 		EcorePackage.eINSTANCE.eClass();
+		RequirementClassificationConcernsPackage.eINSTANCE.eClass();
+		RequirementsCharacteristicsConcernsPackage.eINSTANCE.eClass();
+		PriorityAndImportanceConcernsPackage.eINSTANCE.eClass();
+		RequirementAndProcessConcernsPackage.eINSTANCE.eClass();
+		VerificationAndValidationConcernsPackage.eINSTANCE.eClass();
+		StandardPackage.eINSTANCE.eClass();
 		sysmlPackage.eINSTANCE.eClass();
 		TypesPackage.eINSTANCE.eClass();
 		UMLPackage.eINSTANCE.eClass();
@@ -635,6 +647,11 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 		// Obtain other dependent packages
 		RequirementsPackage theRequirementsPackage = (RequirementsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+		PriorityAndImportanceConcernsPackage thePriorityAndImportanceConcernsPackage = (PriorityAndImportanceConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(PriorityAndImportanceConcernsPackage.eNS_URI);
+		RequirementAndProcessConcernsPackage theRequirementAndProcessConcernsPackage = (RequirementAndProcessConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementAndProcessConcernsPackage.eNS_URI);
+		RequirementsCharacteristicsConcernsPackage theRequirementsCharacteristicsConcernsPackage = (RequirementsCharacteristicsConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementsCharacteristicsConcernsPackage.eNS_URI);
+		RequirementClassificationConcernsPackage theRequirementClassificationConcernsPackage = (RequirementClassificationConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementClassificationConcernsPackage.eNS_URI);
+		VerificationAndValidationConcernsPackage theVerificationAndValidationConcernsPackage = (VerificationAndValidationConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(VerificationAndValidationConcernsPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -667,48 +684,48 @@ public class RequirementGenericCharacteristicsPackageImpl extends EPackageImpl i
 		initEAttribute(getOwnerReqCharac_Owner(), theTypesPackage.getString(), "owner", null, 0, 1, OwnerReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(importanceReqCharacEClass, ImportanceReqCharac.class, "ImportanceReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getImportanceReqCharac_Importance(), ecorePackage.getEJavaObject(), "importance", null, 0, 1, ImportanceReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getImportanceReqCharac_Importance(), thePriorityAndImportanceConcernsPackage.getImportanceKind(), "importance", null, 0, 1, ImportanceReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(approvalAuthorityReqCharacEClass, ApprovalAuthorityReqCharac.class, "ApprovalAuthorityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getApprovalAuthorityReqCharac_ApprovalAuthority(), theTypesPackage.getString(), "approvalAuthority", null, 0, 1, ApprovalAuthorityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(agreementStatusReqCharacEClass, AgreementStatusReqCharac.class, "AgreementStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getAgreementStatusReqCharac_AgreementStatus(), ecorePackage.getEJavaObject(), "agreementStatus", null, 0, 1, AgreementStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getAgreementStatusReqCharac_AgreementStatus(), theRequirementAndProcessConcernsPackage.getAgreementStatusKind(), "agreementStatus", null, 0, 1, AgreementStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(maturityReqCharacEClass, MaturityReqCharac.class, "MaturityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getMaturityReqCharac_Maturity(), theTypesPackage.getInteger(), "maturity", null, 0, 1, MaturityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(lifeCyclePhaseReqCharacEClass, LifeCyclePhaseReqCharac.class, "LifeCyclePhaseReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getLifeCyclePhaseReqCharac_LifeCyclePhase(), ecorePackage.getEJavaObject(), "lifeCyclePhase", null, 0, 1, LifeCyclePhaseReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getLifeCyclePhaseReqCharac_LifeCyclePhase(), theRequirementsCharacteristicsConcernsPackage.getLifeCyclePhaseKind(), "lifeCyclePhase", null, 0, 1, LifeCyclePhaseReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(abstractionLevelReqCharacEClass, AbstractionLevelReqCharac.class, "AbstractionLevelReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getAbstractionLevelReqCharac_AbstractionLevel(), ecorePackage.getEJavaObject(), "abstractionLevel", null, 0, 1, AbstractionLevelReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getAbstractionLevelReqCharac_AbstractionLevel(), theRequirementsCharacteristicsConcernsPackage.getAbstractionLevelKind(), "abstractionLevel", null, 0, 1, AbstractionLevelReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(priorityReqCharacEClass, PriorityReqCharac.class, "PriorityReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getPriorityReqCharac_Priority(), ecorePackage.getEJavaObject(), "priority", null, 0, 1, PriorityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getPriorityReqCharac_Priority(), thePriorityAndImportanceConcernsPackage.getPriorityKind(), "priority", null, 0, 1, PriorityReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(sourceReqCharacEClass, SourceReqCharac.class, "SourceReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getSourceReqCharac_Source(), theTypesPackage.getString(), "source", null, 0, 1, SourceReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(qualificationStatusReqCharacEClass, QualificationStatusReqCharac.class, "QualificationStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getQualificationStatusReqCharac_QualificationStatus(), ecorePackage.getEJavaObject(), "qualificationStatus", null, 0, 1, QualificationStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getQualificationStatusReqCharac_QualificationStatus(), theRequirementAndProcessConcernsPackage.getQualificationStatusKind(), "qualificationStatus", null, 0, 1, QualificationStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(reviewStatusReqCharacEClass, ReviewStatusReqCharac.class, "ReviewStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getReviewStatusReqCharac_ReviewStatus(), ecorePackage.getEJavaObject(), "reviewStatus", null, 0, 1, ReviewStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getReviewStatusReqCharac_ReviewStatus(), theRequirementAndProcessConcernsPackage.getReviewStatusKind(), "reviewStatus", null, 0, 1, ReviewStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(validatorNameReqCharacEClass, ValidatorNameReqCharac.class, "ValidatorNameReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getValidatorNameReqCharac_ValidatorName(), theTypesPackage.getString(), "validatorName", null, 0, 1, ValidatorNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(qualityNatureReqCharacEClass, QualityNatureReqCharac.class, "QualityNatureReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getQualityNatureReqCharac_QualityNature(), ecorePackage.getEJavaObject(), "qualityNature", null, 0, 1, QualityNatureReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getQualityNatureReqCharac_QualityNature(), theRequirementClassificationConcernsPackage.getQualityKind(), "qualityNature", null, 0, 1, QualityNatureReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(verifierNameReqCharacEClass, VerifierNameReqCharac.class, "VerifierNameReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getVerifierNameReqCharac_VerifierName(), theTypesPackage.getString(), "verifierName", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getVerifierNameReqCharac_VV_Method(), ecorePackage.getEJavaObject(), "VV_Method", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getVerifierNameReqCharac_VV_Status(), ecorePackage.getEJavaObject(), "VV_Status", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getVerifierNameReqCharac_VV_Method(), theVerificationAndValidationConcernsPackage.getVV_MethodKind(), "VV_Method", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getVerifierNameReqCharac_VV_Status(), theVerificationAndValidationConcernsPackage.getVV_StatusKind(), "VV_Status", null, 0, 1, VerifierNameReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(satifiactionStatusReqCharacEClass, SatifiactionStatusReqCharac.class, "SatifiactionStatusReqCharac", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getSatifiactionStatusReqCharac_SatisfactionStatus(), ecorePackage.getEJavaObject(), "satisfactionStatus", null, 0, 1, SatifiactionStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getSatifiactionStatusReqCharac_SatisfactionStatus(), theRequirementAndProcessConcernsPackage.getSatisfactionStatusKind(), "satisfactionStatus", null, 0, 1, SatifiactionStatusReqCharac.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		// Create resource
 		createResource(eNS_URI);

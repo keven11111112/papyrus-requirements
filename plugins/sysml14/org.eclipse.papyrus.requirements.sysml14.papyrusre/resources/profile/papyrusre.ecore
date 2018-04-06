@@ -17,7 +17,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ImportanceReqCharac" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Requirement">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="importance" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//priorityandimportanceconcerns/ImportanceKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ApprovalAuthorityReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="approvalAuthority" ordered="false"
@@ -25,7 +25,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="AgreementStatusReqCharac" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Requirement">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="agreementStatus" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/AgreementStatusKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="MaturityReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="maturity" ordered="false"
@@ -33,15 +33,15 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="LifeCyclePhaseReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="lifeCyclePhase" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/LifeCyclePhaseKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="AbstractionLevelReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractionLevel" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementscharacteristicsconcerns/AbstractionLevelKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="PriorityReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//priorityandimportanceconcerns/PriorityKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SourceReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" ordered="false"
@@ -49,11 +49,11 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="QualificationStatusReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualificationStatus"
-          ordered="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          ordered="false" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/QualificationStatusKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ReviewStatusReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="reviewStatus" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/ReviewStatusKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ValidatorNameReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="validatorName" ordered="false"
@@ -61,19 +61,19 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="QualityNatureReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualityNature" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="VerifierNameReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifierName" ordered="false"
           eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Method" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_MethodKind"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Status" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SatifiactionStatusReqCharac">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="satisfactionStatus" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="requirementclassification" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementClassification"
@@ -85,15 +85,15 @@
     <eClassifiers xsi:type="ecore:EClass" name="ProcessRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement"/>
     <eClassifiers xsi:type="ecore:EClass" name="ConstraintRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="constraintKind" ordered="false"
-          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/ConstraintKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="WorkloadCapacityRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="workloadCapacity" ordered="false"
-          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/WorkloadCapacitiesKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="QualityRequirement" eSuperTypes="#//requirementgenericcharacteristics/Requirement">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="specificQualityKind"
-          ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          ordered="false" lowerBound="1" eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementclassificationconcerns/QualityKind"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="requirementtraceability" nsURI="http://www.eclipse.org/papyrus/requirements/sysml14/0.7.0/PapyrusRE/RequirementTraceability"
@@ -105,15 +105,15 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="validatorName" ordered="false"
           eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="satisfyStatus" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Verify" eSuperTypes="../../../org.eclipse.papyrus.sysml14/resources/profile/sysml.ecore#//requirements/Verify">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifierName" ordered="false"
           eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifyStatus" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//verificationandvalidationconcerns/VV_StatusKind"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="VV_Method" ordered="false"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          eType="ecore:EEnum ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/papyrusrestandardutils.ecore#//requirementandprocessconcerns/SatisfactionStatusKind"/>
     </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

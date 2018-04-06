@@ -13,6 +13,8 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Satisfy</b></em>'.
@@ -59,6 +61,7 @@ public interface Satisfy extends org.eclipse.papyrus.sysml14.requirements.Satisf
 
 	/**
 	 * Returns the value of the '<em><b>Satisfy Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Satisfy Status</em>' attribute isn't clear,
@@ -66,21 +69,23 @@ public interface Satisfy extends org.eclipse.papyrus.sysml14.requirements.Satisf
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Satisfy Status</em>' attribute.
-	 * @see #setSatisfyStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
+	 * @see #setSatisfyStatus(SatisfactionStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage#getSatisfy_SatisfyStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getSatisfyStatus();
+	SatisfactionStatusKind getSatisfyStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.Satisfy#getSatisfyStatus <em>Satisfy Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Satisfy Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
 	 * @see #getSatisfyStatus()
 	 * @generated
 	 */
-	void setSatisfyStatus(Object value);
+	void setSatisfyStatus(SatisfactionStatusKind value);
 
 } // Satisfy

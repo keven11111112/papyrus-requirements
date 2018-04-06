@@ -19,6 +19,11 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityAndImportanceConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.RequirementAndProcessConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.RequirementClassificationConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.RequirementsCharacteristicsConcernsPackage;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VerificationAndValidationConcernsPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.ConstraintRequirement;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.ProcessRequirement;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.ProjectRequirement;
@@ -40,6 +45,7 @@ import org.eclipse.papyrus.sysml14.sysmlPackage;
 import org.eclipse.uml2.types.TypesPackage;
 
 import org.eclipse.uml2.uml.UMLPackage;
+import org.eclipse.uml2.uml.profile.standard.StandardPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -131,6 +137,12 @@ public class RequirementClassificationPackageImpl extends EPackageImpl implement
 
 		// Initialize simple dependencies
 		EcorePackage.eINSTANCE.eClass();
+		RequirementClassificationConcernsPackage.eINSTANCE.eClass();
+		RequirementsCharacteristicsConcernsPackage.eINSTANCE.eClass();
+		PriorityAndImportanceConcernsPackage.eINSTANCE.eClass();
+		RequirementAndProcessConcernsPackage.eINSTANCE.eClass();
+		VerificationAndValidationConcernsPackage.eINSTANCE.eClass();
+		StandardPackage.eINSTANCE.eClass();
 		sysmlPackage.eINSTANCE.eClass();
 		TypesPackage.eINSTANCE.eClass();
 		UMLPackage.eINSTANCE.eClass();
@@ -297,6 +309,7 @@ public class RequirementClassificationPackageImpl extends EPackageImpl implement
 
 		// Obtain other dependent packages
 		RequirementGenericCharacteristicsPackage theRequirementGenericCharacteristicsPackage = (RequirementGenericCharacteristicsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementGenericCharacteristicsPackage.eNS_URI);
+		RequirementClassificationConcernsPackage theRequirementClassificationConcernsPackage = (RequirementClassificationConcernsPackage)EPackage.Registry.INSTANCE.getEPackage(RequirementClassificationConcernsPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -315,13 +328,13 @@ public class RequirementClassificationPackageImpl extends EPackageImpl implement
 		initEClass(processRequirementEClass, ProcessRequirement.class, "ProcessRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 
 		initEClass(constraintRequirementEClass, ConstraintRequirement.class, "ConstraintRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getConstraintRequirement_ConstraintKind(), ecorePackage.getEJavaObject(), "constraintKind", null, 1, 1, ConstraintRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getConstraintRequirement_ConstraintKind(), theRequirementClassificationConcernsPackage.getConstraintKind(), "constraintKind", null, 1, 1, ConstraintRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(workloadCapacityRequirementEClass, WorkloadCapacityRequirement.class, "WorkloadCapacityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getWorkloadCapacityRequirement_WorkloadCapacity(), ecorePackage.getEJavaObject(), "workloadCapacity", null, 1, 1, WorkloadCapacityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getWorkloadCapacityRequirement_WorkloadCapacity(), theRequirementClassificationConcernsPackage.getWorkloadCapacitiesKind(), "workloadCapacity", null, 1, 1, WorkloadCapacityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(qualityRequirementEClass, QualityRequirement.class, "QualityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getQualityRequirement_SpecificQualityKind(), ecorePackage.getEJavaObject(), "specificQualityKind", null, 1, 1, QualityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getQualityRequirement_SpecificQualityKind(), theRequirementClassificationConcernsPackage.getQualityKind(), "specificQualityKind", null, 1, 1, QualityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED); //$NON-NLS-1$
 
 		// Create resource
 		createResource(eNS_URI);

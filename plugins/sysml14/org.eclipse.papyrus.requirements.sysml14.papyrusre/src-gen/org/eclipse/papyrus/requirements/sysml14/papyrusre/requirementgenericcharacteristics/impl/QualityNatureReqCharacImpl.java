@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualityNatureReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -45,7 +46,7 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object QUALITY_NATURE_EDEFAULT = null;
+	protected static final QualityKind QUALITY_NATURE_EDEFAULT = QualityKind.ADAPTABILITY;
 
 	/**
 	 * The cached value of the '{@link #getQualityNature() <em>Quality Nature</em>}' attribute.
@@ -55,7 +56,7 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 * @ordered
 	 */
-	protected Object qualityNature = QUALITY_NATURE_EDEFAULT;
+	protected QualityKind qualityNature = QUALITY_NATURE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getQualityNature() {
+	public QualityKind getQualityNature() {
 		return qualityNature;
 	}
 
@@ -90,9 +91,9 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQualityNature(Object newQualityNature) {
-		Object oldQualityNature = qualityNature;
-		qualityNature = newQualityNature;
+	public void setQualityNature(QualityKind newQualityNature) {
+		QualityKind oldQualityNature = qualityNature;
+		qualityNature = newQualityNature == null ? QUALITY_NATURE_EDEFAULT : newQualityNature;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.QUALITY_NATURE_REQ_CHARAC__QUALITY_NATURE, oldQualityNature, qualityNature));
 	}
@@ -120,7 +121,7 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.QUALITY_NATURE_REQ_CHARAC__QUALITY_NATURE:
-				setQualityNature(newValue);
+				setQualityNature((QualityKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class QualityNatureReqCharacImpl extends MinimalEObjectImpl.Container imp
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.QUALITY_NATURE_REQ_CHARAC__QUALITY_NATURE:
-				return QUALITY_NATURE_EDEFAULT == null ? qualityNature != null : !QUALITY_NATURE_EDEFAULT.equals(qualityNature);
+				return qualityNature != QUALITY_NATURE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

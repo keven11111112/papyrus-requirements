@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface ReviewStatusReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Review Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Review Status</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface ReviewStatusReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Review Status</em>' attribute.
-	 * @see #setReviewStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind
+	 * @see #setReviewStatus(ReviewStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getReviewStatusReqCharac_ReviewStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getReviewStatus();
+	ReviewStatusKind getReviewStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ReviewStatusReqCharac#getReviewStatus <em>Review Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Review Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind
 	 * @see #getReviewStatus()
 	 * @generated
 	 */
-	void setReviewStatus(Object value);
+	void setReviewStatus(ReviewStatusKind value);
 
 } // ReviewStatusReqCharac

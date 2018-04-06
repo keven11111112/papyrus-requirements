@@ -18,6 +18,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.QualityRequirement;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage;
 
@@ -45,7 +46,7 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object SPECIFIC_QUALITY_KIND_EDEFAULT = null;
+	protected static final QualityKind SPECIFIC_QUALITY_KIND_EDEFAULT = QualityKind.ADAPTABILITY;
 
 	/**
 	 * The cached value of the '{@link #getSpecificQualityKind() <em>Specific Quality Kind</em>}' attribute.
@@ -55,7 +56,7 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	 * @generated
 	 * @ordered
 	 */
-	protected Object specificQualityKind = SPECIFIC_QUALITY_KIND_EDEFAULT;
+	protected QualityKind specificQualityKind = SPECIFIC_QUALITY_KIND_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getSpecificQualityKind() {
+	public QualityKind getSpecificQualityKind() {
 		return specificQualityKind;
 	}
 
@@ -90,9 +91,9 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSpecificQualityKind(Object newSpecificQualityKind) {
-		Object oldSpecificQualityKind = specificQualityKind;
-		specificQualityKind = newSpecificQualityKind;
+	public void setSpecificQualityKind(QualityKind newSpecificQualityKind) {
+		QualityKind oldSpecificQualityKind = specificQualityKind;
+		specificQualityKind = newSpecificQualityKind == null ? SPECIFIC_QUALITY_KIND_EDEFAULT : newSpecificQualityKind;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementClassificationPackage.QUALITY_REQUIREMENT__SPECIFIC_QUALITY_KIND, oldSpecificQualityKind, specificQualityKind));
 	}
@@ -120,7 +121,7 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementClassificationPackage.QUALITY_REQUIREMENT__SPECIFIC_QUALITY_KIND:
-				setSpecificQualityKind(newValue);
+				setSpecificQualityKind((QualityKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class QualityRequirementImpl extends RequirementImpl implements QualityRe
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementClassificationPackage.QUALITY_REQUIREMENT__SPECIFIC_QUALITY_KIND:
-				return SPECIFIC_QUALITY_KIND_EDEFAULT == null ? specificQualityKind != null : !SPECIFIC_QUALITY_KIND_EDEFAULT.equals(specificQualityKind);
+				return specificQualityKind != SPECIFIC_QUALITY_KIND_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

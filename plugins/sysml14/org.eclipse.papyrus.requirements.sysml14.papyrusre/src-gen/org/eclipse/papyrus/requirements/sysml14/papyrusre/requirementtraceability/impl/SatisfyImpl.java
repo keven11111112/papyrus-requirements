@@ -18,6 +18,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.Satisfy;
 
@@ -64,7 +65,7 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object SATISFY_STATUS_EDEFAULT = null;
+	protected static final SatisfactionStatusKind SATISFY_STATUS_EDEFAULT = SatisfactionStatusKind.NOT_SATISFIED;
 
 	/**
 	 * The cached value of the '{@link #getSatisfyStatus() <em>Satisfy Status</em>}' attribute.
@@ -74,7 +75,7 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 	 * @generated
 	 * @ordered
 	 */
-	protected Object satisfyStatus = SATISFY_STATUS_EDEFAULT;
+	protected SatisfactionStatusKind satisfyStatus = SATISFY_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,7 +122,7 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getSatisfyStatus() {
+	public SatisfactionStatusKind getSatisfyStatus() {
 		return satisfyStatus;
 	}
 
@@ -130,9 +131,9 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSatisfyStatus(Object newSatisfyStatus) {
-		Object oldSatisfyStatus = satisfyStatus;
-		satisfyStatus = newSatisfyStatus;
+	public void setSatisfyStatus(SatisfactionStatusKind newSatisfyStatus) {
+		SatisfactionStatusKind oldSatisfyStatus = satisfyStatus;
+		satisfyStatus = newSatisfyStatus == null ? SATISFY_STATUS_EDEFAULT : newSatisfyStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementTraceabilityPackage.SATISFY__SATISFY_STATUS, oldSatisfyStatus, satisfyStatus));
 	}
@@ -165,7 +166,7 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 				setValidatorName((String)newValue);
 				return;
 			case RequirementTraceabilityPackage.SATISFY__SATISFY_STATUS:
-				setSatisfyStatus(newValue);
+				setSatisfyStatus((SatisfactionStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -200,7 +201,7 @@ public class SatisfyImpl extends org.eclipse.papyrus.sysml14.requirements.intern
 			case RequirementTraceabilityPackage.SATISFY__VALIDATOR_NAME:
 				return VALIDATOR_NAME_EDEFAULT == null ? validatorName != null : !VALIDATOR_NAME_EDEFAULT.equals(validatorName);
 			case RequirementTraceabilityPackage.SATISFY__SATISFY_STATUS:
-				return SATISFY_STATUS_EDEFAULT == null ? satisfyStatus != null : !SATISFY_STATUS_EDEFAULT.equals(satisfyStatus);
+				return satisfyStatus != SATISFY_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

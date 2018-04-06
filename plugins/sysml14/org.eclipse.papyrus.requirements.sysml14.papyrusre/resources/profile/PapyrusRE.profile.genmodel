@@ -11,7 +11,7 @@
     testsDirectory="/org.eclipse.papyrus.requirements.sysml14.papyrusre.tests/src-gen"
     testSuiteClass="org.eclipse.papyrus.requirements.sysml14.papyrusre.tests.PapyrusREAllTests"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../../org.eclipse.papyrus.sysml14/resources/profile/SysML.profile.genmodel#//sysml14 ../../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
+    usedGenPackages="../../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../../org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary/resources/modellibrary/PapyrusRE_StandardUtils.modellibrary.genmodel#//papyrusrestandardutils ../../../org.eclipse.uml2.uml.profile.standard/model/Standard.genmodel#//standard ../../../org.eclipse.papyrus.sysml14/resources/profile/SysML.profile.genmodel#//sysml14 ../../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
     classNamePattern="" operationReflection="true" importOrganizing="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>

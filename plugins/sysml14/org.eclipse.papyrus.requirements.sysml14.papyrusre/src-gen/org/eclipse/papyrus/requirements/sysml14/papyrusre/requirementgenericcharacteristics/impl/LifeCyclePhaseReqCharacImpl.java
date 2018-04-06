@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.LifeCyclePhaseReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -45,7 +46,7 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object LIFE_CYCLE_PHASE_EDEFAULT = null;
+	protected static final LifeCyclePhaseKind LIFE_CYCLE_PHASE_EDEFAULT = LifeCyclePhaseKind.PRE_CONCEPT;
 
 	/**
 	 * The cached value of the '{@link #getLifeCyclePhase() <em>Life Cycle Phase</em>}' attribute.
@@ -55,7 +56,7 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 * @ordered
 	 */
-	protected Object lifeCyclePhase = LIFE_CYCLE_PHASE_EDEFAULT;
+	protected LifeCyclePhaseKind lifeCyclePhase = LIFE_CYCLE_PHASE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getLifeCyclePhase() {
+	public LifeCyclePhaseKind getLifeCyclePhase() {
 		return lifeCyclePhase;
 	}
 
@@ -90,9 +91,9 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLifeCyclePhase(Object newLifeCyclePhase) {
-		Object oldLifeCyclePhase = lifeCyclePhase;
-		lifeCyclePhase = newLifeCyclePhase;
+	public void setLifeCyclePhase(LifeCyclePhaseKind newLifeCyclePhase) {
+		LifeCyclePhaseKind oldLifeCyclePhase = lifeCyclePhase;
+		lifeCyclePhase = newLifeCyclePhase == null ? LIFE_CYCLE_PHASE_EDEFAULT : newLifeCyclePhase;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.LIFE_CYCLE_PHASE_REQ_CHARAC__LIFE_CYCLE_PHASE, oldLifeCyclePhase, lifeCyclePhase));
 	}
@@ -120,7 +121,7 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.LIFE_CYCLE_PHASE_REQ_CHARAC__LIFE_CYCLE_PHASE:
-				setLifeCyclePhase(newValue);
+				setLifeCyclePhase((LifeCyclePhaseKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class LifeCyclePhaseReqCharacImpl extends MinimalEObjectImpl.Container im
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.LIFE_CYCLE_PHASE_REQ_CHARAC__LIFE_CYCLE_PHASE:
-				return LIFE_CYCLE_PHASE_EDEFAULT == null ? lifeCyclePhase != null : !LIFE_CYCLE_PHASE_EDEFAULT.equals(lifeCyclePhase);
+				return lifeCyclePhase != LIFE_CYCLE_PHASE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -14,6 +14,8 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,6 +64,7 @@ public interface VerifierNameReqCharac extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>VV Method</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>VV Method</em>' attribute isn't clear,
@@ -69,25 +72,28 @@ public interface VerifierNameReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>VV Method</em>' attribute.
-	 * @see #setVV_Method(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind
+	 * @see #setVV_Method(VV_MethodKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getVerifierNameReqCharac_VV_Method()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getVV_Method();
+	VV_MethodKind getVV_Method();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.VerifierNameReqCharac#getVV_Method <em>VV Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>VV Method</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind
 	 * @see #getVV_Method()
 	 * @generated
 	 */
-	void setVV_Method(Object value);
+	void setVV_Method(VV_MethodKind value);
 
 	/**
 	 * Returns the value of the '<em><b>VV Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>VV Status</em>' attribute isn't clear,
@@ -95,21 +101,23 @@ public interface VerifierNameReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>VV Status</em>' attribute.
-	 * @see #setVV_Status(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind
+	 * @see #setVV_Status(VV_StatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getVerifierNameReqCharac_VV_Status()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getVV_Status();
+	VV_StatusKind getVV_Status();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.VerifierNameReqCharac#getVV_Status <em>VV Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>VV Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind
 	 * @see #getVV_Status()
 	 * @generated
 	 */
-	void setVV_Status(Object value);
+	void setVV_Status(VV_StatusKind value);
 
 } // VerifierNameReqCharac

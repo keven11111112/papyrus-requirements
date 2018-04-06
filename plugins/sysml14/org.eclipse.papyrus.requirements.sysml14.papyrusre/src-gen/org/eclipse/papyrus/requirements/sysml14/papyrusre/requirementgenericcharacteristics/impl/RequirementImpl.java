@@ -18,6 +18,16 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.PriorityKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.LifeCyclePhaseKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AbstractionLevelReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ApprovalAuthorityReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ImportanceReqCharac;
@@ -72,7 +82,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object IMPORTANCE_EDEFAULT = null;
+	protected static final ImportanceKind IMPORTANCE_EDEFAULT = ImportanceKind.IMPORTANCE1;
 
 	/**
 	 * The cached value of the '{@link #getImportance() <em>Importance</em>}' attribute.
@@ -82,7 +92,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object importance = IMPORTANCE_EDEFAULT;
+	protected ImportanceKind importance = IMPORTANCE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVerifierName() <em>Verifier Name</em>}' attribute.
@@ -112,7 +122,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VV_METHOD_EDEFAULT = null;
+	protected static final VV_MethodKind VV_METHOD_EDEFAULT = VV_MethodKind.ANALYSIS;
 
 	/**
 	 * The cached value of the '{@link #getVV_Method() <em>VV Method</em>}' attribute.
@@ -122,7 +132,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object vV_Method = VV_METHOD_EDEFAULT;
+	protected VV_MethodKind vV_Method = VV_METHOD_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVV_Status() <em>VV Status</em>}' attribute.
@@ -132,7 +142,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VV_STATUS_EDEFAULT = null;
+	protected static final VV_StatusKind VV_STATUS_EDEFAULT = VV_StatusKind.PENDING;
 
 	/**
 	 * The cached value of the '{@link #getVV_Status() <em>VV Status</em>}' attribute.
@@ -142,7 +152,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object vV_Status = VV_STATUS_EDEFAULT;
+	protected VV_StatusKind vV_Status = VV_STATUS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAbstractionLevel() <em>Abstraction Level</em>}' attribute.
@@ -152,7 +162,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object ABSTRACTION_LEVEL_EDEFAULT = null;
+	protected static final AbstractionLevelKind ABSTRACTION_LEVEL_EDEFAULT = AbstractionLevelKind.SPECIFICATION_LEVEL;
 
 	/**
 	 * The cached value of the '{@link #getAbstractionLevel() <em>Abstraction Level</em>}' attribute.
@@ -162,7 +172,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object abstractionLevel = ABSTRACTION_LEVEL_EDEFAULT;
+	protected AbstractionLevelKind abstractionLevel = ABSTRACTION_LEVEL_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getApprovalAuthority() <em>Approval Authority</em>}' attribute.
@@ -192,7 +202,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object LIFE_CYCLE_PHASE_EDEFAULT = null;
+	protected static final LifeCyclePhaseKind LIFE_CYCLE_PHASE_EDEFAULT = LifeCyclePhaseKind.PRE_CONCEPT;
 
 	/**
 	 * The cached value of the '{@link #getLifeCyclePhase() <em>Life Cycle Phase</em>}' attribute.
@@ -202,7 +212,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object lifeCyclePhase = LIFE_CYCLE_PHASE_EDEFAULT;
+	protected LifeCyclePhaseKind lifeCyclePhase = LIFE_CYCLE_PHASE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getMaturity() <em>Maturity</em>}' attribute.
@@ -252,7 +262,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object PRIORITY_EDEFAULT = null;
+	protected static final PriorityKind PRIORITY_EDEFAULT = PriorityKind.MANDATORY;
 
 	/**
 	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
@@ -262,7 +272,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object priority = PRIORITY_EDEFAULT;
+	protected PriorityKind priority = PRIORITY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getQualificationStatus() <em>Qualification Status</em>}' attribute.
@@ -272,7 +282,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object QUALIFICATION_STATUS_EDEFAULT = null;
+	protected static final QualificationStatusKind QUALIFICATION_STATUS_EDEFAULT = QualificationStatusKind.NOT_QUALIFIED;
 
 	/**
 	 * The cached value of the '{@link #getQualificationStatus() <em>Qualification Status</em>}' attribute.
@@ -282,7 +292,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object qualificationStatus = QUALIFICATION_STATUS_EDEFAULT;
+	protected QualificationStatusKind qualificationStatus = QUALIFICATION_STATUS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getQualityNature() <em>Quality Nature</em>}' attribute.
@@ -292,7 +302,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object QUALITY_NATURE_EDEFAULT = null;
+	protected static final QualityKind QUALITY_NATURE_EDEFAULT = QualityKind.ADAPTABILITY;
 
 	/**
 	 * The cached value of the '{@link #getQualityNature() <em>Quality Nature</em>}' attribute.
@@ -302,7 +312,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object qualityNature = QUALITY_NATURE_EDEFAULT;
+	protected QualityKind qualityNature = QUALITY_NATURE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getReviewStatus() <em>Review Status</em>}' attribute.
@@ -312,7 +322,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object REVIEW_STATUS_EDEFAULT = null;
+	protected static final ReviewStatusKind REVIEW_STATUS_EDEFAULT = ReviewStatusKind.TO_BE_REVIEWED;
 
 	/**
 	 * The cached value of the '{@link #getReviewStatus() <em>Review Status</em>}' attribute.
@@ -322,7 +332,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object reviewStatus = REVIEW_STATUS_EDEFAULT;
+	protected ReviewStatusKind reviewStatus = REVIEW_STATUS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getSatisfactionStatus() <em>Satisfaction Status</em>}' attribute.
@@ -332,7 +342,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object SATISFACTION_STATUS_EDEFAULT = null;
+	protected static final SatisfactionStatusKind SATISFACTION_STATUS_EDEFAULT = SatisfactionStatusKind.NOT_SATISFIED;
 
 	/**
 	 * The cached value of the '{@link #getSatisfactionStatus() <em>Satisfaction Status</em>}' attribute.
@@ -342,7 +352,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * @generated
 	 * @ordered
 	 */
-	protected Object satisfactionStatus = SATISFACTION_STATUS_EDEFAULT;
+	protected SatisfactionStatusKind satisfactionStatus = SATISFACTION_STATUS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
@@ -429,7 +439,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getImportance() {
+	public ImportanceKind getImportance() {
 		return importance;
 	}
 
@@ -438,9 +448,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImportance(Object newImportance) {
-		Object oldImportance = importance;
-		importance = newImportance;
+	public void setImportance(ImportanceKind newImportance) {
+		ImportanceKind oldImportance = importance;
+		importance = newImportance == null ? IMPORTANCE_EDEFAULT : newImportance;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE, oldImportance, importance));
 	}
@@ -450,7 +460,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getLifeCyclePhase() {
+	public LifeCyclePhaseKind getLifeCyclePhase() {
 		return lifeCyclePhase;
 	}
 
@@ -459,9 +469,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLifeCyclePhase(Object newLifeCyclePhase) {
-		Object oldLifeCyclePhase = lifeCyclePhase;
-		lifeCyclePhase = newLifeCyclePhase;
+	public void setLifeCyclePhase(LifeCyclePhaseKind newLifeCyclePhase) {
+		LifeCyclePhaseKind oldLifeCyclePhase = lifeCyclePhase;
+		lifeCyclePhase = newLifeCyclePhase == null ? LIFE_CYCLE_PHASE_EDEFAULT : newLifeCyclePhase;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE, oldLifeCyclePhase, lifeCyclePhase));
 	}
@@ -492,7 +502,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getAbstractionLevel() {
+	public AbstractionLevelKind getAbstractionLevel() {
 		return abstractionLevel;
 	}
 
@@ -501,9 +511,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAbstractionLevel(Object newAbstractionLevel) {
-		Object oldAbstractionLevel = abstractionLevel;
-		abstractionLevel = newAbstractionLevel;
+	public void setAbstractionLevel(AbstractionLevelKind newAbstractionLevel) {
+		AbstractionLevelKind oldAbstractionLevel = abstractionLevel;
+		abstractionLevel = newAbstractionLevel == null ? ABSTRACTION_LEVEL_EDEFAULT : newAbstractionLevel;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL, oldAbstractionLevel, abstractionLevel));
 	}
@@ -534,7 +544,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getPriority() {
+	public PriorityKind getPriority() {
 		return priority;
 	}
 
@@ -543,9 +553,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPriority(Object newPriority) {
-		Object oldPriority = priority;
-		priority = newPriority;
+	public void setPriority(PriorityKind newPriority) {
+		PriorityKind oldPriority = priority;
+		priority = newPriority == null ? PRIORITY_EDEFAULT : newPriority;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY, oldPriority, priority));
 	}
@@ -555,7 +565,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getQualificationStatus() {
+	public QualificationStatusKind getQualificationStatus() {
 		return qualificationStatus;
 	}
 
@@ -564,9 +574,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQualificationStatus(Object newQualificationStatus) {
-		Object oldQualificationStatus = qualificationStatus;
-		qualificationStatus = newQualificationStatus;
+	public void setQualificationStatus(QualificationStatusKind newQualificationStatus) {
+		QualificationStatusKind oldQualificationStatus = qualificationStatus;
+		qualificationStatus = newQualificationStatus == null ? QUALIFICATION_STATUS_EDEFAULT : newQualificationStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS, oldQualificationStatus, qualificationStatus));
 	}
@@ -576,7 +586,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getReviewStatus() {
+	public ReviewStatusKind getReviewStatus() {
 		return reviewStatus;
 	}
 
@@ -585,9 +595,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReviewStatus(Object newReviewStatus) {
-		Object oldReviewStatus = reviewStatus;
-		reviewStatus = newReviewStatus;
+	public void setReviewStatus(ReviewStatusKind newReviewStatus) {
+		ReviewStatusKind oldReviewStatus = reviewStatus;
+		reviewStatus = newReviewStatus == null ? REVIEW_STATUS_EDEFAULT : newReviewStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS, oldReviewStatus, reviewStatus));
 	}
@@ -597,7 +607,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getSatisfactionStatus() {
+	public SatisfactionStatusKind getSatisfactionStatus() {
 		return satisfactionStatus;
 	}
 
@@ -606,9 +616,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSatisfactionStatus(Object newSatisfactionStatus) {
-		Object oldSatisfactionStatus = satisfactionStatus;
-		satisfactionStatus = newSatisfactionStatus;
+	public void setSatisfactionStatus(SatisfactionStatusKind newSatisfactionStatus) {
+		SatisfactionStatusKind oldSatisfactionStatus = satisfactionStatus;
+		satisfactionStatus = newSatisfactionStatus == null ? SATISFACTION_STATUS_EDEFAULT : newSatisfactionStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS, oldSatisfactionStatus, satisfactionStatus));
 	}
@@ -681,7 +691,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVV_Method() {
+	public VV_MethodKind getVV_Method() {
 		return vV_Method;
 	}
 
@@ -690,9 +700,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVV_Method(Object newVV_Method) {
-		Object oldVV_Method = vV_Method;
-		vV_Method = newVV_Method;
+	public void setVV_Method(VV_MethodKind newVV_Method) {
+		VV_MethodKind oldVV_Method = vV_Method;
+		vV_Method = newVV_Method == null ? VV_METHOD_EDEFAULT : newVV_Method;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_METHOD, oldVV_Method, vV_Method));
 	}
@@ -702,7 +712,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVV_Status() {
+	public VV_StatusKind getVV_Status() {
 		return vV_Status;
 	}
 
@@ -711,9 +721,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVV_Status(Object newVV_Status) {
-		Object oldVV_Status = vV_Status;
-		vV_Status = newVV_Status;
+	public void setVV_Status(VV_StatusKind newVV_Status) {
+		VV_StatusKind oldVV_Status = vV_Status;
+		vV_Status = newVV_Status == null ? VV_STATUS_EDEFAULT : newVV_Status;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS, oldVV_Status, vV_Status));
 	}
@@ -723,7 +733,7 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getQualityNature() {
+	public QualityKind getQualityNature() {
 		return qualityNature;
 	}
 
@@ -732,9 +742,9 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQualityNature(Object newQualityNature) {
-		Object oldQualityNature = qualityNature;
-		qualityNature = newQualityNature;
+	public void setQualityNature(QualityKind newQualityNature) {
+		QualityKind oldQualityNature = qualityNature;
+		qualityNature = newQualityNature == null ? QUALITY_NATURE_EDEFAULT : newQualityNature;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE, oldQualityNature, qualityNature));
 	}
@@ -792,25 +802,25 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE:
-				setImportance(newValue);
+				setImportance((ImportanceKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VERIFIER_NAME:
 				setVerifierName((String)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_METHOD:
-				setVV_Method(newValue);
+				setVV_Method((VV_MethodKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS:
-				setVV_Status(newValue);
+				setVV_Status((VV_StatusKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL:
-				setAbstractionLevel(newValue);
+				setAbstractionLevel((AbstractionLevelKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY:
 				setApprovalAuthority((String)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE:
-				setLifeCyclePhase(newValue);
+				setLifeCyclePhase((LifeCyclePhaseKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY:
 				setMaturity((Integer)newValue);
@@ -819,19 +829,19 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 				setOwner((String)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY:
-				setPriority(newValue);
+				setPriority((PriorityKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS:
-				setQualificationStatus(newValue);
+				setQualificationStatus((QualificationStatusKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE:
-				setQualityNature(newValue);
+				setQualityNature((QualityKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS:
-				setReviewStatus(newValue);
+				setReviewStatus((ReviewStatusKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS:
-				setSatisfactionStatus(newValue);
+				setSatisfactionStatus((SatisfactionStatusKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE:
 				setSource((String)newValue);
@@ -912,33 +922,33 @@ public class RequirementImpl extends AgreementStatusReqCharacImpl implements Req
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__IMPORTANCE:
-				return IMPORTANCE_EDEFAULT == null ? importance != null : !IMPORTANCE_EDEFAULT.equals(importance);
+				return importance != IMPORTANCE_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VERIFIER_NAME:
 				return VERIFIER_NAME_EDEFAULT == null ? verifierName != null : !VERIFIER_NAME_EDEFAULT.equals(verifierName);
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_METHOD:
-				return VV_METHOD_EDEFAULT == null ? vV_Method != null : !VV_METHOD_EDEFAULT.equals(vV_Method);
+				return vV_Method != VV_METHOD_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VV_STATUS:
-				return VV_STATUS_EDEFAULT == null ? vV_Status != null : !VV_STATUS_EDEFAULT.equals(vV_Status);
+				return vV_Status != VV_STATUS_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__ABSTRACTION_LEVEL:
-				return ABSTRACTION_LEVEL_EDEFAULT == null ? abstractionLevel != null : !ABSTRACTION_LEVEL_EDEFAULT.equals(abstractionLevel);
+				return abstractionLevel != ABSTRACTION_LEVEL_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__APPROVAL_AUTHORITY:
 				return APPROVAL_AUTHORITY_EDEFAULT == null ? approvalAuthority != null : !APPROVAL_AUTHORITY_EDEFAULT.equals(approvalAuthority);
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__LIFE_CYCLE_PHASE:
-				return LIFE_CYCLE_PHASE_EDEFAULT == null ? lifeCyclePhase != null : !LIFE_CYCLE_PHASE_EDEFAULT.equals(lifeCyclePhase);
+				return lifeCyclePhase != LIFE_CYCLE_PHASE_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__MATURITY:
 				return maturity != MATURITY_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__OWNER:
 				return OWNER_EDEFAULT == null ? owner != null : !OWNER_EDEFAULT.equals(owner);
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__PRIORITY:
-				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
+				return priority != PRIORITY_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALIFICATION_STATUS:
-				return QUALIFICATION_STATUS_EDEFAULT == null ? qualificationStatus != null : !QUALIFICATION_STATUS_EDEFAULT.equals(qualificationStatus);
+				return qualificationStatus != QUALIFICATION_STATUS_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__QUALITY_NATURE:
-				return QUALITY_NATURE_EDEFAULT == null ? qualityNature != null : !QUALITY_NATURE_EDEFAULT.equals(qualityNature);
+				return qualityNature != QUALITY_NATURE_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__REVIEW_STATUS:
-				return REVIEW_STATUS_EDEFAULT == null ? reviewStatus != null : !REVIEW_STATUS_EDEFAULT.equals(reviewStatus);
+				return reviewStatus != REVIEW_STATUS_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__SATISFACTION_STATUS:
-				return SATISFACTION_STATUS_EDEFAULT == null ? satisfactionStatus != null : !SATISFACTION_STATUS_EDEFAULT.equals(satisfactionStatus);
+				return satisfactionStatus != SATISFACTION_STATUS_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__SOURCE:
 				return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
 			case RequirementGenericCharacteristicsPackage.REQUIREMENT__VALIDATOR_NAME:

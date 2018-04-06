@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface QualificationStatusReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Qualification Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Qualification Status</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface QualificationStatusReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Qualification Status</em>' attribute.
-	 * @see #setQualificationStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind
+	 * @see #setQualificationStatus(QualificationStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getQualificationStatusReqCharac_QualificationStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getQualificationStatus();
+	QualificationStatusKind getQualificationStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualificationStatusReqCharac#getQualificationStatus <em>Qualification Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Qualification Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind
 	 * @see #getQualificationStatus()
 	 * @generated
 	 */
-	void setQualificationStatus(Object value);
+	void setQualificationStatus(QualificationStatusKind value);
 
 } // QualificationStatusReqCharac

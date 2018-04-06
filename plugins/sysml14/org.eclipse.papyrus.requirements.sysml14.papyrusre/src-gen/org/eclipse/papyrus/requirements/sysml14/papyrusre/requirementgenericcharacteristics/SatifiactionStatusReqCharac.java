@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface SatifiactionStatusReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Satisfaction Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Satisfaction Status</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface SatifiactionStatusReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Satisfaction Status</em>' attribute.
-	 * @see #setSatisfactionStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
+	 * @see #setSatisfactionStatus(SatisfactionStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getSatifiactionStatusReqCharac_SatisfactionStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getSatisfactionStatus();
+	SatisfactionStatusKind getSatisfactionStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.SatifiactionStatusReqCharac#getSatisfactionStatus <em>Satisfaction Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Satisfaction Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
 	 * @see #getSatisfactionStatus()
 	 * @generated
 	 */
-	void setSatisfactionStatus(Object value);
+	void setSatisfactionStatus(SatisfactionStatusKind value);
 
 } // SatifiactionStatusReqCharac

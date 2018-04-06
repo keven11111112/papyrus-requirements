@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AbstractionLevelReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -45,7 +46,7 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object ABSTRACTION_LEVEL_EDEFAULT = null;
+	protected static final AbstractionLevelKind ABSTRACTION_LEVEL_EDEFAULT = AbstractionLevelKind.SPECIFICATION_LEVEL;
 
 	/**
 	 * The cached value of the '{@link #getAbstractionLevel() <em>Abstraction Level</em>}' attribute.
@@ -55,7 +56,7 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 * @ordered
 	 */
-	protected Object abstractionLevel = ABSTRACTION_LEVEL_EDEFAULT;
+	protected AbstractionLevelKind abstractionLevel = ABSTRACTION_LEVEL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getAbstractionLevel() {
+	public AbstractionLevelKind getAbstractionLevel() {
 		return abstractionLevel;
 	}
 
@@ -90,9 +91,9 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAbstractionLevel(Object newAbstractionLevel) {
-		Object oldAbstractionLevel = abstractionLevel;
-		abstractionLevel = newAbstractionLevel;
+	public void setAbstractionLevel(AbstractionLevelKind newAbstractionLevel) {
+		AbstractionLevelKind oldAbstractionLevel = abstractionLevel;
+		abstractionLevel = newAbstractionLevel == null ? ABSTRACTION_LEVEL_EDEFAULT : newAbstractionLevel;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.ABSTRACTION_LEVEL_REQ_CHARAC__ABSTRACTION_LEVEL, oldAbstractionLevel, abstractionLevel));
 	}
@@ -120,7 +121,7 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.ABSTRACTION_LEVEL_REQ_CHARAC__ABSTRACTION_LEVEL:
-				setAbstractionLevel(newValue);
+				setAbstractionLevel((AbstractionLevelKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class AbstractionLevelReqCharacImpl extends MinimalEObjectImpl.Container 
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.ABSTRACTION_LEVEL_REQ_CHARAC__ABSTRACTION_LEVEL:
-				return ABSTRACTION_LEVEL_EDEFAULT == null ? abstractionLevel != null : !ABSTRACTION_LEVEL_EDEFAULT.equals(abstractionLevel);
+				return abstractionLevel != ABSTRACTION_LEVEL_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

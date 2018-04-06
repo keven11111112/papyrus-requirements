@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.QualificationStatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.QualificationStatusReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -45,7 +46,7 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object QUALIFICATION_STATUS_EDEFAULT = null;
+	protected static final QualificationStatusKind QUALIFICATION_STATUS_EDEFAULT = QualificationStatusKind.NOT_QUALIFIED;
 
 	/**
 	 * The cached value of the '{@link #getQualificationStatus() <em>Qualification Status</em>}' attribute.
@@ -55,7 +56,7 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	 * @generated
 	 * @ordered
 	 */
-	protected Object qualificationStatus = QUALIFICATION_STATUS_EDEFAULT;
+	protected QualificationStatusKind qualificationStatus = QUALIFICATION_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getQualificationStatus() {
+	public QualificationStatusKind getQualificationStatus() {
 		return qualificationStatus;
 	}
 
@@ -90,9 +91,9 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setQualificationStatus(Object newQualificationStatus) {
-		Object oldQualificationStatus = qualificationStatus;
-		qualificationStatus = newQualificationStatus;
+	public void setQualificationStatus(QualificationStatusKind newQualificationStatus) {
+		QualificationStatusKind oldQualificationStatus = qualificationStatus;
+		qualificationStatus = newQualificationStatus == null ? QUALIFICATION_STATUS_EDEFAULT : newQualificationStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.QUALIFICATION_STATUS_REQ_CHARAC__QUALIFICATION_STATUS, oldQualificationStatus, qualificationStatus));
 	}
@@ -120,7 +121,7 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.QUALIFICATION_STATUS_REQ_CHARAC__QUALIFICATION_STATUS:
-				setQualificationStatus(newValue);
+				setQualificationStatus((QualificationStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class QualificationStatusReqCharacImpl extends MinimalEObjectImpl.Contain
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.QUALIFICATION_STATUS_REQ_CHARAC__QUALIFICATION_STATUS:
-				return QUALIFICATION_STATUS_EDEFAULT == null ? qualificationStatus != null : !QUALIFICATION_STATUS_EDEFAULT.equals(qualificationStatus);
+				return qualificationStatus != QUALIFICATION_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

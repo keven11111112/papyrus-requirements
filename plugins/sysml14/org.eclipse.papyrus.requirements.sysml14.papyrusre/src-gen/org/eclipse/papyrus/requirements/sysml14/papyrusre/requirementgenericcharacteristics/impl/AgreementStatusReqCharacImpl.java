@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.AgreementStatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AgreementStatusReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -46,7 +47,7 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object AGREEMENT_STATUS_EDEFAULT = null;
+	protected static final AgreementStatusKind AGREEMENT_STATUS_EDEFAULT = AgreementStatusKind.SUBMITTED;
 
 	/**
 	 * The cached value of the '{@link #getAgreementStatus() <em>Agreement Status</em>}' attribute.
@@ -56,7 +57,7 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	 * @generated
 	 * @ordered
 	 */
-	protected Object agreementStatus = AGREEMENT_STATUS_EDEFAULT;
+	protected AgreementStatusKind agreementStatus = AGREEMENT_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,7 +83,7 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getAgreementStatus() {
+	public AgreementStatusKind getAgreementStatus() {
 		return agreementStatus;
 	}
 
@@ -91,9 +92,9 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAgreementStatus(Object newAgreementStatus) {
-		Object oldAgreementStatus = agreementStatus;
-		agreementStatus = newAgreementStatus;
+	public void setAgreementStatus(AgreementStatusKind newAgreementStatus) {
+		AgreementStatusKind oldAgreementStatus = agreementStatus;
+		agreementStatus = newAgreementStatus == null ? AGREEMENT_STATUS_EDEFAULT : newAgreementStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.AGREEMENT_STATUS_REQ_CHARAC__AGREEMENT_STATUS, oldAgreementStatus, agreementStatus));
 	}
@@ -121,7 +122,7 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.AGREEMENT_STATUS_REQ_CHARAC__AGREEMENT_STATUS:
-				setAgreementStatus(newValue);
+				setAgreementStatus((AgreementStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -151,7 +152,7 @@ public class AgreementStatusReqCharacImpl extends RequirementImpl implements Agr
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.AGREEMENT_STATUS_REQ_CHARAC__AGREEMENT_STATUS:
-				return AGREEMENT_STATUS_EDEFAULT == null ? agreementStatus != null : !AGREEMENT_STATUS_EDEFAULT.equals(agreementStatus);
+				return agreementStatus != AGREEMENT_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

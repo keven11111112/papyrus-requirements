@@ -14,6 +14,7 @@
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface AbstractionLevelReqCharac extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Abstraction Level</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Abstraction Level</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface AbstractionLevelReqCharac extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Abstraction Level</em>' attribute.
-	 * @see #setAbstractionLevel(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind
+	 * @see #setAbstractionLevel(AbstractionLevelKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getAbstractionLevelReqCharac_AbstractionLevel()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getAbstractionLevel();
+	AbstractionLevelKind getAbstractionLevel();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AbstractionLevelReqCharac#getAbstractionLevel <em>Abstraction Level</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Abstraction Level</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementscharacteristicsconcerns.AbstractionLevelKind
 	 * @see #getAbstractionLevel()
 	 * @generated
 	 */
-	void setAbstractionLevel(Object value);
+	void setAbstractionLevel(AbstractionLevelKind value);
 
 } // AbstractionLevelReqCharac

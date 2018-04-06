@@ -13,6 +13,9 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Verify</b></em>'.
@@ -60,6 +63,7 @@ public interface Verify extends org.eclipse.papyrus.sysml14.requirements.Verify 
 
 	/**
 	 * Returns the value of the '<em><b>Verify Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Verify Status</em>' attribute isn't clear,
@@ -67,25 +71,28 @@ public interface Verify extends org.eclipse.papyrus.sysml14.requirements.Verify 
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Verify Status</em>' attribute.
-	 * @see #setVerifyStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind
+	 * @see #setVerifyStatus(VV_StatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage#getVerify_VerifyStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getVerifyStatus();
+	VV_StatusKind getVerifyStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.Verify#getVerifyStatus <em>Verify Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Verify Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind
 	 * @see #getVerifyStatus()
 	 * @generated
 	 */
-	void setVerifyStatus(Object value);
+	void setVerifyStatus(VV_StatusKind value);
 
 	/**
 	 * Returns the value of the '<em><b>VV Method</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>VV Method</em>' attribute isn't clear,
@@ -93,21 +100,23 @@ public interface Verify extends org.eclipse.papyrus.sysml14.requirements.Verify 
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>VV Method</em>' attribute.
-	 * @see #setVV_Method(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
+	 * @see #setVV_Method(SatisfactionStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.RequirementTraceabilityPackage#getVerify_VV_Method()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getVV_Method();
+	SatisfactionStatusKind getVV_Method();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementtraceability.Verify#getVV_Method <em>VV Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>VV Method</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind
 	 * @see #getVV_Method()
 	 * @generated
 	 */
-	void setVV_Method(Object value);
+	void setVV_Method(SatisfactionStatusKind value);
 
 } // Verify

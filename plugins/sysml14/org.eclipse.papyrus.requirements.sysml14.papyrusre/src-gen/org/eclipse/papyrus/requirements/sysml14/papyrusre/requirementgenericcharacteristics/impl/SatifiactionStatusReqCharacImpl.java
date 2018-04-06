@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.SatisfactionStatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.SatifiactionStatusReqCharac;
 
@@ -45,7 +46,7 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object SATISFACTION_STATUS_EDEFAULT = null;
+	protected static final SatisfactionStatusKind SATISFACTION_STATUS_EDEFAULT = SatisfactionStatusKind.NOT_SATISFIED;
 
 	/**
 	 * The cached value of the '{@link #getSatisfactionStatus() <em>Satisfaction Status</em>}' attribute.
@@ -55,7 +56,7 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
-	protected Object satisfactionStatus = SATISFACTION_STATUS_EDEFAULT;
+	protected SatisfactionStatusKind satisfactionStatus = SATISFACTION_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getSatisfactionStatus() {
+	public SatisfactionStatusKind getSatisfactionStatus() {
 		return satisfactionStatus;
 	}
 
@@ -90,9 +91,9 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSatisfactionStatus(Object newSatisfactionStatus) {
-		Object oldSatisfactionStatus = satisfactionStatus;
-		satisfactionStatus = newSatisfactionStatus;
+	public void setSatisfactionStatus(SatisfactionStatusKind newSatisfactionStatus) {
+		SatisfactionStatusKind oldSatisfactionStatus = satisfactionStatus;
+		satisfactionStatus = newSatisfactionStatus == null ? SATISFACTION_STATUS_EDEFAULT : newSatisfactionStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.SATIFIACTION_STATUS_REQ_CHARAC__SATISFACTION_STATUS, oldSatisfactionStatus, satisfactionStatus));
 	}
@@ -120,7 +121,7 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.SATIFIACTION_STATUS_REQ_CHARAC__SATISFACTION_STATUS:
-				setSatisfactionStatus(newValue);
+				setSatisfactionStatus((SatisfactionStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class SatifiactionStatusReqCharacImpl extends MinimalEObjectImpl.Containe
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.SATIFIACTION_STATUS_REQ_CHARAC__SATISFACTION_STATUS:
-				return SATISFACTION_STATUS_EDEFAULT == null ? satisfactionStatus != null : !SATISFACTION_STATUS_EDEFAULT.equals(satisfactionStatus);
+				return satisfactionStatus != SATISFACTION_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

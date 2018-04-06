@@ -13,6 +13,7 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.Requirement;
 
 /**
@@ -34,6 +35,7 @@ import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericchar
 public interface QualityRequirement extends Requirement {
 	/**
 	 * Returns the value of the '<em><b>Specific Quality Kind</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Specific Quality Kind</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface QualityRequirement extends Requirement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Specific Quality Kind</em>' attribute.
-	 * @see #setSpecificQualityKind(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind
+	 * @see #setSpecificQualityKind(QualityKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage#getQualityRequirement_SpecificQualityKind()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	Object getSpecificQualityKind();
+	QualityKind getSpecificQualityKind();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.QualityRequirement#getSpecificQualityKind <em>Specific Quality Kind</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Specific Quality Kind</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.QualityKind
 	 * @see #getSpecificQualityKind()
 	 * @generated
 	 */
-	void setSpecificQualityKind(Object value);
+	void setSpecificQualityKind(QualityKind value);
 
 } // QualityRequirement

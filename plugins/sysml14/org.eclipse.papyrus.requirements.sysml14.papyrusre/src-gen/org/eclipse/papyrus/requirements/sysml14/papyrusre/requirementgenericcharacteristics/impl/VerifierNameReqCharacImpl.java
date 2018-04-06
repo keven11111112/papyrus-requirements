@@ -20,6 +20,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_MethodKind;
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.verificationandvalidationconcerns.VV_StatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.VerifierNameReqCharac;
 
@@ -67,7 +69,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VV_METHOD_EDEFAULT = null;
+	protected static final VV_MethodKind VV_METHOD_EDEFAULT = VV_MethodKind.ANALYSIS;
 
 	/**
 	 * The cached value of the '{@link #getVV_Method() <em>VV Method</em>}' attribute.
@@ -77,7 +79,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected Object vV_Method = VV_METHOD_EDEFAULT;
+	protected VV_MethodKind vV_Method = VV_METHOD_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVV_Status() <em>VV Status</em>}' attribute.
@@ -87,7 +89,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object VV_STATUS_EDEFAULT = null;
+	protected static final VV_StatusKind VV_STATUS_EDEFAULT = VV_StatusKind.PENDING;
 
 	/**
 	 * The cached value of the '{@link #getVV_Status() <em>VV Status</em>}' attribute.
@@ -97,7 +99,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected Object vV_Status = VV_STATUS_EDEFAULT;
+	protected VV_StatusKind vV_Status = VV_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,7 +146,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVV_Method() {
+	public VV_MethodKind getVV_Method() {
 		return vV_Method;
 	}
 
@@ -153,9 +155,9 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVV_Method(Object newVV_Method) {
-		Object oldVV_Method = vV_Method;
-		vV_Method = newVV_Method;
+	public void setVV_Method(VV_MethodKind newVV_Method) {
+		VV_MethodKind oldVV_Method = vV_Method;
+		vV_Method = newVV_Method == null ? VV_METHOD_EDEFAULT : newVV_Method;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_METHOD, oldVV_Method, vV_Method));
 	}
@@ -165,7 +167,7 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getVV_Status() {
+	public VV_StatusKind getVV_Status() {
 		return vV_Status;
 	}
 
@@ -174,9 +176,9 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVV_Status(Object newVV_Status) {
-		Object oldVV_Status = vV_Status;
-		vV_Status = newVV_Status;
+	public void setVV_Status(VV_StatusKind newVV_Status) {
+		VV_StatusKind oldVV_Status = vV_Status;
+		vV_Status = newVV_Status == null ? VV_STATUS_EDEFAULT : newVV_Status;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_STATUS, oldVV_Status, vV_Status));
 	}
@@ -211,10 +213,10 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 				setVerifierName((String)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_METHOD:
-				setVV_Method(newValue);
+				setVV_Method((VV_MethodKind)newValue);
 				return;
 			case RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_STATUS:
-				setVV_Status(newValue);
+				setVV_Status((VV_StatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -252,9 +254,9 @@ public class VerifierNameReqCharacImpl extends MinimalEObjectImpl.Container impl
 			case RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VERIFIER_NAME:
 				return VERIFIER_NAME_EDEFAULT == null ? verifierName != null : !VERIFIER_NAME_EDEFAULT.equals(verifierName);
 			case RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_METHOD:
-				return VV_METHOD_EDEFAULT == null ? vV_Method != null : !VV_METHOD_EDEFAULT.equals(vV_Method);
+				return vV_Method != VV_METHOD_EDEFAULT;
 			case RequirementGenericCharacteristicsPackage.VERIFIER_NAME_REQ_CHARAC__VV_STATUS:
-				return VV_STATUS_EDEFAULT == null ? vV_Status != null : !VV_STATUS_EDEFAULT.equals(vV_Status);
+				return vV_Status != VV_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

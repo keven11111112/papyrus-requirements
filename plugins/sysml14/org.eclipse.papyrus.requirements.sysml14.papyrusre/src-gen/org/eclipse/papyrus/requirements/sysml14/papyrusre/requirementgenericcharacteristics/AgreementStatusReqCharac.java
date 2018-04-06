@@ -13,6 +13,7 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.AgreementStatusKind;
 import org.eclipse.papyrus.sysml14.requirements.Requirement;
 
 /**
@@ -34,6 +35,7 @@ import org.eclipse.papyrus.sysml14.requirements.Requirement;
 public interface AgreementStatusReqCharac extends Requirement {
 	/**
 	 * Returns the value of the '<em><b>Agreement Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.AgreementStatusKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Agreement Status</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface AgreementStatusReqCharac extends Requirement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Agreement Status</em>' attribute.
-	 * @see #setAgreementStatus(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.AgreementStatusKind
+	 * @see #setAgreementStatus(AgreementStatusKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getAgreementStatusReqCharac_AgreementStatus()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getAgreementStatus();
+	AgreementStatusKind getAgreementStatus();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.AgreementStatusReqCharac#getAgreementStatus <em>Agreement Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Agreement Status</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.AgreementStatusKind
 	 * @see #getAgreementStatus()
 	 * @generated
 	 */
-	void setAgreementStatus(Object value);
+	void setAgreementStatus(AgreementStatusKind value);
 
 } // AgreementStatusReqCharac

@@ -13,6 +13,7 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.WorkloadCapacitiesKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.Requirement;
 
 /**
@@ -34,6 +35,7 @@ import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericchar
 public interface WorkloadCapacityRequirement extends Requirement {
 	/**
 	 * Returns the value of the '<em><b>Workload Capacity</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.WorkloadCapacitiesKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Workload Capacity</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface WorkloadCapacityRequirement extends Requirement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Workload Capacity</em>' attribute.
-	 * @see #setWorkloadCapacity(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.WorkloadCapacitiesKind
+	 * @see #setWorkloadCapacity(WorkloadCapacitiesKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage#getWorkloadCapacityRequirement_WorkloadCapacity()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	Object getWorkloadCapacity();
+	WorkloadCapacitiesKind getWorkloadCapacity();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.WorkloadCapacityRequirement#getWorkloadCapacity <em>Workload Capacity</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Workload Capacity</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.WorkloadCapacitiesKind
 	 * @see #getWorkloadCapacity()
 	 * @generated
 	 */
-	void setWorkloadCapacity(Object value);
+	void setWorkloadCapacity(WorkloadCapacitiesKind value);
 
 } // WorkloadCapacityRequirement

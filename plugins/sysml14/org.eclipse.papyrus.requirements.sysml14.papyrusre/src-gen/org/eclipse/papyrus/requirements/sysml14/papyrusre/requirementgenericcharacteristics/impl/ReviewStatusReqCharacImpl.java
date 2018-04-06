@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementandprocessconcerns.ReviewStatusKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ReviewStatusReqCharac;
 
@@ -45,7 +46,7 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object REVIEW_STATUS_EDEFAULT = null;
+	protected static final ReviewStatusKind REVIEW_STATUS_EDEFAULT = ReviewStatusKind.TO_BE_REVIEWED;
 
 	/**
 	 * The cached value of the '{@link #getReviewStatus() <em>Review Status</em>}' attribute.
@@ -55,7 +56,7 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected Object reviewStatus = REVIEW_STATUS_EDEFAULT;
+	protected ReviewStatusKind reviewStatus = REVIEW_STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getReviewStatus() {
+	public ReviewStatusKind getReviewStatus() {
 		return reviewStatus;
 	}
 
@@ -90,9 +91,9 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReviewStatus(Object newReviewStatus) {
-		Object oldReviewStatus = reviewStatus;
-		reviewStatus = newReviewStatus;
+	public void setReviewStatus(ReviewStatusKind newReviewStatus) {
+		ReviewStatusKind oldReviewStatus = reviewStatus;
+		reviewStatus = newReviewStatus == null ? REVIEW_STATUS_EDEFAULT : newReviewStatus;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.REVIEW_STATUS_REQ_CHARAC__REVIEW_STATUS, oldReviewStatus, reviewStatus));
 	}
@@ -120,7 +121,7 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.REVIEW_STATUS_REQ_CHARAC__REVIEW_STATUS:
-				setReviewStatus(newValue);
+				setReviewStatus((ReviewStatusKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -150,7 +151,7 @@ public class ReviewStatusReqCharacImpl extends MinimalEObjectImpl.Container impl
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.REVIEW_STATUS_REQ_CHARAC__REVIEW_STATUS:
-				return REVIEW_STATUS_EDEFAULT == null ? reviewStatus != null : !REVIEW_STATUS_EDEFAULT.equals(reviewStatus);
+				return reviewStatus != REVIEW_STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

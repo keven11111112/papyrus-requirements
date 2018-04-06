@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ImportanceReqCharac;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage;
 
@@ -46,7 +47,7 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object IMPORTANCE_EDEFAULT = null;
+	protected static final ImportanceKind IMPORTANCE_EDEFAULT = ImportanceKind.IMPORTANCE1;
 
 	/**
 	 * The cached value of the '{@link #getImportance() <em>Importance</em>}' attribute.
@@ -56,7 +57,7 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	 * @generated
 	 * @ordered
 	 */
-	protected Object importance = IMPORTANCE_EDEFAULT;
+	protected ImportanceKind importance = IMPORTANCE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,7 +83,7 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getImportance() {
+	public ImportanceKind getImportance() {
 		return importance;
 	}
 
@@ -91,9 +92,9 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setImportance(Object newImportance) {
-		Object oldImportance = importance;
-		importance = newImportance;
+	public void setImportance(ImportanceKind newImportance) {
+		ImportanceKind oldImportance = importance;
+		importance = newImportance == null ? IMPORTANCE_EDEFAULT : newImportance;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RequirementGenericCharacteristicsPackage.IMPORTANCE_REQ_CHARAC__IMPORTANCE, oldImportance, importance));
 	}
@@ -121,7 +122,7 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.IMPORTANCE_REQ_CHARAC__IMPORTANCE:
-				setImportance(newValue);
+				setImportance((ImportanceKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -151,7 +152,7 @@ public class ImportanceReqCharacImpl extends RequirementImpl implements Importan
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RequirementGenericCharacteristicsPackage.IMPORTANCE_REQ_CHARAC__IMPORTANCE:
-				return IMPORTANCE_EDEFAULT == null ? importance != null : !IMPORTANCE_EDEFAULT.equals(importance);
+				return importance != IMPORTANCE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

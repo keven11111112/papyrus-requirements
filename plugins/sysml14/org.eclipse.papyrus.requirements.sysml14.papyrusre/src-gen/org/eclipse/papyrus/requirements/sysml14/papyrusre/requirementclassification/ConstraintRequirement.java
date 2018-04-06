@@ -13,6 +13,7 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.ConstraintKind;
 import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.Requirement;
 
 /**
@@ -34,6 +35,7 @@ import org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericchar
 public interface ConstraintRequirement extends Requirement {
 	/**
 	 * Returns the value of the '<em><b>Constraint Kind</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.ConstraintKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Constraint Kind</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface ConstraintRequirement extends Requirement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Constraint Kind</em>' attribute.
-	 * @see #setConstraintKind(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.ConstraintKind
+	 * @see #setConstraintKind(ConstraintKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.RequirementClassificationPackage#getConstraintRequirement_ConstraintKind()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	Object getConstraintKind();
+	ConstraintKind getConstraintKind();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementclassification.ConstraintRequirement#getConstraintKind <em>Constraint Kind</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Constraint Kind</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.requirementclassificationconcerns.ConstraintKind
 	 * @see #getConstraintKind()
 	 * @generated
 	 */
-	void setConstraintKind(Object value);
+	void setConstraintKind(ConstraintKind value);
 
 } // ConstraintRequirement

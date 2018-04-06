@@ -13,6 +13,7 @@
  */
 package org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics;
 
+import org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind;
 import org.eclipse.papyrus.sysml14.requirements.Requirement;
 
 /**
@@ -34,6 +35,7 @@ import org.eclipse.papyrus.sysml14.requirements.Requirement;
 public interface ImportanceReqCharac extends Requirement {
 	/**
 	 * Returns the value of the '<em><b>Importance</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Importance</em>' attribute isn't clear,
@@ -41,21 +43,23 @@ public interface ImportanceReqCharac extends Requirement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Importance</em>' attribute.
-	 * @see #setImportance(Object)
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind
+	 * @see #setImportance(ImportanceKind)
 	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.RequirementGenericCharacteristicsPackage#getImportanceReqCharac_Importance()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Object getImportance();
+	ImportanceKind getImportance();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.papyrus.requirements.sysml14.papyrusre.requirementgenericcharacteristics.ImportanceReqCharac#getImportance <em>Importance</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Importance</em>' attribute.
+	 * @see org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.papyrusrestandardutils.priorityandimportanceconcerns.ImportanceKind
 	 * @see #getImportance()
 	 * @generated
 	 */
-	void setImportance(Object value);
+	void setImportance(ImportanceKind value);
 
 } // ImportanceReqCharac
