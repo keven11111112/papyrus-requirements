@@ -133,7 +133,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3O88wqROEeeur8HW6jKajg" x="210" y="20"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_d4-1ETp7EeCmwNGSFJpOjg"/>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_6HCcUFxREeelPYvPzDlaIw" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_6HCcUFxREeelPYvPzDlaIw" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_rfYh0F_zEeeOZqSO0VwLaQ" diagramKindId="org.eclipse.papyrus.uml.diagram.profile">
       <owner xmi:type="uml:Profile" href="PapyrusRE.profile.uml#_wJDIkDp6EeCmwNGSFJpOjg"/>
     </styles>
@@ -796,7 +796,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gg1PgDKmEeiCRcmDqF2OVg" x="550" y="980" width="271" height="61"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_WgSzcTp_EeCmwNGSFJpOjg"/>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_DuKuoFxSEeelPYvPzDlaIw" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_DuKuoFxSEeelPYvPzDlaIw" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_hoQ28JIgEeeji413eaUmIg" diagramKindId="org.eclipse.papyrus.uml.diagram.profile">
       <owner xmi:type="uml:Profile" href="PapyrusRE.profile.uml#_6-xDADp8EeCmwNGSFJpOjg"/>
     </styles>
