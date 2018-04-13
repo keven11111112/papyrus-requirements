@@ -13,6 +13,7 @@
 
 package org.eclipse.papyrus.requirements.sysml.common.advices;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.gmf.runtime.common.core.command.ICommand;
 import org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest;
 import org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest;
@@ -64,8 +65,12 @@ public class RequirementEditHelperAdvice extends org.eclipse.papyrus.uml.types.c
 				@Override
 				public ICommand getAfterEditCommand(IEditCommandRequest req) {
 					if (req instanceof SetRequest) {
-						Stereotype reqStereotype = ((org.eclipse.uml2.uml.Class)((SetRequest) req).getElementToEdit()).getApplicableStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE);
-				//System.out.println(((org.eclipse.uml2.uml.Class)((SetRequest) req).getElementToEdit()).getValue(reqStereotype, I_SysMLStereotype.REQUIREMENT_ID_ATT));
+						SetRequest setRequest = (SetRequest) req;
+						EObject elementToEdit = setRequest.getElementToEdit();
+						if (elementToEdit instanceof org.eclipse.uml2.uml.Class) {
+							Stereotype reqStereotype = ((org.eclipse.uml2.uml.Class)elementToEdit).getApplicableStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE);
+							//System.out.println(((org.eclipse.uml2.uml.Class)((SetRequest) req).getElementToEdit()).getValue(reqStereotype, I_SysMLStereotype.REQUIREMENT_ID_ATT));
+						}
 				
 					}
 					
