@@ -22,6 +22,8 @@ import org.eclipse.uml2.uml.Element;
 /**
  * 
  * Parses the text of the requirement and move some parts as comment
+ *@deprecated see org.eclipse.papyrus.requirements.sysml14.assistant.commands.api.CommandAssistantFactory
+ *@since 0.8.0
  *
  */
 public class CommentReqCommand extends RecordingCommand {

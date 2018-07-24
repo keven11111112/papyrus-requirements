@@ -8,8 +8,8 @@
         <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
       </eParameters>
       <query xsi:type="javaQuery:JavaQuery" implementationClassName="org.eclipse.papyrus.requirements.sysml14.common.ui.queries.GetComplexName"/>
-      <override xsi:type="efacet:FacetOperation" href="../../../plugin/org.eclipse.papyrus.emf.facet.custom.ui/resources/customproperties.efacet#//CustomizedEObject/label"/>
+      <override xsi:type="efacet:FacetOperation" href="platform:/plugin/org.eclipse.papyrus.emf.facet.custom.ui/resources/customproperties.efacet#//CustomizedEObject/label"/>
     </facetOperations>
-    <extendedFacets href="../../../plugin/org.eclipse.papyrus.emf.facet.custom.ui/resources/customproperties.efacet#//CustomizedEObject"/>
+    <extendedFacets href="platform:/plugin/org.eclipse.papyrus.emf.facet.custom.ui/resources/customproperties.efacet#//CustomizedEObject"/>
   </eClassifiers>
 </custom:Customization>

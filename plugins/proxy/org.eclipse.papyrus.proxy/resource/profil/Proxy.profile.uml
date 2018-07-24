@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Profile xmi:id="_yTEaoK9cEeeX4J2fh1dVPQ" name="Proxy" metaclassReference="_2NiFEK9cEeeX4J2fh1dVPQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OZDN4K9dEeeX4J2fh1dVPQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-    <elementImport xmi:type="uml:ElementImport" xmi:id="_2NiFEK9cEeeX4J2fh1dVPQ" alias="Element">
+    <eAnnotations xmi:id="_OZDN4K9dEeeX4J2fh1dVPQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+    <elementImport xmi:id="_2NiFEK9cEeeX4J2fh1dVPQ" alias="Element">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
     </elementImport>
-    <elementImport xmi:type="uml:ElementImport" xmi:id="_5ceMkLKZEeeXdNpCuqJQzg" alias="EObject">
+    <elementImport xmi:id="_5ceMkLKZEeeXdNpCuqJQzg" alias="EObject">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
     </elementImport>
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_yjh4gK9cEeeX4J2fh1dVPQ">
+    <packageImport xmi:id="_yjh4gK9cEeeX4J2fh1dVPQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_yjk70K9cEeeX4J2fh1dVPQ">
+    <packageImport xmi:id="_yjk70K9cEeeX4J2fh1dVPQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_3OjdMK9cEeeX4J2fh1dVPQ" name="EcoreReference">
-      <generalization xmi:type="uml:Generalization" xmi:id="_ubieMLC2EeeytNa0G5wlRQ" general="_bk1d8LC2EeeytNa0G5wlRQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_gqTvYLIpEeeoUNX41D-9qA" name="ref" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+      <generalization xmi:id="_ubieMLC2EeeytNa0G5wlRQ" general="_bk1d8LC2EeeytNa0G5wlRQ"/>
+      <ownedAttribute xmi:id="_gqTvYLIpEeeoUNX41D-9qA" name="ref" visibility="public">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uQyMILIpEeeoUNX41D-9qA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uQ6vALIpEeeoUNX41D-9qA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bk1d8LC2EeeytNa0G5wlRQ" name="Proxy" isAbstract="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_fhTTgbC2EeeytNa0G5wlRQ" name="base_Element" association="_fhKJkLC2EeeytNa0G5wlRQ">
+      <ownedAttribute xmi:id="_fhTTgbC2EeeytNa0G5wlRQ" name="base_Element" association="_fhKJkLC2EeeytNa0G5wlRQ">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
       </ownedAttribute>
     </packagedElement>
@@ -31,19 +31,19 @@
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fhTTgLC2EeeytNa0G5wlRQ" name="extension_Proxy" type="_bk1d8LC2EeeytNa0G5wlRQ" aggregation="composite" association="_fhKJkLC2EeeytNa0G5wlRQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_-a8hMLC2EeeytNa0G5wlRQ" name="FileReference">
-      <generalization xmi:type="uml:Generalization" xmi:id="_Ia0qsLC3EeeytNa0G5wlRQ" general="_bk1d8LC2EeeytNa0G5wlRQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__zn1kK9cEeeX4J2fh1dVPQ" name="ref" visibility="public">
+      <generalization xmi:id="_Ia0qsLC3EeeytNa0G5wlRQ" general="_bk1d8LC2EeeytNa0G5wlRQ"/>
+      <ownedAttribute xmi:id="__zn1kK9cEeeX4J2fh1dVPQ" name="ref" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_tGMK9dEeeX4J2fh1dVPQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H_5TcK9dEeeX4J2fh1dVPQ" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_U-8dkLA-Eee0iN1NNqo2iQ" name="defaultValue" value=" "/>
       </ownedAttribute>
     </packagedElement>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_3d2l8LA3Eee0iN1NNqo2iQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3d_v4LA3Eee0iN1NNqo2iQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_3d2l8LA3Eee0iN1NNqo2iQ">
+      <eAnnotations xmi:id="_3d_v4LA3Eee0iN1NNqo2iQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="_4zZckLA3Eee0iN1NNqo2iQ" base_Package="_yTEaoK9cEeeX4J2fh1dVPQ" packageName="proxy" nsURI="http://org.eclipse.papyrus/proxy" basePackage="org.eclipse.papyrus.proxy" prefix="Proxy"/>
