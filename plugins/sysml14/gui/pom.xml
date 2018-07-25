@@ -23,21 +23,30 @@
 	<!-- Parent POM (i.e., Bundles) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
+		<artifactId>org.eclipse.papyrus.requirements.plugins.sysml14</artifactId>
 		<version>0.8.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.plugins.sysml14</artifactId>
+	<artifactId>org.eclipse.papyrus.requirements.plugins.gui</artifactId>
 	<packaging>pom</packaging>
-	<name>Requirements for sysml14</name>
+	<name>Requirements UI plugin</name>
 	
 	<!-- Modules to build -->
 	
 	<modules>
-	
-		<module>controler</module>
-		<module>gui</module>
-		<module>viewpoint</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.common.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.assistant.handlers</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.assistant.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.testers</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.traceability.handlers</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.traceability.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.templates</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.matrix.common</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.papyrusre.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.papyrusre.modellibrary.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.migrationtoreq.ui</module>
+   <module>org.eclipse.papyrus.requirements.sysml14.export</module>
+		 
 	</modules>
 </project>

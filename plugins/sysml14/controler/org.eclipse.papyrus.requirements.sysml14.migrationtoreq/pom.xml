@@ -20,27 +20,15 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	
-	<!-- Parent POM -->
+	<!-- Parent POM (i.e., Bundles) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.root</artifactId>
+		<artifactId>org.eclipse.papyrus.requirements.plugins.controler</artifactId>
 		<version>0.8.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
-	<packaging>pom</packaging>
-	<name>Requirements Bundles (Bundles folder)</name>
-	
-	<!-- Modules to build -->
-	<modules>
-		
-		<!-- module>sysml11</module-->
-		<module>common</module> 
-		<module>sysml14</module> 
-		<module>proxy</module>
-        <module>metricsconnector</module> 		
-		
-	</modules>
-	
+	<artifactId>org.eclipse.papyrus.requirements.sysml14.migrationtoreq</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<version>0.7.0-SNAPSHOT</version>
 </project>
