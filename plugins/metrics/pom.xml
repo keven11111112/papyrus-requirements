@@ -20,26 +20,27 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	
-	<!-- Parent POM -->
+	<!-- Parent POM (i.e., bundles POM) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.root</artifactId>
+		<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
 		<version>0.8.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
+	<artifactId>org.eclipse.papyrus.requirements.plugins.common.metrics</artifactId>
 	<packaging>pom</packaging>
-	<name>Requirements Bundles (Bundles folder)</name>
+	<name>Requirements metrics</name>
 	
 	<!-- Modules to build -->
 	<modules>
-		<module>bmm</module>
-		<module>metrics</module> 
-		<module>sysml14</module> 
-		<module>proxy</module>
-        <module>metricsconnector</module> 		
-		
+		<module>org.eclipse.papyrus.metrics.commands</module>
+		<module>org.eclipse.papyrus.metrics.extensionpoints</module>
+		<module>org.eclipse.papyrus.metrics.handlers</module>
+		<module>org.eclipse.papyrus.metrics.smm</module>
+		<!-- module>org.eclipse.papyrus.metrics.ui</module-->
+		<module>org.eclipse.papyrus.metrics.view</module>
+		<module>org.eclipse.papyrus.metrics.viewers</module>
 	</modules>
 	
 </project>

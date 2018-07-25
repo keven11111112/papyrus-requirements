@@ -20,26 +20,25 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	
-	<!-- Parent POM -->
+	<!-- Parent POM (i.e., bundles POM) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.root</artifactId>
+		<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
 		<version>0.8.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->
-	<artifactId>org.eclipse.papyrus.requirements.plugins</artifactId>
+	<artifactId>org.eclipse.papyrus.requirements.plugins.common.bmm</artifactId>
 	<packaging>pom</packaging>
-	<name>Requirements Bundles (Bundles folder)</name>
+	<name>Requirements bmm</name>
 	
 	<!-- Modules to build -->
 	<modules>
-		<module>bmm</module>
-		<module>metrics</module> 
-		<module>sysml14</module> 
-		<module>proxy</module>
-        <module>metricsconnector</module> 		
-		
+		<module>org.eclipse.papyrus.bmm</module>
+		<module>org.eclipse.papyrus.bmm.diagram</module>
+		<module>org.eclipse.papyrus.bmm.diagram.common</module>
+		<module>org.eclipse.papyrus.bmm.diagram.ui</module>
+		<module>org.eclipse.papyrus.bmm.examples</module>
 	</modules>
 	
 </project>
