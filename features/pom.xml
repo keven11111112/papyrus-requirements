@@ -20,7 +20,6 @@
 		<module>org.eclipse.papyrus.requirements.controler.feature</module>
 		<module>org.eclipse.papyrus.requirements.viewpoint.feature</module>
 		<module>org.eclipse.papyrus.requirements.gui.feature</module>
-		<module>org.eclipse.papyrus.requirements.core.feature</module>
 		<!-- module>org.eclipse.papyrus.requirements.bmm.feature</module-->
 		<module>org.eclipse.papyrus.requirements.metrics.feature</module>
 		<module>org.eclipse.papyrus.requirements.sysml14.metrics.feature</module>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="3.0.0.qualifier">
-      <category name="org.eclipse.papyrus.requirements"/>
+      <category name="org.eclipse.papyrus.metrics"/>
    </feature>
    <feature url="features/org.eclipse.papyrus.requirements.sysml14.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.metrics.feature" version="3.0.0.qualifier">
-      <category name="org.eclipse.papyrus.requirements"/>
+      <category name="org.eclipse.papyrus.requirementmetrics"/>
    </feature>
    <feature url="features/org.eclipse.papyrus.requirements.controler.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.controler.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
@@ -18,6 +18,16 @@
    <category-def name="org.eclipse.papyrus.requirements" label="Requirements">
       <description>
          Papyrus Tools for Requirements
+      </description>
+   </category-def>
+   <category-def name="org.eclipse.papyrus.metrics" label="Metrics for model">
+      <description>
+         Implementation   to make metrics on models
+      </description>
+   </category-def>
+   <category-def name="org.eclipse.papyrus.requirementmetrics" label="Metrics for Requirements">
+      <description>
+         Metrics for Requirements
       </description>
    </category-def>
 </site>
