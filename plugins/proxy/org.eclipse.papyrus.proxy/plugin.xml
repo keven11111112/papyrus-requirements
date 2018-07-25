@@ -13,16 +13,7 @@
             class="org.eclipse.papyrus.proxy.proxy.ProxyPackage"
             genModel="resource/profil/proxy.genmodel"/>
    </extension>
-   <extension
-         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
-      <profile
-            description="This profile is used to connect to other model of file of this environment"
-            iconpath="resource/icons/reference.GIF"
-            name="Proxy profile"
-            path="platform:/plugin/org.eclipse.papyrus.proxy/resource/profil/Proxy.profile.uml"
-            qualifiednames="QSProject">
-      </profile>
-   </extension>
+   
    <extension
          point="org.eclipse.uml2.uml.generated_package">
       <profile

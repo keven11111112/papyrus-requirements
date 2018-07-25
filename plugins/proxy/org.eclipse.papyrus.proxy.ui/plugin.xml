@@ -33,5 +33,15 @@
             class="org.eclipse.papyrus.proxy.ui.Activator">
       </startup>
    </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="This profile is used to connect to other model of file of this environment"
+            iconpath="icons/reference.GIF"
+            name="Proxy profile"
+            path="platform:/plugin/org.eclipse.papyrus.proxy/resource/profil/Proxy.profile.uml"
+            qualifiednames="QSProject">
+      </profile>
+   </extension>
 
 </plugin>

@@ -14,6 +14,7 @@ Require-Bundle: org.eclipse.osgi;bundle-version="3.12.50",
  org.eclipse.papyrus.proxy;bundle-version="0.7.0",
  org.eclipse.emf.edit.ui,
  org.eclipse.core.resources,
- org.eclipse.papyrus.infra.ui
+ org.eclipse.papyrus.infra.ui,
+ org.eclipse.papyrus.uml.extensionpoints;bundle-version="1.3.0"
 Bundle-Activator: org.eclipse.papyrus.proxy.ui.Activator
 Bundle-Vendor: %providerName

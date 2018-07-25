@@ -69,7 +69,6 @@ public class RequirementEditHelperAdvice extends org.eclipse.papyrus.uml.types.c
 						EObject elementToEdit = setRequest.getElementToEdit();
 						if (elementToEdit instanceof org.eclipse.uml2.uml.Class) {
 							Stereotype reqStereotype = ((org.eclipse.uml2.uml.Class)elementToEdit).getApplicableStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE);
-							//System.out.println(((org.eclipse.uml2.uml.Class)((SetRequest) req).getElementToEdit()).getValue(reqStereotype, I_SysMLStereotype.REQUIREMENT_ID_ATT));
 						}
 				
 					}

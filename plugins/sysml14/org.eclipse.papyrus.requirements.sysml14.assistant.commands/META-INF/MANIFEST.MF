@@ -5,8 +5,7 @@ Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.assistant.commands
 Bundle-Version: 0.8.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.assistant.commands.Activator
 Bundle-Vendor: %Bundle-Vendor
-Require-Bundle: org.eclipse.gmf.runtime.diagram.ui,
- org.eclipse.papyrus.uml.tools,
+Require-Bundle: org.eclipse.papyrus.uml.tools,
  org.eclipse.papyrus.requirements.sysml14.preferences,
  org.eclipse.papyrus.requirements.sysml14.common,
  org.eclipse.papyrus.sysml14

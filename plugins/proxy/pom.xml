@@ -36,5 +36,6 @@
 	
 	<modules>
 		<module>org.eclipse.papyrus.proxy</module>
+		<module>org.eclipse.papyrus.proxy.ui</module>
 	</modules>
 </project>
