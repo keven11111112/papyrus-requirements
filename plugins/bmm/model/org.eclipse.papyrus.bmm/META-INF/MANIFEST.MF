@@ -2,18 +2,15 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.papyrus.bmm;singleton:=true
-Bundle-Version: 0.7.0.qualifier
+Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-Activator: org.eclipse.papyrus.bmm.Activator
-Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime,
- org.eclipse.uml2.uml;visibility:=reexport,
- org.eclipse.uml2.types;visibility:=reexport,
- org.eclipse.papyrus.uml.extensionpoints,
- org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.papyrus.infra.properties
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.0.0,4.0.0)",
+ org.eclipse.uml2.uml;bundle-version="[5.0.0,6.0.0)";visibility:=reexport,
+ org.eclipse.uml2.types;bundle-version="[2.0.0,3.0.0)";visibility:=reexport,
+ org.eclipse.emf.ecore;bundle-version="[2.0.0,3.0.0)";visibility:=reexport
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.papyrus.bmm;uses:="org.osgi.framework,org.eclipse.ui.plugin",
@@ -29,3 +26,4 @@ Export-Package: org.eclipse.papyrus.bmm;uses:="org.osgi.framework,org.eclipse.ui
    org.eclipse.emf.common.notify.impl,
    org.eclipse.emf.ecore.util,
    org.eclipse.papyrus.bmm.BMMProfile"
+Automatic-Module-Name: org.eclipse.papyrus.bmm

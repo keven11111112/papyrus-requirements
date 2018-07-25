@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_FnJUsI4yEeeHHIaf5vdK1g" name="ReqSpecification">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_pq-DQIT-Eei2Vr7qEyml5Q" annotatedElement="_cIrn8I4yEeeHHIaf5vdK1g"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_F6P24I4yEeeHHIaf5vdK1g">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -78,5 +77,4 @@
   <Requirements:Requirement xmi:id="_cI_xAI4yEeeHHIaf5vdK1g" base_Class="_cIrn8I4yEeeHHIaf5vdK1g" id="R-001" text="Views of papyrus must be customized in order to manage requirements"/>
   <Requirements:Requirement xmi:id="_A6KWQI40EeeYpYlUdHhhKQ" base_Class="_A5bWcI40EeeYpYlUdHhhKQ" id="R-001-002" text="Papyrus should contains only one menu called Papyrus Req."/>
   <Requirements:Requirement xmi:id="_F3rmAI8tEeeSyOZlBmfUSA" base_Class="_FoGR4I8tEeeSyOZlBmfUSA" id="R-002" text="Papyrus should provide a set of metric to manage Requirements"/>
-  <ModelElements:ElementGroup xmi:id="_qbuKwIT-Eei2Vr7qEyml5Q" base_Comment="_pq-DQIT-Eei2Vr7qEyml5Q" name="GUI"/>
 </xmi:XMI>
