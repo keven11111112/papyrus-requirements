@@ -5,8 +5,6 @@
       version="3.0.0.qualifier"
       provider-name="Eclipse Modeling Project">
 
-
-
    <copyright url="http://www.eclipse.org/legal/epl-v10.html">
       Copyright (c) 2016 CEA LIST.
 All rights reserved.   This program and the accompanying materials
@@ -52,6 +50,13 @@ http://www.eclipse.org/legal/epl-v10.html
          download-size="0"
          install-size="0"
          version="0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.bmm.types"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>

@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="ASCII"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" identifier="org.eclipse.papyrus.bmm.bmm.elementTypes" name="Bmm" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Assessment" identifier="org.eclipse.papyrus.bmm.bmm.Assessment" name="Assessment" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Assessment.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Assessment</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsAchievementOfEnd" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsAchievementOfEnd" name="AssessmentAffectsAchievementOfEnd" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentAffectsAchievementOfEnd</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsEmploymentOfMeans" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsEmploymentOfMeans" name="AssessmentAffectsEmploymentOfMeans" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentAffectsEmploymentOfMeans</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentCategory" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentCategory" name="AssessmentCategory" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentCategoryCategorizesAssessment" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentCategoryCategorizesAssessment" name="AssessmentCategoryCategorizesAssessment" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentCategoryCategorizesAssessment</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentIdentifiesPotentialImpact" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentIdentifiesPotentialImpact" name="AssessmentIdentifiesPotentialImpact" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentIdentifiesPotentialImpact</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentIsJudgmentOfInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentIsJudgmentOfInfluencer" name="AssessmentIsJudgmentOfInfluencer" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentIsJudgmentOfInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.AssessmentProvidesImpetusForDirective" identifier="org.eclipse.papyrus.bmm.bmm.AssessmentProvidesImpetusForDirective" name="AssessmentProvidesImpetusForDirective" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::AssessmentProvidesImpetusForDirective</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Asset" identifier="org.eclipse.papyrus.bmm.bmm.Asset" name="Asset" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Asset.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Asset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" identifier="org.eclipse.papyrus.bmm.bmm.BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" name="BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" identifier="org.eclipse.papyrus.bmm.bmm.BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" name="BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderCourseOfActionIncludesMoreSpecificCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.BroaderCourseOfActionIncludesMoreSpecificCourseOfAction" name="BroaderCourseOfActionIncludesMoreSpecificCourseOfAction" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderCourseOfActionIncludesMoreSpecificCourseOfAction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" identifier="org.eclipse.papyrus.bmm.bmm.BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" name="BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderDesiredResultIncludesMoreSpecificDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.BroaderDesiredResultIncludesMoreSpecificDesiredResult" name="BroaderDesiredResultIncludesMoreSpecificDesiredResult" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderDesiredResultIncludesMoreSpecificDesiredResult</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderInfluencerCategorizesNarrowerInfluencerCategory" identifier="org.eclipse.papyrus.bmm.bmm.BroaderInfluencerCategorizesNarrowerInfluencerCategory" name="BroaderInfluencerCategorizesNarrowerInfluencerCategory" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderInfluencerCategorizesNarrowerInfluencerCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" identifier="org.eclipse.papyrus.bmm.bmm.BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" name="BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessPolicy" identifier="org.eclipse.papyrus.bmm.bmm.BusinessPolicy" name="BusinessPolicy" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/BusinessPolicy.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessPolicy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessPolicyGovernsBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.BusinessPolicyGovernsBusinessProcess" name="BusinessPolicyGovernsBusinessProcess" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessPolicyGovernsBusinessProcess</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessPolicyIsBasisOfBusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.BusinessPolicyIsBasisOfBusinessRule" name="BusinessPolicyIsBasisOfBusinessRule" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessPolicyIsBasisOfBusinessRule</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.BusinessProcess" name="BusinessProcess" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/BusinessProcess.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessProcess</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessProcessDeliversOffering" identifier="org.eclipse.papyrus.bmm.bmm.BusinessProcessDeliversOffering" name="BusinessProcessDeliversOffering" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessProcessDeliversOffering</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessProcessManagesAsset" identifier="org.eclipse.papyrus.bmm.bmm.BusinessProcessManagesAsset" name="BusinessProcessManagesAsset" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessProcessManagesAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessProcessRealizesCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.BusinessProcessRealizesCourseOfAction" name="BusinessProcessRealizesCourseOfAction" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessProcessRealizesCourseOfAction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.BusinessRule" name="BusinessRule" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/BusinessRule.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessRule</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.BusinessRuleGuidesBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.BusinessRuleGuidesBusinessProcess" name="BusinessRuleGuidesBusinessProcess" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::BusinessRuleGuidesBusinessProcess</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfAction" name="CourseOfAction" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfAction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfActionChannelsEffortsTowardsDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfActionChannelsEffortsTowardsDesiredResult" name="CourseOfActionChannelsEffortsTowardsDesiredResult" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfActionChannelsEffortsTowardsDesiredResult</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfActionDefinesOffering" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfActionDefinesOffering" name="CourseOfActionDefinesOffering" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfActionDefinesOffering</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfActionDeploysAsset" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfActionDeploysAsset" name="CourseOfActionDeploysAsset" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfActionDeploysAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfActionDischargesLiability" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfActionDischargesLiability" name="CourseOfActionDischargesLiability" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfActionDischargesLiability</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.CourseOfActionIsFormulatedBasedOnDirective" identifier="org.eclipse.papyrus.bmm.bmm.CourseOfActionIsFormulatedBasedOnDirective" name="CourseOfActionIsFormulatedBasedOnDirective" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::CourseOfActionIsFormulatedBasedOnDirective</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.DesiredResult" name="DesiredResult" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DesiredResult</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DesiredResultCategory" identifier="org.eclipse.papyrus.bmm.bmm.DesiredResultCategory" name="DesiredResultCategory" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DesiredResultCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DesiredResultCategoryCategorizesDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.DesiredResultCategoryCategorizesDesiredResult" name="DesiredResultCategoryCategorizesDesiredResult" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DesiredResultCategoryCategorizesDesiredResult</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Directive" identifier="org.eclipse.papyrus.bmm.bmm.Directive" name="Directive" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Directive</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DirectiveActsAsRegulation" identifier="org.eclipse.papyrus.bmm.bmm.DirectiveActsAsRegulation" name="DirectiveActsAsRegulation" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DirectiveActsAsRegulation</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsCourseOfAction" name="DirectiveGovernsCourseOfAction" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DirectiveGovernsCourseOfAction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsUseOfAsset" identifier="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsUseOfAsset" name="DirectiveGovernsUseOfAsset" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DirectiveGovernsUseOfAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.DirectiveSupportsAchievementOfDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.DirectiveSupportsAchievementOfDesiredResult" name="DirectiveSupportsAchievementOfDesiredResult" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::DirectiveSupportsAchievementOfDesiredResult</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.EnablingCourseOfActionEnablesEnabledCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.EnablingCourseOfActionEnablesEnabledCourseOfAction" name="EnablingCourseOfActionEnablesEnabledCourseOfAction" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::EnablingCourseOfActionEnablesEnabledCourseOfAction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.End" identifier="org.eclipse.papyrus.bmm.bmm.End" name="End" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::End</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.ExternalInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.ExternalInfluencer" name="ExternalInfluencer" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/ExternalInfluencer.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::ExternalInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.FixedAsset" identifier="org.eclipse.papyrus.bmm.bmm.FixedAsset" name="FixedAsset" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::FixedAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.FixedAssetProvidesResource" identifier="org.eclipse.papyrus.bmm.bmm.FixedAssetProvidesResource" name="FixedAssetProvidesResource" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::FixedAssetProvidesResource</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Goal" identifier="org.eclipse.papyrus.bmm.bmm.Goal" name="Goal" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Goal.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Goal</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.GoalAmplifiesVision" identifier="org.eclipse.papyrus.bmm.bmm.GoalAmplifiesVision" name="GoalAmplifiesVision" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::GoalAmplifiesVision</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Influencer" identifier="org.eclipse.papyrus.bmm.bmm.Influencer" name="Influencer" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Influencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.InfluencerCategory" identifier="org.eclipse.papyrus.bmm.bmm.InfluencerCategory" name="InfluencerCategory" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::InfluencerCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.InfluencerCategoryCategorizesInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.InfluencerCategoryCategorizesInfluencer" name="InfluencerCategoryCategorizesInfluencer" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::InfluencerCategoryCategorizesInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.InfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.InfluencingOrganization" name="InfluencingOrganization" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::InfluencingOrganization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.InfluencingOrganizationIsSourceofInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.InfluencingOrganizationIsSourceofInfluencer" name="InfluencingOrganizationIsSourceofInfluencer" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::InfluencingOrganizationIsSourceofInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.InternalInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.InternalInfluencer" name="InternalInfluencer" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/InternalInfluencer.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::InternalInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Liability" identifier="org.eclipse.papyrus.bmm.bmm.Liability" name="Liability" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Liability</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.LiabilityClaimsResource" identifier="org.eclipse.papyrus.bmm.bmm.LiabilityClaimsResource" name="LiabilityClaimsResource" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::LiabilityClaimsResource</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Means" identifier="org.eclipse.papyrus.bmm.bmm.Means" name="Means" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Means</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Mission" identifier="org.eclipse.papyrus.bmm.bmm.Mission" name="Mission" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Mission.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Mission</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.MissionMakesOperativeVision" identifier="org.eclipse.papyrus.bmm.bmm.MissionMakesOperativeVision" name="MissionMakesOperativeVision" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::MissionMakesOperativeVision</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.MotivationEdge" identifier="org.eclipse.papyrus.bmm.bmm.MotivationEdge" name="MotivationEdge" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::MotivationEdge</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.MotivationElement" identifier="org.eclipse.papyrus.bmm.bmm.MotivationElement" name="MotivationElement" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::MotivationElement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Objective" identifier="org.eclipse.papyrus.bmm.bmm.Objective" name="Objective" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Objective.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Objective</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.ObjectiveQuantitiesGoal" identifier="org.eclipse.papyrus.bmm.bmm.ObjectiveQuantitiesGoal" name="ObjectiveQuantitiesGoal" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::ObjectiveQuantitiesGoal</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Offering" identifier="org.eclipse.papyrus.bmm.bmm.Offering" name="Offering" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Offering</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OfferingRequiresResource" identifier="org.eclipse.papyrus.bmm.bmm.OfferingRequiresResource" name="OfferingRequiresResource" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OfferingRequiresResource</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OfferingUsesFixedAsset" identifier="org.eclipse.papyrus.bmm.bmm.OfferingUsesFixedAsset" name="OfferingUsesFixedAsset" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OfferingUsesFixedAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationCategory" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationCategory" name="OrganizationCategory" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationCategory</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationCategoryCategorizesInfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationCategoryCategorizesInfluencingOrganization" name="OrganizationCategoryCategorizesInfluencingOrganization" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationCategoryCategorizesInfluencingOrganization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnit" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnit" name="OrganizationUnit" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/OrganizationUnit.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnit</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitActsAsInfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitActsAsInfluencingOrganization" name="OrganizationUnitActsAsInfluencingOrganization" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitActsAsInfluencingOrganization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitDefinesEnd" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitDefinesEnd" name="OrganizationUnitDefinesEnd" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitDefinesEnd</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitEstablishesMeans" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitEstablishesMeans" name="OrganizationUnitEstablishesMeans" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitEstablishesMeans</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForAsset" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForAsset" name="OrganizationUnitIsResponsibleForAsset" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitIsResponsibleForAsset</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForBusinessProcess" name="OrganizationUnitIsResponsibleForBusinessProcess" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitIsResponsibleForBusinessProcess</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForLiability" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForLiability" name="OrganizationUnitIsResponsibleForLiability" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitIsResponsibleForLiability</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitMakesAssessment" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitMakesAssessment" name="OrganizationUnitMakesAssessment" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitMakesAssessment</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.OrganizationUnitRecognizesInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.OrganizationUnitRecognizesInfluencer" name="OrganizationUnitRecognizesInfluencer" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::OrganizationUnitRecognizesInfluencer</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.PotentialImpact" identifier="org.eclipse.papyrus.bmm.bmm.PotentialImpact" name="PotentialImpact" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::PotentialImpact</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.PotentialImpactProvidesImpetursForDirective" identifier="org.eclipse.papyrus.bmm.bmm.PotentialImpactProvidesImpetursForDirective" name="PotentialImpactProvidesImpetursForDirective" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::PotentialImpactProvidesImpetursForDirective</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.PotentialReward" identifier="org.eclipse.papyrus.bmm.bmm.PotentialReward" name="PotentialReward" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::PotentialReward</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Regulation" identifier="org.eclipse.papyrus.bmm.bmm.Regulation" name="Regulation" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Regulation</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Resource" identifier="org.eclipse.papyrus.bmm.bmm.Resource" name="Resource" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/full/obj16/Artifact.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Resource</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Risk" identifier="org.eclipse.papyrus.bmm.bmm.Risk" name="Risk" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Risk.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Risk</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Strategy" identifier="org.eclipse.papyrus.bmm.bmm.Strategy" name="Strategy" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Strategy.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Strategy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.StrategyDeterminesOrganizationUnit" identifier="org.eclipse.papyrus.bmm.bmm.StrategyDeterminesOrganizationUnit" name="StrategyDeterminesOrganizationUnit" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::StrategyDeterminesOrganizationUnit</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.StrategyIsAComponentfOfThe_PlanForMIssion" identifier="org.eclipse.papyrus.bmm.bmm.StrategyIsAComponentfOfThe_PlanForMIssion" name="StrategyIsAComponentfOfThe_PlanForMIssion" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::StrategyIsAComponentfOfThe_PlanForMIssion</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Tactic" identifier="org.eclipse.papyrus.bmm.bmm.Tactic" name="Tactic" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Tactic.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Tactic</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.TacticEffectsEnforcementLevelOfBusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.TacticEffectsEnforcementLevelOfBusinessRule" name="TacticEffectsEnforcementLevelOfBusinessRule" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::TacticEffectsEnforcementLevelOfBusinessRule</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.TacticImplementsStrategy" identifier="org.eclipse.papyrus.bmm.bmm.TacticImplementsStrategy" name="TacticImplementsStrategy" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::TacticImplementsStrategy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.UsingAssessmentUsesUsedAssessment" identifier="org.eclipse.papyrus.bmm.bmm.UsingAssessmentUsesUsedAssessment" name="UsingAssessmentUsesUsedAssessment" hint="UML::Dependency">
+    <iconEntry iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::UsingAssessmentUsesUsedAssessment</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bmm.bmm.Vision" identifier="org.eclipse.papyrus.bmm.bmm.Vision" name="Vision" hint="UML::Artifact">
+    <iconEntry iconPath="/icons/Vision.png" bundleId="org.eclipse.papyrus.bmm.diagram.common"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration">
+      <stereotypesQualifiedNames>Bmm::Vision</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Assessment" identifier="org.eclipse.papyrus.bmm.bmm.assessment" target="org.eclipse.papyrus.bmm.bmm.Assessment">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Assessment" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentAffectsAchievementOfEnd" identifier="org.eclipse.papyrus.bmm.bmm.assessmentAffectsAchievementOfEnd" target="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsAchievementOfEnd">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentAffectsAchievementOfEnd" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentAffectsEmploymentOfMeans" identifier="org.eclipse.papyrus.bmm.bmm.assessmentAffectsEmploymentOfMeans" target="org.eclipse.papyrus.bmm.bmm.AssessmentAffectsEmploymentOfMeans">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentAffectsEmploymentOfMeans" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentCategory" identifier="org.eclipse.papyrus.bmm.bmm.assessmentCategory" target="org.eclipse.papyrus.bmm.bmm.AssessmentCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentCategoryCategorizesAssessment" identifier="org.eclipse.papyrus.bmm.bmm.assessmentCategoryCategorizesAssessment" target="org.eclipse.papyrus.bmm.bmm.AssessmentCategoryCategorizesAssessment">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentCategoryCategorizesAssessment" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentIdentifiesPotentialImpact" identifier="org.eclipse.papyrus.bmm.bmm.assessmentIdentifiesPotentialImpact" target="org.eclipse.papyrus.bmm.bmm.AssessmentIdentifiesPotentialImpact">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentIdentifiesPotentialImpact" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentIsJudgmentOfInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.assessmentIsJudgmentOfInfluencer" target="org.eclipse.papyrus.bmm.bmm.AssessmentIsJudgmentOfInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentIsJudgmentOfInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="AssessmentProvidesImpetusForDirective" identifier="org.eclipse.papyrus.bmm.bmm.assessmentProvidesImpetusForDirective" target="org.eclipse.papyrus.bmm.bmm.AssessmentProvidesImpetusForDirective">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::AssessmentProvidesImpetusForDirective" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Asset" identifier="org.eclipse.papyrus.bmm.bmm.asset" target="org.eclipse.papyrus.bmm.bmm.Asset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Asset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" identifier="org.eclipse.papyrus.bmm.bmm.broaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" target="org.eclipse.papyrus.bmm.bmm.BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderAssessmentCategoryCategorizesNarrowerAssessmentCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" identifier="org.eclipse.papyrus.bmm.bmm.broaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" target="org.eclipse.papyrus.bmm.bmm.BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderBusinessPolicyIncludesMoreSpecificBusinessPolicy" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderCourseOfActionIncludesMoreSpecificCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.broaderCourseOfActionIncludesMoreSpecificCourseOfAction" target="org.eclipse.papyrus.bmm.bmm.BroaderCourseOfActionIncludesMoreSpecificCourseOfAction">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderCourseOfActionIncludesMoreSpecificCourseOfAction" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" identifier="org.eclipse.papyrus.bmm.bmm.broaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" target="org.eclipse.papyrus.bmm.bmm.BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderDesiredCategoryCategorizesMoreSpecificDesiredResultCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderDesiredResultIncludesMoreSpecificDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.broaderDesiredResultIncludesMoreSpecificDesiredResult" target="org.eclipse.papyrus.bmm.bmm.BroaderDesiredResultIncludesMoreSpecificDesiredResult">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderDesiredResultIncludesMoreSpecificDesiredResult" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderInfluencerCategorizesNarrowerInfluencerCategory" identifier="org.eclipse.papyrus.bmm.bmm.broaderInfluencerCategorizesNarrowerInfluencerCategory" target="org.eclipse.papyrus.bmm.bmm.BroaderInfluencerCategorizesNarrowerInfluencerCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderInfluencerCategorizesNarrowerInfluencerCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" identifier="org.eclipse.papyrus.bmm.bmm.broaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" target="org.eclipse.papyrus.bmm.bmm.BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BroaderOrganizationCategoryCategorizesNarrowerOrganizationCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessPolicy" identifier="org.eclipse.papyrus.bmm.bmm.businessPolicy" target="org.eclipse.papyrus.bmm.bmm.BusinessPolicy">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessPolicy" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessPolicyGovernsBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.businessPolicyGovernsBusinessProcess" target="org.eclipse.papyrus.bmm.bmm.BusinessPolicyGovernsBusinessProcess">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessPolicyGovernsBusinessProcess" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessPolicyIsBasisOfBusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.businessPolicyIsBasisOfBusinessRule" target="org.eclipse.papyrus.bmm.bmm.BusinessPolicyIsBasisOfBusinessRule">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessPolicyIsBasisOfBusinessRule" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.businessProcess" target="org.eclipse.papyrus.bmm.bmm.BusinessProcess">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessProcess" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessProcessDeliversOffering" identifier="org.eclipse.papyrus.bmm.bmm.businessProcessDeliversOffering" target="org.eclipse.papyrus.bmm.bmm.BusinessProcessDeliversOffering">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessProcessDeliversOffering" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessProcessManagesAsset" identifier="org.eclipse.papyrus.bmm.bmm.businessProcessManagesAsset" target="org.eclipse.papyrus.bmm.bmm.BusinessProcessManagesAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessProcessManagesAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessProcessRealizesCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.businessProcessRealizesCourseOfAction" target="org.eclipse.papyrus.bmm.bmm.BusinessProcessRealizesCourseOfAction">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessProcessRealizesCourseOfAction" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.businessRule" target="org.eclipse.papyrus.bmm.bmm.BusinessRule">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessRule" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="BusinessRuleGuidesBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.businessRuleGuidesBusinessProcess" target="org.eclipse.papyrus.bmm.bmm.BusinessRuleGuidesBusinessProcess">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::BusinessRuleGuidesBusinessProcess" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.courseOfAction" target="org.eclipse.papyrus.bmm.bmm.CourseOfAction">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfAction" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfActionChannelsEffortsTowardsDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.courseOfActionChannelsEffortsTowardsDesiredResult" target="org.eclipse.papyrus.bmm.bmm.CourseOfActionChannelsEffortsTowardsDesiredResult">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfActionChannelsEffortsTowardsDesiredResult" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfActionDefinesOffering" identifier="org.eclipse.papyrus.bmm.bmm.courseOfActionDefinesOffering" target="org.eclipse.papyrus.bmm.bmm.CourseOfActionDefinesOffering">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfActionDefinesOffering" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfActionDeploysAsset" identifier="org.eclipse.papyrus.bmm.bmm.courseOfActionDeploysAsset" target="org.eclipse.papyrus.bmm.bmm.CourseOfActionDeploysAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfActionDeploysAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfActionDischargesLiability" identifier="org.eclipse.papyrus.bmm.bmm.courseOfActionDischargesLiability" target="org.eclipse.papyrus.bmm.bmm.CourseOfActionDischargesLiability">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfActionDischargesLiability" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="CourseOfActionIsFormulatedBasedOnDirective" identifier="org.eclipse.papyrus.bmm.bmm.courseOfActionIsFormulatedBasedOnDirective" target="org.eclipse.papyrus.bmm.bmm.CourseOfActionIsFormulatedBasedOnDirective">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::CourseOfActionIsFormulatedBasedOnDirective" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.desiredResult" target="org.eclipse.papyrus.bmm.bmm.DesiredResult">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DesiredResult" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DesiredResultCategory" identifier="org.eclipse.papyrus.bmm.bmm.desiredResultCategory" target="org.eclipse.papyrus.bmm.bmm.DesiredResultCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DesiredResultCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DesiredResultCategoryCategorizesDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.desiredResultCategoryCategorizesDesiredResult" target="org.eclipse.papyrus.bmm.bmm.DesiredResultCategoryCategorizesDesiredResult">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DesiredResultCategoryCategorizesDesiredResult" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Directive" identifier="org.eclipse.papyrus.bmm.bmm.directive" target="org.eclipse.papyrus.bmm.bmm.Directive">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Directive" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DirectiveActsAsRegulation" identifier="org.eclipse.papyrus.bmm.bmm.directiveActsAsRegulation" target="org.eclipse.papyrus.bmm.bmm.DirectiveActsAsRegulation">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DirectiveActsAsRegulation" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DirectiveGovernsCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.directiveGovernsCourseOfAction" target="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsCourseOfAction">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DirectiveGovernsCourseOfAction" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DirectiveGovernsUseOfAsset" identifier="org.eclipse.papyrus.bmm.bmm.directiveGovernsUseOfAsset" target="org.eclipse.papyrus.bmm.bmm.DirectiveGovernsUseOfAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DirectiveGovernsUseOfAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="DirectiveSupportsAchievementOfDesiredResult" identifier="org.eclipse.papyrus.bmm.bmm.directiveSupportsAchievementOfDesiredResult" target="org.eclipse.papyrus.bmm.bmm.DirectiveSupportsAchievementOfDesiredResult">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::DirectiveSupportsAchievementOfDesiredResult" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="EnablingCourseOfActionEnablesEnabledCourseOfAction" identifier="org.eclipse.papyrus.bmm.bmm.enablingCourseOfActionEnablesEnabledCourseOfAction" target="org.eclipse.papyrus.bmm.bmm.EnablingCourseOfActionEnablesEnabledCourseOfAction">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::EnablingCourseOfActionEnablesEnabledCourseOfAction" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="End" identifier="org.eclipse.papyrus.bmm.bmm.end" target="org.eclipse.papyrus.bmm.bmm.End">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::End" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="ExternalInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.externalInfluencer" target="org.eclipse.papyrus.bmm.bmm.ExternalInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::ExternalInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="FixedAsset" identifier="org.eclipse.papyrus.bmm.bmm.fixedAsset" target="org.eclipse.papyrus.bmm.bmm.FixedAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::FixedAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="FixedAssetProvidesResource" identifier="org.eclipse.papyrus.bmm.bmm.fixedAssetProvidesResource" target="org.eclipse.papyrus.bmm.bmm.FixedAssetProvidesResource">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::FixedAssetProvidesResource" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Goal" identifier="org.eclipse.papyrus.bmm.bmm.goal" target="org.eclipse.papyrus.bmm.bmm.Goal">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Goal" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="GoalAmplifiesVision" identifier="org.eclipse.papyrus.bmm.bmm.goalAmplifiesVision" target="org.eclipse.papyrus.bmm.bmm.GoalAmplifiesVision">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::GoalAmplifiesVision" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Influencer" identifier="org.eclipse.papyrus.bmm.bmm.influencer" target="org.eclipse.papyrus.bmm.bmm.Influencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Influencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="InfluencerCategory" identifier="org.eclipse.papyrus.bmm.bmm.influencerCategory" target="org.eclipse.papyrus.bmm.bmm.InfluencerCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::InfluencerCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="InfluencerCategoryCategorizesInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.influencerCategoryCategorizesInfluencer" target="org.eclipse.papyrus.bmm.bmm.InfluencerCategoryCategorizesInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::InfluencerCategoryCategorizesInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="InfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.influencingOrganization" target="org.eclipse.papyrus.bmm.bmm.InfluencingOrganization">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::InfluencingOrganization" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="InfluencingOrganizationIsSourceofInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.influencingOrganizationIsSourceofInfluencer" target="org.eclipse.papyrus.bmm.bmm.InfluencingOrganizationIsSourceofInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::InfluencingOrganizationIsSourceofInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="InternalInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.internalInfluencer" target="org.eclipse.papyrus.bmm.bmm.InternalInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::InternalInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Liability" identifier="org.eclipse.papyrus.bmm.bmm.liability" target="org.eclipse.papyrus.bmm.bmm.Liability">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Liability" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="LiabilityClaimsResource" identifier="org.eclipse.papyrus.bmm.bmm.liabilityClaimsResource" target="org.eclipse.papyrus.bmm.bmm.LiabilityClaimsResource">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::LiabilityClaimsResource" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Means" identifier="org.eclipse.papyrus.bmm.bmm.means" target="org.eclipse.papyrus.bmm.bmm.Means">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Means" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Mission" identifier="org.eclipse.papyrus.bmm.bmm.mission" target="org.eclipse.papyrus.bmm.bmm.Mission">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Mission" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="MissionMakesOperativeVision" identifier="org.eclipse.papyrus.bmm.bmm.missionMakesOperativeVision" target="org.eclipse.papyrus.bmm.bmm.MissionMakesOperativeVision">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::MissionMakesOperativeVision" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="MotivationEdge" identifier="org.eclipse.papyrus.bmm.bmm.motivationEdge" target="org.eclipse.papyrus.bmm.bmm.MotivationEdge">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::MotivationEdge" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="MotivationElement" identifier="org.eclipse.papyrus.bmm.bmm.motivationElement" target="org.eclipse.papyrus.bmm.bmm.MotivationElement">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::MotivationElement" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Objective" identifier="org.eclipse.papyrus.bmm.bmm.objective" target="org.eclipse.papyrus.bmm.bmm.Objective">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Objective" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="ObjectiveQuantitiesGoal" identifier="org.eclipse.papyrus.bmm.bmm.objectiveQuantitiesGoal" target="org.eclipse.papyrus.bmm.bmm.ObjectiveQuantitiesGoal">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::ObjectiveQuantitiesGoal" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Offering" identifier="org.eclipse.papyrus.bmm.bmm.offering" target="org.eclipse.papyrus.bmm.bmm.Offering">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Offering" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OfferingRequiresResource" identifier="org.eclipse.papyrus.bmm.bmm.offeringRequiresResource" target="org.eclipse.papyrus.bmm.bmm.OfferingRequiresResource">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OfferingRequiresResource" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OfferingUsesFixedAsset" identifier="org.eclipse.papyrus.bmm.bmm.offeringUsesFixedAsset" target="org.eclipse.papyrus.bmm.bmm.OfferingUsesFixedAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OfferingUsesFixedAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationCategory" identifier="org.eclipse.papyrus.bmm.bmm.organizationCategory" target="org.eclipse.papyrus.bmm.bmm.OrganizationCategory">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationCategory" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationCategoryCategorizesInfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.organizationCategoryCategorizesInfluencingOrganization" target="org.eclipse.papyrus.bmm.bmm.OrganizationCategoryCategorizesInfluencingOrganization">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationCategoryCategorizesInfluencingOrganization" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnit" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnit" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnit">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnit" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitActsAsInfluencingOrganization" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitActsAsInfluencingOrganization" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitActsAsInfluencingOrganization">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitActsAsInfluencingOrganization" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitDefinesEnd" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitDefinesEnd" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitDefinesEnd">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitDefinesEnd" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitEstablishesMeans" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitEstablishesMeans" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitEstablishesMeans">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitEstablishesMeans" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitIsResponsibleForAsset" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitIsResponsibleForAsset" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForAsset">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitIsResponsibleForAsset" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitIsResponsibleForBusinessProcess" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitIsResponsibleForBusinessProcess" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForBusinessProcess">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitIsResponsibleForBusinessProcess" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitIsResponsibleForLiability" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitIsResponsibleForLiability" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitIsResponsibleForLiability">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitIsResponsibleForLiability" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitMakesAssessment" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitMakesAssessment" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitMakesAssessment">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitMakesAssessment" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="OrganizationUnitRecognizesInfluencer" identifier="org.eclipse.papyrus.bmm.bmm.organizationUnitRecognizesInfluencer" target="org.eclipse.papyrus.bmm.bmm.OrganizationUnitRecognizesInfluencer">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::OrganizationUnitRecognizesInfluencer" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="PotentialImpact" identifier="org.eclipse.papyrus.bmm.bmm.potentialImpact" target="org.eclipse.papyrus.bmm.bmm.PotentialImpact">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::PotentialImpact" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="PotentialImpactProvidesImpetursForDirective" identifier="org.eclipse.papyrus.bmm.bmm.potentialImpactProvidesImpetursForDirective" target="org.eclipse.papyrus.bmm.bmm.PotentialImpactProvidesImpetursForDirective">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::PotentialImpactProvidesImpetursForDirective" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="PotentialReward" identifier="org.eclipse.papyrus.bmm.bmm.potentialReward" target="org.eclipse.papyrus.bmm.bmm.PotentialReward">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::PotentialReward" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Regulation" identifier="org.eclipse.papyrus.bmm.bmm.regulation" target="org.eclipse.papyrus.bmm.bmm.Regulation">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Regulation" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Resource" identifier="org.eclipse.papyrus.bmm.bmm.resource" target="org.eclipse.papyrus.bmm.bmm.Resource">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Resource" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Risk" identifier="org.eclipse.papyrus.bmm.bmm.risk" target="org.eclipse.papyrus.bmm.bmm.Risk">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Risk" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Strategy" identifier="org.eclipse.papyrus.bmm.bmm.strategy" target="org.eclipse.papyrus.bmm.bmm.Strategy">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Strategy" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="StrategyDeterminesOrganizationUnit" identifier="org.eclipse.papyrus.bmm.bmm.strategyDeterminesOrganizationUnit" target="org.eclipse.papyrus.bmm.bmm.StrategyDeterminesOrganizationUnit">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::StrategyDeterminesOrganizationUnit" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="StrategyIsAComponentfOfThe_PlanForMIssion" identifier="org.eclipse.papyrus.bmm.bmm.strategyIsAComponentfOfThe_PlanForMIssion" target="org.eclipse.papyrus.bmm.bmm.StrategyIsAComponentfOfThe_PlanForMIssion">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::StrategyIsAComponentfOfThe_PlanForMIssion" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Tactic" identifier="org.eclipse.papyrus.bmm.bmm.tactic" target="org.eclipse.papyrus.bmm.bmm.Tactic">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Tactic" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="TacticEffectsEnforcementLevelOfBusinessRule" identifier="org.eclipse.papyrus.bmm.bmm.tacticEffectsEnforcementLevelOfBusinessRule" target="org.eclipse.papyrus.bmm.bmm.TacticEffectsEnforcementLevelOfBusinessRule">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::TacticEffectsEnforcementLevelOfBusinessRule" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="TacticImplementsStrategy" identifier="org.eclipse.papyrus.bmm.bmm.tacticImplementsStrategy" target="org.eclipse.papyrus.bmm.bmm.TacticImplementsStrategy">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::TacticImplementsStrategy" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="UsingAssessmentUsesUsedAssessment" identifier="org.eclipse.papyrus.bmm.bmm.usingAssessmentUsesUsedAssessment" target="org.eclipse.papyrus.bmm.bmm.UsingAssessmentUsesUsedAssessment">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::UsingAssessmentUsesUsedAssessment" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" description="Vision" identifier="org.eclipse.papyrus.bmm.bmm.vision" target="org.eclipse.papyrus.bmm.bmm.Vision">
+    <stereotypesToApply stereotypeQualifiedName="Bmm::Vision" updateName="true">
+      <requiredProfiles>Bmm</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

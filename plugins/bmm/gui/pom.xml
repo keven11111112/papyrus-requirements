@@ -34,7 +34,6 @@
 	
 	<!-- Modules to build -->
 	<modules>
-		<module>org.eclipse.papyrus.bmm.diagram</module>
 		<module>org.eclipse.papyrus.bmm.diagram.common</module>
 		<module>org.eclipse.papyrus.bmm.ui</module>
 	</modules>

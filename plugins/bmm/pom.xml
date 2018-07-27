@@ -36,6 +36,7 @@
 	<modules>
 		<module>model</module>
 		<module>gui</module>
+		<module>viewpointconfig</module>
 	</modules>
 	
 </project>

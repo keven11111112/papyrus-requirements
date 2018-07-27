@@ -13,5 +13,11 @@
  -->
 
 <plugin>
+   <extension
+         point="org.eclipse.papyrus.infra.architecture.models">
+      <model
+            path="viewpoints/bmm.architecture">
+      </model>
+   </extension>
  
 </plugin>

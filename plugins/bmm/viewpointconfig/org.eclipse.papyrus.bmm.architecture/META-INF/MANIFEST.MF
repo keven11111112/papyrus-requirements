@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Export-Package: org.eclipse.papyrus.bmm.diagram
+Export-Package: org.eclipse.papyrus.bmm.ui
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.papyrus.infra.viewpoints.policy;bundle-version="1.2.0",
@@ -21,8 +21,8 @@ Bundle-Vendor: %Bundle-Vendor
 Bundle-ActivationPolicy: lazy
 Bundle-Version: 0.7.0.qualifier
 Bundle-Name: %Bundle-Name
-Bundle-Activator: org.eclipse.papyrus.bmm.diagram.Activator
+Bundle-Activator: org.eclipse.papyrus.bmm.ui.Activator
 Bundle-ManifestVersion: 2
-Bundle-SymbolicName: org.eclipse.papyrus.bmm.diagram;singleton:=true
+Bundle-SymbolicName: org.eclipse.papyrus.bmm.architecture;singleton:=true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Localization: bundle
