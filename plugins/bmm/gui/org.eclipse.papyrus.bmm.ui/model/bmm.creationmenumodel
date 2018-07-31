@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElementCreationMenuModel:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ElementCreationMenuModel="http://www.eclipse.org/papyrus/infra/newchild/elementcreationmenumodel" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:filters="http://www.eclipse.org/Papyrus/2014/common/filters" xmlns:umlfilters="http://www.eclipse.org/Papyrus/2014/uml/filters" xmi:id="_FUfLgMyuEeSuYbPdZwWlyw" label="BMM new Child" icon="platform:/plugin/org.eclipse.papyrus.bmm.ui/icons/bmm_16x16.png">
+  <filter xsi:type="filters:CompoundFilter" filter="//@filter/@ownedFilter.0">
+    <ownedFilter xsi:type="umlfilters:ProfileApplied" name="IsBMMApplied" profileQualifiedName="Bmm" profileURI="pathmap://BMM_PROFILE_1.3/Bmm.profile.uml#_bNz28BEEEeWdY8_QZO32Xg"/>
+  </filter>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Assessment">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Assessment"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="AssessmentCategory">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.AssessmentCategory"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Asset">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Asset"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="BusinessPolicy">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.BusinessPolicy"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="BusinessProcess">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.BusinessProcess"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="BusinessRule">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.BusinessRule"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="CourseOfAction">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.CourseOfAction"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="DesiredResult">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.DesiredResult"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="DesiredResultCategory">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.DesiredResultCategory"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Directive">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Directive"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="End">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.End"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ExternalInfluencer">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.ExternalInfluencer"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="FixedAsset">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.FixedAsset"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Goal">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Goal"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Influencer">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Influencer"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InfluencerCategory">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.InfluencerCategory"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InfluencingOrganization">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.InfluencingOrganization"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InfluencingOrganizationIsSourceofInfluencer">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.InfluencingOrganizationIsSourceofInfluencer"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InternalInfluencer">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.InternalInfluencer"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Liability">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Liability"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Means">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Means"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Mission">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Mission"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="MotivationElement">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.MotivationElement"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Objective">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Objective"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Offering">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Offering"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="OrganizationCategory">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.OrganizationCategory"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="OrganizationUnit">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.OrganizationUnit"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="PotentialImpact">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.PotentialImpact"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="PotentialReward">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.PotentialReward"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Regulation">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Regulation"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Resource">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Resource"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Risk">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Risk"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Strategy">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Strategy"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Tactic">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Tactic"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Vision">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#org.eclipse.papyrus.bmm.bmm.Vision"/>
+  </menu>
+</ElementCreationMenuModel:Folder>

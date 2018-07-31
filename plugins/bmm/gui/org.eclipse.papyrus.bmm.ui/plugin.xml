@@ -30,4 +30,10 @@
              isCustomizable="true">
        </context>
    </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.newchild">
+      <menuCreationModel
+            model="model/bmm.creationmenumodel">
+      </menuCreationModel>
+   </extension>
 </plugin>

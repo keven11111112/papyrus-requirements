@@ -12,6 +12,10 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_w6YwUJGAEei9e8NPTGdl5g" name="Satisfies_Dedicated propertyview" client="_rHLbkJGAEei9e8NPTGdl5g" supplier="_eDp64JGAEei9e8NPTGdl5g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_w6WUEJGAEei9e8NPTGdl5g" name="Satisfies_Dedicated propertyview" client="_UTxVMJGAEei9e8NPTGdl5g" supplier="_eDp64JGAEei9e8NPTGdl5g"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XpbLwJPYEeiiNbWBCyvDfA" name="Menu newchild"/>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_i9Kw4JPYEeiiNbWBCyvDfA" name="bmm.creationmenumodel" fileName="model/bmm.creationmenumodel"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_tgK1kJPYEeiiNbWBCyvDfA" name="Satisfies_Menu newchild" client="_i9Kw4JPYEeiiNbWBCyvDfA" supplier="_XpbLwJPYEeiiNbWBCyvDfA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_tgSKUJPYEeiiNbWBCyvDfA" name="Satisfies_Menu newchild" client="_UTxVMJGAEei9e8NPTGdl5g" supplier="_XpbLwJPYEeiiNbWBCyvDfA"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-gf2IJF_Eei9e8NPTGdl5g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ggdMJF_Eei9e8NPTGdl5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -72,4 +76,7 @@
   <Requirements:Requirement xmi:id="_eDrJAJGAEei9e8NPTGdl5g" base_Class="_eDp64JGAEei9e8NPTGdl5g" id="org.eclipse.papyrus.bmm.ui.R-02" text="The BMM profile must have a dedicated property view inside Papyrus Framework"/>
   <Requirements:Satisfy xmi:id="_w6XiMJGAEei9e8NPTGdl5g" base_DirectedRelationship="_w6WUEJGAEei9e8NPTGdl5g" base_Abstraction="_w6WUEJGAEei9e8NPTGdl5g"/>
   <Requirements:Satisfy xmi:id="_w6algJGAEei9e8NPTGdl5g" base_DirectedRelationship="_w6YwUJGAEei9e8NPTGdl5g" base_Abstraction="_w6YwUJGAEei9e8NPTGdl5g"/>
+  <Requirements:Requirement xmi:id="_XtrZoJPYEeiiNbWBCyvDfA" base_Class="_XpbLwJPYEeiiNbWBCyvDfA" id="org.eclipse.papyrus.bmm.ui.R-03" text="The menu new child dedicated to papyrus shall implemented"/>
+  <Requirements:Satisfy xmi:id="_tgOf8JPYEeiiNbWBCyvDfA" base_DirectedRelationship="_tgK1kJPYEeiiNbWBCyvDfA" base_Abstraction="_tgK1kJPYEeiiNbWBCyvDfA"/>
+  <Requirements:Satisfy xmi:id="_tgVNoJPYEeiiNbWBCyvDfA" base_DirectedRelationship="_tgSKUJPYEeiiNbWBCyvDfA" base_Abstraction="_tgSKUJPYEeiiNbWBCyvDfA"/>
 </xmi:XMI>

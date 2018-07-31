@@ -26,6 +26,7 @@
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types.ui/model/uml-advice.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#_32XHUJGpEei5Db6j7J0mnA"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/model/bmmdiag.elementtypesconfigurations#_OZNdQJPbEeiiNbWBCyvDfA"/>
     <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_H4swsIv6EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.diagram" name="BMM Diagram" icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/bmm_16x16.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="PapyrusUMLDeploymentDiagram" customStyle="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/css/BmmStyle.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.deployment.CreateDeploymentDiagramCommand">
       <modelRules xmi:id="_IsJU8Iv8EeeNBcglvVZtOQ">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
@@ -34,6 +35,7 @@
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </owningRules>
       <childRules xmi:id="_QoQ28Iv8EeeNBcglvVZtOQ"/>
+      <palettes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/palette/bmm.paletteconfiguration#/"/>
     </representationKinds>
     <metamodel href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
     <profiles href="https://www.eclipse.org/papyrus/BMM/0.7.0/#/"/>
