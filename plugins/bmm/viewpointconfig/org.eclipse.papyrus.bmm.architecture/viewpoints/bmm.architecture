@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmi:id="_UadTAIv4EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.domain" name="Business Motivation Domain" description="The Business Motivation Domain" icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/bmm_16x16.png">
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmi:id="_UadTAIv4EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.domain" name="Business Motivation Domain" description="The Business Motivation Domain" icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram/icons/bmm_16x16.png">
   <stakeholders xmi:id="_ACzA4Iv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.BusinessEngineer" name="Business Engineer" description="An engineer interested in Business Modeling" concerns="_hhXXgIv7EeeNBcglvVZtOQ"/>
   <concerns xmi:id="_hhXXgIv7EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.concern" name="Business concern" description="The concern of developing the business"/>
   <contexts xsi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_U9_ocIv5EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.language" name="Business Modeling" description="The Business modeling language" icon="platform:/plugin/org.eclipse.papyrus.bmm.ui/icons/bmm_16x16.png" creationCommandClass="org.eclipse.papyrus.bmm.ui.CreateBMMModelCommand">
@@ -26,8 +26,8 @@
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types.ui/model/uml-advice.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.bmm.types/model/Bmm.elementtypesconfigurations#_32XHUJGpEei5Db6j7J0mnA"/>
-    <elementTypes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/model/bmmdiag.elementtypesconfigurations#_OZNdQJPbEeiiNbWBCyvDfA"/>
-    <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_H4swsIv6EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.diagram" name="BMM Diagram" icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/bmm_16x16.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="PapyrusUMLDeploymentDiagram" customStyle="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/css/BmmStyle.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.deployment.CreateDeploymentDiagramCommand">
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram/model/bmmdiag.elementtypesconfigurations#_OZNdQJPbEeiiNbWBCyvDfA"/>
+    <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_H4swsIv6EeeNBcglvVZtOQ" id="org.eclipse.papyrus.bmm.diagram" name="BMM Diagram" icon="platform:/plugin/org.eclipse.papyrus.bmm.diagram/icons/bmm_16x16.png" concerns="_hhXXgIv7EeeNBcglvVZtOQ" implementationID="PapyrusUMLDeploymentDiagram" customStyle="platform:/plugin/org.eclipse.papyrus.bmm.diagram/css/BmmStyle.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.deployment.CreateDeploymentDiagramCommand">
       <modelRules xmi:id="_IsJU8Iv8EeeNBcglvVZtOQ">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
@@ -35,7 +35,7 @@
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </owningRules>
       <childRules xmi:id="_QoQ28Iv8EeeNBcglvVZtOQ"/>
-      <palettes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/palette/bmm.paletteconfiguration#/"/>
+      <palettes href="platform:/plugin/org.eclipse.papyrus.bmm.diagram/palette/bmm.paletteconfiguration#/"/>
     </representationKinds>
     <metamodel href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
     <profiles href="https://www.eclipse.org/papyrus/BMM/0.7.0/#/"/>

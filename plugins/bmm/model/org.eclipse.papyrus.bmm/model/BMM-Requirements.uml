@@ -19,6 +19,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_px9HUJF7Eei9e8NPTGdl5g" name="plugin.xml" fileName="plugin.xml"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_vsB5EJF7Eei9e8NPTGdl5g" name="Satisfies_EMF implementation of the BMM profile" client="_px9HUJF7Eei9e8NPTGdl5g" supplier="_yPQgQJF6Eei9e8NPTGdl5g"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9nD5IJVjEeiiNbWBCyvDfA" name="icons">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_EC7JUJVkEeiiNbWBCyvDfA" name="Satisfies_Specification the BMM profile with Papyrus" client="_9nD5IJVjEeiiNbWBCyvDfA" supplier="_Fd9mQJF6Eei9e8NPTGdl5g"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__UKWcJF5Eei9e8NPTGdl5g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__UMysJF5Eei9e8NPTGdl5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -81,4 +84,5 @@
   <Requirements:Satisfy xmi:id="_h-gZIJF7Eei9e8NPTGdl5g" base_DirectedRelationship="_h-ej8JF7Eei9e8NPTGdl5g" base_Abstraction="_h-ej8JF7Eei9e8NPTGdl5g"/>
   <Requirements:Satisfy xmi:id="_h-kqkJF7Eei9e8NPTGdl5g" base_DirectedRelationship="_h-iOUJF7Eei9e8NPTGdl5g" base_Abstraction="_h-iOUJF7Eei9e8NPTGdl5g"/>
   <Requirements:Satisfy xmi:id="_vsDuQJF7Eei9e8NPTGdl5g" base_DirectedRelationship="_vsB5EJF7Eei9e8NPTGdl5g" base_Abstraction="_vsB5EJF7Eei9e8NPTGdl5g"/>
+  <Requirements:Satisfy xmi:id="_EFU9EJVkEeiiNbWBCyvDfA" base_DirectedRelationship="_EC7JUJVkEeiiNbWBCyvDfA" base_Abstraction="_EC7JUJVkEeiiNbWBCyvDfA"/>
 </xmi:XMI>

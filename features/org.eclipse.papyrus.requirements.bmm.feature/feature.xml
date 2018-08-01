@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.papyrus.requirements.bmm.feature"
       label="Requirements BMM (Incubation)"
-      version="3.0.0.qualifier"
+      version="4.0.0.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <copyright url="http://www.eclipse.org/legal/epl-v10.html">
@@ -32,13 +32,6 @@ http://www.eclipse.org/legal/epl-v10.html
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.bmm.diagram.common"
-         download-size="0"
-         install-size="0"
-         version="0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.papyrus.bmm.ui"
          download-size="0"
          install-size="0"
@@ -46,14 +39,14 @@ http://www.eclipse.org/legal/epl-v10.html
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.bmm.examples"
+         id="org.eclipse.papyrus.bmm.types"
          download-size="0"
          install-size="0"
-         version="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.papyrus.bmm.types"
+         id="org.eclipse.papyrus.bmm.architecture"
          download-size="0"
          install-size="0"
          version="0.0.0"

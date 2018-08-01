@@ -885,7 +885,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TXhEEEeWdY8_QZO32Xg" name="Assessment">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TXxEEEeWdY8_QZO32Xg" general="_bN2TWREEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_BDGiMDeTEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Assessment.png">
+      <icon xmi:type="uml:Image" xmi:id="_BDGiMDeTEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Assessment.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BDGiMTeTEeWZLNwDCi6AmQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BDGiMjeTEeWZLNwDCi6AmQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -893,7 +893,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TYBEEEeWdY8_QZO32Xg" name="OrganizationUnit">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TYREEEeWdY8_QZO32Xg" general="_bN2TWREEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_k-Qo4HpOEea07s7ArHSAGQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/OrganizationUnit.png">
+      <icon xmi:type="uml:Image" xmi:id="_k-Qo4HpOEea07s7ArHSAGQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/OrganizationUnit.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k-Qo4XpOEea07s7ArHSAGQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k-Qo4npOEea07s7ArHSAGQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -901,7 +901,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TYhEEEeWdY8_QZO32Xg" name="Strategy">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TYxEEEeWdY8_QZO32Xg" general="_bN2TZBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_2MKUMDUpEeW_VYU9dRYcXQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Strategy.png">
+      <icon xmi:type="uml:Image" xmi:id="_2MKUMDUpEeW_VYU9dRYcXQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Strategy.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2MKUMTUpEeW_VYU9dRYcXQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2MKUMjUpEeW_VYU9dRYcXQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -924,7 +924,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TbhEEEeWdY8_QZO32Xg" name="ExternalInfluencer">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TbxEEEeWdY8_QZO32Xg" general="_bN2TcBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_0rmw8DdZEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/ExternalInfluencer.png">
+      <icon xmi:type="uml:Image" xmi:id="_0rmw8DdZEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/ExternalInfluencer.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0rmw8TdZEeWZLNwDCi6AmQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0rmw8jdZEeWZLNwDCi6AmQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -953,7 +953,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TfhEEEeWdY8_QZO32Xg" name="Asset">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TfxEEEeWdY8_QZO32Xg" general="_bN2TWREEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_rzatEHZ3EeWX7Yz_StfVnw" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Asset.png">
+      <icon xmi:type="uml:Image" xmi:id="_rzatEHZ3EeWX7Yz_StfVnw" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Asset.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rzbUIHZ3EeWX7Yz_StfVnw" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rzbUIXZ3EeWX7Yz_StfVnw" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -961,7 +961,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TgBEEEeWdY8_QZO32Xg" name="BusinessProcess">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TgREEEeWdY8_QZO32Xg" general="_bN2TWREEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_mP6BMHZ3EeWX7Yz_StfVnw" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/BusinessProcess.png">
+      <icon xmi:type="uml:Image" xmi:id="_mP6BMHZ3EeWX7Yz_StfVnw" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/BusinessProcess.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mP6BMXZ3EeWX7Yz_StfVnw" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mP6BMnZ3EeWX7Yz_StfVnw" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -969,7 +969,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2TghEEEeWdY8_QZO32Xg" name="BusinessRule">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2TgxEEEeWdY8_QZO32Xg" general="_bN2TaBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_kQY5sDT-EeWlz7zSXuvhbA" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/BusinessRule.png">
+      <icon xmi:type="uml:Image" xmi:id="_kQY5sDT-EeWlz7zSXuvhbA" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/BusinessRule.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQY5sTT-EeWlz7zSXuvhbA" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kQY5sjT-EeWlz7zSXuvhbA" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -977,7 +977,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2ThBEEEeWdY8_QZO32Xg" name="BusinessPolicy">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2ThREEEeWdY8_QZO32Xg" general="_bN2TaBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_eclvEDT-EeWlz7zSXuvhbA" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/BusinessPolicy.png">
+      <icon xmi:type="uml:Image" xmi:id="_eclvEDT-EeWlz7zSXuvhbA" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/BusinessPolicy.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eclvETT-EeWlz7zSXuvhbA" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eclvEjT-EeWlz7zSXuvhbA" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -985,7 +985,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN2ThhEEEeWdY8_QZO32Xg" name="Tactic">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN2ThxEEEeWdY8_QZO32Xg" general="_bN2TZBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_CVnJoDR3EeWbE8UqxfbwNQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Tactic.png">
+      <icon xmi:type="uml:Image" xmi:id="_CVnJoDR3EeWbE8UqxfbwNQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Tactic.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CVnJoTR3EeWbE8UqxfbwNQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CVnJojR3EeWbE8UqxfbwNQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1005,7 +1005,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26QBEEEeWdY8_QZO32Xg" name="Mission">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26QREEEeWdY8_QZO32Xg" general="_bN2TZhEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_gS3kYDRzEeWbE8UqxfbwNQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Mission.png">
+      <icon xmi:type="uml:Image" xmi:id="_gS3kYDRzEeWbE8UqxfbwNQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Mission.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gS3kYTRzEeWbE8UqxfbwNQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gS3kYjRzEeWbE8UqxfbwNQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1013,7 +1013,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26QhEEEeWdY8_QZO32Xg" name="Vision">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26QxEEEeWdY8_QZO32Xg" general="_bN2TehEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_pVyJYDUCEeWlz7zSXuvhbA" format="" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Vision.png">
+      <icon xmi:type="uml:Image" xmi:id="_pVyJYDUCEeWlz7zSXuvhbA" format="" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Vision.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pVyJYTUCEeWlz7zSXuvhbA" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pVyJYjUCEeWlz7zSXuvhbA" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1021,7 +1021,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26RBEEEeWdY8_QZO32Xg" name="Goal">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26RREEEeWdY8_QZO32Xg" general="_bN2TeBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_52ytwDIGEeWGvZrHpphEwA" format="" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Goal.png">
+      <icon xmi:type="uml:Image" xmi:id="_52ytwDIGEeWGvZrHpphEwA" format="" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Goal.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_52ytwTIGEeWGvZrHpphEwA" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_52ytwjIGEeWGvZrHpphEwA" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1029,7 +1029,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26RhEEEeWdY8_QZO32Xg" name="Objective">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26RxEEEeWdY8_QZO32Xg" general="_bN2TeBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_xTKpMDReEeWNZc7vjD9cEg" format="Papyrus" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Objective.png">
+      <icon xmi:type="uml:Image" xmi:id="_xTKpMDReEeWNZc7vjD9cEg" format="Papyrus" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Objective.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xTLQQDReEeWNZc7vjD9cEg" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xTLQQTReEeWNZc7vjD9cEg" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1041,7 +1041,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26ShEEEeWdY8_QZO32Xg" name="InternalInfluencer">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26SxEEEeWdY8_QZO32Xg" general="_bN2TcBEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_wxqD4DdZEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/InternalInfluencer.png">
+      <icon xmi:type="uml:Image" xmi:id="_wxqD4DdZEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/InternalInfluencer.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wxqD4TdZEeWZLNwDCi6AmQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wxqD4jdZEeWZLNwDCi6AmQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
@@ -1052,7 +1052,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bN26ThEEEeWdY8_QZO32Xg" name="Risk">
       <generalization xmi:type="uml:Generalization" xmi:id="_bN26TxEEEeWdY8_QZO32Xg" general="_bN2TahEEEeWdY8_QZO32Xg"/>
-      <icon xmi:type="uml:Image" xmi:id="_ZLD5UDeWEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm.diagram.common/icons/Risk.png">
+      <icon xmi:type="uml:Image" xmi:id="_ZLD5UDeWEeWZLNwDCi6AmQ" location="platform:/plugin/org.eclipse.papyrus.bmm/icons/Risk.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aO4t0DeWEeWZLNwDCi6AmQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aO5U4DeWEeWZLNwDCi6AmQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
