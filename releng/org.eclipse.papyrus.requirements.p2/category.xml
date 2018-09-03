@@ -15,7 +15,7 @@
     <feature url="features/org.eclipse.papyrus.requirements.sysml14.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.metrics.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.requirementmetrics"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_4.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="4.0.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_4.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="4.0.100.qualifier">
       <category name="org.eclipse.papyrus.bmm"/>
    </feature>
    
