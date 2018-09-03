@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.papyrus.requirements.bmm.feature"
       label="Requirements BMM (Incubation)"
-      version="4.0.0.qualifier"
+      version="4.0.100.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <copyright url="http://www.eclipse.org/legal/epl-v10.html">
