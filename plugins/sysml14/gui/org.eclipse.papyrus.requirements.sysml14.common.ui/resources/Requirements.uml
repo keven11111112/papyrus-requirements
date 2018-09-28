@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_HV_WQML7Eei2pNyaSCNcPA" name="org.eclipse.papyrus.requirements.sysml14.common.ui">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_HlKav8L7Eei2pNyaSCNcPA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_HlwQkML7Eei2pNyaSCNcPA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pgc2QML7Eei2pNyaSCNcPA" name="Display Requirement in the model explorer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XtgXQML7Eei2pNyaSCNcPA" name="Upward Traceability"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jbTbIML7Eei2pNyaSCNcPA" name="Downward Tracability"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ABy6cML8Eei2pNyaSCNcPA" name="resources">
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_PvOcoML8Eei2pNyaSCNcPA" name="ReqDisplay.custom" fileName="ReqDisplay.custom"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Vt6ooML8Eei2pNyaSCNcPA" name="Satisfies_Display Requirement in the model explorer" client="_PvOcoML8Eei2pNyaSCNcPA" supplier="_Pgc2QML7Eei2pNyaSCNcPA"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_W8fUkML8Eei2pNyaSCNcPA" name="UpwardTacability.custom" fileName="UpwardTacability.custom"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_bsh8IML8Eei2pNyaSCNcPA" name="DownwardTacability.custom" fileName="DownwardTacability.custom"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_j3ytYML8Eei2pNyaSCNcPA" name="Satisfies_Upward Traceability" client="_W8fUkML8Eei2pNyaSCNcPA" supplier="_XtgXQML7Eei2pNyaSCNcPA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_nA2wEML8Eei2pNyaSCNcPA" name="Satisfies_Downward Tracability" client="_bsh8IML8Eei2pNyaSCNcPA" supplier="_jbTbIML7Eei2pNyaSCNcPA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DB5OYML8Eei2pNyaSCNcPA" name="src">
+      <packagedElement xmi:type="uml:Class" xmi:id="_EEabUML8Eei2pNyaSCNcPA" name="GetComplexName"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_H11egML8Eei2pNyaSCNcPA" name="plugin.xml" fileName="plugin.xml"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OYfTMML8Eei2pNyaSCNcPA" name="Satisfies_Display Requirement in the model explorer" client="_H11egML8Eei2pNyaSCNcPA" supplier="_Pgc2QML7Eei2pNyaSCNcPA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OYfTMsL8Eei2pNyaSCNcPA" name="Satisfies_Upward Traceability" client="_H11egML8Eei2pNyaSCNcPA" supplier="_XtgXQML7Eei2pNyaSCNcPA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OYodIcL8Eei2pNyaSCNcPA" name="Satisfies_Downward Tracability" client="_H11egML8Eei2pNyaSCNcPA" supplier="_jbTbIML7Eei2pNyaSCNcPA"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HktuwML7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hk3fwML7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlBQwML7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlBQwcL7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlBQwsL7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKasML7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKascL7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKassL7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKas8L7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKatML7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKatcL7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKatsL7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKat8L7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKauML7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKaucL7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKausL7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKau8L7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKavML7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HlKavcL7Eei2pNyaSCNcPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlKavsL7Eei2pNyaSCNcPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_PjbRwML7Eei2pNyaSCNcPA" base_Class="_Pgc2QML7Eei2pNyaSCNcPA" id="R-01" text="A requirement should be displayed as ID: text"/>
+  <Requirements:Requirement xmi:id="_Xt9DMML7Eei2pNyaSCNcPA" base_Class="_XtgXQML7Eei2pNyaSCNcPA" id="R-02" text="The model explorer should display upward tracability of an element"/>
+  <Requirements:Requirement xmi:id="_jbTbIcL7Eei2pNyaSCNcPA" base_Class="_jbTbIML7Eei2pNyaSCNcPA" id="R-03" text="The model explorer should display downward tracability of an element"/>
+  <Requirements:Satisfy xmi:id="_OYfTMcL8Eei2pNyaSCNcPA" base_DirectedRelationship="_OYfTMML8Eei2pNyaSCNcPA" base_Abstraction="_OYfTMML8Eei2pNyaSCNcPA"/>
+  <Requirements:Satisfy xmi:id="_OYodIML8Eei2pNyaSCNcPA" base_DirectedRelationship="_OYfTMsL8Eei2pNyaSCNcPA" base_Abstraction="_OYfTMsL8Eei2pNyaSCNcPA"/>
+  <Requirements:Satisfy xmi:id="_OYodIsL8Eei2pNyaSCNcPA" base_DirectedRelationship="_OYodIcL8Eei2pNyaSCNcPA" base_Abstraction="_OYodIcL8Eei2pNyaSCNcPA"/>
+  <Requirements:Satisfy xmi:id="_Vt6oocL8Eei2pNyaSCNcPA" base_DirectedRelationship="_Vt6ooML8Eei2pNyaSCNcPA" base_Abstraction="_Vt6ooML8Eei2pNyaSCNcPA"/>
+  <Requirements:Satisfy xmi:id="_j38eYML8Eei2pNyaSCNcPA" base_DirectedRelationship="_j3ytYML8Eei2pNyaSCNcPA" base_Abstraction="_j3ytYML8Eei2pNyaSCNcPA"/>
+  <Requirements:Satisfy xmi:id="_nBAhEML8Eei2pNyaSCNcPA" base_DirectedRelationship="_nA2wEML8Eei2pNyaSCNcPA" base_Abstraction="_nA2wEML8Eei2pNyaSCNcPA"/>
+</xmi:XMI>

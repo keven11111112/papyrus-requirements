@@ -3,13 +3,17 @@ Bundle-SymbolicName: org.eclipse.papyrus.requirements.sysml14.common.u
  i;singleton:=true
 Export-Package: org.eclipse.papyrus.requirements.sysml14.common.ui
 Bundle-Name: %Bundle-Name
-Bundle-Version: 0.7.0.qualifier
+Bundle-Version: 0.8.0.qualifier
 Bundle-Localization: plugin
-Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.6
- .0",org.eclipse.papyrus.emf.facet.efacet.core,org.eclipse.papyrus.emf
- .facet.query.java.core,org.eclipse.uml2.uml,org.eclipse.papyrus.uml.t
- ools,org.eclipse.papyrus.requirements.sysml14.common,org.eclipse.papy
- rus.sysml14,org.eclipse.emf.ecore
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.6.0",
+ org.eclipse.papyrus.emf.facet.efacet.core,
+ org.eclipse.papyrus.emf.facet.query.java.core,
+ org.eclipse.uml2.uml,
+ org.eclipse.papyrus.uml.tools,
+ org.eclipse.papyrus.requirements.sysml14.common,
+ org.eclipse.papyrus.sysml14,
+ org.eclipse.emf.ecore,
+ org.eclipse.papyrus.emf.facet.custom.metamodel
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.papyrus.requirements.sysml14.common.ui.A
  ctivator

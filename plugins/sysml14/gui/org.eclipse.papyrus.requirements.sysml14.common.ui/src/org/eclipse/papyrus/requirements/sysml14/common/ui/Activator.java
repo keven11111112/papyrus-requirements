@@ -1,5 +1,5 @@
 /*****************************************************************************
- * Copyright (c) 2016 CEA LIST.
+ * Copyright (c) 2016,2018 CEA LIST.
  *
  *
  * All rights reserved. This program and the accompanying materials
@@ -10,6 +10,7 @@
  * Contributors:
  * 
  * 		Mauricio Alferez (mauricio.alferez@cea.fr) CEA LIST - Initial API and implementation
+ * 		Patrick Tessier (Patrick.tessier@cea.fr) CEA LIST
  *
  *****************************************************************************/
 package org.eclipse.papyrus.requirements.sysml14.common.ui;

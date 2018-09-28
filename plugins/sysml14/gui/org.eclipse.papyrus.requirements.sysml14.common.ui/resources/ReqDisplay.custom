@@ -4,8 +4,8 @@
     <extendedMetaclass href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
     <facetOperations name="DisplayStereotype">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eParameters name="eObject">
-        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      <eParameters name="eReference">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
       </eParameters>
       <query xsi:type="javaQuery:JavaQuery" implementationClassName="org.eclipse.papyrus.requirements.sysml14.common.ui.queries.GetComplexName"/>
       <override xsi:type="efacet:FacetOperation" href="platform:/plugin/org.eclipse.papyrus.emf.facet.custom.ui/resources/customproperties.efacet#//CustomizedEObject/label"/>
