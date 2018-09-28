@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.papyrus.requirements.gui.feature"
       label="Requirements GUI (Incubation)"
-      version="0.7.0.qualifier"
+      version="0.8.0.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <copyright url="http://www.eclipse.org/legal/epl-v10.html">

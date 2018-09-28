@@ -25,7 +25,7 @@ import org.eclipse.papyrus.uml.tools.providers.DelegatingItemLabelProvider;
 import org.eclipse.uml2.uml.NamedElement;
 import org.eclipse.uml2.uml.Stereotype;
 
-/** get the name + the list of applied stereotypes */
+/**Req01: A requirement should be displayed as ID: text */
 public class GetComplexName implements IJavaQuery2<NamedElement, String> {
 
 	/**
@@ -52,7 +52,7 @@ public class GetComplexName implements IJavaQuery2<NamedElement, String> {
 	private static final IItemLabelProvider labelProvider = new DelegatingItemLabelProvider();
 
 	public String evaluate(NamedElement source, IParameterValueList2 parameterValues, IFacetManager facetManager) throws DerivedTypedElementException {
-		ParameterValue parameterValue = parameterValues.getParameterValueByName("eObject"); //$NON-NLS-1$
+		ParameterValue parameterValue = parameterValues.getParameterValueByName("eReference"); //$NON-NLS-1$
 		if (parameterValue.getValue() instanceof EStructuralFeature) {
 			return ((EStructuralFeature) parameterValue.getValue()).getName();
 		}

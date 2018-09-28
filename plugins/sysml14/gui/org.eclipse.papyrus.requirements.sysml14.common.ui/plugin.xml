@@ -58,6 +58,15 @@
       <modeldeclaration
             file="resources/ReqDisplay.custom">
       </modeldeclaration>
+      <modeldeclaration
+            file="resources/DownwardTracability.custom">
+      </modeldeclaration>
+      <modeldeclaration
+            file="resources/UpwardTracability.custom">
+      </modeldeclaration>
+      <modeldeclaration
+            file="resources/DisplaySatisfiedReq.custom">
+      </modeldeclaration>
    </extension>
 
 </plugin>

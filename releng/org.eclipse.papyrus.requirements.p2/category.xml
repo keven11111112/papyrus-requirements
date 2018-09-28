@@ -3,7 +3,7 @@
    <feature url="features/org.eclipse.papyrus.requirements.controler.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.controler.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.requirements.gui.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.gui.feature" version="0.7.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.requirements.gui.feature_0.8.0.qualifier.jar" id="org.eclipse.papyrus.requirements.gui.feature" version="0.8.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
    <feature url="features/org.eclipse.papyrus.requirements.viewpoint.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.viewpoint.feature" version="0.7.0.qualifier">
