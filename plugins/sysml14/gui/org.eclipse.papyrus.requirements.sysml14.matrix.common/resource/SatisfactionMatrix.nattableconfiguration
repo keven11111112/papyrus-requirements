@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nattableconfiguration:TableConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattablecelleditor="http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablelabelprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:umlexpressions="http://www.eclipse.org/papyrus/umlexpressions" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor http://www.eclipse.org/papyrus/nattable/model#//nattablecelleditor http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider http://www.eclipse.org/papyrus/nattable/model#//nattablelabelprovider http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle" description="This table allows to display SysML 1.4 satisifiedBy relationship between Classes and Requirements" name="Satisfaction Requirement Matrix" type="SysMLSatisfactionRequirementMatrix" iconPath="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" defaultRowAxisProvider="//@columnAxisProviders.0" defaultColumnAxisProvider="//@rowAxisProviders.0">
-  <styles xsi:type="nattablestyle:TableDisplayStyle" displayStyle="HIERARCHIC_SINGLE_TREE_COLUMN"/>
-  <styles xsi:type="nattablestyle:StringListValueStyle" name="dragRegions">
+<nattableconfiguration:TableConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattablecelleditor="http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablelabelprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:umlexpressions="http://www.eclipse.org/papyrus/umlexpressions" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor http://www.eclipse.org/papyrus/nattable/model#//nattablecelleditor http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider http://www.eclipse.org/papyrus/nattable/model#//nattablelabelprovider http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle" xmi:id="_suVLJMCdEeiydex6g9efPA" description="This table allows to display SysML 1.4 satisifiedBy relationship between Classes and Requirements " name="Satisfaction Requirement Matrix" type="SysMLSatisfactionRequirementMatrix" iconPath="platform:/plugin/org.eclipse.papyrus.sysml14.nattable.requirement/icons/table_SysML_Requirement.png" cellEditorDeclaration="COLUMN" defaultRowAxisProvider="_EqqnU8ZPEeijBIWPt_NRXw" defaultColumnAxisProvider="_EqqnVMZPEeijBIWPt_NRXw">
+  <styles xmi:type="nattablestyle:TableDisplayStyle" xmi:id="_EqoLEcZPEeijBIWPt_NRXw" displayStyle="HIERARCHIC_SINGLE_TREE_COLUMN"/>
+  <styles xmi:type="nattablestyle:StringListValueStyle" xmi:id="_EqoLEsZPEeijBIWPt_NRXw" name="dragRegions">
     <stringListValue>ROW_HEADER</stringListValue>
   </styles>
-  <styles xsi:type="nattablestyle:IntListValueStyle" name="hiddenCategoriesByDepth">
+  <styles xmi:type="nattablestyle:IntListValueStyle" xmi:id="_EqoLE8ZPEeijBIWPt_NRXw" name="hiddenCategoriesByDepth">
     <intListValue>1</intListValue>
   </styles>
-  <styles xsi:type="nattablestyle:BooleanValueStyle" name="expandAll" booleanValue="true"/>
-  <rowHeaderAxisConfiguration xsi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" indexStyle="NUMERIC">
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:ObjectLabelProviderConfiguration"/>
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" displayType="false" displayMultiplicity="false"/>
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:OperationLabelProviderConfiguration" displayType="false" displayMultiplicity="false"/>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="1" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+  <styles xmi:type="nattablestyle:BooleanValueStyle" xmi:id="_EqoLFMZPEeijBIWPt_NRXw" name="expandAll" booleanValue="true"/>
+  <rowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_EqoLFcZPEeijBIWPt_NRXw" indexStyle="NUMERIC" displayLabel="true" displayFilter="false" displayIndex="true">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:ObjectLabelProviderConfiguration" xmi:id="_EqoLFsZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_EqoLF8ZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_EqoLGMZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqoLGcZPEeijBIWPt_NRXw" depth="1" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqoLGsZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqoLG8ZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="2" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqoyIMZPEeijBIWPt_NRXw" depth="2" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqoyIcZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqoyIsZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="3" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqoyI8ZPEeijBIWPt_NRXw" depth="3" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqoyJMZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqoyJcZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="4" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqoyJsZPEeijBIWPt_NRXw" depth="4" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqoyJ8ZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqoyKMZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="5" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqoyKcZPEeijBIWPt_NRXw" depth="5" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqoyKsZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqoyK8ZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="6" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqpZMMZPEeijBIWPt_NRXw" depth="6" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqpZMcZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqpZMsZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="7" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqpZM8ZPEeijBIWPt_NRXw" depth="7" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqpZNMZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqpZNcZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="8" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqpZNsZPEeijBIWPt_NRXw" depth="8" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqpZN8ZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqpZOMZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="9" labelProvider="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis" alias="">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqpZOcZPEeijBIWPt_NRXw" depth="9" labelProvider="_EqoLF8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqpZOsZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsTypeOfExpression" name="IsClassExpression" description="Return true if the element is an UML Class">
-        <umlEClass xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      <filterRule xmi:type="umlexpressions:IsTypeOfExpression" xmi:id="_EqpZO8ZPEeijBIWPt_NRXw" name="IsClassExpression" description="Return true if the element is an UML Class">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </filterRule>
     </ownedAxisConfigurations>
-    <axisManagers xsi:type="nattableaxisconfiguration:AxisManagerRepresentation" axisManagerId="org.eclipse.papyrus.infra.uml.nattable.tree.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@rowHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@rowHeaderAxisConfiguration/@ownedAxisConfigurations.0 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.1 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.2 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.3 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.4 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.5 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.6 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.7 //@rowHeaderAxisConfiguration/@ownedAxisConfigurations.8"/>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="_EqqAQMZPEeijBIWPt_NRXw" axisManagerId="org.eclipse.papyrus.infra.uml.nattable.tree.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="_EqoLFsZPEeijBIWPt_NRXw" specificAxisConfigurations="_EqoLGcZPEeijBIWPt_NRXw _EqoyIMZPEeijBIWPt_NRXw _EqoyI8ZPEeijBIWPt_NRXw _EqoyJsZPEeijBIWPt_NRXw _EqoyKcZPEeijBIWPt_NRXw _EqpZMMZPEeijBIWPt_NRXw _EqpZM8ZPEeijBIWPt_NRXw _EqpZNsZPEeijBIWPt_NRXw _EqpZOcZPEeijBIWPt_NRXw"/>
   </rowHeaderAxisConfiguration>
-  <columnHeaderAxisConfiguration xsi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration">
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:ObjectLabelProviderConfiguration"/>
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" displayType="false" displayMultiplicity="false"/>
-    <ownedLabelConfigurations xsi:type="nattablelabelprovider:OperationLabelProviderConfiguration" displayType="false" displayMultiplicity="false"/>
-    <ownedAxisConfigurations xsi:type="nattableaxisconfiguration:TreeFillingConfiguration" depth="1" labelProvider="//@columnHeaderAxisConfiguration/@ownedLabelConfigurations.1" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
-      <axisUsedAsAxisProvider xsi:type="nattableaxis:EStructuralFeatureAxis">
-        <element xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+  <columnHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_EqqAQcZPEeijBIWPt_NRXw" displayLabel="true" displayFilter="false" displayIndex="true">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:ObjectLabelProviderConfiguration" xmi:id="_EqqAQsZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_EqqAQ8ZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_EqqARMZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_EqqnUMZPEeijBIWPt_NRXw" depth="1" labelProvider="_EqqAQ8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_EqqnUcZPEeijBIWPt_NRXw">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
       </axisUsedAsAxisProvider>
-      <filterRule xsi:type="umlexpressions:IsKindOfStereotypeExpression" xmi:id="_-P3q0LPxEeenvaoBuNrG0w" name="IsKindOfRequirement" stereotypeQualifiedName="SysML::Requirements::Requirement"/>
+      <filterRule xmi:type="umlexpressions:IsKindOfStereotypeExpression" xmi:id="_-P3q0LPxEeenvaoBuNrG0w" name="IsKindOfRequirement" stereotypeQualifiedName="SysML::Requirements::Requirement"/>
     </ownedAxisConfigurations>
-    <axisManagers xsi:type="nattableaxisconfiguration:AxisManagerRepresentation" axisManagerId="org.eclipse.papyrus.infra.emf.nattable.axis.column.eobject.matrix.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="//@columnHeaderAxisConfiguration/@ownedLabelConfigurations.0" specificAxisConfigurations="//@columnHeaderAxisConfiguration/@ownedAxisConfigurations.0"/>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="_EqqnUsZPEeijBIWPt_NRXw" axisManagerId="org.eclipse.papyrus.infra.emf.nattable.axis.column.eobject.matrix.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="_EqqAQsZPEeijBIWPt_NRXw" specificAxisConfigurations="_EqqnUMZPEeijBIWPt_NRXw"/>
   </columnHeaderAxisConfiguration>
-  <columnAxisProviders xsi:type="nattableaxisprovider:MasterObjectAxisProvider" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
-  <rowAxisProviders xsi:type="nattableaxisprovider:MasterObjectAxisProvider" description="This axis provider manages the columns, according to the wanted hierarchy" name="HierarchicalColumnsAxisManager" disconnectSlave="true"/>
-  <ownedCellEditorConfigurations xsi:type="nattablecelleditor:GenericRelationshipMatrixCellEditorConfiguration" cellEditorId="GenericRelationshipMatrixEditorConfiguration">
-    <editedElement xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml14.service.types/model/SysML14.elementtypesconfigurations#org.eclipse.papyrus.SysML14.Satisfy_Abstraction"/>
+  <columnAxisProviders xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_EqqnU8ZPEeijBIWPt_NRXw" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+  <rowAxisProviders xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_EqqnVMZPEeijBIWPt_NRXw" description="This axis provider manages the columns, according to the wanted hierarchy" name="HierarchicalColumnsAxisManager" disconnectSlave="true"/>
+  <ownedCellEditorConfigurations xmi:type="nattablecelleditor:GenericRelationshipMatrixCellEditorConfiguration" xmi:id="_EqqnVcZPEeijBIWPt_NRXw" cellEditorId="GenericRelationshipMatrixEditorConfiguration" direction="FROM_ROW_TO_COLUMN" relationshipOwnerStrategy="DEFAULT">
+    <editedElement xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml14.service.types/model/SysML14.elementtypesconfigurations#org.eclipse.papyrus.SysML14.Satisfy_Abstraction"/>
   </ownedCellEditorConfigurations>
 </nattableconfiguration:TableConfiguration>
