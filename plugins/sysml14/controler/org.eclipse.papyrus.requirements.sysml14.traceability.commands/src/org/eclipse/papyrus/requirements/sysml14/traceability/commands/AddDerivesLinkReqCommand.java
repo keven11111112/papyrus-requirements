@@ -44,7 +44,6 @@ public class AddDerivesLinkReqCommand extends RecordingCommand {
 
 	@Override
 	protected void doExecute() {
-		if (selectedElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) != null) {
 			Stereotype reqStereotype = selectedElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE);
 			final IStaticContentProvider provider = new UMLContentProvider(Utils.getToPackage(selectedElement),
 					UMLPackage.eINSTANCE.getPackage_PackagedElement(), reqStereotype);
@@ -70,5 +69,4 @@ public class AddDerivesLinkReqCommand extends RecordingCommand {
 				}
 			}
 		}
-	}
 }

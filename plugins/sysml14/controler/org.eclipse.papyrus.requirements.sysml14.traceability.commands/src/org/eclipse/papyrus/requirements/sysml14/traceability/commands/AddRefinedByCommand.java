@@ -46,7 +46,6 @@ public class AddRefinedByCommand extends RecordingCommand {
 
 	@Override
 	protected void doExecute() {
-		if (selectedElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) != null) {
 			final IStaticContentProvider provider = new UMLContentProvider(Utils.getToPackage(selectedElement),
 					UMLPackage.eINSTANCE.getPackage_PackagedElement());
 			ReferenceSelector selector = new ReferenceSelector();
@@ -75,6 +74,5 @@ public class AddRefinedByCommand extends RecordingCommand {
 
 			}
 		}
-	}
 
 }
