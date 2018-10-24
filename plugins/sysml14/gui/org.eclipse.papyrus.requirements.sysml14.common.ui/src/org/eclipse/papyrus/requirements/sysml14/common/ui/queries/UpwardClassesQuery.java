@@ -34,10 +34,13 @@ import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.resource.UMLResource;
 
 /**
- * Req03: Papyrus Req  shall provides a means to display downward traceability in the model explorer
+ * Req02:Papyrus Req  shall provides a means to display upward traceability in the model explorer
  *
  */
-public class DownwardTracabilityQuery implements IJavaQuery2<NamedElement,  Collection<EObject>> {
+public class UpwardClassesQuery implements IJavaQuery2<NamedElement,  Collection<EObject>> {
+
+
+
 	public Collection<EObject>  evaluate(final NamedElement context, 
 			final IParameterValueList2 parameterValues,
 			final IFacetManager facetManager)
@@ -45,24 +48,18 @@ public class DownwardTracabilityQuery implements IJavaQuery2<NamedElement,  Coll
 
 
 		ArrayList<EObject> result= new ArrayList<EObject>();
-		if( context  instanceof DirectedRelationship) {
-			result.addAll(((DirectedRelationship)context).getSources());
-		}
-		else {
-			ResourceSet resourceSet=context.eResource().getResourceSet();
-			
-			for(int i=0; i< resourceSet.getResources().size();i++) {
-				Resource resource = (Resource) resourceSet.getResources().get(i);
-				if( resource instanceof UMLResource) {
-					for (Iterator<EObject> iteratorObject = resource.getAllContents(); iteratorObject.hasNext();) {
-						EObject ownedElement = (EObject) iteratorObject.next();
-						if(ownedElement instanceof DirectedRelationship) {
-							if( ownedElement instanceof  Abstraction) {
-								if(((DirectedRelationship)ownedElement).getTargets().contains(context)) {
-									result.add(ownedElement);
-								}
-							}
+		ResourceSet resourceSet=context.eResource().getResourceSet();
+		for(int i=0; i< resourceSet.getResources().size();i++) {
+			Resource resource = (Resource) resourceSet.getResources().get(i);
+			if( resource instanceof UMLResource) {
 
+				for (Iterator<EObject> iteratorObject = resource.getAllContents(); iteratorObject.hasNext();) {
+					EObject ownedElement = (EObject) iteratorObject.next();
+					if(ownedElement instanceof DirectedRelationship) {
+						if( ownedElement instanceof  Abstraction) {
+							if(((DirectedRelationship)ownedElement).getSources().contains(context)) {
+								result.addAll(((DirectedRelationship)ownedElement).getTargets());
+							}
 						}
 					}
 				}
