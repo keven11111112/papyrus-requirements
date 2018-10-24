@@ -25,6 +25,8 @@ import org.eclipse.papyrus.emf.facet.efacet.core.IFacetManager;
 import org.eclipse.papyrus.emf.facet.efacet.core.exception.DerivedTypedElementException;
 import org.eclipse.papyrus.emf.facet.query.java.core.IJavaQuery2;
 import org.eclipse.papyrus.emf.facet.query.java.core.IParameterValueList2;
+import org.eclipse.uml2.uml.Abstraction;
+import org.eclipse.uml2.uml.Dependency;
 import org.eclipse.uml2.uml.DirectedRelationship;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.NamedElement;
@@ -36,9 +38,9 @@ import org.eclipse.uml2.uml.resource.UMLResource;
  *
  */
 public class UpwardTracabilityQuery implements IJavaQuery2<NamedElement,  Collection<EObject>> {
-	
-	
-	
+
+
+
 	public Collection<EObject>  evaluate(final NamedElement context, 
 			final IParameterValueList2 parameterValues,
 			final IFacetManager facetManager)
@@ -52,15 +54,17 @@ public class UpwardTracabilityQuery implements IJavaQuery2<NamedElement,  Collec
 		else {
 
 			ResourceSet resourceSet=context.eResource().getResourceSet();
-			for (Iterator<Resource> iteratorResource = resourceSet.getResources().iterator(); iteratorResource.hasNext();) {
-				Resource resource = (Resource) iteratorResource.next();
+			for(int i=0; i< resourceSet.getResources().size();i++) {
+				Resource resource = (Resource) resourceSet.getResources().get(i);
 				if( resource instanceof UMLResource) {
 
 					for (Iterator<EObject> iteratorObject = resource.getAllContents(); iteratorObject.hasNext();) {
 						EObject ownedElement = (EObject) iteratorObject.next();
 						if(ownedElement instanceof DirectedRelationship) {
-							if(((DirectedRelationship)ownedElement).getSources().contains(context)) {
-								result.add(ownedElement);
+							if( ownedElement instanceof  Abstraction) {
+								if(((DirectedRelationship)ownedElement).getSources().contains(context)) {
+									result.add(ownedElement);
+								}
 							}
 						}
 					}

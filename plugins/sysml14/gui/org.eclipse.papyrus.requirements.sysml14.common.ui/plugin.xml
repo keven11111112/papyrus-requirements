@@ -67,6 +67,12 @@
       <modeldeclaration
             file="resources/DisplaySatisfiedReq.custom">
       </modeldeclaration>
+      <modeldeclaration
+            file="resources/DownwardTracabilityClasses.custom">
+      </modeldeclaration>
+      <modeldeclaration
+            file="resources/UpwardTracabilityClasses.custom">
+      </modeldeclaration>
    </extension>
 
 </plugin>
