@@ -62,11 +62,11 @@ public class AddDerivedLinkReqCommand extends RecordingCommand {
 
 				for (int i = 0; i < result.length; i++) {
 					Element currentElement = (Element) result[i];
-					if (currentElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) != null) {
+					//if (currentElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) != null) {
 						DerivationReqCreateCommand derivationReqCreateCommand = new DerivationReqCreateCommand(domain,
 								(NamedElement) selectedElement, (NamedElement) currentElement);
 						derivationReqCreateCommand.execute();
-					}
+					//}
 				}
 			}
 		}

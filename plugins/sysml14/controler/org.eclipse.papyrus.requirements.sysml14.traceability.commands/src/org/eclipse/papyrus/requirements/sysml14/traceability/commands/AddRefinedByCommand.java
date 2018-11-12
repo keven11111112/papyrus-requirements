@@ -65,11 +65,11 @@ public class AddRefinedByCommand extends RecordingCommand {
 				for (int i = 0; i < result.length; i++) {
 					Element currentElement = (Element) result[i];
 					// chosen elements cannot be requirements
-					if (currentElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) == null) {
+					//if (currentElement.getAppliedStereotype(I_SysMLStereotype.REQUIREMENT_STEREOTYPE) == null) {
 						RefinementCreateCommand refinementCreateCommand = new RefinementCreateCommand(domain,
 								(NamedElement) currentElement, (NamedElement) selectedElement);
 						refinementCreateCommand.execute();
-					}
+					//}
 				}
 
 			}
