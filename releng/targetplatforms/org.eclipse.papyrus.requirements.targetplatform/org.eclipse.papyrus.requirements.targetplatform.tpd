@@ -1,6 +1,6 @@
 target "Requirements Target Platform"
 
-location "http://download.eclipse.org/releases/photon/" {
+location "http://download.eclipse.org/releases/2018-09" {
  org.eclipse.platform.feature.group lazy
  org.eclipse.rcp.feature.group lazy
  org.eclipse.jdt.feature.group lazy
@@ -11,6 +11,7 @@ location "http://download.eclipse.org/releases/photon/" {
  
  org.eclipse.uml2.sdk.feature.group lazy    
  org.eclipse.emf.transaction.sdk.feature.group lazy
+ org.eclipse.emf.sdk.feature.group lazy
  org.eclipse.emf.validation.sdk.feature.group lazy
  org.eclipse.gef.sdk.feature.group lazy
  org.eclipse.gmf.runtime.notation.sdk.feature.group lazy
@@ -33,11 +34,12 @@ location rmf "http://download.eclipse.org/rmf/updates/releases" {
     org.eclipse.rmf.reqif10.pror.sdk.feature.feature.group lazy
 }
 
-location orbit "http://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository" {
+location orbit "http://download.eclipse.org/tools/orbit/downloads/drops/R20180905201904/repository" {
     org.apache.commons.lang lazy
     org.apache.commons.codec lazy
 }
 
 location xwt "http://download.eclipse.org/xwt/updates" {
 	org.eclipse.xwt.feature.feature.group [1.3.1, 2.0.0)
-}
+ }
+
