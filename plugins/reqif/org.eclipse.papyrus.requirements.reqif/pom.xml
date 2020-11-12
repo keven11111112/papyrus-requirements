@@ -23,8 +23,8 @@
 	<!-- Parent POM (i.e., Bundles) -->
 	<parent>
 		<groupId>org.eclipse.papyrus.requirements</groupId>
-		<artifactId>org.eclipse.papyrus.requirements.plugins.sysml11.requirements</artifactId>
-		<version>0.7.0-SNAPSHOT</version>
+		<artifactId>org.eclipse.papyrus.requirements-reqif</artifactId>
+		<version>0.8.0-SNAPSHOT</version>
 	</parent>
 	
 	<!-- POM Description -->

@@ -9,12 +9,15 @@
    <feature url="features/org.eclipse.papyrus.requirements.viewpoint.feature_0.7.0.qualifier.jar" id="org.eclipse.papyrus.requirements.viewpoint.feature" version="0.7.0.qualifier">
       <category name="org.eclipse.papyrus.requirements"/>
    </feature>
-      <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="3.0.0.qualifier">
+   
+   <feature url="features/org.eclipse.papyrus.requirements.sysml14.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.metrics.feature" version="3.0.0.qualifier">
+      <category name="org.eclipse.papyrus.requirement.metrics"/>
+   </feature>
+   
+   <feature url="features/org.eclipse.papyrus.requirements.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.metrics.feature" version="3.0.0.qualifier">
       <category name="org.eclipse.papyrus.metrics"/>
    </feature>
-    <feature url="features/org.eclipse.papyrus.requirements.sysml14.metrics.feature_3.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.sysml14.metrics.feature" version="3.0.0.qualifier">
-      <category name="org.eclipse.papyrus.requirementmetrics"/>
-   </feature>
+   
    <feature url="features/org.eclipse.papyrus.requirements.bmm.feature_4.0.0.qualifier.jar" id="org.eclipse.papyrus.requirements.bmm.feature" version="4.0.100.qualifier">
       <category name="org.eclipse.papyrus.bmm"/>
    </feature>
@@ -29,7 +32,7 @@
          Implementation to make metrics on models
       </description>
    </category-def>
-   <category-def name="org.eclipse.papyrus.requirementmetrics" label="Metrics for Requirements">
+   <category-def name="org.eclipse.papyrus.requirement.metrics" label="Metrics for Requirements">
       <description>
          Metrics for Requirements
       </description>

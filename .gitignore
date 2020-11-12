@@ -10,6 +10,10 @@ sonarlint/
 # Workspace metadata folder created by Oomph when launching tests.
 tests/**/.metadata/
 
+# Eclipse specific files
+.project
+!**/org.eclipse.papyrus.*/.project
+
 #intellij files
 .idea/
 *.iml
