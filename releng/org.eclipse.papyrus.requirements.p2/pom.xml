@@ -15,5 +15,5 @@
 	<artifactId>org.eclipse.papyrus.requirements.releng.p2</artifactId>
 	<name>Requirements update site</name>
 	<packaging>eclipse-repository</packaging>
-
+	
 </project>
