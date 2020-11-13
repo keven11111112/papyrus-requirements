@@ -1,25 +1,26 @@
-#!/bin/bash
+#!/bin/sh
 alias ll="ls -la"
 
 ########### Parameters Check ###########
-if (test $# -ne 5) then
-  echo "The script must have access to the following parameters:
-  - MILESTONE,
-  - SIGN,
-  - RELEASE_NUMBER,
-  - OVERRIDE,
-  - PUBLISH"
+if [[ -v $PROMOTED_JOB_NAME ]] || [[ -v $PROMOTED_JOB_NUMBER ]] || [[ -v $MILESTONE ]] || [[ -v $RELEASE_NUMBER ]] || [[ -v $OVERRIDE ]] ; then
+  echo "The script must set to the following parameters:
+  - PROMOTED_JOB_NAME, found: $PROMOTED_JOB_NAME,
+  - PROMOTED_JOB_NUMBER, found: $PROMOTED_JOB_NUMBER,
+  - MILESTONE, found: $MILESTONE,
+  - RELEASE_NUMBER, found: $RELEASE_NUMBER,
+  - OVERRIDE, found: $OVERRIDE"
+  
+  exit 1;
 fi
+
+########### Set Access Rights ###########
+# This function sets the acess rights to allow all memebers of the group to edit the files
+function setAccessRights() {
+  chmod -R 775 "$1"
+  chgrp -hR modeling.mdt.papyrus "$1"
+}
 
 ########### Parameters Initialization ###########
-if ! $PUBLISH ; then
-  exit 0 # nothing to do here
-fi 
-
-if ! $SIGN ; then
-  echo "The sources may not have been signed. Please verify the build and artifacts parameters and try again."
-  exit 1
-fi
 
 #The specific localization
 remoteRoot="/home/data/httpd/download.eclipse.org"
@@ -34,8 +35,7 @@ else
 fi
 echo $destinationUpdateSite
 
-#jobArtifacts=$HOME/.jenkins/jobs/$PROMOTED_JOB_NAME/builds/$PROMOTED_NUMBER/archive
-jobArtifacts=$HOME/agent/workspace/$JOB_NAME/
+jobArtifacts=$HOME/.jenkins/jobs/$PROMOTED_JOB_NAME/builds/$PROMOTED_JOB_NUMBER/archive
 if [ ! -d $jobArtifacts ] ; then
   echo "No artifact folder was found under the specified $jobArtifacts path"
   exit 1
@@ -65,13 +65,13 @@ cd $jobArtifacts
 if [ ! -f Papyrus-Requirements.zip ] ; then
   echo "There is no Papyrus-Requirements.zip here."
   pwd
-  ls
+  ll
   exit 1
 fi
 if [ ! -d repository ] ; then
   echo "There is no repository directory here."
   pwd
-  ls
+  ll
   exit 1
 fi
 
@@ -91,17 +91,83 @@ echo "copying the zip into $destinationUpdateSite"
 cp Papyrus-Requirements.zip $destinationUpdateSite
 
 echo "copying the p2 repository folder into $destinationUpdateSite"
-cp -r repository/* $destinationUpdateSite
+cp -r repository $destinationUpdateSite
 
 
-########### Set Access Rights ###########
-# This function sets the acess rights to allow all memebers of the group to edit the files
-function setAccessRights() {
-  chmod -R 775 "$1"
-  chgrp -hR modeling.mdt.papyrus "$1"
-}
+# create the composite update site
+newTimeStamp=$(date +%s000)
+
+cat > "$updateSiteDir/compositeArtifacts.xml" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<repository name="Papyrus" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
+  <properties size="1">
+    <property name="p2.timestamp" value="${newTimeStamp}"/>
+  </properties>
+  <children size="1">
+    <child location="repository"/>
+  </children>
+</repository>
+EOF
+
+cat > "$updateSiteDir/compositeContent.xml" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<repository name="Papyrus" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="1">
+    <property name="p2.timestamp" value="${newTimeStamp}"/>
+  </properties>
+  <children size="1">
+    <child location="repository"/>
+  </children>
+</repository>
+EOF
+
+
+if [[ "$MILESTONE" != "-R" ]] ; then
+
+# create the composite update site for the update site root folder
+updateSiteChildren=$(($(find $updateSiteDir/.. -maxdepth 1 -type d -print | wc -l)-1))
+
+# Update the releaseRoot composites
+cat > "$updateSiteDir/../compositeContent.xml" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<repository name="Papyrus" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
+  <properties size="1">
+    <property name="p2.timestamp" value="${newTimeStamp}"/>
+  </properties>
+  <children size="${updateSiteChildren}">$(
+    for folder in $updateSiteDir/../*; do
+	if [[ -d ${folder} ]] ; then
+    printf "\n    <child location='$(basename ${folder})'/>"
+	fi
+    done
+    )
+  </children>
+</repository>
+EOF
+
+cat > "$updateSiteDir/../compositeArtifacts.xml" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<repository name="Papyrus" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="1">
+    <property name="p2.timestamp" value="${newTimeStamp}"/>
+  </properties>
+  <children size="${updateSiteChildren}">$(
+    for folder in $updateSiteDir/../*; do
+	if [[ -d ${folder} ]] ; then
+    printf "\n    <child location='$(basename ${folder})'/>"
+	fi
+    done
+    )
+  </children>
+</repository>
+EOF
+
+echo "Set access right -R: $updateSiteDir/.."
+setAccessRights "$updateSiteDir/.."
+
+fi
+
 echo "Set access right -R: $destinationUpdateSite"
 setAccessRights $destinationUpdateSite
-
 
 echo "publishing done."
