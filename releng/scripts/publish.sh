@@ -97,7 +97,7 @@ cp -r repository $destinationUpdateSite
 # create the composite update site
 newTimeStamp=$(date +%s000)
 
-cat > "$updateSiteDir/compositeArtifacts.xml" <<EOF
+cat > "$destinationUpdateSite/compositeArtifacts.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <repository name="Papyrus" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
   <properties size="1">
@@ -109,7 +109,7 @@ cat > "$updateSiteDir/compositeArtifacts.xml" <<EOF
 </repository>
 EOF
 
-cat > "$updateSiteDir/compositeContent.xml" <<EOF
+cat > "$destinationUpdateSite/compositeContent.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <repository name="Papyrus" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
   <properties size="1">
@@ -125,17 +125,17 @@ EOF
 if [[ "$MILESTONE" != "-R" ]] ; then
 
 # create the composite update site for the update site root folder
-updateSiteChildren=$(($(find $updateSiteDir/.. -maxdepth 1 -type d -print | wc -l)-1))
+updateSiteChildren=$(($(find $destinationUpdateSite/.. -maxdepth 1 -type d -print | wc -l)-1))
 
 # Update the releaseRoot composites
-cat > "$updateSiteDir/../compositeContent.xml" <<EOF
+cat > "$destinationUpdateSite/../compositeContent.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <repository name="Papyrus" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
   <properties size="1">
     <property name="p2.timestamp" value="${newTimeStamp}"/>
   </properties>
   <children size="${updateSiteChildren}">$(
-    for folder in $updateSiteDir/../*; do
+    for folder in $destinationUpdateSite/../*; do
 	if [[ -d ${folder} ]] ; then
     printf "\n    <child location='$(basename ${folder})'/>"
 	fi
@@ -145,14 +145,14 @@ cat > "$updateSiteDir/../compositeContent.xml" <<EOF
 </repository>
 EOF
 
-cat > "$updateSiteDir/../compositeArtifacts.xml" <<EOF
+cat > "$destinationUpdateSite/../compositeArtifacts.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <repository name="Papyrus" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
   <properties size="1">
     <property name="p2.timestamp" value="${newTimeStamp}"/>
   </properties>
   <children size="${updateSiteChildren}">$(
-    for folder in $updateSiteDir/../*; do
+    for folder in $destinationUpdateSite/../*; do
 	if [[ -d ${folder} ]] ; then
     printf "\n    <child location='$(basename ${folder})'/>"
 	fi
@@ -162,8 +162,8 @@ cat > "$updateSiteDir/../compositeArtifacts.xml" <<EOF
 </repository>
 EOF
 
-echo "Set access right -R: $updateSiteDir/.."
-setAccessRights "$updateSiteDir/.."
+echo "Set access right -R: $destinationUpdateSite/.."
+setAccessRights "$destinationUpdateSite/.."
 
 fi
 
